@@ -1,0 +1,12 @@
+{
+  "name": "web-optimizer",
+  "version": "1.0.0",
+  "description": "A test platform for implementing and evaluating web performance optimization techniques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tomas Stveracek",
+  "license": "ISC"
+}
