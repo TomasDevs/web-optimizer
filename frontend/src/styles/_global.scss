@@ -1,0 +1,23 @@
+@use "variables" as vars;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: vars.$font-family;
+  background-color: vars.$background-color;
+  color: vars.$text-color;
+}
+
+::selection {
+  background-color: vars.$primary-color;
+  color: vars.$background-color;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  color: vars.$primary-color;
+  font-weight: 700;
+}

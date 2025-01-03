@@ -1,2 +1,4 @@
-@import "variables.scss";
-@import "global.scss";
+@use "variables" as vars;
+@use "mixins" as mx;
+@use "utilities" as util;
+@use "global";

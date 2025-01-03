@@ -1,0 +1,35 @@
+@use "variables" as vars;
+
+// Breakpoints
+@mixin breakpoint($size) {
+  @if $size == sm {
+    @media (min-width: vars.$breakpoint-sm) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (min-width: vars.$breakpoint-md) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (min-width: vars.$breakpoint-lg) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: vars.$breakpoint-xl) {
+      @content;
+    }
+  } @else if $size == 2xl {
+    @media (min-width: vars.$breakpoint-2xl) {
+      @content;
+    }
+  }
+}
+
+// Units
+@function rem($value, $base-font-size: 16) {
+  @if str-slice($value, -2) == "px" {
+    @return #{str-to-number(str-slice($value, 1, -2)) / $base-font-size}rem;
+  } @else {
+    @error "Invalid value: `#{$value}`. Please use a value in px (e.g., 20px).";
+  }
+}
