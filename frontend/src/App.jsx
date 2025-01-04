@@ -1,9 +1,8 @@
+import React from "react";
+import Layout from "./components/Layout";
+
 const App = () => {
-  return (
-    <div className="App">
-      <h1>Web Optimizer</h1>
-    </div>
-  );
+  return <Layout />;
 };
 
 export default App;

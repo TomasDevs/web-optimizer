@@ -7,9 +7,28 @@
 }
 
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-family: vars.$font-family;
-  background-color: vars.$background-color;
   color: vars.$text-color;
+  background: url("data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 100 100%22 preserveAspectRatio%3D%22none%22%3E%3Crect x%3D%2269%22 y%3D%22-50%22 width%3D%2210%22 height%3D%22200%22 fill%3D%22%235e7dff%22 transform%3D%22rotate(15 50 50)%22/%3E%3Crect x%3D%2260%22 y%3D%22-50%22 width%3D%2250%22 height%3D%22200%22 fill%3D%22%23fbc6e5%22 transform%3D%22rotate(15 0 100)%22/%3E%3Crect x%3D%2295%22 y%3D%22-50%22 width%3D%225%22 height%3D%22200%22 fill%3D%22%235e7dff%22 transform%3D%22rotate(0 50 50)%22/%3E%3C/svg%3E")
+    no-repeat;
+  background-size: cover;
+  background-color: vars.$background-color;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin: 5rem auto;
+  background-color: rgba(#fff, 0.9);
+  border-radius: vars.$border-radius-lg;
+}
+
+main {
+  flex: 1;
 }
 
 ::selection {

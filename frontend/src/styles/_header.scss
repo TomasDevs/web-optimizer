@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 0.5rem;
+  word-spacing: -5px;
+  text-transform: lowercase;
+  strong {
+    font-weight: 900;
+  }
+}
