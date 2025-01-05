@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1.5rem vars.$spacing-sm;
   margin: 0 -#{vars.$spacing-sm};
   font-size: 0.9rem;
   background-color: vars.$secondary-color;
@@ -16,10 +16,12 @@
 
   @include mx.breakpoint(lg) {
     margin: 0 -#{vars.$spacing-md};
+    padding: 2rem vars.$spacing-md;
   }
 
   @include mx.breakpoint(2xl) {
     margin: 0 -#{vars.$spacing-lg};
+    padding: 2rem vars.$spacing-lg;
   }
 
   a {
