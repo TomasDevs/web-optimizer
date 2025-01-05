@@ -1,0 +1,35 @@
+@use "../variables" as vars;
+
+.card {
+  display: flex;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    flex: 1;
+    padding: vars.$spacing-md;
+    background-color: #fff;
+    color: vars.$primary-color;
+    border-radius: vars.$border-radius-sm;
+    box-shadow: 0 10px 60px rgba(vars.$primary-color, 0.25);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      background-color: vars.$primary-color;
+      color: #fff;
+      box-shadow: 0 10px 40px rgba(vars.$primary-color, 0.5);
+      .card__title {
+        color: #fff;
+      }
+    }
+  }
+}

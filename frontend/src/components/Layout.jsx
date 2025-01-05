@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Hero from "./Hero";
-import Cards from "./Cards";
+import Cards from "./Card/Cards";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {

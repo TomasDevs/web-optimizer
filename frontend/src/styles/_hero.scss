@@ -1,14 +1,17 @@
 @use "mixins" as mx;
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  max-width: 20ch;
-}
+.hero {
+  &__title {
+    margin-bottom: 1rem;
+    max-width: 22ch;
+    font-size: 3.4rem;
+    font-weight: 500;
+  }
 
-.hero-text {
-  font-size: 1.45rem;
-  font-weight: 400;
-  max-width: 40ch;
+  &__text {
+    max-width: 52ch;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
 }
