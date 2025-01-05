@@ -1,0 +1,33 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0 -#{vars.$spacing-sm};
+  font-size: 0.9rem;
+  background-color: vars.$secondary-color;
+  color: vars.$light-color;
+  text-align: center;
+  border-radius: 0 0 vars.$border-radius-lg vars.$border-radius-lg;
+
+  @include mx.breakpoint(lg) {
+    margin: 0 -#{vars.$spacing-md};
+  }
+
+  @include mx.breakpoint(2xl) {
+    margin: 0 -#{vars.$spacing-lg};
+  }
+
+  a {
+    color: vars.$highlight-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

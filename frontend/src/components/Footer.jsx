@@ -1,7 +1,15 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <p>&copy; 2025 Optimalizace webového výkonu</p>
+      <p className="footer__text"> &copy; {currentYear} Web Optimizer</p>
+      <p className="footer__text">
+        <span role="img" aria-label="Idea">
+          💡
+        </span>{" "}
+        by Tomáš Štveráček
+      </p>
     </footer>
   );
 };
