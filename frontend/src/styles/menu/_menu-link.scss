@@ -1,0 +1,14 @@
+@use "../variables" as vars;
+
+.menu {
+  &__link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: vars.$primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
