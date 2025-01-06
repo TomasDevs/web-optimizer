@@ -1,7 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default defineConfig(({ mode }) => {
+  const isMinified = mode === "minified";
+
+  return {
+    plugins: [react()],
+    build: {
+      // Změna výstupní složky podle módu
+      outDir: isMinified ? "dist/minified" : "dist/unminified",
+      minify: isMinified ? "terser" : false,
+      rollupOptions: {
+        output: {
+          entryFileNames: `[name].js`, // Neměním název souborů uvnitř
+          assetFileNames: `[name].[ext]`,
+          chunkFileNames: `[name].js`,
+        },
+      },
+    },
+  };
+});
