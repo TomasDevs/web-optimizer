@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const MenuLink = ({ href, children }) => {
   return (
-    <a href={href} className="menu__link">
+    <Link to={href} className="menu__link">
       {children}
-    </a>
+    </Link>
   );
 };
 

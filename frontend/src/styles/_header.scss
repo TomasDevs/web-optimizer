@@ -3,20 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
-}
 
-.logo-container {
-  display: flex;
-  align-items: flex-end;
-}
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: inherit;
+  }
 
-.logo-text {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-left: 0.5rem;
-  word-spacing: -5px;
-  text-transform: lowercase;
-  strong {
-    font-weight: 900;
+  &__text {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 0.5rem;
+    word-spacing: -5px;
+    text-transform: lowercase;
+
+    &--strong {
+      font-weight: 900;
+    }
   }
 }

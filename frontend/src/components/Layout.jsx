@@ -1,18 +1,15 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Hero from "./Hero";
-import Cards from "./Card/Cards";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <div className="container">
         <Header />
         <main>
-          {children}
-          <Hero />
-          <Cards />
+          <Outlet />
         </main>
         <Footer />
       </div>

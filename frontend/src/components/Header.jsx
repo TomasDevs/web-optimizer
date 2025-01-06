@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import Menu from "./Menu";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-container flex">
+      <Link to="/" className="header__link">
         <Logo />
-        <strong className="logo-text">
-          <strong>Web</strong> Optimizer
+        <strong className="header__text">
+          <strong className="header__text--strong">Web</strong> Optimizer
         </strong>
-      </div>
+      </Link>
       <Menu />
     </header>
   );
