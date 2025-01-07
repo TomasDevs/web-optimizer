@@ -31,7 +31,8 @@
   cursor: pointer;
 
   &:hover {
-    background-color: darken(vars.$primary-color, 10%);
+    background-color: vars.$highlight-color;
+    color: vars.$text-color;
   }
 }
 

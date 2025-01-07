@@ -7,12 +7,11 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     build: {
-      // Změna výstupní složky podle módu
       outDir: isMinified ? "dist/minified" : "dist/unminified",
       minify: isMinified ? "terser" : false,
       rollupOptions: {
         output: {
-          entryFileNames: `[name].js`, // Neměním název souborů uvnitř
+          entryFileNames: `[name].js`,
           assetFileNames: `[name].[ext]`,
           chunkFileNames: `[name].js`,
         },

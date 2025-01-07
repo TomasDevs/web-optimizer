@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
+import TestPageSpeed from "../components/testing/TestPageSpeed";
 
 const CodeMinification = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -110,6 +111,7 @@ const CodeMinification = () => {
           </a>
           .
         </p>
+        <TestPageSpeed />
       </div>
     </section>
   );
