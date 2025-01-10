@@ -1,0 +1,152 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.additional {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-auto-rows: auto;
+  gap: 0;
+  margin: 0 -#{vars.$spacing-sm};
+  padding: 4rem 0 0;
+
+  @include mx.breakpoint(lg) {
+    margin: 0 -#{vars.$spacing-md};
+  }
+
+  @include mx.breakpoint(2xl) {
+    margin: 0 -#{vars.$spacing-lg};
+  }
+
+  &__section {
+    background: linear-gradient(
+      135deg,
+      vars.$light-color,
+      color.scale(vars.$light-color, $lightness: -10%)
+    );
+    padding: 6em 5em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    &:first-child {
+      background: linear-gradient(
+        135deg,
+        vars.$primary-color,
+        color.scale(vars.$primary-color, $lightness: 20%)
+      );
+      color: vars.$light-color;
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(
+        135deg,
+        vars.$secondary-color,
+        color.scale(vars.$secondary-color, $lightness: -10%)
+      );
+      color: vars.$light-color;
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(
+        135deg,
+        vars.$tertiary-color,
+        color.scale(vars.$tertiary-color, $lightness: -10%)
+      );
+      color: vars.$text-color;
+    }
+
+    &:nth-child(4) {
+      background: linear-gradient(
+        135deg,
+        vars.$highlight-color,
+        color.scale(vars.$highlight-color, $lightness: 80%)
+      );
+      color: vars.$text-color;
+    }
+
+    &:last-child {
+      grid-column: span 2;
+      background: linear-gradient(
+        135deg,
+        vars.$text-color,
+        color.scale(vars.$text-color, $lightness: 10%)
+      );
+      color: vars.$light-color;
+    }
+
+    &.dark-theme {
+      color: vars.$light-color;
+
+      .additional__title {
+        color: vars.$light-color;
+      }
+
+      .additional__link {
+        color: vars.$light-color;
+
+        &:hover {
+          color: vars.$highlight-color;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: inherit;
+  }
+
+  &__text,
+  &__quote {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: inherit;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: vars.$border-radius-sm;
+    background-color: vars.$light-color;
+    color: vars.$text-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: vars.$highlight-color;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: vars.$highlight-color;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      margin-bottom: 0.875rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

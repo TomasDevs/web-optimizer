@@ -2,9 +2,10 @@ import MenuLink from "./MenuLink";
 
 const Menu = () => {
   const menuItems = [
-    { href: "/minifikace-kodu", label: "Minifikace kódu" },
-    { href: "/optimalizace-obrazku", label: "Optimalizace obrázků" },
-    { href: "/testovani-api", label: "Testování API" },
+    { href: "/o-aplikaci", label: "O aplikaci" },
+    { href: "/nastroje", label: "Nástroje" },
+    { href: "/vysledky", label: "Výsledky" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   return (

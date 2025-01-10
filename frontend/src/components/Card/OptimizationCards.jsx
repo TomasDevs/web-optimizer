@@ -1,6 +1,12 @@
+import React from "react";
 import Card from "./Card";
 
 const features = [
+  {
+    title: "Minifikace kódu",
+    description: "Odstraňte zbytečnosti a zrychlete svůj web.",
+    link: "/minifikace-kodu",
+  },
   {
     title: "Optimalizace obrázků",
     description: "Zjistěte, jak zlepšit rychlost načítání obrázků.",
@@ -21,11 +27,7 @@ const features = [
     description: "Naučte se, jak načítat obsah efektivně.",
     link: "/lazy-loading",
   },
-  {
-    title: "Minifikace kódu",
-    description: "Odstraňte zbytečnosti a zrychlete svůj web.",
-    link: "/code-minification",
-  },
+
   {
     title: "Využití CDN",
     description: "Zjistěte, jak CDN zlepší výkon vašeho webu.",
@@ -43,19 +45,23 @@ const features = [
   },
 ];
 
-const Cards = () => {
+const OptimizationCards = () => {
   return (
-    <section className="section cards">
-      {features.map((feature, index) => (
-        <Card
-          key={index}
-          title={feature.title}
-          description={feature.description}
-          link={feature.link}
-        />
-      ))}
+    <section className="section optimization-cards">
+      <h2 className="section-subtitle">Techniky optimalizace webu</h2>
+
+      <div className="cards__container">
+        {features.map((feature, index) => (
+          <Card
+            key={index}
+            title={feature.title}
+            description={feature.description}
+            link={feature.link}
+          />
+        ))}
+      </div>
     </section>
   );
 };
 
-export default Cards;
+export default OptimizationCards;

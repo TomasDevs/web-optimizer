@@ -3,7 +3,10 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <p className="footer__text"> &copy; {currentYear} Web Optimizer</p>
+      <p className="footer__text">
+        {" "}
+        &copy; {currentYear} Web Optimizer | All Rights Reserved
+      </p>
       <p className="footer__text">
         <span role="img" aria-label="Idea">
           💡
