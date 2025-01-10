@@ -1,0 +1,56 @@
+@use "variables" as vars;
+
+.faq-page {
+  .faq-list {
+    margin-top: 2rem;
+    border-radius: vars.$border-radius-md;
+    background-color: vars.$secondary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .faq-item {
+      border-bottom: 1px solid vars.$primary-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: vars.$text-color;
+        cursor: pointer;
+
+        &:hover {
+          background-color: vars.$highlight-color;
+        }
+
+        .faq-icon {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: vars.$highlight-color;
+        }
+      }
+
+      .faq-answer {
+        padding: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: vars.$light-color;
+        background-color: vars.$secondary-color;
+      }
+
+      &.active .faq-question {
+        background-color: vars.$highlight-color;
+        color: vars.$light-color;
+
+        .faq-icon {
+          color: vars.$light-color;
+        }
+      }
+    }
+  }
+}

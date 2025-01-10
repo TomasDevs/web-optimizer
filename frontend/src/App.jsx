@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import CodeMinification from "./pages/Optimization/CodeMinification";
 import AboutApp from "./pages/Menu/AboutApp";
 import Tools from "./pages/Menu/Tools";
+import FAQ from "./pages/Menu/FAQ";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/o-aplikaci" element={<AboutApp />} />
           <Route path="/nastroje" element={<Tools />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/minifikace-kodu" element={<CodeMinification />} />
           <Route path="*" element={<NotFound />} />
         </Route>
