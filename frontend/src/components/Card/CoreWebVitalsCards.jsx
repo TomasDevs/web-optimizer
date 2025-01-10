@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const coreWebVitalsFeatures = [
   {
@@ -22,7 +23,13 @@ const coreWebVitalsFeatures = [
 const CoreWebVitalsCards = () => {
   return (
     <section className="section core-web-vitals-cards">
-      <h2 className="section-subtitle">Porozumění Core Web Vitals</h2>
+      <h2 className="section-subtitle">
+        Porozumění{" "}
+        <Link to={"/core-web-vitals"} className="highlight-link">
+          {" "}
+          Core Web Vitals
+        </Link>{" "}
+      </h2>
 
       <div className="cards__container">
         {coreWebVitalsFeatures.map((feature, index) => (

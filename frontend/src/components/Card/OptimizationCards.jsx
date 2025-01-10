@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -48,7 +49,13 @@ const features = [
 const OptimizationCards = () => {
   return (
     <section className="section optimization-cards">
-      <h2 className="section-subtitle">Techniky optimalizace webu</h2>
+      <h2 className="section-subtitle">
+        Techniky{" "}
+        <Link to={"/optimalizce"} className="highlight-link">
+          {" "}
+          optimalizace webu
+        </Link>
+      </h2>
 
       <div className="cards__container">
         {features.map((feature, index) => (
