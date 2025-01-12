@@ -2,7 +2,7 @@ import React from "react";
 
 const DidYouKnow = () => {
   return (
-    <div className="additional__section">
+    <div className="additional__section -did-you-know">
       <h3 className="additional__title">Věděli jste, že...</h3>
       <ul className="additional__list">
         <li className="additional__list-item">
@@ -23,7 +23,7 @@ const DidYouKnow = () => {
         <li className="additional__list-item">
           <blockquote className="additional__quote">
             "Rychle načtené stránky zlepšují konverze o 20 %."
-            <cite className="additional__cite">- Studie Google</cite>
+            <cite className="additional__cite"> Studie Google</cite>
           </blockquote>
         </li>
       </ul>

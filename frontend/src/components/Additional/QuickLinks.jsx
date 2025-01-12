@@ -2,7 +2,7 @@ import React from "react";
 
 const QuickLinks = () => {
   return (
-    <div className="additional__section">
+    <div className="additional__section -quick-links">
       <h3 className="additional__title">Změřte si váš web</h3>
       <ul className="additional__list">
         <li className="additional__list-item">
@@ -25,20 +25,29 @@ const QuickLinks = () => {
         </li>
         <li className="additional__list-item">
           <a
-            href="https://web.dev/measure/"
+            href="https://webpagetest.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="additional__link">
-            Web.dev Measure
+            WebPageTest
           </a>
         </li>
         <li className="additional__list-item">
           <a
-            href="https://developer.chrome.com/docs/devtools/"
+            href="https://tools.pingdom.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="additional__link">
-            Chrome DevTools
+            Pingdom Tools
+          </a>
+        </li>
+        <li className="additional__list-item">
+          <a
+            href="https://pagespeed.cz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="additional__link">
+            PageSpeed.cz Tester
           </a>
         </li>
       </ul>

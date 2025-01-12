@@ -42,8 +42,8 @@ const AboutApp = () => {
           využíváním na různých zařízeních jsou uživatelé stále náročnější na
           rychlost a plynulost aplikací. I malé zpoždění při načítání stránky
           může ovlivnit spokojenost uživatele a vést ke ztrátě zájmu. V
-          konkurenčním prostředí, jako je e-commerce, je optimalizace výkonu
-          zásadní nejen pro udržení zákazníků, ale také pro zlepšení
+          konkurenčním prostředí, jako je e&#8209;commerce, je optimalizace
+          výkonu zásadní nejen pro udržení zákazníků, ale také pro zlepšení
           viditelnosti ve vyhledávačích (SEO). Tento projekt se zaměřuje na
           analýzu a testování optimalizačních technik, které mohou výrazně
           ovlivnit uživatelský zážitek a výkonnost webových aplikací na různých

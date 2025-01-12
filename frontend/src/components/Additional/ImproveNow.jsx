@@ -2,7 +2,7 @@ import React from "react";
 
 const ImproveNow = () => {
   return (
-    <div className="additional__section">
+    <div className="additional__section -improve">
       <h3 className="additional__title">Zlepšete svůj web ještě dnes!</h3>
       <p className="additional__text">
         Webové stránky, které běží rychle a hladce, jsou klíčem k úspěchu.

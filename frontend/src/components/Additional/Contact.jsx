@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="additional__section">
+    <div className="additional__section -contact">
       <h3 className="additional__title">Zeptejte se mě</h3>
       <p className="additional__text">
         Máte otázky? Napište mi na e-mail:{" "}
