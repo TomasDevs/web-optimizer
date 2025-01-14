@@ -6,7 +6,7 @@ const Contact = () => {
       <h3 className="additional__title">Zeptejte se mě</h3>
       <p className="additional__text">
         Máte otázky? Napište mi na e-mail:{" "}
-        <a href="mailto:info@weboptimizer.cz" className="additional__link">
+        <a href="mailto:stveracek.work@gmail.com" className="additional__link">
           stveracek.work@gmail.com
         </a>
         .

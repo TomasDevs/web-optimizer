@@ -7,26 +7,33 @@ const DidYouKnow = () => {
       <ul className="additional__list">
         <li className="additional__list-item">
           <blockquote className="additional__quote">
-            Stránka, která se načítá do 2 sekund, má o 15 % nižší míru odchodů.
+            Až 53 % uživatelů opustí stránku, pokud se načítá déle než 3
+            sekundy.
           </blockquote>
         </li>
         <li className="additional__list-item">
           <blockquote className="additional__quote">
-            Google penalizuje pomalé stránky ve vyhledávání.
+            Pravděpodobnost opuštění stránky vzroste o 32 %, pokud načítání trvá
+            3 sekundy místo 1.
           </blockquote>
         </li>
         <li className="additional__list-item">
           <blockquote className="additional__quote">
-            Většina uživatelů opustí web po 3 sekundách čekání.
-          </blockquote>
-        </li>
-        <li className="additional__list-item">
-          <blockquote className="additional__quote">
-            "Rychle načtené stránky zlepšují konverze o 20 %."
-            <cite className="additional__cite"> Studie Google</cite>
+            79 % zákazníků, kteří jsou nespokojeni s výkonem webu, zvažuje, že z
+            něj znovu nenakoupí.
           </blockquote>
         </li>
       </ul>
+      <cite className="additional__cite">
+        Potvrzeno{" "}
+        <a
+          href="https://www.thinkwithgoogle.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="additional__cite-link">
+          Studií Google
+        </a>
+      </cite>
     </div>
   );
 };

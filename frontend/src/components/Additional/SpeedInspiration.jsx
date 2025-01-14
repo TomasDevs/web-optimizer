@@ -16,6 +16,34 @@ const SpeedInspiration = () => {
         </li>
         <li className="additional__list-item">
           <a
+            href="https://web.dev/case-studies/vodafone"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="additional__link">
+            Vodafone zlepšil LCP o 31 %, což vedlo k 8% nárůstu prodeje.
+          </a>
+        </li>
+        <li className="additional__list-item">
+          <a
+            href="https://engineeringblog.yelp.com/2021/01/boosting-user-conversion-with-ux-performance-wins.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="additional__link">
+            Yelp snížil FCP o 45 % a zvýšil míru konverze o 15 %.
+          </a>
+        </li>
+        <li className="additional__list-item">
+          <a
+            href="https://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="additional__link">
+            BBC zjistilo, že za každou další sekundu načítání ztrácí 10 %
+            uživatelů.
+          </a>
+        </li>
+        <li className="additional__list-item">
+          <a
             href="https://www.ilincev.com/rychlost-webu"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,11 +53,11 @@ const SpeedInspiration = () => {
         </li>
         <li className="additional__list-item">
           <a
-            href="https://portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm"
+            href="https://docs.pagespeed.cz/docs/why-page-speed"
             target="_blank"
             rel="noopener noreferrer"
             className="additional__link">
-            Rychlejší načítání stránek může zvýšit konverzní poměr až o 40 %.
+            Proč optimalizovat rychlost webu?
           </a>
         </li>
       </ul>

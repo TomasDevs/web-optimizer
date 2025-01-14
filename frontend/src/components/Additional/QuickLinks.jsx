@@ -50,6 +50,15 @@ const QuickLinks = () => {
             PageSpeed.cz Tester
           </a>
         </li>
+        <li className="additional__list-item">
+          <a
+            href="https://www.speedcurve.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="additional__link">
+            SpeedCurve
+          </a>
+        </li>
       </ul>
     </div>
   );
