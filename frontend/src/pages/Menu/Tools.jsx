@@ -6,16 +6,12 @@ const Tools = () => {
       <section className="section-page">
         <h1 className="subpage-title">Nástroje pro měření výkonu</h1>
         <p className="section-text">
-          Váš web může být rychlý jako blesk nebo pomalý jako šnek – to záleží
-          jen na tom, jak dobře jej optimalizujete. Naštěstí existují špičkové
-          nástroje, které vám s tím pomohou. Ponořte se do světa měření výkonu a
-          objevte, co vše můžete vylepšit pro rychlejší, stabilnější a
-          uživatelsky příjemnější web.
+          Rychlejší web je na dosah. Objevte nástroje, které vám s tím pomohou.
         </p>
       </section>
 
       <section className="section-page">
-        <h2 className="section-subtitle">Nástroje, které musíte znát</h2>
+        <h2 className="section-subtitle">Bez čeho se neobejdete</h2>
         <ul className="tools-list">
           <li>
             <a
@@ -26,11 +22,10 @@ const Tools = () => {
               PageSpeed Insights
             </a>
             <p className="section-text">
-              Chcete vědět, co zpomaluje váš web? Tento nástroj od Googlu vám
-              přesně řekne, co zlepšit – od obrázků až po kód. Využijte jeho
-              rady a už nikdy nezklamte netrpělivé uživatele.
+              Zjistěte, co zpomaluje váš web, a získejte konkrétní doporučení.
             </p>
           </li>
+
           <li>
             <a
               href="https://developers.google.com/web/tools/lighthouse"
@@ -40,11 +35,10 @@ const Tools = () => {
               Google Lighthouse
             </a>
             <p className="section-text">
-              Váš osobní průvodce výkonností, přístupností a SEO. Tento nástroj
-              je integrovaný přímo v prohlížeči Chrome a poskytuje vám hloubkové
-              audity pro vyladění každého detailu vašeho webu.
+              Podrobná analýza výkonu, přístupnosti a SEO.
             </p>
           </li>
+
           <li>
             <a
               href="https://gtmetrix.com/"
@@ -54,11 +48,10 @@ const Tools = () => {
               GTmetrix
             </a>
             <p className="section-text">
-              Viděli jste někdy svůj web „pod kapotou“? GTmetrix vám ukáže
-              přesná data o rychlosti načítání, Core Web Vitals a doporučí
-              konkrétní kroky ke zlepšení.
+              Detailní přehled o rychlosti a Core Web Vitals.
             </p>
           </li>
+
           <li>
             <a
               href="https://webpagetest.org/"
@@ -68,11 +61,10 @@ const Tools = () => {
               WebPageTest
             </a>
             <p className="section-text">
-              Simulujte, jak váš web funguje při různých rychlostech připojení
-              nebo v různých zemích. Perfektní nástroj pro podrobnou analýzu a
-              testování reálných podmínek.
+              Simulace výkonu v různých podmínkách a lokalitách.
             </p>
           </li>
+
           <li>
             <a
               href="https://tools.pingdom.com/"
@@ -82,17 +74,9 @@ const Tools = () => {
               Pingdom Tools
             </a>
             <p className="section-text">
-              Nepřetržité sledování rychlosti a dostupnosti vašeho webu. Pingdom
-              je ideální pro každého, kdo chce mít svůj web pod neustálým
-              dohledem.
+              Sledování rychlosti a dostupnosti vašeho webu.
             </p>
           </li>
-        </ul>
-      </section>
-
-      <section className="section-page">
-        <h2 className="section-subtitle">Objevte další užitečné pomocníky</h2>
-        <ul className="tools-list">
           <li>
             <a
               href="https://pagespeed.cz/"
@@ -102,11 +86,10 @@ const Tools = () => {
               PageSpeed.cz Tester
             </a>
             <p className="section-text">
-              Český nástroj založený na Google Lighthouse, který vás provede
-              testováním rychlosti vašeho webu krok za krokem. Ideální pro
-              detailní analýzu.
+              Český nástroj pro testování rychlosti založený na Lighthouse.
             </p>
           </li>
+
           <li>
             <a
               href="https://analytics.google.com/"
@@ -116,11 +99,10 @@ const Tools = () => {
               Google Analytics
             </a>
             <p className="section-text">
-              Chcete vědět, odkud přicházejí vaši návštěvníci a co na vašem webu
-              dělají? Google Analytics poskytuje neocenitelné informace o
-              chování uživatelů, včetně technických metrik.
+              Data o návštěvnících a jejich chování na vašem webu.
             </p>
           </li>
+
           <li>
             <a
               href="https://developer.chrome.com/docs/devtools/"
@@ -130,11 +112,10 @@ const Tools = () => {
               Chrome DevTools
             </a>
             <p className="section-text">
-              Ladění v reálném čase, analýza síťových požadavků nebo simulace
-              pomalého připojení – to vše zvládnete s DevTools, které jsou
-              součástí prohlížeče Chrome.
+              Ladění a analýza výkonu přímo v prohlížeči.
             </p>
           </li>
+
           <li>
             <a
               href="https://speedcurve.com/"
@@ -144,10 +125,36 @@ const Tools = () => {
               SpeedCurve
             </a>
             <p className="section-text">
-              Pro ty, kdo to myslí s výkonností vážně. SpeedCurve kombinuje
-              syntetické testování s reálnými daty uživatelů a poskytuje
-              komplexní přehled o výkonu vašeho webu.
+              Syntetická data i skutečný uživatelský zážitek na jednom místě.
             </p>
+          </li>
+        </ul>
+      </section>
+
+      <section className="section-page">
+        <h2 className="section-subtitle">Záleží na rychlosti?</h2>
+        <p className="section-text">
+          Opravdu rychlost rozhoduje? Tady najdete odpověď.
+        </p>
+        <ul className="tools-list">
+          <li>
+            <a
+              href="https://www.ilincev.com/rychlost-webu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight-link -external">
+              9 možností, jak zrychlit web a zvýšit tím konverze
+            </a>
+          </li>
+          <br />
+          <li>
+            <a
+              href="https://docs.pagespeed.cz/docs/why-page-speed"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight-link -external">
+              Proč optimalizovat rychlost webu?
+            </a>
           </li>
         </ul>
       </section>

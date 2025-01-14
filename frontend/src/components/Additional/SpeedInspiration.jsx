@@ -42,24 +42,6 @@ const SpeedInspiration = () => {
             uživatelů.
           </a>
         </li>
-        <li className="additional__list-item">
-          <a
-            href="https://www.ilincev.com/rychlost-webu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="additional__link">
-            9 možností, jak zrychlit web a zvýšit tím konverze
-          </a>
-        </li>
-        <li className="additional__list-item">
-          <a
-            href="https://docs.pagespeed.cz/docs/why-page-speed"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="additional__link">
-            Proč optimalizovat rychlost webu?
-          </a>
-        </li>
       </ul>
     </div>
   );
