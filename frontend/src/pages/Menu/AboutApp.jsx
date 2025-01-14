@@ -10,7 +10,7 @@ const AboutApp = () => {
           optimalizaci webů, vyvinutý jako součást bakalářské práce na{" "}
           <a
             href="https://www.vspj.cz/cs/"
-            className="highlight-link"
+            className="highlight-link -external"
             target="_blank"
             rel="noopener noreferrer">
             Vysoké škole polytechnické Jihlava

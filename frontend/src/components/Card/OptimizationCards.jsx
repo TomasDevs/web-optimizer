@@ -51,7 +51,7 @@ const OptimizationCards = () => {
     <section className="section optimization-cards">
       <h2 className="section-subtitle">
         Techniky{" "}
-        <Link to={"/optimalizce"} className="highlight-link">
+        <Link to={"/optimalizace"} className="highlight-link">
           {" "}
           optimalizace webu
         </Link>

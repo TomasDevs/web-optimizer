@@ -1,0 +1,36 @@
+@use "sass:color";
+@use "variables" as vars;
+
+.subpage-title {
+  color: vars.$dark-color;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  max-width: 65ch;
+}
+
+.tip-block {
+  background-color: color.scale(vars.$highlight-color, $lightness: 80%);
+  border-left: 4px solid vars.$primary-color;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+
+  h3 {
+    margin: 0 0 0.5rem;
+    color: vars.$primary-color;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: vars.$dark-color;
+
+    code {
+      background-color: color.scale(vars.$highlight-color, $lightness: 60%);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+  }
+}
