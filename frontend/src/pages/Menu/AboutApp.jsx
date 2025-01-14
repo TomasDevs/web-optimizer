@@ -6,8 +6,8 @@ const AboutApp = () => {
       <section className="section-page">
         <h1 className="subpage-title">O aplikaci</h1>
         <p className="section-text">
-          <strong>Web Optimizer</strong> je moderní platforma vyvinutá jako
-          součást bakalářské práce na{" "}
+          <strong>Web Optimizer</strong> je nástroj pro testování výkonu a
+          optimalizaci webů, vyvinutý jako součást bakalářské práce na{" "}
           <a
             href="https://www.vspj.cz/cs/"
             className="highlight-link"
@@ -15,13 +15,16 @@ const AboutApp = () => {
             rel="noopener noreferrer">
             Vysoké škole polytechnické Jihlava
           </a>
-          . Aplikace umožňuje testování různých technik optimalizace webových
-          aplikací s cílem zlepšit jejich výkon a uživatelskou zkušenost.
+          . Pomáhá zlepšit rychlost a uživatelský zážitek webových aplikací.
         </p>
       </section>
       <section className="section-page">
         <h2 className="section-subtitle">Informace o práci</h2>
         <ul className="section-text">
+          <li>
+            <strong>Název:</strong> Optimalizační techniky a jejich dopad na
+            výkon webových aplikací
+          </li>
           <li>
             <strong>Autor:</strong> Tomáš Štveráček
           </li>
@@ -29,52 +32,36 @@ const AboutApp = () => {
             <strong>Vedoucí práce:</strong> PaedDr. František Smrčka, Ph.D.
           </li>
           <li>
-            <strong>Zadání:</strong> Vytvořit webovou aplikaci pro testování
-            optimalizačních technik, měření výkonu pomocí metrik Core Web Vitals
-            a analýzu jejich dopadu na výkonnost aplikací.
+            <strong>Zadání:</strong> Cílem práce je vytvořit platformu pro
+            testování optimalizačních technik s důrazem na výkon a metriky Core
+            Web Vitals. Bude probíhat porovnání nástrojů pro měření výkonu a
+            analýza vlivu na mobilní i desktopové zařízení.
           </li>
         </ul>
       </section>
+
       <section className="section-page">
-        <h2 className="section-subtitle">Úvod do problematiky</h2>
+        <h2 className="section-subtitle">
+          Proč je to důležité a jak to funguje?
+        </h2>
         <p className="section-text">
-          S rostoucím významem webových technologií a jejich každodenním
-          využíváním na různých zařízeních jsou uživatelé stále náročnější na
-          rychlost a plynulost aplikací. I malé zpoždění při načítání stránky
-          může ovlivnit spokojenost uživatele a vést ke ztrátě zájmu. V
-          konkurenčním prostředí, jako je e&#8209;commerce, je optimalizace
-          výkonu zásadní nejen pro udržení zákazníků, ale také pro zlepšení
-          viditelnosti ve vyhledávačích (SEO). Tento projekt se zaměřuje na
-          analýzu a testování optimalizačních technik, které mohou výrazně
-          ovlivnit uživatelský zážitek a výkonnost webových aplikací na různých
-          zařízeních.
+          Weby musí být rychlé a plynulé, jinak ztrácí uživatele. Tento projekt
+          se zaměřuje na testování a implementaci technik jako minifikace kódu,
+          optimalizace obrázků a lazy loading, které mohou výrazně zlepšit výkon
+          aplikací.
+        </p>
+        <p className="section-text">
+          Aplikace <strong>Web Optimizer</strong> umožňuje porovnat výkon tohoto
+          webu před a po optimalizaci pomocí metrik Core Web Vitals. K analýze
+          výkonu používá nástroje jako PageSpeed Insights, GTmetrix a
+          WebPageTest a pomáhá identifikovat oblasti pro zlepšení.
         </p>
       </section>
+
       <section className="section-page">
-        <h2 className="section-subtitle">Popis aplikace</h2>
+        <h2 className="section-subtitle">Kontakt</h2>
         <p className="section-text">
-          Web Optimizer umožňuje testování technik, jako je minifikace kódu,
-          optimalizace obrázků nebo lazy loading. Aplikace poskytuje přehledný
-          způsob, jak porovnat výkon mezi optimalizovanými a neoptimalizovanými
-          verzemi pomocí metrik Core Web Vitals, což uživatelům pomáhá lépe
-          pochopit přínos jednotlivých technik.
-        </p>
-        <p className="section-text">
-          Aplikace využívá populární nástroje pro měření výkonu, jako jsou
-          PageSpeed Insights, GTmetrix, WebPageTest, Pingdom Tools a Chrome
-          DevTools. Tyto nástroje poskytují detailní pohled na výkon aplikace a
-          pomáhají identifikovat oblasti pro zlepšení.
-        </p>
-      </section>
-      <section className="section-page">
-        <h2 className="section-subtitle">Kontakt a poděkování</h2>
-        <p className="section-text">
-          Děkuji všem, kteří přispěli k realizaci tohoto projektu svou odbornou
-          radou, podporou nebo zpětnou vazbou.
-        </p>
-        <p className="section-text">
-          <strong>Máte dotazy nebo připomínky?</strong> Neváhejte mě kontaktovat
-          na e-mailu:{" "}
+          Máte dotazy nebo připomínky? Kontaktujte mě na{" "}
           <a className="highlight-link" href="mailto:stveracek.work@gmail.com">
             stveracek.work@gmail.com
           </a>

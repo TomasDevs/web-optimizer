@@ -34,6 +34,22 @@ const FAQ = () => {
       answer:
         "Velké a neoptimalizované obrázky zpomalují načítání stránky. Používání moderních formátů jako WebP nebo AVIF, stejně jako komprese a správná velikost obrázků, mohou výrazně zlepšit výkon.",
     },
+    {
+      question: "Jak mohu testovat výkon webu na mobilních zařízeních?",
+      answer:
+        "Kromě standardních nástrojů, jako je Lighthouse či PageSpeed Insights, můžete využít Chrome DevTools Mobile Emulation nebo pokročilejší nástroje pro simulaci různých zařízení a rychlostí připojení (3G, 4G). Tak lépe zjistíte, jak se váš web chová při slabším signálu a na méně výkonných zařízeních.",
+    },
+    {
+      question:
+        "Jak mohu optimalizovat JavaScript a CSS pro rychlejší načítání?",
+      answer:
+        "Minimalizujte a komprimujte své soubory, využijte code splitting, lazy loading skriptů a odkládání nepotřebných stylů či knihoven. Rozdělením kódu do menších částí docílíte rychlejšího načtení toho, co je nezbytné pro první vykreslení stránky.",
+    },
+    {
+      question: "Jakou roli hraje hosting a server při výkonu webu?",
+      answer:
+        "Kvalita hostingu a konfigurace serveru může mít značný vliv na rychlost webu. Například nasazení HTTP/2, využití kvalitní CDN, vhodné nastavení cache na straně serveru či moderní verze PHP či Node.js mohou výrazně zkrátit dobu odezvy.",
+    },
   ];
 
   const toggleAccordion = (index) => {
@@ -42,28 +58,35 @@ const FAQ = () => {
 
   return (
     <div className="faq-page">
-      <section className="section-page">
-        <h1 className="subpage-title">Často kladené otázky</h1>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              className={`faq-item ${activeIndex === index ? "active" : ""}`}
-              key={index}>
-              <div
-                className="faq-question"
-                onClick={() => toggleAccordion(index)}>
-                {faq.question}
-                <span className="faq-icon">
-                  {activeIndex === index ? "-" : "+"}
-                </span>
-              </div>
-              {activeIndex === index && (
-                <div className="faq-answer">{faq.answer}</div>
-              )}
-            </div>
-          ))}
+      <div className="section-page flex">
+        <div className="left-col">
+          <h1 className="subpage-title">
+            Co vás zajímá ohledně rychlosti a optimalizace
+          </h1>
         </div>
-      </section>
+
+        <div className="right-col">
+          <div className="faq-list">
+            {faqs.map((faq, index) => (
+              <div
+                className={`faq-item ${activeIndex === index ? "active" : ""}`}
+                key={index}>
+                <div
+                  className="faq-question"
+                  onClick={() => toggleAccordion(index)}>
+                  {faq.question}
+                  <span className="faq-icon">
+                    {activeIndex === index ? "−" : "+"}
+                  </span>
+                </div>
+                {activeIndex === index && (
+                  <div className="faq-answer">{faq.answer}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

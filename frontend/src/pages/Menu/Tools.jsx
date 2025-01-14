@@ -156,6 +156,16 @@ const Tools = () => {
               Proč optimalizovat rychlost webu?
             </a>
           </li>
+          <br />
+          <li>
+            <a
+              href="https://unifer.cz/nova-metrika-google-inp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight-link -external">
+              Googlu na tom záleží
+            </a>
+          </li>
         </ul>
       </section>
     </div>
