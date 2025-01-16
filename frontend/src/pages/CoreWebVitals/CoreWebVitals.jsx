@@ -7,10 +7,10 @@ const CoreWebVitals = () => {
       <h1 className="subpage-title">Core Web Vitals</h1>
 
       <p className="section-text">
-        Core Web Vitals jsou klíčové metriky od Googlu, které hodnotí rychlost,
+        Core Web Vitals jsou hlavní metriky od Googlu, které hodnotí rychlost,
         stabilitu a interaktivitu webových stránek. Jejich význam neustále roste
-        – ovlivňují spokojenost uživatelů i pozici ve vyhledávání. Níže se
-        dozvíte, jak jednotlivé metriky fungují a proč je důležité je
+        – ovlivňují spokojenost uživatelů i pozici ve vyhledávání. Níže
+        zjistíte, jak jednotlivé metriky fungují a proč je důležité je
         optimalizovat.
       </p>
 
@@ -28,8 +28,8 @@ const CoreWebVitals = () => {
         </p>
         <p>
           <strong>Jak na optimalizaci:</strong> Minimalizujte načítání velkých
-          obrázků, využijte <em>lazy loading</em>, efektivní formáty (WebP,
-          AVIF) a dbejte na rychlou odezvu serveru.
+          obrázků, využijte formáty (WebP, AVIF) a dbejte na rychlou odezvu
+          serveru.
         </p>
         <p>
           <Link to="/core-web-vitals/lcp" className="highlight-link">
@@ -130,8 +130,8 @@ const CoreWebVitals = () => {
         <Link to="/nastroje" className="highlight-link">
           nástroje
         </Link>
-        , kde najdete tipy na praktické testování. A pokud hledáte tipy, jak web
-        zrychlit, mrkněte na{" "}
+        , kde najdete tipy na praktické testování. A jestli hledáte tipy, jak
+        web zrychlit, mrkněte na{" "}
         <Link to="/optimalizace" className="highlight-link">
           optimalizaci
         </Link>
