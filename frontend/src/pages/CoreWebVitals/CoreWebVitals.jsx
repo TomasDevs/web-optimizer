@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CoreWebVitals = () => {
   return (
-    <div className="page core-web-vitals-page">
+    <div className="section-page">
       <h1 className="subpage-title">Core Web Vitals</h1>
 
       <p className="section-text">

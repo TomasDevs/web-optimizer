@@ -2,21 +2,24 @@
 @use "variables" as vars;
 
 .tip-block {
-  background-color: color.scale(vars.$highlight-color, $lightness: 80%);
-  border-left: 4px solid vars.$primary-color;
-  padding: 1rem 1.5rem;
+  background-color: color.scale(vars.$highlight-color, $lightness: 95%);
+  border-left: 6px solid vars.$primary-color;
+  padding: 1.5rem;
   margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   h3 {
     margin: 0 0 0.75rem;
     color: vars.$primary-color;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
   }
 
   p {
     margin-bottom: 1rem;
     color: vars.$dark-color;
+    line-height: 1.5;
 
     code {
       background-color: color.scale(vars.$highlight-color, $lightness: 60%);

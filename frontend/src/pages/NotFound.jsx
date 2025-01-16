@@ -6,7 +6,7 @@ const NotFound = () => {
   const queryParams = location.search;
 
   return (
-    <section className="section not-found">
+    <section className="section-page not-found">
       <h1 className="not-found__title">404 - Stránka nenalezena</h1>
       <p className="not-found__text">
         Omlouváme se, ale požadovaná stránka{" "}

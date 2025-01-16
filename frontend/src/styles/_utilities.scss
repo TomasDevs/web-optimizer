@@ -41,28 +41,15 @@
 .container {
   width: 100%;
   max-width: vars.$breakpoint-sm;
-  padding: 0 vars.$spacing-sm;
+  padding: 0 vars.$spacing-md;
   margin: 0 auto;
 
   @include mx.breakpoint(sm) {
-    max-width: vars.$breakpoint-sm;
-  }
-
-  @include mx.breakpoint(md) {
-    max-width: vars.$breakpoint-md;
+    width: 94%;
+    max-width: vars.$breakpoint-2xl;
   }
 
   @include mx.breakpoint(lg) {
-    max-width: vars.$breakpoint-lg;
-    padding: 0 vars.$spacing-md;
-  }
-
-  @include mx.breakpoint(xl) {
-    max-width: vars.$breakpoint-xl;
-  }
-
-  @include mx.breakpoint(2xl) {
-    max-width: vars.$breakpoint-2xl;
     padding: 0 vars.$spacing-lg;
   }
 }

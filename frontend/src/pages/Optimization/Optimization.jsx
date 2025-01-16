@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Optimization = () => {
   return (
-    <div className="page optimization-page">
+    <div className="section-page">
       <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>
 
       <p className="section-text">

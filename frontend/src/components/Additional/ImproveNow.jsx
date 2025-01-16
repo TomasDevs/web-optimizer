@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ImproveNow = () => {
   return (
@@ -9,9 +10,9 @@ const ImproveNow = () => {
         <br />
         Optimalizujte a zlepšete spokojenost uživatelů i výsledky!
       </p>
-      <a href="/nastroje" className="additional__button">
+      <Link to="/nastroje" className="additional__button">
         Začněte optimalizovat
-      </a>
+      </Link>
     </div>
   );
 };
