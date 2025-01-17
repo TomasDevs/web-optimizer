@@ -1,9 +1,11 @@
 import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import MenuLink from "./MenuLink";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const location = useLocation();
 
   const menuItems = [
     { href: "/o-aplikaci", label: "O aplikaci" },
@@ -49,7 +51,11 @@ const Menu = () => {
       <nav className={`menu ${isOpen ? "menu--open" : ""}`} ref={menuRef}>
         <ul className="menu__list">
           {menuItems.map((item, index) => (
-            <li className="menu__item" key={index}>
+            <li
+              className={`menu__item ${
+                location.pathname === item.href ? "menu__item--active" : ""
+              }`}
+              key={index}>
               <MenuLink href={item.href} onClick={handleLinkClick}>
                 {item.label}
               </MenuLink>

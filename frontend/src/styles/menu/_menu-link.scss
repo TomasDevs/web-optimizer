@@ -3,6 +3,7 @@
 
 .menu {
   &__link {
+    position: relative;
     display: block;
     padding: 0.8rem;
     font-weight: 500;
@@ -14,12 +15,30 @@
       color: vars.$light-color;
     }
 
-    @include mx.breakpoint(lg) {
-      padding: 0;
-    }
-
     &:hover {
       text-decoration: underline;
+    }
+
+    @include mx.breakpoint(lg) {
+      padding: 10px 0;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: vars.$primary-color;
+        transition: width 0.3s ease;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
