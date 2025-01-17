@@ -45,11 +45,11 @@
   margin: 0 auto;
 
   @include mx.breakpoint(sm) {
-    width: 94%;
     max-width: vars.$breakpoint-2xl;
   }
 
   @include mx.breakpoint(lg) {
+    width: 94%;
     padding: 0 vars.$spacing-lg;
   }
 }

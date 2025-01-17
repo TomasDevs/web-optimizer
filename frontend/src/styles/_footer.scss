@@ -18,13 +18,12 @@
   @include mx.breakpoint(sm) {
     flex-direction: row;
     justify-content: space-between;
-
-    border-radius: 0 0 vars.$border-radius-lg vars.$border-radius-lg;
   }
 
   @include mx.breakpoint(lg) {
     margin: 0 -#{vars.$spacing-lg};
     padding: 2rem vars.$spacing-lg;
+    border-radius: 0 0 vars.$border-radius-lg vars.$border-radius-lg;
   }
 
   a {

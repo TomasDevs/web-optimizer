@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
   background-color: rgba(#fff, 0.9);
 
-  @include mx.breakpoint(sm) {
+  @include mx.breakpoint(lg) {
     margin: 2rem auto;
     border-radius: vars.$border-radius-lg;
   }

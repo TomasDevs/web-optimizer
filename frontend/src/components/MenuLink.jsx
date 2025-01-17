@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const MenuLink = ({ href, children }) => {
+const MenuLink = ({ href, children, onClick }) => {
   return (
-    <Link to={href} className="menu__link">
+    <Link to={href} className="menu__link" onClick={onClick}>
       {children}
     </Link>
   );

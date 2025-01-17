@@ -1,11 +1,22 @@
 @use "../variables" as vars;
+@use "../mixins" as mx;
 
 .menu {
   &__link {
+    display: block;
+    padding: 0.8rem;
     font-weight: 500;
     font-size: 1.1rem;
     color: vars.$primary-color;
     text-decoration: none;
+
+    .menu--open & {
+      color: vars.$light-color;
+    }
+
+    @include mx.breakpoint(lg) {
+      padding: 0;
+    }
 
     &:hover {
       text-decoration: underline;
