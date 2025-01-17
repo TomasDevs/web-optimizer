@@ -1,36 +1,59 @@
+@use "sass:color";
+@use "variables" as vars;
+
 .not-found {
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
 
   &__title {
-    font-size: 2.5rem;
-    color: #ff5e57;
-    margin-bottom: 1rem;
+    font-size: 6rem;
+    font-weight: bold;
+    color: vars.$primary-color;
+    margin: 0 0 1rem;
+    animation: bounce 1s infinite;
   }
 
   &__text {
     font-size: 1.2rem;
+    line-height: 1.6;
+    color: vars.$dark-color;
     margin-bottom: 1.5rem;
-    color: #4a4a4a;
 
     code {
-      background-color: #f4f4f4;
+      background-color: vars.$highlight-color;
+      color: vars.$dark-color;
       padding: 0.2rem 0.4rem;
-      border-radius: 3px;
+      border-radius: 4px;
+      font-weight: bold;
     }
   }
 
   &__link {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #007bff;
-    color: white;
+    padding: 1rem 2rem;
+    background-color: vars.$secondary-color;
+    color: vars.$light-color;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background-color: #0056b3;
+      background-color: color.scale(vars.$secondary-color, $lightness: 10%);
+      color: vars.$dark-color;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 }
