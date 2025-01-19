@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
+import FadeInOnScroll from "../FadeInOnScroll";
 
 const features = [
   {
@@ -49,24 +50,26 @@ const features = [
 const OptimizationCards = () => {
   return (
     <section className="section optimization-cards">
-      <h2 className="section-subtitle">
-        Techniky{" "}
-        <Link to={"/optimalizace"} className="highlight-link">
-          {" "}
-          optimalizace webu
-        </Link>
-      </h2>
+      <FadeInOnScroll className="section-description">
+        <h2 className="section-subtitle">
+          Techniky{" "}
+          <Link to={"/optimalizace"} className="highlight-link">
+            {" "}
+            optimalizace webu
+          </Link>
+        </h2>
 
-      <div className="cards__container">
-        {features.map((feature, index) => (
-          <Card
-            key={index}
-            title={feature.title}
-            description={feature.description}
-            link={feature.link}
-          />
-        ))}
-      </div>
+        <div className="cards__container">
+          {features.map((feature, index) => (
+            <Card
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              link={feature.link}
+            />
+          ))}
+        </div>
+      </FadeInOnScroll>
     </section>
   );
 };

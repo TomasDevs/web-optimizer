@@ -41,8 +41,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background-color: color.scale(vars.$secondary-color, $lightness: 10%);
-      color: vars.$dark-color;
       transform: scale(1.05);
     }
   }

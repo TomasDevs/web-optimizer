@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
+import FadeInOnScroll from "../FadeInOnScroll";
 
 const coreWebVitalsFeatures = [
   {
@@ -23,24 +24,26 @@ const coreWebVitalsFeatures = [
 const CoreWebVitalsCards = () => {
   return (
     <section className="section core-web-vitals-cards">
-      <h2 className="section-subtitle">
-        Porozumění{" "}
-        <Link to={"/core-web-vitals"} className="highlight-link">
-          {" "}
-          Core Web Vitals
-        </Link>{" "}
-      </h2>
+      <FadeInOnScroll className="section-description">
+        <h2 className="section-subtitle">
+          Porozumění{" "}
+          <Link to={"/core-web-vitals"} className="highlight-link">
+            {" "}
+            Core Web Vitals
+          </Link>{" "}
+        </h2>
 
-      <div className="cards__container">
-        {coreWebVitalsFeatures.map((feature, index) => (
-          <Card
-            key={index}
-            title={feature.title}
-            description={feature.description}
-            link={feature.link}
-          />
-        ))}
-      </div>
+        <div className="cards__container">
+          {coreWebVitalsFeatures.map((feature, index) => (
+            <Card
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              link={feature.link}
+            />
+          ))}
+        </div>
+      </FadeInOnScroll>
     </section>
   );
 };

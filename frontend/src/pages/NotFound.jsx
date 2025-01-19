@@ -8,16 +8,18 @@ const NotFound = () => {
   return (
     <section className="section-page not-found">
       <h1 className="not-found__title">404</h1>
-      <p className="not-found__text">Oops! Tady jste špatně.</p>
+      <p className="not-found__text">
+        Ups, tahle stránka se rozhodla <strong>zmizet na dovolenou!</strong> 🏖️
+      </p>
       <p className="not-found__text">
         Stránku <code>{location.pathname + queryParams}</code> jsme nenašli.
-        Možná jste zadali špatnou adresu, nebo už neexistuje.
+        Možná se někde <strong>vyhřívá na slunci.</strong>
       </p>
       <p className="not-found__text">
-        Ale nezoufejte, <strong>všechno napravíme!</strong>
+        Ale nemusíte zoufat, <strong>my vám pomůžeme</strong> najít cestu zpět.
       </p>
       <Link to="/" className="not-found__link">
-        🌟 Zpátky domů 🌟
+        Návrat domů
       </Link>
     </section>
   );

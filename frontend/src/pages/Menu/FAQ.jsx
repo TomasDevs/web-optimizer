@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -66,25 +67,29 @@ const FAQ = () => {
         </div>
 
         <div className="right-col">
-          <div className="faq-list">
-            {faqs.map((faq, index) => (
-              <div
-                className={`faq-item ${activeIndex === index ? "active" : ""}`}
-                key={index}>
+          <FadeInOnScroll className="section-description">
+            <div className="faq-list">
+              {faqs.map((faq, index) => (
                 <div
-                  className="faq-question"
-                  onClick={() => toggleAccordion(index)}>
-                  {faq.question}
-                  <span className="faq-icon">
-                    {activeIndex === index ? "−" : "+"}
-                  </span>
+                  className={`faq-item ${
+                    activeIndex === index ? "active" : ""
+                  }`}
+                  key={index}>
+                  <div
+                    className="faq-question"
+                    onClick={() => toggleAccordion(index)}>
+                    {faq.question}
+                    <span className="faq-icon">
+                      {activeIndex === index ? "−" : "+"}
+                    </span>
+                  </div>
+                  {activeIndex === index && (
+                    <div className="faq-answer">{faq.answer}</div>
+                  )}
                 </div>
-                {activeIndex === index && (
-                  <div className="faq-answer">{faq.answer}</div>
-                )}
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </FadeInOnScroll>
         </div>
       </div>
     </div>
