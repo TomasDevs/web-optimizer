@@ -1,11 +1,40 @@
+@use "../mixins" as mx;
+
 .cards {
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 1rem;
     margin: 2rem 0 0;
+
+    @include mx.breakpoint(md) {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+
     .core-web-vitals-cards & {
-      grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+
+      @include mx.breakpoint(md) {
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+      }
+    }
+
+    // Scroll snap implementation for small screens
+    @media screen and (max-width: 640px) {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding-bottom: 1rem;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+      }
     }
   }
 }

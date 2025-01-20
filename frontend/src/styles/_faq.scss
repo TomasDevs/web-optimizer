@@ -6,11 +6,17 @@
   .section-page {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+
+    @include mx.breakpoint(md) {
+      gap: 2rem;
+    }
 
     .left-col {
-      flex: 0 0 340px;
       color: vars.$light-color;
+      @include mx.breakpoint(lg) {
+        flex: 0 0 340px;
+      }
     }
 
     .right-col {
@@ -18,7 +24,11 @@
       background-color: vars.$light-color;
       border-radius: vars.$border-radius-md;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 2rem;
+      padding: 1.5rem;
+
+      @include mx.breakpoint(md) {
+        padding: 2rem;
+      }
 
       .faq-list {
         .faq-item {
@@ -33,17 +43,24 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: bold;
             color: vars.$dark-color;
             cursor: pointer;
             transition: background-color 0.2s ease;
 
+            @include mx.breakpoint(md) {
+              font-size: 1.1rem;
+            }
+
             .faq-icon {
-              font-size: 1.5rem;
+              font-size: 1.2rem;
               font-weight: bold;
               color: vars.$primary-color;
               margin-left: 1rem;
+              @include mx.breakpoint(md) {
+                font-size: 1.5rem;
+              }
             }
 
             &:hover {

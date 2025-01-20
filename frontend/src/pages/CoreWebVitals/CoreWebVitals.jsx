@@ -6,8 +6,8 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const CoreWebVitals = () => {
   return (
     <div className="section-page">
-      <h1 className="subpage-title">Core Web Vitals</h1>
       <FadeInOnScroll className="section-description">
+        <h1 className="subpage-title">Core Web Vitals</h1>
         <p className="section-text">
           Core Web Vitals jsou hlavní metriky od Googlu, které hodnotí rychlost,
           stabilitu a interaktivitu webových stránek. Jejich význam neustále

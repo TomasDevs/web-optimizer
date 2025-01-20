@@ -6,8 +6,8 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const INPDetail = () => {
   return (
     <div className="page inp-detail-page">
-      <h1 className="subpage-title">Interaction to Next Paint (INP)</h1>
       <FadeInOnScroll className="section-description">
+        <h1 className="subpage-title">Interaction to Next Paint (INP)</h1>
         <p className="section-text">
           Metrika <strong>Interaction to Next Paint (INP)</strong> měří odezvu
           stránky na uživatelské akce, jako je kliknutí, stisk klávesy nebo

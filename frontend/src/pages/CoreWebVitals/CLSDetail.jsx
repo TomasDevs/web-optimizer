@@ -6,8 +6,8 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const CLSDetail = () => {
   return (
     <div className="page cls-detail-page">
-      <h1 className="subpage-title">Cumulative Layout Shift (CLS)</h1>
       <FadeInOnScroll className="section-description">
+        <h1 className="subpage-title">Cumulative Layout Shift (CLS)</h1>
         <p className="section-text">
           Metrika <strong>Cumulative Layout Shift (CLS)</strong> sleduje
           vizuální stabilitu stránky během načítání. Pokud se prvky na stránce

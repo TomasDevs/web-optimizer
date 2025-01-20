@@ -8,16 +8,17 @@
 
   @include mx.breakpoint(sm) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-auto-rows: auto;
     gap: 0;
   }
 
   @include mx.breakpoint(md) {
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
 
   @include mx.breakpoint(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     margin: 0 -#{vars.$spacing-lg};
     padding: 4rem 0 0;
   }
@@ -34,7 +35,7 @@
     align-items: flex-start;
     text-align: left;
 
-    @include mx.breakpoint(sm) {
+    @include mx.breakpoint(md) {
       padding: 4em 3.5em 3em;
     }
 
@@ -90,10 +91,14 @@
   }
 
   &__title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
     color: inherit;
+    @include mx.breakpoint(md) {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__text,

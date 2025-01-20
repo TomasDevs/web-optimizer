@@ -5,8 +5,8 @@ const AboutApp = () => {
   return (
     <div className="about-app">
       <section className="section-page">
-        <h1 className="subpage-title">O aplikaci</h1>
         <FadeInOnScroll className="section-description">
+          <h1 className="subpage-title">O aplikaci</h1>
           <p className="section-text">
             <strong>Web Optimizer</strong> je nástroj pro testování výkonu a
             optimalizaci webů, vyvinutý jako součást bakalářské práce na{" "}

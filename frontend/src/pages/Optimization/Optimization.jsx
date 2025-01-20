@@ -6,9 +6,9 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const Optimization = () => {
   return (
     <div className="section-page">
-      <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>
-
       <FadeInOnScroll className="section-description">
+        <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>
+
         <p className="section-text">
           Rychlý web je základem skvělé uživatelské zkušenosti a lepších
           konverzí. Podle{" "}

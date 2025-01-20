@@ -1,12 +1,17 @@
 @use "sass:color";
 @use "variables" as vars;
+@use "mixins" as mx;
 
 .not-found {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3rem 1rem;
+
+  @include mx.breakpoint(md) {
+    padding: 4rem 2rem;
+  }
 
   &__title {
-    font-size: 6rem;
+    font-size: clamp(4.5rem, 8vw, 6rem);
     font-weight: bold;
     color: vars.$primary-color;
     margin: 0 0 1rem;
@@ -14,10 +19,15 @@
   }
 
   &__text {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     line-height: 1.6;
     color: vars.$dark-color;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    @include mx.breakpoint(md) {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
 
     code {
       background-color: vars.$highlight-color;

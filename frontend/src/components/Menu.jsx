@@ -70,8 +70,8 @@ const Menu = () => {
             height={34}
             className="menu__logo"
           />
-          <strong class="menu__footer--text">
-            <strong class="menu__footer--strong">Web</strong> Optimizer
+          <strong className="menu__footer--text">
+            <strong className="menu__footer--strong">Web</strong> Optimizer
           </strong>
         </div>
       </nav>

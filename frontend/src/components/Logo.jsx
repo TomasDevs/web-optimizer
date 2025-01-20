@@ -5,7 +5,7 @@ const Logo = () => {
       alt="Logo"
       width={40}
       height={44}
-      className="logo"
+      className="header__logo"
     />
   );
 };

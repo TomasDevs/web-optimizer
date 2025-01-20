@@ -2,7 +2,11 @@
 
 // Breakpoints
 @mixin breakpoint($size) {
-  @if $size == sm {
+  @if $size == xs {
+    @media (min-width: vars.$breakpoint-xs) {
+      @content;
+    }
+  } @else if $size == sm {
     @media (min-width: vars.$breakpoint-sm) {
       @content;
     }

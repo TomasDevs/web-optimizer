@@ -5,8 +5,8 @@ const Tools = () => {
   return (
     <div className="tools-page">
       <section className="section-page">
-        <h1 className="subpage-title">Nástroje pro měření výkonu</h1>
         <FadeInOnScroll className="section-description">
+          <h1 className="subpage-title">Nástroje pro měření výkonu</h1>
           <p className="section-text">
             Rychlejší web je na dosah. Objevte nástroje, které vám s tím
             pomohou.

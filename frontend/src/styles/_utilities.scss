@@ -4,13 +4,13 @@
 // Utilities
 
 .subpage-title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4.5vw, 2.6rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
   font-weight: 500;
   margin-bottom: 0.5rem;
   text-wrap: balance;
@@ -18,9 +18,12 @@
 
 .section-text {
   margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.6;
   max-width: 65ch;
+  @include mx.breakpoint(md) {
+    font-size: 1.125rem;
+  }
 }
 
 .button {
@@ -41,8 +44,12 @@
 .container {
   width: 100%;
   max-width: vars.$breakpoint-sm;
-  padding: 0 vars.$spacing-md;
+  padding: 0 vars.$spacing-sm;
   margin: 0 auto;
+
+  @include mx.breakpoint(xs) {
+    padding: 0 vars.$spacing-md;
+  }
 
   @include mx.breakpoint(sm) {
     max-width: vars.$breakpoint-2xl;
@@ -55,10 +62,14 @@
 }
 
 .section {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 
   &-page {
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
+  }
+
+  @include mx.breakpoint(xs) {
+    padding: 2rem 0;
   }
 
   @include mx.breakpoint(lg) {
@@ -89,7 +100,10 @@
 }
 
 .-external {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  @include mx.breakpoint(md) {
+    font-size: 1.125rem;
+  }
   .tip-block & {
     font-size: 1rem;
   }

@@ -61,9 +61,11 @@ const FAQ = () => {
     <div className="faq-page">
       <div className="section-page flex">
         <div className="left-col">
-          <h1 className="subpage-title">
-            Co vás zajímá ohledně rychlosti a optimalizace
-          </h1>
+          <FadeInOnScroll className="section-description">
+            <h1 className="subpage-title">
+              Co vás zajímá ohledně rychlosti a optimalizace
+            </h1>
+          </FadeInOnScroll>
         </div>
 
         <div className="right-col">

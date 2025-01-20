@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "variables" as vars;
+@use "mixins" as mx;
 
 .tip-block {
   background-color: color.scale(vars.$highlight-color, $lightness: 95%);
@@ -9,11 +10,18 @@
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
+  @include mx.breakpoint(md) {
+    margin: 3rem 0;
+  }
+
   h3 {
     margin: 0 0 0.75rem;
     color: vars.$primary-color;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 700;
+    @include mx.breakpoint(md) {
+      font-size: 1.4rem;
+    }
   }
 
   p {

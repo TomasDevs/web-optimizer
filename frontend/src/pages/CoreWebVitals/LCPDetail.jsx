@@ -6,8 +6,8 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const LCPDetail = () => {
   return (
     <div className="page lcp-detail-page">
-      <h1 className="subpage-title">Largest Contentful Paint (LCP)</h1>
       <FadeInOnScroll className="section-description">
+        <h1 className="subpage-title">Largest Contentful Paint (LCP)</h1>
         <p className="section-text">
           Metrika <strong>Largest Contentful Paint (LCP)</strong> sleduje, za
           jak dlouho se uživateli zobrazí <em>největší prvek</em> ve viditelné

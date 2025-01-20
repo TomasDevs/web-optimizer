@@ -2,7 +2,11 @@
 
 .header {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
+
+  @include mx.breakpoint(sm) {
+    padding: 2rem 0;
+  }
 
   @include mx.breakpoint(lg) {
     display: flex;
@@ -12,18 +16,31 @@
   }
 
   &__link {
-    display: flex;
+    display: inline-flex;
     align-items: flex-end;
     text-decoration: none;
     color: inherit;
   }
 
+  &__logo {
+    width: 34px;
+    height: auto;
+
+    @include mx.breakpoint(xs) {
+      width: 40px;
+    }
+  }
+
   &__text {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     margin-left: 0.5rem;
     word-spacing: -5px;
     text-transform: lowercase;
+
+    @include mx.breakpoint(xs) {
+      font-size: 2rem;
+    }
 
     &--strong {
       font-weight: 900;
