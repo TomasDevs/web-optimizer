@@ -1,10 +1,14 @@
 {
   "name": "web-optimizer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A test platform for implementing and evaluating web performance optimization techniques.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd frontend && npm run build",
+    "start": "node backend/src/server.js",
+    "dev": "cd frontend && npm run dev",
+    "lint": "cd frontend && npm run lint",
+    "preview": "cd frontend && npm run preview"
   },
   "keywords": [],
   "author": "Tomas Stveracek",

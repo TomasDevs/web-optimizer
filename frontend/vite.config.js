@@ -6,6 +6,14 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://localhost:5000",
+          changeOrigin: true,
+        },
+      },
+    },
     build: {
       outDir: isMinified ? "dist/minified" : "dist/unminified",
       minify: isMinified ? "terser" : false,

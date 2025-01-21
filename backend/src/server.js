@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 require("dotenv").config();
-console.log("API Key:", process.env.PAGESPEED_API_KEY);
 
 const app = express();
 
