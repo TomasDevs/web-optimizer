@@ -26,11 +26,11 @@ const FadeInOnScroll = ({ children, className = "", threshold = 0.2 }) => {
   }, [threshold]);
 
   return (
-    <div
+    <section
       ref={ref}
       className={`${className} ${isVisible ? "fade-in" : "fade-out"}`}>
       {children}
-    </div>
+    </section>
   );
 };
 

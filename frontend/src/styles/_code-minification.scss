@@ -1,47 +1,12 @@
 @use "variables" as vars;
 
 .code-minification {
-  padding: 2rem;
-
-  &__title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  &__intro,
-  &__process {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-  }
-
-  &__button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: vars.$primary-color;
-    color: white;
-    cursor: pointer;
-
-    &:hover {
-      background-color: vars.$secondary-color;
-    }
-  }
-
-  &__example {
-    margin-bottom: 2rem;
-  }
-
   &__code-block {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     border-radius: 0.5rem;
     overflow-x: auto;
-  }
-
-  &__benefits {
-    margin-top: 2rem;
   }
 
   &__list {
@@ -54,7 +19,6 @@
   }
 
   &__notes {
-    margin-top: 2rem;
     font-size: 1rem;
 
     a {

@@ -31,7 +31,7 @@ const INPDetail = () => {
             <code>requestIdleCallback</code> pro rozložení zátěže:
           </>,
           <>
-            <pre>
+            <pre className="code-block">
               {`setTimeout(() => {
   // Zpracování dlouhého úkolu
 }, 0);`}
@@ -66,7 +66,7 @@ const INPDetail = () => {
             nebo <code>async</code>:
           </>,
           <>
-            <pre>{`<script src="analytics.js" defer></script>`}</pre>
+            <pre className="code-block">{`<script src="analytics.js" defer></script>`}</pre>
           </>,
           <>
             Pro kód, který není kritický pro první vykreslení, použijte lazy
@@ -94,7 +94,7 @@ const INPDetail = () => {
 
       <FadeInOnScroll className="section-description">
         <div className="section-text">
-          <h2>Další zdroje o INP</h2>
+          <h2 className="section-subtitle">Další zdroje o INP</h2>
           <p>
             Více informací najdete v článcích na{" "}
             <a

@@ -69,7 +69,7 @@ const LCPDetail = () => {
             při stahování.
           </>,
           <>
-            <pre>
+            <pre className="code-block">
               {`<img
       src="hero.webp"
       alt="Hero obrázek"
@@ -135,7 +135,7 @@ const LCPDetail = () => {
             začne stahovat důležité zdroje, jako jsou fonty, co nejdříve.
           </>,
           <>
-            <pre>
+            <pre className="code-block">
               {`<link 
       rel="preload" 
       href="/fonts/my-custom-font.woff2" 
@@ -173,7 +173,7 @@ const LCPDetail = () => {
             rychlejší spojení s jejich servery:
           </>,
           <>
-            <pre>
+            <pre className="code-block">
               {`<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">`}
             </pre>
           </>,
@@ -200,7 +200,7 @@ const LCPDetail = () => {
             vykreslení stránky.
           </>,
           <>
-            <pre>{`<script src="app.js" defer></script>`}</pre>
+            <pre className="code-block">{`<script src="app.js" defer></script>`}</pre>
           </>,
           <>
             <strong>Umístění:</strong> Skripty s <code>defer</code> vložte buď
@@ -217,7 +217,7 @@ const LCPDetail = () => {
 
       <FadeInOnScroll className="section-description">
         <div className="section-text">
-          <h2>Další zdroje o LCP</h2>
+          <h2 className="section-subtitle">Další zdroje o LCP</h2>
           <p>
             Podrobný rozbor najdete v{" "}
             <a

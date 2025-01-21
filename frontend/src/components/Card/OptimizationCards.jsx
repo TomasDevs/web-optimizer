@@ -7,7 +7,7 @@ const features = [
   {
     title: "Minifikace kódu",
     description: "Odstraňte zbytečnosti a zrychlete svůj web.",
-    link: "/minifikace-kodu",
+    link: "optimalizace/minifikace-kodu",
   },
   {
     title: "Optimalizace obrázků",

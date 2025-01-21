@@ -39,7 +39,7 @@ const CLSDetail = () => {
           </>,
           <>
             {" "}
-            <pre>
+            <pre className="code-block">
               {`<img
   src="example.jpg"
   alt="Příklad obrázku"
@@ -75,7 +75,7 @@ const CLSDetail = () => {
           </>,
           <>
             {" "}
-            <pre>
+            <pre className="code-block">
               {`@font-face {
   font-family: 'CustomFont';
   src: url('/fonts/custom-font.woff2') format('woff2');
@@ -131,7 +131,7 @@ const CLSDetail = () => {
             skutečný obsah.
           </>,
           <>
-            <pre>{`<div class="skeleton"></div>
+            <pre className="code-block">{`<div class="skeleton"></div>
 
 .skeleton {
     width: 100%;
@@ -148,7 +148,7 @@ const CLSDetail = () => {
 
       <FadeInOnScroll className="section-description">
         <div className="section-text">
-          <h2>Další zdroje o CLS</h2>
+          <h2 className="section-subtitle">Další zdroje o CLS</h2>
           <p>
             Podrobné informace najdete v článku na{" "}
             <a

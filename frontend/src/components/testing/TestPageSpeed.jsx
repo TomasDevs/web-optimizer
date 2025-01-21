@@ -28,9 +28,10 @@ const TestPageSpeed = () => {
 
   return (
     <div className="test-page-speed">
-      <h2>Testování stránky</h2>
+      <h2 className="section-subtitle -small">Testování stránky</h2>
       <button
-        onClick={() => testPage("http://localhost:5173/minifikace-kodu")}
+        className="button -bottom"
+        onClick={() => testPage(window.location.href)}
         disabled={loading}>
         {loading ? "Testuji..." : "Otestovat stránku"}
       </button>

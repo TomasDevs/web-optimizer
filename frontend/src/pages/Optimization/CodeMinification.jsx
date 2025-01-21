@@ -1,9 +1,16 @@
 import { useSearchParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CodeMinification = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    if (!searchParams.has("minified")) {
+      setSearchParams({ minified: "false" }, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
+
   const isMinifiedPage = searchParams.get("minified") === "true";
 
   const [isCodeMinified, setIsCodeMinified] = useState(false);
@@ -33,19 +40,32 @@ const CodeMinification = () => {
   };
 
   return (
-    <section className="code-minification">
+    <section className="code-minification section-page">
       <h1 className="subpage-title">Minifikace kódu</h1>
 
       <p className="section-text">
         Minifikace je proces, který zmenšuje velikost kódu odstraněním
-        nadbytečných znaků, neovlivňuje funkčnost kódu a zlepšuje rychlost
-        načítání. Níže naleznete příklad neminifikovaného kódu a možnost
-        přepnout na minifikovanou verzi.
+        nadbytečných znaků, jako jsou mezery, komentáře nebo nepotřebné znaky.
+        Neovlivňuje funkčnost kódu a zlepšuje rychlost načítání.
       </p>
 
-      <div className="code-minification__benefits">
-        <h2 className="code-minification__subtitle">Výhody minifikace</h2>
-        <ul className="code-minification__list">
+      <section className="code-minification__example section-page">
+        <h2 className="section-subtitle -small">Příklad kódu</h2>
+        <button
+          onClick={handleLocalMinification}
+          className="button button -bottom">
+          {isCodeMinified
+            ? "Zobrazit neminifikovaný kód"
+            : "Zobrazit minifikovaný kód"}
+        </button>
+        <pre className="code-block">
+          {isCodeMinified ? minifiedCode : unminifiedCode}
+        </pre>
+      </section>
+
+      <section className="code-minification__benefits section-page">
+        <h2 className="section-subtitle -small">Výhody minifikace</h2>
+        <ul className="code-minification__list section-text">
           <li className="code-minification__list-item">
             🚀 Rychlejší načítání stránky
           </li>
@@ -56,63 +76,36 @@ const CodeMinification = () => {
             ⚙️ Lepší skóre Core Web Vitals
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div className="code-minification__example">
-        <h2 className="section-subtitle">Příklad kódu</h2>
-        <pre className="code-minification__code-block">
-          {isCodeMinified ? minifiedCode : unminifiedCode}
-        </pre>
-        <button onClick={handleLocalMinification} className="button">
-          {isCodeMinified
-            ? "Zobrazit neminifikovaný kód"
-            : "Zobrazit minifikovaný kód"}
-        </button>
-      </div>
-
-      <div className="code-minification__page-toggle">
-        <h2 className="section-subtitle">Minifikace stránky</h2>
-        <p className="code-minification__process">
+      <section className="code-minification__page-toggle section-page">
+        <h2 className="section-subtitle -small">Minifikace stránky</h2>
+        <p className="section-text">
           Stránka využívá <strong>query parametry</strong> v URL pro přepínání
           mezi minifikovanou a neminifikovanou verzí. Pokud je parametr{" "}
-          <code>?minified=true</code>, stránka se načte v minifikovaném stavu.
-          Pro neminifikovaný stav použijte <code>?minified=false</code>.
+          <code className="inline-code">?minified=true</code>, stránka se načte
+          v minifikovaném stavu. Pro neminifikovaný stav použijte{" "}
+          <code className="inline-code">?minified=false</code>.
         </p>
-        <p>
+        <p className="status-text">
           Aktuálně je stránka v{" "}
           <strong>
             {isMinifiedPage ? "minifikovaném" : "neminifikovaném"} stavu
           </strong>
           .
         </p>
-        <button onClick={handlePageMinificationToggle} className="button">
+        <button
+          onClick={handlePageMinificationToggle}
+          className="button -margin">
           {isMinifiedPage
             ? "Přepnout na neminifikovanou stránku"
             : "Přepnout na minifikovanou stránku"}
         </button>
-      </div>
+      </section>
 
-      <div className="code-minification__notes">
-        <h2 className="section-subtitle">Automatizované testování výkonu</h2>
-        <p>
-          Pro efektivní testování doporučujeme použít nástroje jako{" "}
-          <a
-            href="https://pagespeed.web.dev/"
-            target="_blank"
-            rel="noopener noreferrer">
-            PageSpeed Insights
-          </a>{" "}
-          nebo{" "}
-          <a
-            href="https://web.dev/measure/"
-            target="_blank"
-            rel="noopener noreferrer">
-            web.dev Measure
-          </a>
-          .
-        </p>
+      <section className="code-minification__notes section-page">
         <TestPageSpeed />
-      </div>
+      </section>
     </section>
   );
 };

@@ -4,11 +4,13 @@ import FadeInOnScroll from "./FadeInOnScroll";
 
 const TipBlock = ({ title, content, link, linkText }) => (
   <FadeInOnScroll className="tip-block">
-    <h3>{title}</h3>
+    <h3 className="tip-block__title">{title}</h3>
     {content.map((paragraph, index) => (
-      <p key={index}>{paragraph}</p>
+      <p className="tip-block__text" key={index}>
+        {paragraph}
+      </p>
     ))}
-    <p>
+    <p className="tip-block__link">
       <Link to={link} className="highlight-link">
         {linkText}
       </Link>
