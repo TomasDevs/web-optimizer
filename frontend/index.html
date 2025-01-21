@@ -27,6 +27,15 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const isMinified = params.get("minified") === "true";
+      const script = document.createElement("script");
+      script.src = isMinified ? "/minified/index.js" : "/unminified/index.js";
+      script.type = "module";
+      document.head.appendChild(script);
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

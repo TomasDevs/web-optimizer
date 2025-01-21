@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/backend/api/index.js" }
-  ],
-  "routes": [{ "src": "/.*", "dest": "/index.html" }]
+    { "source": "/minified/(.*)", "destination": "/dist/minified/$1" },
+    { "source": "/unminified/(.*)", "destination": "/dist/unminified/$1" }
+  ]
 }
