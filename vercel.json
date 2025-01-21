@@ -2,5 +2,5 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/backend/api/index.js" }
   ],
-  "routes": [{ "src": "/.*", "dest": "/index.html" }]
+  "routes": [{ "src": "/(.*)", "dest": "/frontend/dist/unminified/index.html" }]
 }
