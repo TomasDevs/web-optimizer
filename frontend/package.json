@@ -7,7 +7,7 @@
   "author": "Tomas Stveracek",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:unminified && npm run build:minified",
+    "build": "npx vite build --mode unminified && npx vite build --mode minified",
     "build:minified": "vite build --mode minified",
     "build:unminified": "vite build --mode unminified",
     "lint": "eslint .",
