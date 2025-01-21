@@ -5,13 +5,15 @@ const TestPageSpeed = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   const testPage = async (url) => {
     setLoading(true);
     setError(null);
     setResult(null);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/pagespeed?url=${encodeURIComponent(url)}`
+        `${API_BASE_URL}/api/pagespeed?url=${encodeURIComponent(url)}`
       );
       if (!response.ok) {
         throw new Error(`HTTP chyba: ${response.status}`);
