@@ -2,8 +2,5 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/backend/api/index.js" }
   ],
-  "redirects": [
-    { "source": "/optimalizace/minifikace-kodu", "destination": "/" }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "routes": [{ "src": "/.*", "dest": "/index.html" }]
 }
