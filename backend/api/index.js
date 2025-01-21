@@ -21,7 +21,7 @@ app.get("/api/pagespeed", async (req, res) => {
     const response = await axios.get(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
         url
-      )}&key=${process.env.PAGESPEED_API_KEY}`
+      )}&key=${process.env.VITE_PAGESPEED_API_KEY}`
     );
     res.json(response.data);
   } catch (error) {
