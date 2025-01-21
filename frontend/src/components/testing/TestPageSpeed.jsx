@@ -9,9 +9,6 @@ const TestPageSpeed = () => {
     import.meta.env.VITE_API_URL || "https://weboptimizer.vercel.app";
 
   const testPage = async (url) => {
-    setLoading(true);
-    setError(null);
-    setResult(null);
     try {
       const response = await fetch(
         `${API_BASE_URL}/api/pagespeed?url=${encodeURIComponent(url)}`
