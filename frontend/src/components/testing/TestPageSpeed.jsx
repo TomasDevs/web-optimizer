@@ -6,7 +6,7 @@ const TestPageSpeed = () => {
   const [error, setError] = useState(null);
 
   const API_BASE_URL =
-    import.meta.env.VITE_API_URL || "https://weboptimizer.vercel.app";
+    import.meta.env.VITE_API_URL || "https://weboptimizer.vercel.app/api";
 
   const testPage = async (url) => {
     try {
