@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ mode }) => {
   const isMinified = mode === "minified";
+  console.log("API BASE URL:", process.env.VITE_API_URL);
 
   return {
     plugins: [react()],
