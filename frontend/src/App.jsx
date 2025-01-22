@@ -9,6 +9,7 @@ import LazyLoading from "./pages/Optimization/LazyLoading";
 import ImageFormatOptimization from "./pages/Optimization/ImageFormatOptimization";
 import ImageSizeOptimization from "./pages/Optimization/ImageSizeOptimization";
 import ImageDisplayComparison from "./pages/Optimization/ImageDisplayComparison";
+import FontOptimization from "./pages/Optimization/FontOptimization";
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
@@ -50,6 +51,7 @@ const App = () => {
             path="/optimalizace/zobrazeni-obrazku"
             element={<ImageDisplayComparison />}
           />
+          <Route path="/optimalizace/fonty" element={<FontOptimization />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

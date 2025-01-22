@@ -44,7 +44,7 @@
             align-items: center;
             padding: 1rem;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 700;
             color: vars.$dark-color;
             cursor: pointer;
             transition: background-color 0.2s ease;
@@ -55,7 +55,7 @@
 
             .faq-icon {
               font-size: 1.2rem;
-              font-weight: bold;
+              font-weight: 700;
               color: vars.$primary-color;
               margin-left: 1rem;
               @include mx.breakpoint(md) {
