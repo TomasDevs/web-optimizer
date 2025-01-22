@@ -58,6 +58,25 @@ const Optimization = () => {
       />
 
       <TipBlock
+        title="Lazy loading"
+        content={[
+          <>
+            <strong>Proč je to důležité?</strong> Na stránkách s mnoha obrázky
+            nebo videi se stahuje ohromné množství dat. Lazy loading zajistí, že
+            se média načtou až ve chvíli, kdy k nim uživatel skutečně
+            doscroluje.
+          </>,
+          <>
+            <strong>Jak na to?</strong> Můžete použít nativní atribut{" "}
+            <code>loading="lazy"</code> pro obrázky (moderní prohlížeče) nebo
+            knihovny třetích stran (Intersection Observer).
+          </>,
+        ]}
+        link="/optimalizace/lazy-loading"
+        linkText="Více o lazy loadingu"
+      />
+
+      <TipBlock
         title="Optimalizace obrázků"
         content={[
           <>
@@ -97,25 +116,6 @@ const Optimization = () => {
         ]}
         link="/optimalizace/cdn-optimization"
         linkText="Více o CDN a cachování"
-      />
-
-      <TipBlock
-        title="Lazy loading"
-        content={[
-          <>
-            <strong>Proč je to důležité?</strong> Na stránkách s mnoha obrázky
-            nebo videi se stahuje ohromné množství dat. Lazy loading zajistí, že
-            se média načtou až ve chvíli, kdy k nim uživatel skutečně
-            doscroluje.
-          </>,
-          <>
-            <strong>Jak na to?</strong> Můžete použít nativní atribut{" "}
-            <code>loading="lazy"</code> pro obrázky (moderní prohlížeče) nebo
-            knihovny třetích stran (Intersection Observer).
-          </>,
-        ]}
-        link="/optimalizace/lazy-loading"
-        linkText="Více o lazy loadingu"
       />
 
       <TipBlock

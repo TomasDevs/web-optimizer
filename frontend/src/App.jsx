@@ -5,6 +5,10 @@ import Home from "./pages/Home";
 import ScrollToTop from "./components/ScrollToTop";
 import Optimization from "./pages/Optimization/Optimization";
 import CodeMinification from "./pages/Optimization/CodeMinification";
+import LazyLoading from "./pages/Optimization/LazyLoading";
+import ImageFormatOptimization from "./pages/Optimization/ImageFormatOptimization";
+import ImageSizeOptimization from "./pages/Optimization/ImageSizeOptimization";
+import ImageDisplayComparison from "./pages/Optimization/ImageDisplayComparison";
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
@@ -32,6 +36,19 @@ const App = () => {
           <Route
             path="/optimalizace/minifikace-kodu"
             element={<CodeMinification />}
+          />
+          <Route path="/optimalizace/lazy-loading" element={<LazyLoading />} />
+          <Route
+            path="/optimalizace/optimalizace-obrazku"
+            element={<ImageFormatOptimization />}
+          />
+          <Route
+            path="/optimalizace/velikost-obrazku"
+            element={<ImageSizeOptimization />}
+          />
+          <Route
+            path="/optimalizace/zobrazeni-obrazku"
+            element={<ImageDisplayComparison />}
           />
           <Route path="*" element={<NotFound />} />
         </Route>

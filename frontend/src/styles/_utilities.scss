@@ -56,6 +56,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 12px -1px rgba(vars.$primary-color, 0.6);
 
   &.-bottom {
     margin: 0 0 1.25rem;

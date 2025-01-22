@@ -137,6 +137,8 @@
     color: vars.$text-color;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 0 4px 12px -1px rgba(vars.$light-color, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
       background-color: vars.$highlight-color;

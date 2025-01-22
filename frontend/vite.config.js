@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: mode === "minified" ? "/minified/" : "/unminified/",
+    base: "/",
     build: {
       outDir: mode === "minified" ? "dist/minified" : "dist/unminified",
       minify: mode === "minified" ? "terser" : false,

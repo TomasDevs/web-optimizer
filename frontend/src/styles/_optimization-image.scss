@@ -1,0 +1,48 @@
+@use "variables" as vars;
+
+.gallery {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    justify-items: center;
+
+    &.css-background {
+      .gallery__item {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        aspect-ratio: 4/3;
+      }
+
+      .gallery__item:nth-child(1) {
+        background-image: url("/assets/images/image1.jpg");
+      }
+
+      .gallery__item:nth-child(2) {
+        background-image: url("/assets/images/image2.jpg");
+      }
+
+      .gallery__item:nth-child(3) {
+        background-image: url("/assets/images/image3.jpg");
+      }
+
+      .gallery__item:nth-child(4) {
+        background-image: url("/assets/images/image4.jpg");
+      }
+
+      .gallery__item:nth-child(5) {
+        background-image: url("/assets/images/image5.jpg");
+      }
+
+      .gallery__item:nth-child(6) {
+        background-image: url("/assets/images/image6.jpg");
+      }
+    }
+  }
+
+  &__item {
+    border-radius: vars.$border-radius-md;
+    box-shadow: 0 4px 8px rgba(vars.$primary-color, 0.2);
+  }
+}

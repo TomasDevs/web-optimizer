@@ -10,6 +10,11 @@ const features = [
     link: "optimalizace/minifikace-kodu",
   },
   {
+    title: "Lazy Loading",
+    description: "Naučte se, jak načítat obsah efektivně.",
+    link: "optimalizace/lazy-loading",
+  },
+  {
     title: "Optimalizace obrázků",
     description: "Zjistěte, jak zlepšit rychlost načítání obrázků.",
     link: "/image-optimization",
@@ -24,12 +29,6 @@ const features = [
     description: "Zlepšete výkon vašeho API a zrychlete odpovědi.",
     link: "/api-optimization",
   },
-  {
-    title: "Lazy Loading",
-    description: "Naučte se, jak načítat obsah efektivně.",
-    link: "/lazy-loading",
-  },
-
   {
     title: "Využití CDN",
     description: "Zjistěte, jak CDN zlepší výkon vašeho webu.",
