@@ -10,10 +10,14 @@ import ImageFormatOptimization from "./pages/Optimization/ImageFormatOptimizatio
 import ImageSizeOptimization from "./pages/Optimization/ImageSizeOptimization";
 import ImageDisplayComparison from "./pages/Optimization/ImageDisplayComparison";
 import FontOptimization from "./pages/Optimization/FontOptimization";
+import ScriptLoading from "./pages/Optimization/ScriptLoading";
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
 import INPDetail from "./pages/CoreWebVitals/INPDetail";
+import LCPTesting from "./pages/CoreWebVitals/LCPTesting";
+import ClsTesting from "./pages/CoreWebVitals/CLSTesting";
+import InpTesting from "./pages/CoreWebVitals/INPTesting";
 import AboutApp from "./pages/Menu/AboutApp";
 import Tools from "./pages/Menu/Tools";
 import FAQ from "./pages/Menu/FAQ";
@@ -52,6 +56,13 @@ const App = () => {
             element={<ImageDisplayComparison />}
           />
           <Route path="/optimalizace/fonty" element={<FontOptimization />} />
+          <Route
+            path="/optimalizace/nacitani-skriptu"
+            element={<ScriptLoading />}
+          />
+          <Route path="/core-web-vitals/lcp-testing" element={<LCPTesting />} />
+          <Route path="/core-web-vitals/cls-testing" element={<ClsTesting />} />
+          <Route path="/core-web-vitals/inp-testing" element={<InpTesting />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
