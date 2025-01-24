@@ -21,6 +21,11 @@ const LCPDetail = () => {
           Níže najdete praktické tipy a ukázky kódu, jak LCP zlepšit. Pokud vás
           zajímá více teorie, mrkněte na praktické články v dolní části stránky.
         </p>
+
+        <Link to="/core-web-vitals/lcp-testing" className="button">
+          {" "}
+          Testování LCP
+        </Link>
       </FadeInOnScroll>
 
       <TipBlock

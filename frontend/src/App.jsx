@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/ScrollToTop";
+import TestingPage from "./pages/Testing/TestingPage";
 import Optimization from "./pages/Optimization/Optimization";
 import CodeMinification from "./pages/Optimization/CodeMinification";
 import LazyLoading from "./pages/Optimization/LazyLoading";
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/o-aplikaci" element={<AboutApp />} />
           <Route path="/nastroje" element={<Tools />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/testovani" element={<TestingPage />} />
           <Route path="/optimalizace" element={<Optimization />} />
           <Route path="/core-web-vitals" element={<CoreWebVitals />} />
           <Route path="/core-web-vitals/lcp" element={<LCPDetail />} />
@@ -60,9 +62,9 @@ const App = () => {
             path="/optimalizace/nacitani-skriptu"
             element={<ScriptLoading />}
           />
-          <Route path="/core-web-vitals/lcp-testing" element={<LCPTesting />} />
-          <Route path="/core-web-vitals/cls-testing" element={<ClsTesting />} />
-          <Route path="/core-web-vitals/inp-testing" element={<InpTesting />} />
+          <Route path="/testovani/lcp-testing" element={<LCPTesting />} />
+          <Route path="/testovani/cls-testing" element={<ClsTesting />} />
+          <Route path="/testovani/inp-testing" element={<InpTesting />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -7,7 +7,7 @@ const LCPTesting = () => {
 
   useEffect(() => {
     if (!searchParams.has("optimized")) {
-      setSearchParams({ optimized: "true" }, { replace: true });
+      setSearchParams({ optimized: "false" }, { replace: true });
     }
   }, [searchParams, setSearchParams]);
 
@@ -24,11 +24,12 @@ const LCPTesting = () => {
       </h1>
 
       <p className="section-text">
-        LCP měří čas načtení největšího prvku na stránce. Zde můžeš porovnat
-        optimalizovanou a neoptimalizovanou verzi.
+        LCP určuje rychlost načtení největšího viditelného prvku na stránce.
+        Nejčastěji se jedná o hlavní obrázek nebo nadpis. Hodnota LCP by měla
+        být pod <strong>2,5 vteřiny</strong>.
       </p>
 
-      <button onClick={handleLCPChange} className="button -margin">
+      <button onClick={handleLCPChange} className="button -bottom">
         Přepnout na {isOptimized ? "neoptimalizovanou" : "optimalizovanou"}{" "}
         verzi
       </button>
@@ -37,17 +38,19 @@ const LCPTesting = () => {
         <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
       </p>
 
-      <div className="hero-section">
+      <div className="section">
         {isOptimized ? (
-          <img
-            fetchPriority="high"
-            src="/assets/images/lcp-image-min.webp"
-            width="1440"
-            height="960"
-            alt="Optimalizovaný hero obrázek"
-            className="lcp-image"
-            loading="eager"
-          />
+          <>
+            <img
+              fetchPriority="high"
+              src="/assets/images/lcp-image-min.webp"
+              width="1440"
+              height="960"
+              alt="Optimalizovaný hero obrázek"
+              className="lcp-image"
+              loading="eager"
+            />
+          </>
         ) : (
           <img
             src="/assets/images/lcp-image.jpg"
@@ -60,17 +63,14 @@ const LCPTesting = () => {
         )}
       </div>
 
-      <section className="content-section">
-        <h2>Další obsah</h2>
+      <section className="section-text">
+        <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p>
-          Tento obsah simuluje reálnou stránku s textem a dalšími prvky, které
-          mohou ovlivnit výkon.
+          Optimalizovaná verze využívá moderní formát obrázků WebP, atribut{" "}
+          <code>fetchPriority</code> a vhodné načítání obrázků pomocí{" "}
+          <code>loading="eager"</code>. Neoptimalizovaná verze používá formát
+          JPG bez prioritizace načítání.
         </p>
-        <ul>
-          <li>Optimalizované písmo vs. Google Fonts</li>
-          <li>Lazy loading vs. eager loading</li>
-          <li>Prioritizace načítání prvků</li>
-        </ul>
       </section>
 
       <section className="section-page">

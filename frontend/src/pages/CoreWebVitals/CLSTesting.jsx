@@ -2,7 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
-const ClsTesting = () => {
+const CLSTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("cls") === "optimized";
 
@@ -21,9 +21,10 @@ const ClsTesting = () => {
       <h1 className="subpage-title">Testování Cumulative Layout Shift (CLS)</h1>
 
       <p className="section-text">
-        Testovací stránka s možností přepínání mezi optimalizovanou a
-        neoptimalizovanou verzí. Změň verzi a sleduj metriky v nástrojích jako
-        Lighthouse.
+        CLS měří vizuální stabilitu stránky během načítání. Pokud se prvky na
+        stránce pohybují nebo posouvají, může to uživatele zmást a vést ke
+        špatnému uživatelskému zážitku. Podle doporučení Googlu by hodnota CLS
+        měla být nižší než <strong>0,1</strong>.
       </p>
 
       <button onClick={handleClsToggle} className="button -margin">
@@ -31,15 +32,20 @@ const ClsTesting = () => {
         verzi
       </button>
 
+      <p className="status-text">
+        Aktuální verze:{" "}
+        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+      </p>
+
       <section className="section-page">
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
         <p className="section-text">
           {isOptimized
-            ? "Obrázky mají pevně definované rozměry pro prevenci CLS."
-            : "Obrázky nemají definované rozměry, což může způsobit posuny layoutu."}
+            ? "Obrázky mají pevně definované rozměry, aby se zabránilo posunům layoutu."
+            : "Obrázky nemají pevné rozměry, což může způsobit posuny layoutu."}
         </p>
         <div className="gallery__container">
-          {Array.from({ length: 5 }, (_, index) => (
+          {Array.from({ length: 4 }, (_, index) => (
             <img
               key={index}
               src={`/assets/images/image${index + 1}.jpg`}
@@ -52,21 +58,24 @@ const ClsTesting = () => {
       </section>
 
       <section className="section-page">
-        <h2 className="section-subtitle -small">Reklama</h2>
+        <h2 className="section-subtitle -small">Reklamy</h2>
         <p className="section-text">
           {isOptimized
-            ? "Reklama má rezervovaný prostor."
-            : "Reklama se načítá později a způsobuje posun layoutu."}
+            ? "Reklamní prostor je předem rezervován, aby se zabránilo posunům layoutu."
+            : "Reklama se načítá dynamicky, což způsobuje posuny layoutu."}
         </p>
         <div className="ad-placeholder">
           {isOptimized ? (
             <div style={{ width: "728px", height: "90px", background: "#ccc" }}>
-              Reklama
+              Rezervované místo pro reklamu
             </div>
           ) : (
             <iframe
-              src="https://via.placeholder.com/728x90"
-              title="Reklama"></iframe>
+              src="https://www.bing.com"
+              width="728"
+              height="90"
+              title="Ukázková reklama"
+              style={{ border: "none" }}></iframe>
           )}
         </div>
       </section>
@@ -75,15 +84,15 @@ const ClsTesting = () => {
         <h2 className="section-subtitle -small">Načítání fontů</h2>
         <p className="section-text">
           {isOptimized
-            ? "Fonty se načítají pomocí font-display: swap."
-            : "Bez rezervovaného místa, což způsobuje FOUT/FOIT."}
+            ? "Fonty se načítají s 'font-display: swap', aby se zabránilo prázdným místům."
+            : "Fonty se načítají bez optimalizace, což způsobuje FOUT (Flash of Unstyled Text)."}
         </p>
         <p
           style={{
             fontFamily: isOptimized ? "'CustomFont', sans-serif" : "sans-serif",
             fontSize: "24px",
           }}>
-          Toto je ukázkový text.
+          Ukázkový text s různými způsoby načítání fontů.
         </p>
       </section>
 
@@ -91,18 +100,29 @@ const ClsTesting = () => {
         <h2 className="section-subtitle -small">Dynamický obsah</h2>
         <p className="section-text">
           {isOptimized
-            ? "Obsah má předem rezervované místo."
-            : "Obsah se načte později a způsobí posun layoutu."}
+            ? "Obsah má předem rezervované místo, aby nedocházelo k posunům."
+            : "Obsah se načítá dynamicky a může způsobit posuny layoutu."}
         </p>
         <div className="dynamic-content">
           {isOptimized ? (
             <div style={{ width: "100%", height: "100px", background: "#ddd" }}>
-              Předem rezervované místo pro obsah
+              Rezervované místo pro obsah
             </div>
           ) : (
-            <p>Zde se načítá dynamický obsah...</p>
+            <p>Dynamický obsah se načítá...</p>
           )}
         </div>
+      </section>
+
+      <section className="section-page">
+        <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
+        <p className="section-text">
+          Optimalizovaná verze má pevně definované rozměry prvků pro
+          minimalizaci posunů. Používá optimalizované načítání fontů k eliminaci
+          FOUT. Reklamy mají rezervované místo, aby se zabránilo posunům
+          layoutu. Prostor pro dynamický obsah je předem stanoven pro plynulejší
+          vykreslování stránky.
+        </p>
       </section>
 
       <section className="section-page">
@@ -112,4 +132,4 @@ const ClsTesting = () => {
   );
 };
 
-export default ClsTesting;
+export default CLSTesting;

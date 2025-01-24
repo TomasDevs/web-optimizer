@@ -41,6 +41,9 @@ const AboutApp = () => {
               Core Web Vitals. Bude probíhat porovnání nástrojů pro měření
               výkonu a analýza vlivu na mobilní i desktopové zařízení.
             </li>
+            <li>
+              <strong>Rok zpracování:</strong> 2025
+            </li>
           </ul>
         </FadeInOnScroll>
       </section>

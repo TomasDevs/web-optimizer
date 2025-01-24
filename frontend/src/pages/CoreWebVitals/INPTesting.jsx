@@ -13,7 +13,6 @@ const InpTesting = () => {
     }
   }, [searchParams, setSearchParams]);
 
-  // Složitější výpočet: Fibonacci sekvence (rekurzivní)
   const heavyComputation = (num) => {
     if (num <= 1) return num;
     return heavyComputation(num - 1) + heavyComputation(num - 2);
@@ -27,13 +26,11 @@ const InpTesting = () => {
     setStatus("Skript probíhá...");
 
     if (isOptimized) {
-      // Rozložení výpočtu pomocí setTimeout pro neblokování UI
       setTimeout(() => {
-        const result = heavyComputation(40); // Vyšší číslo pro delší výpočet
+        const result = heavyComputation(40);
         setStatus(`Výpočet dokončen: ${result}`);
       }, 0);
     } else {
-      // Blokující výpočet bez zpětné vazby
       const result = heavyComputation(40);
       setStatus(`Výpočet dokončen: ${result}`);
     }
@@ -46,9 +43,9 @@ const InpTesting = () => {
       </h1>
 
       <p className="section-text">
-        Interaction to Next Paint (INP) měří dobu odezvy uživatelské interakce.
-        Pokud stránka nereaguje ihned na kliknutí nebo jiné vstupy, může se
-        jednat o problém s dlouhými výpočty nebo blokováním hlavního vlákna.
+        Interaction to Next Paint (INP) měří dobu odezvy na uživatelskou
+        interakci. Přepni mezi optimalizovanou a neoptimalizovanou verzí a
+        sleduj vliv na responzivitu stránky.
       </p>
       <p className="section-text">
         V tomto testu provádíme výpočet Fibonacciho sekvence pomocí rekurzivního
@@ -66,30 +63,22 @@ const InpTesting = () => {
         umožňuje UI reagovat na uživatelské akce okamžitě, zatímco
         neoptimalizovaná verze blokuje hlavní vlákno.
       </p>
-      <p className="section-text">
-        Praktické příklady vysoké hodnoty INP zahrnují:
-      </p>
-      <ul className="section-text">
-        <li>
-          Přidání produktu do košíku, pokud backend nebo frontend není
-          optimalizovaný.
-        </li>
-        <li>Odeslání formuláře s rozsáhlou validací na straně klienta.</li>
-        <li>Velké animace, které blokují hlavní vlákno.</li>
-        <li>Dynamické načítání obsahu při scrollování stránky.</li>
-      </ul>
 
-      <button onClick={handleInpToggle} className="button -margin">
+      <button onClick={handleInpToggle} className="button -bottom">
         Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
         verzi
       </button>
 
-      <section className="section-page">
+      <p className="status-text">
+        Aktuální verze:{" "}
+        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+      </p>
+
+      <section className="section">
         <h2 className="section-subtitle -small">Test interakce</h2>
         <p className="section-text">
-          Kliknutím na tlačítko spustíte výpočet. Optimalizovaná verze zajistí
-          okamžitou zpětnou vazbu, zatímco neoptimalizovaná verze bude blokovat
-          UI.
+          Kliknutím na tlačítko spustíte výpočet. Optimalizovaná verze rozkládá
+          výpočet, zatímco neoptimalizovaná verze blokuje UI.
         </p>
         <button onClick={handleClick} className="button -margin">
           Otestovat interakci
@@ -97,6 +86,17 @@ const InpTesting = () => {
         <div id="inp-test-output" className="status-text">
           {status}
         </div>
+      </section>
+
+      <section className="section-page">
+        <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
+        <p className="section-text">
+          Optimalizovaná verze používá asynchronní zpracování pomocí setTimeout.
+          Neoptimalizovaná verze blokuje hlavní vlákno a snižuje responzivitu. V
+          optimalizované verzi se během výpočtu zobrazí zpráva "Skript
+          probíhá...", což umožňuje UI reagovat na další akce. Optimální
+          kódování zahrnuje asynchronní přístupy ke zpracování úloh.
+        </p>
       </section>
 
       <section className="section-page">
