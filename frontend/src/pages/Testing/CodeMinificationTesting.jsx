@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
-import { Link } from "react-router-dom";
 
 const CodeMinificationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
