@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className="home">
       <Hero />
-      <TestingCards />
       <OptimizationCards />
       <CoreWebVitalsCards />
+      <TestingCards />
     </div>
   );
 };

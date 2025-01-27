@@ -21,6 +21,11 @@ const CLSDetail = () => {
           zajímá více teorie, podívejte se na doporučené články ve spodní části
           stránky.
         </p>
+
+        <Link to="/testovani/cls-testing" className="button">
+          {" "}
+          Testování CLS
+        </Link>
       </FadeInOnScroll>
 
       <TipBlock

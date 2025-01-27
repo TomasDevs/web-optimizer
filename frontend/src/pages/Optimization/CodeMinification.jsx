@@ -1,18 +1,8 @@
-import { useSearchParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import React, { useState } from "react";
+import FadeInOnScroll from "../../components/FadeInOnScroll";
+import { Link } from "react-router-dom";
 
 const CodeMinification = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  useEffect(() => {
-    if (!searchParams.has("minified")) {
-      setSearchParams({ minified: "false" }, { replace: true });
-    }
-  }, [searchParams, setSearchParams]);
-
-  const isMinifiedPage = searchParams.get("minified") === "true";
-
   const [isCodeMinified, setIsCodeMinified] = useState(false);
 
   const unminifiedCode = `
@@ -35,25 +25,30 @@ const CodeMinification = () => {
     setIsCodeMinified(!isCodeMinified);
   };
 
-  const handlePageMinificationToggle = () => {
-    setSearchParams({ minified: !isMinifiedPage });
-  };
-
   return (
-    <section className="code-minification section-page">
-      <h1 className="subpage-title">Minifikace kódu</h1>
+    <>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">Minifikace kódu</h1>
 
-      <p className="section-text">
-        Minifikace je proces, který zmenšuje velikost kódu odstraněním
-        nadbytečných znaků, jako jsou mezery, komentáře nebo nepotřebné znaky.
-        Neovlivňuje funkčnost kódu a zlepšuje rychlost načítání.
-      </p>
+        <p className="section-text">
+          Minifikace je technika, která slouží ke zmenšení velikosti kódu
+          odstraněním nepotřebných znaků, jako jsou mezery a komentáře. Díky
+          tomu se zrychluje načítání webových stránek a šetří přenos dat.
+        </p>
 
-      <section className="code-minification__example section-page">
+        <h2 className="section-subtitle">Moderní nástroje pro minifikaci</h2>
+        <p className="section-text">
+          Dnes se k minifikaci používají buildovací nástroje jako{" "}
+          <strong>Vite</strong>, <strong>Webpack</strong> nebo{" "}
+          <strong>Esbuild</strong>. Tyto nástroje postupně nahrazují starší task
+          runners jako Gulp a Grunt a dokáží nejen minimalizovat velikost
+          souborů, ale i optimalizovat načítání skriptů.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Příklad kódu</h2>
-        <button
-          onClick={handleLocalMinification}
-          className="button button -bottom">
+        <button onClick={handleLocalMinification} className="button -bottom">
           {isCodeMinified
             ? "Zobrazit neminifikovaný kód"
             : "Zobrazit minifikovaný kód"}
@@ -61,52 +56,19 @@ const CodeMinification = () => {
         <pre className="code-block">
           {isCodeMinified ? minifiedCode : unminifiedCode}
         </pre>
-      </section>
-
-      <section className="code-minification__benefits section-page">
-        <h2 className="section-subtitle -small">Výhody minifikace</h2>
-        <ul className="code-minification__list section-text">
-          <li className="code-minification__list-item">
-            🚀 Rychlejší načítání stránky
-          </li>
-          <li className="code-minification__list-item">
-            📉 Snížení velikosti souborů až o 30–50 %
-          </li>
-          <li className="code-minification__list-item">
-            ⚙️ Lepší skóre Core Web Vitals
-          </li>
-        </ul>
-      </section>
-
-      <section className="code-minification__page-toggle section-page">
-        <h2 className="section-subtitle -small">Minifikace stránky</h2>
+      </FadeInOnScroll>
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle -small"> Testování minifikace</h2>
         <p className="section-text">
-          Stránka využívá <strong>query parametry</strong> v URL pro přepínání
-          mezi minifikovanou a neminifikovanou verzí. Pokud je parametr{" "}
-          <code className="inline-code">?minified=true</code>, stránka se načte
-          v minifikovaném stavu. Pro neminifikovaný stav použijte{" "}
-          <code className="inline-code">?minified=false</code>.
+          Zde můžete vyzkoušet, jak minifikace ovlivňuje velikost kódu a
+          rychlost načítání stránky.
         </p>
-        <p className="status-text">
-          Aktuálně je stránka v{" "}
-          <strong>
-            {isMinifiedPage ? "minifikovaném" : "neminifikovaném"} stavu
-          </strong>
-          .
-        </p>
-        <button
-          onClick={handlePageMinificationToggle}
-          className="button -margin">
-          {isMinifiedPage
-            ? "Přepnout na neminifikovanou stránku"
-            : "Přepnout na minifikovanou stránku"}
-        </button>
-      </section>
 
-      <section className="code-minification__notes section-page">
-        <TestPageSpeed />
-      </section>
-    </section>
+        <Link to="/testovani/minifikace" className="button -bottom">
+          Testování minifikace
+        </Link>
+      </FadeInOnScroll>
+    </>
   );
 };
 

@@ -20,6 +20,11 @@ const INPDetail = () => {
           Níže najdete tipy, jak INP optimalizovat, a konkrétní příklady kódu.
           Další informace můžete prozkoumat v odkazech na konci stránky.
         </p>
+
+        <Link to="/testovani/inp-testing" className="button">
+          {" "}
+          Testování INP
+        </Link>
       </FadeInOnScroll>
 
       <TipBlock

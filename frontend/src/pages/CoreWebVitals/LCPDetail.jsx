@@ -22,7 +22,7 @@ const LCPDetail = () => {
           zajímá více teorie, mrkněte na praktické články v dolní části stránky.
         </p>
 
-        <Link to="/core-web-vitals/lcp-testing" className="button">
+        <Link to="/testovani/lcp-testing" className="button">
           {" "}
           Testování LCP
         </Link>

@@ -12,6 +12,7 @@ const Menu = () => {
     { href: "/nastroje", label: "Nástroje" },
     { href: "/optimalizace", label: "Optimalizace" },
     { href: "/core-web-vitals", label: "Core Web Vitals" },
+    { href: "/testovani", label: "Testování" },
     { href: "/vysledky", label: "Výsledky" },
     { href: "/faq", label: "FAQ" },
   ];
