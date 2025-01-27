@@ -16,9 +16,15 @@ import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
 import INPDetail from "./pages/CoreWebVitals/INPDetail";
+
+// Testing Optimization
+import CodeMinificationTest from "./pages/Testing/CodeMinificationTesting";
+
+// Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
 import ClsTesting from "./pages/Testing/CLSTesting";
 import InpTesting from "./pages/Testing/INPTesting";
+
 import AboutApp from "./pages/Menu/AboutApp";
 import Tools from "./pages/Menu/Tools";
 import FAQ from "./pages/Menu/FAQ";
@@ -65,6 +71,10 @@ const App = () => {
           <Route path="/testovani/lcp-testing" element={<LCPTesting />} />
           <Route path="/testovani/cls-testing" element={<ClsTesting />} />
           <Route path="/testovani/inp-testing" element={<InpTesting />} />
+          <Route
+            path="/testovani/minifikace-kodu"
+            element={<CodeMinificationTest />}
+          />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
