@@ -114,6 +114,12 @@
   display: flex;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
 .highlight-link {
   font-weight: 600;
   color: vars.$primary-color;

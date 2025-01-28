@@ -20,6 +20,7 @@ import INPDetail from "./pages/CoreWebVitals/INPDetail";
 // Testing Optimization
 import CodeMinificationTest from "./pages/Testing/CodeMinificationTesting";
 import LazyLoadingTest from "./pages/Testing/LazyLoadingTesting";
+import FontOptimizationTest from "./pages/Testing/FontOptimizationTesting";
 
 // Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
@@ -77,6 +78,8 @@ const App = () => {
             element={<CodeMinificationTest />}
           />
           <Route path="/testovani/lazy-loading" element={<LazyLoadingTest />} />
+
+          <Route path="/testovani/fonty" element={<FontOptimizationTest />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -77,6 +77,30 @@ const Optimization = () => {
       />
 
       <TipBlock
+        title="Optimalizace fontů"
+        content={[
+          <>
+            <strong>Proč je to důležité?</strong> Fonty tvoří nezanedbatelnou
+            část přenášených dat na webových stránkách. Špatná optimalizace může
+            zpomalit načítání stránky, ovlivnit uživatelskou zkušenost a zhoršit
+            důležité metriky jako <em>Largest Contentful Paint (LCP)</em>.
+          </>,
+          <>
+            <strong>Jak na to?</strong> Použijte moderní formáty fontů jako{" "}
+            <code className="inline-code">WOFF2</code> pro lepší kompresi,
+            hostujte fonty lokálně nebo z rychlého CDN a zvažte subsetting,
+            abyste zahrnuli pouze potřebné znaky (např.{" "}
+            <code className="inline-code">latin</code> nebo{" "}
+            <code className="inline-code">latin-ext</code>). Nastavte{" "}
+            <code className="inline-code">font-display: swap</code>, aby byl
+            text viditelný během načítání fontů.
+          </>,
+        ]}
+        link="/optimalizace/fonty"
+        linkText="Více o optimalizaci fontů"
+      />
+
+      <TipBlock
         title="Optimalizace obrázků"
         content={[
           <>

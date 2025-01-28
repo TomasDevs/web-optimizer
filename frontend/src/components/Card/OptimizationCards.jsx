@@ -22,7 +22,7 @@ const features = [
   {
     title: "Optimalizace fontů",
     description: "Naučte se, jak rychle načítat webové fonty.",
-    link: "/font-optimization",
+    link: "optimalizace/fonty",
   },
   {
     title: "Optimalizace API",

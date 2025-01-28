@@ -47,7 +47,7 @@ const CodeMinification = () => {
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle -small">Příklad kódu</h2>
+        <h2 className="section-subtitle">Příklad kódu</h2>
         <button onClick={handleLocalMinification} className="button -bottom">
           {isCodeMinified
             ? "Zobrazit neminifikovaný kód"
@@ -58,7 +58,7 @@ const CodeMinification = () => {
         </pre>
       </FadeInOnScroll>
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle -small"> Testování minifikace</h2>
+        <h2 className="section-subtitle"> Testování minifikace</h2>
         <p className="section-text">
           Zde můžete vyzkoušet, jak minifikace ovlivňuje velikost kódu a
           rychlost načítání stránky.
