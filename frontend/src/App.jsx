@@ -22,6 +22,7 @@ import CodeMinificationTesting from "./pages/Testing/CodeMinificationTesting";
 import ImageOptimizationTesting from "./pages/Testing/ImageOptimizationTesting";
 import LazyLoadingTesting from "./pages/Testing/LazyLoadingTesting";
 import FontOptimizationTesting from "./pages/Testing/FontOptimizationTesting";
+import ScriptLoadingTesting from "./pages/Testing/ScriptLoadingTesting";
 
 // Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
@@ -39,6 +40,7 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
+          {/* Menu */}
           <Route path="/" element={<Home />} />
           <Route path="/o-aplikaci" element={<AboutApp />} />
           <Route path="/nastroje" element={<Tools />} />
@@ -46,15 +48,18 @@ const App = () => {
           <Route path="/testovani" element={<TestingPage />} />
           <Route path="/optimalizace" element={<Optimization />} />
           <Route path="/core-web-vitals" element={<CoreWebVitals />} />
+
+          {/* Core Web Vitals */}
           <Route path="/core-web-vitals/lcp" element={<LCPDetail />} />
           <Route path="/core-web-vitals/cls" element={<CLSDetail />} />
           <Route path="/core-web-vitals/inp" element={<INPDetail />} />
+
+          {/* Optimization */}
           <Route
             path="/optimalizace/minifikace-kodu"
             element={<CodeMinification />}
           />
           <Route path="/optimalizace/lazy-loading" element={<LazyLoading />} />
-
           <Route path="/optimalizace/fonty" element={<FontOptimization />} />
           <Route
             path="/optimalizace/nacitani-skriptu"
@@ -64,9 +69,13 @@ const App = () => {
             path="/optimalizace/optimalizace-obrazku"
             element={<ImageOptimization />}
           />
+
+          {/* Testing Core Web Vitals */}
           <Route path="/testovani/lcp-testing" element={<LCPTesting />} />
           <Route path="/testovani/cls-testing" element={<ClsTesting />} />
           <Route path="/testovani/inp-testing" element={<InpTesting />} />
+
+          {/* Testing Optimization */}
           <Route
             path="/testovani/minifikace-kodu"
             element={<CodeMinificationTesting />}
@@ -86,6 +95,10 @@ const App = () => {
           <Route
             path="/testovani/fonty"
             element={<FontOptimizationTesting />}
+          />
+          <Route
+            path="/testovani/nacitani-skriptu"
+            element={<ScriptLoadingTesting />}
           />
           <Route path="*" element={<NotFound />} />
         </Route>

@@ -25,6 +25,11 @@ const features = [
     link: "optimalizace/fonty",
   },
   {
+    title: "Načítání skriptů",
+    description: "Optimalizujte výkon pomocí async, defer a dalších metod.",
+    link: "optimalizace/nacitani-skriptu",
+  },
+  {
     title: "Optimalizace API",
     description: "Zlepšete výkon vašeho API a zrychlete odpovědi.",
     link: "/api-optimization",
@@ -38,11 +43,6 @@ const features = [
     title: "Bezpečné načítání",
     description: "Použijte bezpečné techniky načítání pro zajištění dat.",
     link: "/secure-loading",
-  },
-  {
-    title: "Redukce JavaScriptu",
-    description: "Minimalizujte nepotřebný JavaScript pro rychlejší načítání.",
-    link: "/js-reduction",
   },
 ];
 

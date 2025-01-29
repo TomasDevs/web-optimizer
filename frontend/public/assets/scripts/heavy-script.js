@@ -1,15 +1,23 @@
 window.onload = () => {
+  console.log("Heavy script spuštěn – stahování dat...");
   const outputElement = document.getElementById("script-test-output");
-  if (outputElement) {
-    outputElement.innerText = "Skript probíhá...";
+  const utilityOutput = document.getElementById("utility-script-output");
 
-    setTimeout(() => {
-      let total = 0;
-      for (let i = 0; i < 2e8; i++) {
-        total += Math.sqrt(i) * Math.log(i + 1) * Math.sin(i);
-      }
-      outputElement.innerText = `Výpočet dokončen: ${Math.floor(total)}`;
-      console.log("Skript byl načten a výpočet dokončen.");
-    }, 1000);
+  if (outputElement) {
+    outputElement.innerText = "Načítání dat...";
   }
+
+  fetch("https://jsonplaceholder.typicode.com/comments")
+    .then((response) => response.json())
+    .then((data) => {
+      if (outputElement) {
+        outputElement.innerText = `Data načtena (${data.length} záznamů)`;
+      }
+      console.log("Heavy script dokončil stahování dat.");
+    })
+    .finally(() => {
+      if (utilityOutput) {
+        utilityOutput.innerText = "Utility skript proběhl po načtení DOM.";
+      }
+    });
 };

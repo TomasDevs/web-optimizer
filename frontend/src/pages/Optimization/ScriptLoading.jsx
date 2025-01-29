@@ -1,102 +1,178 @@
-import { useSearchParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import React from "react";
+import FadeInOnScroll from "../../components/FadeInOnScroll";
+import { Link } from "react-router-dom";
 
 const ScriptLoading = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  useEffect(() => {
-    if (!searchParams.has("script")) {
-      setSearchParams({ script: "async" }, { replace: true });
-    }
-  }, [searchParams, setSearchParams]);
-
-  const scriptType = searchParams.get("script");
-
-  const handleScriptToggle = () => {
-    const newType = scriptType === "async" ? "defer" : "async";
-    setSearchParams({ script: newType });
-  };
-
-  const scriptExampleAsync = `
-    <script async src="/assets/scripts/demo-script.js"></script>
-  `;
-
-  const scriptExampleDefer = `
-    <script defer src="/assets/scripts/demo-script.js"></script>
-  `;
-
-  const [showAsyncCode, setShowAsyncCode] = useState(true);
-
-  useEffect(() => {
-    const scriptElement = document.createElement("script");
-    scriptElement.src = "/assets/scripts/heavy-script.js";
-    scriptElement.async = scriptType === "async";
-    scriptElement.defer = scriptType === "defer";
-    scriptElement.id = "test-script";
-    document.body.appendChild(scriptElement);
-
-    return () => {
-      const existingScript = document.getElementById("test-script");
-      if (existingScript) {
-        document.body.removeChild(existingScript);
-      }
-    };
-  }, [scriptType]);
-
   return (
-    <section className="section-page">
-      <h1 className="subpage-title">Optimalizace načítání skriptů</h1>
+    <>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">Optimalizace načítání skriptů</h1>
 
-      <p className="section-text">
-        Použití atributů <strong>async</strong> a <strong>defer</strong> při
-        načítání skriptů může ovlivnit výkon a chování stránky.
-      </p>
-
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Příklad kódu</h2>
-        <button
-          onClick={() => setShowAsyncCode(!showAsyncCode)}
-          className="button button -bottom">
-          {showAsyncCode ? "Zobrazit defer" : "Zobrazit async"}
-        </button>
-        <pre className="code-block">
-          {showAsyncCode ? scriptExampleAsync : scriptExampleDefer}
-        </pre>
-      </section>
-
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Testování načítání skriptů</h2>
         <p className="section-text">
-          Stránka používá <strong>query parametry</strong> v URL pro přepínání
-          mezi async a defer. Pokud je parametr{" "}
-          <code className="inline-code">?script=async</code>, skript se načte
-          asynchronně. Pro defer použijte{" "}
-          <code className="inline-code">?script=defer</code>.
+          Skripty mohou významně ovlivnit výkon webové stránky. Je důležité
+          správně zvolit metodu jejich načítání, aby se minimalizovalo blokování
+          vykreslování stránky a zlepšily se metriky jako <strong>FCP</strong>{" "}
+          (First Contentful Paint), <strong>LCP</strong> (Largest Contentful
+          Paint) a <strong>TBT</strong> (Total Blocking Time).
         </p>
-        <p className="status-text">
-          Aktuálně je načítání skriptů: <strong>{scriptType}</strong>.
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Typy načítání skriptů</h2>
+        <p className="section-text">
+          <strong>Bez atributu (synchronní skript)</strong>
+          <br />
+          <code className="inline-code">
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+          </code>
+          <br />
+          Skript se načítá a provádí okamžitě, blokuje zpracování HTML.
         </p>
-        <button onClick={handleScriptToggle} className="button -margin">
-          Přepnout na {scriptType === "async" ? "defer" : "async"}
-        </button>
-      </section>
 
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Výsledek skriptu</h2>
-        <div id="script-test-output" className="status-text">
-          Skript čeká na načtení...
-        </div>
+        <p className="section-text">
+          <strong>Async (asynchronní načítání)</strong>
+          <br />
+          <code className="inline-code">
+            &lt;script async src="script.js"&gt;&lt;/script&gt;
+          </code>
+          <br />
+          Skript se načítá paralelně s HTML, ale provede se hned po stažení, což
+          může přerušit vykreslování.
+        </p>
 
-        <button id="script-test-button" className="button -margin">
-          Restartovat výpočet
-        </button>
-      </section>
+        <p className="section-text">
+          <strong>Defer (odložené vykonání)</strong>
+          <br />
+          <code className="inline-code">
+            &lt;script defer src="script.js"&gt;&lt;/script&gt;
+          </code>
+          <br />
+          Skript se načítá paralelně s HTML, ale provede se až po načtení celého
+          DOM.
+        </p>
 
-      <section className="section-page">
-        <TestPageSpeed />
-      </section>
-    </section>
+        <p className="section-text">
+          <strong>Type="module" (moderní ES6 skripty)</strong>
+          <br />
+          <code className="inline-code">
+            &lt;script type="module" src="script.js"&gt;&lt;/script&gt;
+          </code>
+          <br />
+          Skript se chová jako <code>defer</code>, podporuje importy a není
+          proveden vícekrát.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Dopad na metriky výkonu</h2>
+        <p className="section-text">
+          Správné načítání skriptů ovlivňuje metriky Core Web Vitals:
+        </p>
+        <ul>
+          <li>
+            <strong>FCP (First Contentful Paint)</strong> – async může blokovat
+            vykreslování prvního obsahu.
+          </li>
+          <li>
+            <strong>LCP (Largest Contentful Paint)</strong> – blokující skripty
+            mohou zhoršit dobu načítání hlavního obsahu.
+          </li>
+          <li>
+            <strong>TBT (Total Blocking Time)</strong> – synchronní skripty
+            blokují hlavní vlákno delší dobu.
+          </li>
+        </ul>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">
+          Kdy použít async, defer nebo module?
+        </h2>
+        <p className="section-text">
+          <strong>✅ Použít async:</strong> pokud skript není závislý na DOM
+          (např. analytické skripty, reklamy, widgety třetích stran).
+        </p>
+        <p className="section-text">
+          <strong>✅ Použít defer:</strong> pokud skript potřebuje DOM (např.
+          JavaScript aplikace, interaktivní prvky).
+        </p>
+        <p className="section-text">
+          <strong>✅ Použít module:</strong> pokud používáš moderní ES6 kód s
+          importy.
+        </p>
+        <p className="section-text">
+          <strong>❌ Nepoužívat synchronní načítání</strong>, pokud skript není
+          kritický pro inicializaci stránky.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Praktické využití</h2>
+        <p className="section-text">
+          Různé typy skriptů se hodí pro různé scénáře:
+        </p>
+
+        <h3 className="section-subtitle -small">
+          ✅ Příklady použití <code className="inline-code">async</code>
+        </h3>
+        <pre className="code-block">
+          {`<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js"></script>
+
+<!-- Reklamní skripty -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Social media tlačítka -->
+<script async src="https://platform.twitter.com/widgets.js"></script>`}
+        </pre>
+
+        <h3 className="section-subtitle -small">
+          ✅ Příklady použití <code className="inline-code">defer</code>
+        </h3>
+        <pre className="code-block">
+          {`<!-- Hlavní logika aplikace -->
+<script defer src="app.js"></script>
+
+<!-- UI komponenty -->
+<script defer src="carousel.js"></script>
+<script defer src="menu.js"></script>
+
+<!-- API calls -->
+<script defer src="api-client.js"></script>`}
+        </pre>
+
+        <h3 className="section-subtitle -small">🔹 Konkrétní scénáře:</h3>
+        <h4>E-shop:</h4>
+        <pre className="code-block">
+          {`<!-- Analytika -->
+<script async src="analytics.js"></script>
+
+<!-- Košík a platební brána -->
+<script defer src="shopping-cart.js"></script>
+<script defer src="payment-gateway.js"></script>`}
+        </pre>
+
+        <h4>Blog:</h4>
+        <pre className="code-block">
+          {`<!-- Počítadlo zobrazení stránek -->
+<script async src="page-views.js"></script>
+
+<!-- Komentáře -->
+<script defer src="comments.js"></script>`}
+        </pre>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Testování různých metod načítání</h2>
+        <p className="section-text">
+          Chcete-li otestovat vliv jednotlivých metod načítání skriptů na výkon
+          stránky, přejděte na testovací stránku.
+        </p>
+        <Link to="/testovani/nacitani-skriptu" className="button -bottom">
+          Testování načítání skriptů
+        </Link>
+      </FadeInOnScroll>
+    </>
   );
 };
 

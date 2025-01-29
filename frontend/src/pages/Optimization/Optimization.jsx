@@ -122,6 +122,28 @@ const Optimization = () => {
       />
 
       <TipBlock
+        title="Optimalizace načítání skriptů"
+        content={[
+          <>
+            <strong>Proč je to důležité?</strong> Nesprávně načítané skripty
+            mohou blokovat vykreslování stránky, zhoršovat metriky jako{" "}
+            <em>First Contentful Paint (FCP)</em> a{" "}
+            <em>Total Blocking Time (TBT)</em>a zpomalovat interaktivitu.
+          </>,
+          <>
+            <strong>Jak na to?</strong> Používejte{" "}
+            <code className="inline-code">async</code> pro nezávislé skripty
+            (např. analytiku), <code className="inline-code">defer</code> pro
+            skripty závislé na DOM a <code className="inline-code">module</code>{" "}
+            pro ES6 moduly. Minimalizujte počet externích skriptů a zkombinujte
+            soubory, kde je to možné.
+          </>,
+        ]}
+        link="/optimalizace/nacitani-skriptu"
+        linkText="Více o načítání skriptů"
+      />
+
+      <TipBlock
         title="Využití CDN a efektivní cache"
         content={[
           <>
