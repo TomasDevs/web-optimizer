@@ -1,8 +1,8 @@
 import { useSearchParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import { useEffect } from "react";
+import FadeInOnScroll from "../../components/FadeInOnScroll";
 
-const ImageDisplayComparison = () => {
+const ImageDisplayTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -19,25 +19,28 @@ const ImageDisplayComparison = () => {
   };
 
   return (
-    <section className="section-page">
-      <h1 className="subpage-title">Porovnání zobrazení obrázků</h1>
+    <>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">Porovnání zobrazení obrázků</h1>
 
-      <p className="section-text">
-        Tato stránka porovnává dvě metody zobrazení obrázků: pomocí{" "}
-        <code className="inline-code">img</code> tagu s atributy rozměrů a lazy
-        loadingem, a pomocí{" "}
-        <code className="inline-code">background-image</code> v CSS, kde je
-        použit <code className="inline-code">aspect-ratio</code> pro správný
-        poměr stran. Všechny obrázky jsou ve formátu JPG.
-      </p>
+        <p className="section-text">
+          Tato stránka porovnává dvě metody zobrazení obrázků: pomocí{" "}
+          <code className="inline-code">img</code> tagu s atributy rozměrů a
+          lazy loadingem, a pomocí{" "}
+          <code className="inline-code">background-image</code> v CSS, kde je
+          použit <code className="inline-code">aspect-ratio</code> pro správný
+          poměr stran. Všechny obrázky jsou ve formátu JPG.
+        </p>
 
-      <p className="section-text">
-        Sledujte metriky jako <strong>LCP</strong> (rychlost načtení největšího
-        prvku), <strong>CLS</strong> (vizuální posuny), <strong>FCP</strong>{" "}
-        (první zobrazený obsah) a <strong>velikost přenesených dat</strong>.
-      </p>
+        <p className="section-text">
+          Sledujte metriky jako <strong>LCP</strong> (rychlost načtení
+          největšího prvku), <strong>CLS</strong> (vizuální posuny),{" "}
+          <strong>FCP</strong> (první zobrazený obsah) a{" "}
+          <strong>velikost přenesených dat</strong>.
+        </p>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Testování metod zobrazení</h2>
         <p className="section-text">
           Stránka používá <strong>query parametry</strong> v URL pro přepínání
@@ -55,16 +58,16 @@ const ImageDisplayComparison = () => {
         <button onClick={handleDisplayToggle} className="button -margin">
           Přepnout na {displayMethod === "img" ? "CSS background" : "IMG tag"}
         </button>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page gallery">
+      <FadeInOnScroll className="section-page gallery">
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
 
         <div
           className={`gallery__container ${
             displayMethod === "css" ? "css-background" : ""
           }`}>
-          {Array.from({ length: 6 }, (_, index) =>
+          {Array.from({ length: 10 }, (_, index) =>
             displayMethod === "img" ? (
               <img
                 key={index}
@@ -80,13 +83,9 @@ const ImageDisplayComparison = () => {
             )
           )}
         </div>
-      </section>
-
-      <section className="section-page">
-        <TestPageSpeed />
-      </section>
-    </section>
+      </FadeInOnScroll>
+    </>
   );
 };
 
-export default ImageDisplayComparison;
+export default ImageDisplayTesting;

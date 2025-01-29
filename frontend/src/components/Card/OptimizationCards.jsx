@@ -17,7 +17,7 @@ const features = [
   {
     title: "Optimalizace obrázků",
     description: "Zjistěte, jak zlepšit rychlost načítání obrázků.",
-    link: "/image-optimization",
+    link: "optimalizace/optimalizace-obrazku",
   },
   {
     title: "Optimalizace fontů",

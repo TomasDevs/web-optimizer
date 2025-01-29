@@ -7,9 +7,9 @@ import TestingPage from "./pages/Testing/TestingPage";
 import Optimization from "./pages/Optimization/Optimization";
 import CodeMinification from "./pages/Optimization/CodeMinification";
 import LazyLoading from "./pages/Optimization/LazyLoading";
-import ImageFormatOptimization from "./pages/Optimization/ImageFormatOptimization";
-import ImageSizeOptimization from "./pages/Optimization/ImageSizeOptimization";
-import ImageDisplayComparison from "./pages/Optimization/ImageDisplayComparison";
+import ImageDisplayTesting from "./pages/Testing/ImageDisplayTesting";
+import ImageOptimization from "./pages/Optimization/ImageOptimization";
+
 import FontOptimization from "./pages/Optimization/FontOptimization";
 import ScriptLoading from "./pages/Optimization/ScriptLoading";
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
@@ -18,9 +18,10 @@ import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
 import INPDetail from "./pages/CoreWebVitals/INPDetail";
 
 // Testing Optimization
-import CodeMinificationTest from "./pages/Testing/CodeMinificationTesting";
-import LazyLoadingTest from "./pages/Testing/LazyLoadingTesting";
-import FontOptimizationTest from "./pages/Testing/FontOptimizationTesting";
+import CodeMinificationTesting from "./pages/Testing/CodeMinificationTesting";
+import ImageOptimizationTesting from "./pages/Testing/ImageOptimizationTesting";
+import LazyLoadingTesting from "./pages/Testing/LazyLoadingTesting";
+import FontOptimizationTesting from "./pages/Testing/FontOptimizationTesting";
 
 // Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
@@ -53,33 +54,39 @@ const App = () => {
             element={<CodeMinification />}
           />
           <Route path="/optimalizace/lazy-loading" element={<LazyLoading />} />
-          <Route
-            path="/optimalizace/optimalizace-obrazku"
-            element={<ImageFormatOptimization />}
-          />
-          <Route
-            path="/optimalizace/velikost-obrazku"
-            element={<ImageSizeOptimization />}
-          />
-          <Route
-            path="/optimalizace/zobrazeni-obrazku"
-            element={<ImageDisplayComparison />}
-          />
+
           <Route path="/optimalizace/fonty" element={<FontOptimization />} />
           <Route
             path="/optimalizace/nacitani-skriptu"
             element={<ScriptLoading />}
+          />
+          <Route
+            path="/optimalizace/optimalizace-obrazku"
+            element={<ImageOptimization />}
           />
           <Route path="/testovani/lcp-testing" element={<LCPTesting />} />
           <Route path="/testovani/cls-testing" element={<ClsTesting />} />
           <Route path="/testovani/inp-testing" element={<InpTesting />} />
           <Route
             path="/testovani/minifikace-kodu"
-            element={<CodeMinificationTest />}
+            element={<CodeMinificationTesting />}
           />
-          <Route path="/testovani/lazy-loading" element={<LazyLoadingTest />} />
-
-          <Route path="/testovani/fonty" element={<FontOptimizationTest />} />
+          <Route
+            path="/testovani/optimalizace-obrazku"
+            element={<ImageOptimizationTesting />}
+          />
+          <Route
+            path="/testovani/lazy-loading"
+            element={<LazyLoadingTesting />}
+          />
+          <Route
+            path="/testovani/zobrazeni-obrazku"
+            element={<ImageDisplayTesting />}
+          />
+          <Route
+            path="/testovani/fonty"
+            element={<FontOptimizationTesting />}
+          />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

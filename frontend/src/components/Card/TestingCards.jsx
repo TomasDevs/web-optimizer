@@ -30,11 +30,6 @@ const tests = [
     link: "/testovani/optimalizace-obrazku",
   },
   {
-    title: "Velikost obrázků",
-    description: "Analyzujte vliv velikosti obrázků na výkon webu.",
-    link: "/testovani/velikost-obrazku",
-  },
-  {
     title: "Zobrazení obrázků",
     description: "Otestujte různé způsoby zobrazení obrázků.",
     link: "/testovani/zobrazeni-obrazku",
