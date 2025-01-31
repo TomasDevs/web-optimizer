@@ -1,6 +1,6 @@
 [build]
   base = "frontend"
-  publish = "dist"
+  publish = "dist/minified"
   command = "npm install && npm run build"
   functions = "api/functions"
 

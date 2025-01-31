@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    publicDir: resolve(__dirname, "public"),
     server: {
       headers: {
         "Cache-Control":
