@@ -6,17 +6,17 @@ const APITesting = () => {
   const apiEndpoints = [
     {
       name: "Vlastní dataset (10 položek)",
-      url: "http://localhost:3000/api/data?limit=10",
+      url: "/.netlify/functions/data?limit=10",
       description: "Test s malým množstvím dat",
     },
     {
       name: "Vlastní dataset (1000 položek)",
-      url: "http://localhost:3000/api/data?limit=1000",
+      url: "/.netlify/functions/data?limit=1000",
       description: "Test s velkým množstvím dat",
     },
     {
       name: "Vlastní api s cache (60s)",
-      url: "http://localhost:3000/api/data/cache?limit=1000",
+      url: "/.netlify/functions/data-cached?limit=1000",
       description: "Test s cachováním na 60s",
       options: {
         headers: {
@@ -25,32 +25,9 @@ const APITesting = () => {
       },
     },
     {
-      name: "Vlastní api bez cache",
-      url: "http://localhost:3000/api/data?limit=1000",
-      description: "Test bez cachování",
-      options: {
-        headers: {
-          "Cache-Control": "no-cache, no-store, must-revalidate",
-          Pragma: "no-cache",
-          Expires: "0",
-          Accept: "application/json",
-        },
-      },
-    },
-    {
       name: "Vlastní api s kompresí",
-      url: "http://localhost:3000/api/data/compressed?limit=1000",
+      url: "/.netlify/functions/data-compressed?limit=1000",
       description: "Test s Gzip kompresí",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "Vlastní api bez komprese",
-      url: "http://localhost:3000/api/data?limit=1000",
-      description: "Test bez komprese",
       options: {
         headers: {
           Accept: "application/json",

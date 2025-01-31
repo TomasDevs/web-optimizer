@@ -188,6 +188,30 @@ const Optimization = () => {
       />
 
       <TipBlock
+        title="Využití cache"
+        content={[
+          <>
+            <strong>Proč je to důležité?</strong> Bez správného cachování musí
+            prohlížeč opakovaně stahovat stejná data ze serveru, což způsobuje
+            zbytečné zpoždění a zvýšenou zátěž sítě i serveru. U statických
+            zdrojů jako jsou obrázky, skripty a styly může cache dramaticky
+            zrychlit načítání a snížit množství přenesených dat.
+          </>,
+          <>
+            <strong>Jak na to?</strong> Nastavte správné{" "}
+            <code>Cache-Control</code> hlavičky podle typu obsahu - pro statické
+            soubory použijte delší TTL (např. <code>max-age=31536000</code>),
+            pro dynamická data <code>no-cache</code> s validací pomocí ETag.
+            Využijte Service Worker pro offline přístup a implementujte
+            verzování souborů pro vynucení aktualizace při změnách. U API zvažte
+            kombinaci browser cache a server-side cache pro optimální výkon.
+          </>,
+        ]}
+        link="/optimalizace/cache"
+        linkText="Více o využití cache"
+      />
+
+      <TipBlock
         title="Core Web Vitals"
         content={[
           <>

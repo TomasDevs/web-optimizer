@@ -39,6 +39,12 @@ const features = [
     description: "Zlepšete výkon vašeho API a zrychlete odpovědi.",
     link: "optimalizace/api",
   },
+  {
+    title: "Využití cache",
+    description:
+      "Zrychlete aplikaci pomocí browser cache, HTTP cache a validace.",
+    link: "optimalizace/cache",
+  },
 ];
 
 const OptimizationCards = () => {

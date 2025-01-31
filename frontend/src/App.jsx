@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Layout
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
+// Scroll to top
 import ScrollToTop from "./components/ScrollToTop";
-import TestingPage from "./pages/Testing/TestingPage";
+
+// Optimization
 import Optimization from "./pages/Optimization/Optimization";
 import CodeMinification from "./pages/Optimization/CodeMinification";
 import LazyLoading from "./pages/Optimization/LazyLoading";
@@ -13,6 +15,7 @@ import FontOptimization from "./pages/Optimization/FontOptimization";
 import ScriptLoading from "./pages/Optimization/ScriptLoading";
 import CDNOptimization from "./pages/Optimization/CDNOptimization";
 import APIOptimization from "./pages/Optimization/APIOptimization";
+import CacheOptimization from "./pages/Optimization/CacheOptimization";
 
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
@@ -20,6 +23,7 @@ import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
 import INPDetail from "./pages/CoreWebVitals/INPDetail";
 
 // Testing Optimization
+import TestingPage from "./pages/Testing/TestingPage";
 import CodeMinificationTesting from "./pages/Testing/CodeMinificationTesting";
 import ImageOptimizationTesting from "./pages/Testing/ImageOptimizationTesting";
 import LazyLoadingTesting from "./pages/Testing/LazyLoadingTesting";
@@ -33,6 +37,8 @@ import LCPTesting from "./pages/Testing/LCPTesting";
 import ClsTesting from "./pages/Testing/CLSTesting";
 import InpTesting from "./pages/Testing/INPTesting";
 
+// Menu
+import Home from "./pages/Home";
 import AboutApp from "./pages/Menu/AboutApp";
 import Tools from "./pages/Menu/Tools";
 import FAQ from "./pages/Menu/FAQ";
@@ -75,6 +81,7 @@ const App = () => {
           />
           <Route path="/optimalizace/cdn" element={<CDNOptimization />} />
           <Route path="/optimalizace/api" element={<APIOptimization />} />
+          <Route path="/optimalizace/cache" element={<CacheOptimization />} />
 
           {/* Testing Core Web Vitals */}
           <Route path="/testovani/lcp-testing" element={<LCPTesting />} />

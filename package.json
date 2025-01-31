@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd frontend && npm run build",
-    "start": "node backend/api/index.js",
+    "start": "node /api/index.js",
     "dev": "cd frontend && npm run dev",
     "lint": "cd frontend && npm run lint",
     "preview": "cd frontend && npm run preview"
