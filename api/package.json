@@ -14,14 +14,6 @@
   ],
   "author": "Tomas Stveracek",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^1.7.9",
-    "compression": "^1.7.5",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "@netlify/functions": "^2.0.0",
-    "express": "^4.21.2"
-  },
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
