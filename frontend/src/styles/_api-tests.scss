@@ -1,0 +1,64 @@
+@use "variables" as vars;
+
+.api-tests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+
+  .button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+.api-test-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.api-test-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.api-test-description {
+  color: vars.$dark-color;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.api-results {
+  margin-top: 1.5rem;
+}
+
+.results-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.result-group {
+  background: vars.$light-color;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.result-group h4 {
+  margin: 0 0 0.5rem 0;
+  color: vars.$primary-color;
+  font-size: 1rem;
+}
+
+.result-group p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: vars.$error-color;
+  padding: 1rem;
+  background: vars.$background-color;
+  border-radius: 6px;
+}

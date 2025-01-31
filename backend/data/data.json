@@ -1,0 +1,10002 @@
+[
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-72",
+      "iataTypeCode": "D8Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-100 Dash 8 / 8Q",
+      "iataTypeCode": "DH1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 100",
+      "iataTypeCode": "EP1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Douglas DC-6",
+      "iataTypeCode": "D6F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetBlue Airways",
+      "iataCode": "B6"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 900",
+      "iataTypeCode": "CR9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Southwest Airlines",
+      "iataCode": "WN"
+    },
+    "airplane": {
+      "name": "Boeing 717",
+      "iataTypeCode": "717"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Boeing 777-200",
+      "iataTypeCode": "772"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 200",
+      "iataTypeCode": "CR2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Airbus A380-800",
+      "iataTypeCode": "388"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "IndiGo Airlines",
+      "iataCode": "6E"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 10",
+      "iataTypeCode": "7MJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Boeing 717",
+      "iataTypeCode": "717"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 100",
+      "iataTypeCode": "EP1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 300",
+      "iataTypeCode": "EP3"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wizz Air",
+      "iataCode": "W6"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "Volaris",
+      "iataCode": "Y4"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-72",
+      "iataTypeCode": "D8Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Linea Aerea Amaszonas",
+      "iataCode": "Z8"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sky Airline",
+      "iataCode": "H2"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 787",
+      "iataTypeCode": "787"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 700",
+      "iataTypeCode": "CR7"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD11",
+      "iataTypeCode": "M11"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Volaris",
+      "iataCode": "Y4"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Embraer EMB.120 Brasilia",
+      "iataTypeCode": "EM2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Boeing 747-8",
+      "iataTypeCode": "748"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Beaver",
+      "iataTypeCode": "DHP"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Airbus A330-900neo",
+      "iataTypeCode": "339"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Lockheed L-188 Electra",
+      "iataTypeCode": "LOE"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-154",
+      "iataTypeCode": "TU5"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD80",
+      "iataTypeCode": "M80"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Lockheed L-188 Electra",
+      "iataTypeCode": "LOE"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Airlines",
+      "iataCode": "CI"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Airbus A330-300",
+      "iataTypeCode": "333"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD11",
+      "iataTypeCode": "M11"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 300",
+      "iataTypeCode": "EP3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Airbus A330-300",
+      "iataTypeCode": "333"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qantas Group",
+      "iataCode": "QF"
+    },
+    "airplane": {
+      "name": "Boeing 757-200",
+      "iataTypeCode": "752"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Ilyushin IL96-300",
+      "iataTypeCode": "I93"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Airbus A300",
+      "iataTypeCode": "AB3"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Airbus A300",
+      "iataTypeCode": "AB3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Douglas DC-6",
+      "iataTypeCode": "D6F"
+    }
+  },
+  {
+    "airline": {
+      "name": "IndiGo Airlines",
+      "iataCode": "6E"
+    },
+    "airplane": {
+      "name": "Douglas DC-3",
+      "iataTypeCode": "D3F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai AirAsia",
+      "iataCode": "FD"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 7",
+      "iataTypeCode": "7M7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10",
+      "iataTypeCode": "D10"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Embraer RJ145 Amazon",
+      "iataTypeCode": "ER4"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-100 Dash 8 / 8Q",
+      "iataTypeCode": "DH1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Boeing 757",
+      "iataTypeCode": "757"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Embraer 195",
+      "iataTypeCode": "E95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-400",
+      "iataTypeCode": "734"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 737-400",
+      "iataTypeCode": "734"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Airbus A321neo",
+      "iataTypeCode": "32Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Beaver",
+      "iataTypeCode": "DHP"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Boeing 747-8",
+      "iataTypeCode": "748"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Southwest Airlines",
+      "iataCode": "WN"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sky Airline",
+      "iataCode": "H2"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Boeing 747-8",
+      "iataTypeCode": "748"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "Airbus A320neo",
+      "iataTypeCode": "32N"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "Boeing 787",
+      "iataTypeCode": "787"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kulula.com",
+      "iataCode": "MN"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetBlue Airways",
+      "iataCode": "B6"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wizz Air",
+      "iataCode": "W6"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Airbus A320",
+      "iataTypeCode": "320"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Antonov An-148",
+      "iataTypeCode": "A81"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Douglas DC-6",
+      "iataTypeCode": "D6F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qantas Group",
+      "iataCode": "QF"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 10",
+      "iataTypeCode": "7MJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Boeing 757-200",
+      "iataTypeCode": "752"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Airbus A330-300",
+      "iataTypeCode": "333"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kulula.com",
+      "iataCode": "MN"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air China",
+      "iataCode": "CA"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD80",
+      "iataTypeCode": "M80"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Boeing 737-400",
+      "iataTypeCode": "734"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Lockheed L-188 Electra",
+      "iataTypeCode": "LOE"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 100",
+      "iataTypeCode": "EP1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Embraer 195",
+      "iataTypeCode": "E95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-154",
+      "iataTypeCode": "TU5"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Boeing 777-200",
+      "iataTypeCode": "772"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "Airbus A320",
+      "iataTypeCode": "320"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Lockheed L-1011 Tristar",
+      "iataTypeCode": "L10"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Douglas DC-3",
+      "iataTypeCode": "D3F"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Algerie",
+      "iataCode": "AH"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "Southwest Airlines",
+      "iataCode": "WN"
+    },
+    "airplane": {
+      "name": "Embraer 195",
+      "iataTypeCode": "E95"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air China",
+      "iataCode": "CA"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Airbus A330",
+      "iataTypeCode": "330"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Antonov An-148",
+      "iataTypeCode": "A81"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aerolineas Argentinas",
+      "iataCode": "AR"
+    },
+    "airplane": {
+      "name": "Embraer RJ145 Amazon",
+      "iataTypeCode": "ER4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Airbus A318",
+      "iataTypeCode": "318"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "Southwest Airlines",
+      "iataCode": "WN"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Algerie",
+      "iataCode": "AH"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-42",
+      "iataTypeCode": "YK2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "Airbus A330-200",
+      "iataTypeCode": "332"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Linea Aerea Amaszonas",
+      "iataCode": "Z8"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "IndiGo Airlines",
+      "iataCode": "6E"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-154",
+      "iataTypeCode": "TU5"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai AirAsia",
+      "iataCode": "FD"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 100",
+      "iataTypeCode": "EP1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-42",
+      "iataTypeCode": "YK2"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-3 Otter",
+      "iataTypeCode": "DHL"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kulula.com",
+      "iataCode": "MN"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Boeing 737-900",
+      "iataTypeCode": "739"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Boeing 787-8",
+      "iataTypeCode": "788"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Airbus A340",
+      "iataTypeCode": "340"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Antonov An-26",
+      "iataTypeCode": "A26"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air China",
+      "iataCode": "CA"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Volaris",
+      "iataCode": "Y4"
+    },
+    "airplane": {
+      "name": "Boeing 787-8",
+      "iataTypeCode": "788"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Airbus A320neo",
+      "iataTypeCode": "32N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Embraer EMB.120 Brasilia",
+      "iataTypeCode": "EM2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Boeing 787-8",
+      "iataTypeCode": "788"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 300",
+      "iataTypeCode": "EP3"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD88",
+      "iataTypeCode": "M88"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Airbus A318",
+      "iataTypeCode": "318"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "Boeing 737-900",
+      "iataTypeCode": "739"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Boeing 737-900",
+      "iataTypeCode": "739"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wizz Air",
+      "iataCode": "W6"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sky Airline",
+      "iataCode": "H2"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 7",
+      "iataTypeCode": "7M7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Airbus A340-500",
+      "iataTypeCode": "345"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Boeing 717",
+      "iataTypeCode": "717"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Boeing 757",
+      "iataTypeCode": "757"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Embraer EMB.120 Brasilia",
+      "iataTypeCode": "EM2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Airbus A340-600",
+      "iataTypeCode": "346"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kulula.com",
+      "iataCode": "MN"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "SunExpress",
+      "iataCode": "XQ"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD88",
+      "iataTypeCode": "M88"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air China",
+      "iataCode": "CA"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 200",
+      "iataTypeCode": "CR2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Singapore Airlines",
+      "iataCode": "SQ"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Airbus A340-600",
+      "iataTypeCode": "346"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Antonov An-148",
+      "iataTypeCode": "A81"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD87",
+      "iataTypeCode": "M87"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 100",
+      "iataTypeCode": "CR1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Boeing 757",
+      "iataTypeCode": "757"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD11",
+      "iataTypeCode": "M11"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Airlines",
+      "iataCode": "CI"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia",
+      "iataCode": "AK"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Ilyushin IL96-300",
+      "iataTypeCode": "I93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wizz Air",
+      "iataCode": "W6"
+    },
+    "airplane": {
+      "name": "Boeing 757-200",
+      "iataTypeCode": "752"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sky Airline",
+      "iataCode": "H2"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Airbus A340-600",
+      "iataTypeCode": "346"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Ilyushin IL96-300",
+      "iataTypeCode": "I93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Antonov An-32",
+      "iataTypeCode": "A32"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-3 Otter",
+      "iataTypeCode": "DHL"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "VOEPASS Linhas Aereas",
+      "iataCode": "2Z"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Airbus A330-900neo",
+      "iataTypeCode": "339"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "Republic Airways",
+      "iataCode": "YX"
+    },
+    "airplane": {
+      "name": "De Havilland DH.114 Heron",
+      "iataTypeCode": "DHH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Boeing 787",
+      "iataTypeCode": "787"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Sukhoi Superjet 100-95",
+      "iataTypeCode": "SU9"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 10",
+      "iataTypeCode": "7MJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "Satena",
+      "iataCode": "9R"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "LOT Polish Airlines",
+      "iataCode": "LO"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-154",
+      "iataTypeCode": "TU5"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Airbus A330",
+      "iataTypeCode": "330"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Boeing 737-600",
+      "iataTypeCode": "736"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai AirAsia",
+      "iataCode": "FD"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD80",
+      "iataTypeCode": "M80"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Airbus A318",
+      "iataTypeCode": "318"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "South African Airways",
+      "iataCode": "SA"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Airbus A340",
+      "iataTypeCode": "340"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Airbus A380-800",
+      "iataTypeCode": "388"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD88",
+      "iataTypeCode": "M88"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Boeing 717",
+      "iataTypeCode": "717"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "Embraer Legacy 600",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Airbus A300",
+      "iataTypeCode": "AB3"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-134",
+      "iataTypeCode": "TU3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Douglas DC-6",
+      "iataTypeCode": "D6F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Lockheed L-1011 Tristar",
+      "iataTypeCode": "L10"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Airbus A320neo",
+      "iataTypeCode": "32N"
+    }
+  },
+  {
+    "airline": {
+      "name": "TUI Airways",
+      "iataCode": "BY"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 747-8",
+      "iataTypeCode": "748"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Airbus A350-900",
+      "iataTypeCode": "359"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Airbus A321neo",
+      "iataTypeCode": "32Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Satena",
+      "iataCode": "9R"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Linea Aerea Amaszonas",
+      "iataCode": "Z8"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Ilyushin IL96-300",
+      "iataTypeCode": "I93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Lockheed L-182 / 282 / 382 (L-100) Hercules",
+      "iataTypeCode": "LOH"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 900",
+      "iataTypeCode": "CR9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Ilyushin IL114",
+      "iataTypeCode": "I14"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Boeing 777-300",
+      "iataTypeCode": "773"
+    }
+  },
+  {
+    "airline": {
+      "name": "Star Peru",
+      "iataCode": "2I"
+    },
+    "airplane": {
+      "name": "Airbus A330-300",
+      "iataTypeCode": "333"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD80",
+      "iataTypeCode": "M80"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "Shandong Airlines",
+      "iataCode": "SC"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spring Airlines",
+      "iataCode": "9S"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 900",
+      "iataTypeCode": "CR9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "IndiGo Airlines",
+      "iataCode": "6E"
+    },
+    "airplane": {
+      "name": "Airbus A330-900neo",
+      "iataTypeCode": "339"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Singapore Airlines",
+      "iataCode": "SQ"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Airbus A321neo",
+      "iataTypeCode": "32Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD11",
+      "iataTypeCode": "M11"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Douglas DC-3",
+      "iataTypeCode": "D3F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air China",
+      "iataCode": "CA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 700",
+      "iataTypeCode": "CR7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD11",
+      "iataTypeCode": "M11"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-50",
+      "iataTypeCode": "D8T"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Boeing 747SP",
+      "iataTypeCode": "74L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Boeing 737-400",
+      "iataTypeCode": "734"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-10",
+      "iataTypeCode": "D1X"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-72",
+      "iataTypeCode": "D8Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Boeing 787-8",
+      "iataTypeCode": "788"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Airbus A340",
+      "iataTypeCode": "340"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Douglas DC-6",
+      "iataTypeCode": "D6F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aerolineas Argentinas",
+      "iataCode": "AR"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-200 Dash 8 / 8Q",
+      "iataTypeCode": "DH2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 757-200",
+      "iataTypeCode": "752"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Atlantic Airways",
+      "iataCode": "VS"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD90",
+      "iataTypeCode": "M90"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "WestJet",
+      "iataCode": "WS"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai AirAsia",
+      "iataCode": "FD"
+    },
+    "airplane": {
+      "name": "Embraer RJ145 Amazon",
+      "iataTypeCode": "ER4"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "De Havilland DH.104 Dove",
+      "iataTypeCode": "DHD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Antonov An-148",
+      "iataTypeCode": "A81"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Boeing 737-900",
+      "iataTypeCode": "739"
+    }
+  },
+  {
+    "airline": {
+      "name": "Thai Airways",
+      "iataCode": "TG"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Republic Airways",
+      "iataCode": "YX"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "Canadair CL-44",
+      "iataTypeCode": "CL4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Linea Aerea Amaszonas",
+      "iataCode": "Z8"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti",
+      "iataCode": "VT"
+    },
+    "airplane": {
+      "name": "Airbus A321neo",
+      "iataTypeCode": "32Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cathay Pacific",
+      "iataCode": "CX"
+    },
+    "airplane": {
+      "name": "Boeing 737-500",
+      "iataTypeCode": "735"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Antonov An-26",
+      "iataTypeCode": "A26"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Southern Airlines",
+      "iataCode": "CZ"
+    },
+    "airplane": {
+      "name": "Embraer RJ145 Amazon",
+      "iataTypeCode": "ER4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Boeing 727-100",
+      "iataTypeCode": "721"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hainan Airlines",
+      "iataCode": "HU"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flybondi",
+      "iataCode": "FO"
+    },
+    "airplane": {
+      "name": "Boeing 767",
+      "iataTypeCode": "767"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Airlines",
+      "iataCode": "CI"
+    },
+    "airplane": {
+      "name": "Boeing 757",
+      "iataTypeCode": "757"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-50",
+      "iataTypeCode": "D8T"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "Flydubai",
+      "iataCode": "FZ"
+    },
+    "airplane": {
+      "name": "Airbus A340",
+      "iataTypeCode": "340"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azul Linhas Aereas Brasileiras",
+      "iataCode": "AD"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ryanair",
+      "iataCode": "FR"
+    },
+    "airplane": {
+      "name": "Boeing 727-200",
+      "iataTypeCode": "722"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iataCode": "3U"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-42",
+      "iataTypeCode": "YK2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 900",
+      "iataTypeCode": "CR9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Boeing 747-400",
+      "iataTypeCode": "744"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Ilyushin IL76",
+      "iataTypeCode": "IL7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Frontier Airlines",
+      "iataCode": "F9"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 7",
+      "iataTypeCode": "7M7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aerolineas Argentinas",
+      "iataCode": "AR"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-30",
+      "iataTypeCode": "D93"
+    }
+  },
+  {
+    "airline": {
+      "name": "SAS",
+      "iataCode": "SK"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Airbus A340-600",
+      "iataTypeCode": "346"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lufthansa",
+      "iataCode": "LH"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-40",
+      "iataTypeCode": "YK4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-50",
+      "iataTypeCode": "D8T"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 10",
+      "iataTypeCode": "7MJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ethiopian Airlines",
+      "iataCode": "ET"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "SkyWest Airlines",
+      "iataCode": "OO"
+    },
+    "airplane": {
+      "name": "Douglas DC-10",
+      "iataTypeCode": "D10"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 700",
+      "iataTypeCode": "CR7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Boeing 747-300",
+      "iataTypeCode": "743"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Douglas DC-10",
+      "iataTypeCode": "D10"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Airlines",
+      "iataCode": "CI"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "Satena",
+      "iataCode": "9R"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-154",
+      "iataTypeCode": "TU5"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 300",
+      "iataTypeCode": "EP3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Lockheed L-188 Electra",
+      "iataTypeCode": "LOE"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kulula.com",
+      "iataCode": "MN"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Embraer E195-E2",
+      "iataTypeCode": "295"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Airbus A319neo",
+      "iataTypeCode": "31N"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Lockheed L-188 Electra",
+      "iataTypeCode": "LOE"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Boeing 747-8",
+      "iataTypeCode": "748"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Algerie",
+      "iataCode": "AH"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 900",
+      "iataTypeCode": "CR9"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Boeing 747-200",
+      "iataTypeCode": "742"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "Airbus A330-900neo",
+      "iataTypeCode": "339"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Airbus A340-200",
+      "iataTypeCode": "342"
+    }
+  },
+  {
+    "airline": {
+      "name": "Egyptair",
+      "iataCode": "MS"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "EVA Air",
+      "iataCode": "BR"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Nordwind Airlines",
+      "iataCode": "N4"
+    },
+    "airplane": {
+      "name": "Airbus A350",
+      "iataTypeCode": "350"
+    }
+  },
+  {
+    "airline": {
+      "name": "Allegiant Air",
+      "iataCode": "G4"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Boeing 777-200LR",
+      "iataTypeCode": "77L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "Sun Country Airlines",
+      "iataCode": "SY"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "Saudia",
+      "iataCode": "SV"
+    },
+    "airplane": {
+      "name": "Airbus A330-800neo",
+      "iataTypeCode": "338"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Embraer RJ140",
+      "iataTypeCode": "ERD"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Antonov An-225 Mriya",
+      "iataTypeCode": "A5F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Boliviana de Aviacion",
+      "iataCode": "OB"
+    },
+    "airplane": {
+      "name": "Boeing 767-400",
+      "iataTypeCode": "764"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia X",
+      "iataCode": "D7"
+    },
+    "airplane": {
+      "name": "Airbus A321",
+      "iataTypeCode": "321"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-40",
+      "iataTypeCode": "D94"
+    }
+  },
+  {
+    "airline": {
+      "name": "AirAsia",
+      "iataCode": "AK"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 10",
+      "iataTypeCode": "7MJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-10",
+      "iataTypeCode": "D91"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 100",
+      "iataTypeCode": "CR1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Boeing 737-100",
+      "iataTypeCode": "731"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Lockheed L-1011 Tristar",
+      "iataTypeCode": "L10"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pegasus Airlines",
+      "iataCode": "PC"
+    },
+    "airplane": {
+      "name": "Embraer RJ135",
+      "iataTypeCode": "ER3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeromexico",
+      "iataCode": "AM"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qantas Group",
+      "iataCode": "QF"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air New Zealand",
+      "iataCode": "NZ"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Europa",
+      "iataCode": "UX"
+    },
+    "airplane": {
+      "name": "Boeing 717",
+      "iataTypeCode": "717"
+    }
+  },
+  {
+    "airline": {
+      "name": "Go First",
+      "iataCode": "G8"
+    },
+    "airplane": {
+      "name": "Airbus A340-300",
+      "iataTypeCode": "343"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qatar Airways",
+      "iataCode": "QR"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Arabia",
+      "iataCode": "G9"
+    },
+    "airplane": {
+      "name": "Boeing 787-9",
+      "iataTypeCode": "789"
+    }
+  },
+  {
+    "airline": {
+      "name": "Azur Air",
+      "iataCode": "ZF"
+    },
+    "airplane": {
+      "name": "Boeing 707",
+      "iataTypeCode": "703"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iataCode": "MU"
+    },
+    "airplane": {
+      "name": "Embraer 195",
+      "iataTypeCode": "E95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Easyfly",
+      "iataCode": "VE"
+    },
+    "airplane": {
+      "name": "Airbus A310-200",
+      "iataTypeCode": "312"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aegean Airlines",
+      "iataCode": "A3"
+    },
+    "airplane": {
+      "name": "Airbus A319",
+      "iataTypeCode": "319"
+    }
+  },
+  {
+    "airline": {
+      "name": "Korean Air",
+      "iataCode": "KE"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aeroflot",
+      "iataCode": "SU"
+    },
+    "airplane": {
+      "name": "Antonov An-140",
+      "iataTypeCode": "A40"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Embraer RJ145 Amazon",
+      "iataTypeCode": "ER4"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-20",
+      "iataTypeCode": "D92"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "Lockheed L-1011 Tristar",
+      "iataTypeCode": "L10"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD81",
+      "iataTypeCode": "M81"
+    }
+  },
+  {
+    "airline": {
+      "name": "VietJet Air",
+      "iataCode": "VJ"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Garuda Indonesia",
+      "iataCode": "GA"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Asiana Airlines",
+      "iataCode": "OZ"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wizz Air",
+      "iataCode": "W6"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Satena",
+      "iataCode": "9R"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Juneyao Airlines",
+      "iataCode": "HO"
+    },
+    "airplane": {
+      "name": "Douglas DC-9-50",
+      "iataTypeCode": "D95"
+    }
+  },
+  {
+    "airline": {
+      "name": "Copa Airlines",
+      "iataCode": "CM"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Tunisair",
+      "iataCode": "TU"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-300 Dash 8 / 8Q",
+      "iataTypeCode": "DH3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alaska Airlines",
+      "iataCode": "AS"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Airbus A380",
+      "iataTypeCode": "380"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Douglas DC-10-30",
+      "iataTypeCode": "D1Y"
+    }
+  },
+  {
+    "airline": {
+      "name": "United Airlines",
+      "iataCode": "UA"
+    },
+    "airplane": {
+      "name": "Airbus A310-300",
+      "iataTypeCode": "313"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Boeing 737",
+      "iataTypeCode": "737"
+    }
+  },
+  {
+    "airline": {
+      "name": "Philippine Airlines",
+      "iataCode": "PR"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Antonov An-72",
+      "iataTypeCode": "AN7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Embraer 170",
+      "iataTypeCode": "E70"
+    }
+  },
+  {
+    "airline": {
+      "name": "Turkish Airlines",
+      "iataCode": "TK"
+    },
+    "airplane": {
+      "name": "Boeing 737-900",
+      "iataTypeCode": "739"
+    }
+  },
+  {
+    "airline": {
+      "name": "S7 Airlines",
+      "iataCode": "S7"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 1000",
+      "iataTypeCode": "CRK"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Niugini",
+      "iataCode": "PX"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Volaris",
+      "iataCode": "Y4"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD80",
+      "iataTypeCode": "M80"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jet2",
+      "iataCode": "LS"
+    },
+    "airplane": {
+      "name": "Boeing 747-400D",
+      "iataTypeCode": "74J"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Airbus A330-300",
+      "iataTypeCode": "333"
+    }
+  },
+  {
+    "airline": {
+      "name": "Hawaiian Airlines",
+      "iataCode": "HA"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-400 Dash 8Q",
+      "iataTypeCode": "DH4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Boeing 720B",
+      "iataTypeCode": "B72"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Antonov An-124 Ruslan",
+      "iataTypeCode": "A4F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Oman Air",
+      "iataCode": "WY"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 200",
+      "iataTypeCode": "CR2"
+    }
+  },
+  {
+    "airline": {
+      "name": "China Airlines",
+      "iataCode": "CI"
+    },
+    "airplane": {
+      "name": "Boeing 767-300",
+      "iataTypeCode": "763"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "EcoJet",
+      "iataCode": "8J"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Ilyushin IL86",
+      "iataTypeCode": "ILW"
+    }
+  },
+  {
+    "airline": {
+      "name": "Aircalin",
+      "iataCode": "SB"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "Japan Airlines",
+      "iataCode": "JL"
+    },
+    "airplane": {
+      "name": "Boeing 767-200",
+      "iataTypeCode": "762"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-7 Dash 7",
+      "iataTypeCode": "DH7"
+    }
+  },
+  {
+    "airline": {
+      "name": "Delta Air Lines",
+      "iataCode": "DL"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-8-100 Dash 8 / 8Q",
+      "iataTypeCode": "DH1"
+    }
+  },
+  {
+    "airline": {
+      "name": "Gol Linhas Aereas Inteligentes",
+      "iataCode": "G3"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 8",
+      "iataTypeCode": "7M8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Lockheed L-1049 Super Constellation",
+      "iataTypeCode": "L49"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Tahiti Nui",
+      "iataCode": "TN"
+    },
+    "airplane": {
+      "name": "Boeing 747",
+      "iataTypeCode": "747"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "Boeing 787-10",
+      "iataTypeCode": "781"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ural Airlines",
+      "iataCode": "U6"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "SriLankan Airlines",
+      "iataCode": "UL"
+    },
+    "airplane": {
+      "name": "Ilyushin IL62",
+      "iataTypeCode": "IL6"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Ilyushin IL18",
+      "iataTypeCode": "IL8"
+    }
+  },
+  {
+    "airline": {
+      "name": "Qantas Group",
+      "iataCode": "QF"
+    },
+    "airplane": {
+      "name": "Douglas DC-3",
+      "iataTypeCode": "D3F"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Airbus A310",
+      "iataTypeCode": "310"
+    }
+  },
+  {
+    "airline": {
+      "name": "Malaysia Airlines",
+      "iataCode": "MH"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air India",
+      "iataCode": "AI"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-6 Twin Otter",
+      "iataTypeCode": "DHT"
+    }
+  },
+  {
+    "airline": {
+      "name": "LATAM Airlines",
+      "iataCode": "LA"
+    },
+    "airplane": {
+      "name": "Yakovlev Yak-42",
+      "iataTypeCode": "YK2"
+    }
+  },
+  {
+    "airline": {
+      "name": "Ukraine International",
+      "iataCode": "PS"
+    },
+    "airplane": {
+      "name": "Airbus A330",
+      "iataTypeCode": "330"
+    }
+  },
+  {
+    "airline": {
+      "name": "Fiji Airways",
+      "iataCode": "FJ"
+    },
+    "airplane": {
+      "name": "Boeing 747SR",
+      "iataTypeCode": "74R"
+    }
+  },
+  {
+    "airline": {
+      "name": "British Airways",
+      "iataCode": "BA"
+    },
+    "airplane": {
+      "name": "Douglas DC-8-62",
+      "iataTypeCode": "D8L"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Transat",
+      "iataCode": "TS"
+    },
+    "airplane": {
+      "name": "Boeing 727",
+      "iataTypeCode": "727"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "Avianca",
+      "iataCode": "AV"
+    },
+    "airplane": {
+      "name": "Antonov An-24",
+      "iataTypeCode": "AN4"
+    }
+  },
+  {
+    "airline": {
+      "name": "Etihad Airways",
+      "iataCode": "EY"
+    },
+    "airplane": {
+      "name": "Antonov An-12",
+      "iataTypeCode": "ANF"
+    }
+  },
+  {
+    "airline": {
+      "name": "Finnair",
+      "iataCode": "AY"
+    },
+    "airplane": {
+      "name": "Canadair Regional Jet 705",
+      "iataTypeCode": "CRA"
+    }
+  },
+  {
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iataCode": "DY"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD83",
+      "iataTypeCode": "M83"
+    }
+  },
+  {
+    "airline": {
+      "name": "VivaAerobus",
+      "iataCode": "VB"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Boeing 737-700",
+      "iataTypeCode": "73G"
+    }
+  },
+  {
+    "airline": {
+      "name": "Condor",
+      "iataCode": "DE"
+    },
+    "airplane": {
+      "name": "Aerospatiale/BAC Concorde",
+      "iataTypeCode": "SSC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Satena",
+      "iataCode": "9R"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-2 Turbo-Beaver",
+      "iataTypeCode": "DHR"
+    }
+  },
+  {
+    "airline": {
+      "name": "Royal Air Maroc",
+      "iataCode": "AT"
+    },
+    "airplane": {
+      "name": "Airbus A350-1000",
+      "iataTypeCode": "351"
+    }
+  },
+  {
+    "airline": {
+      "name": "Cebu Pacific Air",
+      "iataCode": "5J"
+    },
+    "airplane": {
+      "name": "De Havilland Canada DHC-4 Caribou",
+      "iataTypeCode": "DHC"
+    }
+  },
+  {
+    "airline": {
+      "name": "Virgin Australia",
+      "iataCode": "VA"
+    },
+    "airplane": {
+      "name": "Airbus A330",
+      "iataTypeCode": "330"
+    }
+  },
+  {
+    "airline": {
+      "name": "Spirit Airlines",
+      "iataCode": "NK"
+    },
+    "airplane": {
+      "name": "Antonov An-28",
+      "iataTypeCode": "A28"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "Airbus A321neo",
+      "iataTypeCode": "32Q"
+    }
+  },
+  {
+    "airline": {
+      "name": "Jeju Air",
+      "iataCode": "7C"
+    },
+    "airplane": {
+      "name": "Boeing 737-800",
+      "iataTypeCode": "738"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Mauritius",
+      "iataCode": "MK"
+    },
+    "airplane": {
+      "name": "Boeing 757-300",
+      "iataTypeCode": "753"
+    }
+  },
+  {
+    "airline": {
+      "name": "JetSMART",
+      "iataCode": "JA"
+    },
+    "airplane": {
+      "name": "Airbus A318",
+      "iataTypeCode": "318"
+    }
+  },
+  {
+    "airline": {
+      "name": "Lion Air",
+      "iataCode": "JT"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air France-KLM",
+      "iataCode": "AF"
+    },
+    "airplane": {
+      "name": "Boeing 777-300ER",
+      "iataTypeCode": "77W"
+    }
+  },
+  {
+    "airline": {
+      "name": "All Nippon Airways",
+      "iataCode": "NH"
+    },
+    "airplane": {
+      "name": "Boeing 737-300",
+      "iataTypeCode": "733"
+    }
+  },
+  {
+    "airline": {
+      "name": "IndiGo Airlines",
+      "iataCode": "6E"
+    },
+    "airplane": {
+      "name": "Canadair Challenger",
+      "iataTypeCode": "CCJ"
+    }
+  },
+  {
+    "airline": {
+      "name": "Air Canada",
+      "iataCode": "AC"
+    },
+    "airplane": {
+      "name": "Boeing 737-200",
+      "iataTypeCode": "732"
+    }
+  },
+  {
+    "airline": {
+      "name": "Alitalia",
+      "iataCode": "AZ"
+    },
+    "airplane": {
+      "name": "Embraer 190",
+      "iataTypeCode": "E90"
+    }
+  },
+  {
+    "airline": {
+      "name": "American Airlines",
+      "iataCode": "AA"
+    },
+    "airplane": {
+      "name": "McDonnell Douglas MD88",
+      "iataTypeCode": "M88"
+    }
+  },
+  {
+    "airline": {
+      "name": "FlySafair",
+      "iataCode": "FA"
+    },
+    "airplane": {
+      "name": "Embraer EMB.110 Bandeirante",
+      "iataTypeCode": "EMB"
+    }
+  },
+  {
+    "airline": {
+      "name": "Kenya Airways",
+      "iataCode": "KQ"
+    },
+    "airplane": {
+      "name": "Embraer 175",
+      "iataTypeCode": "E75"
+    }
+  },
+  {
+    "airline": {
+      "name": "Emirates Airlines",
+      "iataCode": "EK"
+    },
+    "airplane": {
+      "name": "Boeing 777",
+      "iataTypeCode": "777"
+    }
+  },
+  {
+    "airline": {
+      "name": "Pakistan International Airlines",
+      "iataCode": "PK"
+    },
+    "airplane": {
+      "name": "Boeing 747-100",
+      "iataTypeCode": "741"
+    }
+  },
+  {
+    "airline": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "Beijing Capital Airlines",
+      "iataCode": "JD"
+    },
+    "airplane": {
+      "name": "Antonov An-30",
+      "iataTypeCode": "A30"
+    }
+  },
+  {
+    "airline": {
+      "name": "Wingo",
+      "iataCode": "P5"
+    },
+    "airplane": {
+      "name": "Tupolev Tu-204",
+      "iataTypeCode": "T20"
+    }
+  },
+  {
+    "airline": {
+      "name": "EasyJet",
+      "iataCode": "U2"
+    },
+    "airplane": {
+      "name": "Embraer Phenom 300",
+      "iataTypeCode": "EP3"
+    }
+  },
+  {
+    "airline": {
+      "name": "Libyan Airlines",
+      "iataCode": "LN"
+    },
+    "airplane": {
+      "name": "Antonov An-158",
+      "iataTypeCode": "A58"
+    }
+  },
+  {
+    "airline": {
+      "name": "El Al",
+      "iataCode": "LY"
+    },
+    "airplane": {
+      "name": "Ilyushin IL96-300",
+      "iataTypeCode": "I93"
+    }
+  },
+  {
+    "airline": {
+      "name": "Republic Airways",
+      "iataCode": "YX"
+    },
+    "airplane": {
+      "name": "Airbus A330-900neo",
+      "iataTypeCode": "339"
+    }
+  },
+  {
+    "airline": {
+      "name": "TAP Air Portugal",
+      "iataCode": "TP"
+    },
+    "airplane": {
+      "name": "Boeing 737 MAX 9",
+      "iataTypeCode": "7M9"
+    }
+  },
+  {
+    "airline": {
+      "name": "SpiceJet",
+      "iataCode": "SG"
+    },
+    "airplane": {
+      "name": "Embraer E190-E2",
+      "iataTypeCode": "290"
+    }
+  }
+]

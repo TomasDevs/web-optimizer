@@ -51,6 +51,12 @@ const tests = [
     link: "/testovani/cdn",
   },
   {
+    title: "API Test",
+    description:
+      "Porovnejte výkon optimalizovaného a neoptimalizovaného API (cache, komprese).",
+    link: "/testovani/api",
+  },
+  {
     title: "Minifikace kódu",
     description: "Otestujte dopad minifikace kódu na výkon webu.",
     link: "/testovani/minifikace-kodu",

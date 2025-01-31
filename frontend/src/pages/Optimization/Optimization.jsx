@@ -166,6 +166,28 @@ const Optimization = () => {
       />
 
       <TipBlock
+        title="Optimalizace API"
+        content={[
+          <>
+            <strong>Proč je to důležité?</strong> Neoptimalizované API může
+            výrazně zpomalit aplikaci přenosem zbytečných dat, vysokou latencí a
+            opakovaným stahováním stejných informací. Špatně navržené API může
+            také zatěžovat server a zvyšovat náklady na provoz.
+          </>,
+          <>
+            <strong>Jak na to?</strong> Implementujte <code>paginaci</code> pro
+            velké datasety, povolte <code>gzip/brotli kompresi</code> pro menší
+            přenosy a nastavte správné <code>cache hlavičky</code>. Využijte
+            techniky jako batch requesty pro spojení více požadavků a GraphQL
+            pro přesnou specifikaci potřebných dat. Pro často čtená data zvažte
+            použití CDN nebo Redis cache.
+          </>,
+        ]}
+        link="/optimalizace/api"
+        linkText="Více o optimalizaci API"
+      />
+
+      <TipBlock
         title="Core Web Vitals"
         content={[
           <>
@@ -186,25 +208,6 @@ const Optimization = () => {
         ]}
         link="/core-web-vitals"
         linkText="Více o Core Web Vitals"
-      />
-
-      <TipBlock
-        title="API optimalizace, bundling a další"
-        content={[
-          <>
-            <strong>Proč je to důležité?</strong> Rychlá stránka není jen o
-            statických souborech, ale také o tom, jak rychle server vrací data
-            (API) a zda nejsou skripty zbytečně „rozkouskované“.
-          </>,
-          <>
-            <strong>Jak na to?</strong> Zvažte sloučení (bundling) menších JS
-            souborů, nebo naopak <em>code splitting</em> pro načítání jen toho,
-            co je nezbytné. Pro serverová API používejte cachování odpovědí a
-            minimalizujte latenci (např. pomocí regionálního nasazení serveru).
-          </>,
-        ]}
-        link="/optimalizace/api-optimalizace"
-        linkText="Více o optimalizaci API"
       />
 
       <FadeInOnScroll className="section-description">

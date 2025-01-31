@@ -9,7 +9,6 @@ const Menu = () => {
 
   const menuItems = [
     { href: "/o-aplikaci", label: "O aplikaci" },
-    { href: "/nastroje", label: "Nástroje" },
     { href: "/optimalizace", label: "Optimalizace" },
     { href: "/core-web-vitals", label: "Core Web Vitals" },
     { href: "/testovani", label: "Testování" },

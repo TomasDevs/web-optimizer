@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const LCPTesting = () => {

@@ -30,19 +30,14 @@ const features = [
     link: "optimalizace/nacitani-skriptu",
   },
   {
-    title: "Optimalizace API",
-    description: "Zlepšete výkon vašeho API a zrychlete odpovědi.",
-    link: "/api-optimization",
-  },
-  {
     title: "Využití CDN",
     description: "Zrychlete načítání webu díky distribuovaným serverům CDN.",
     link: "optimalizace/cdn",
   },
   {
-    title: "Bezpečné načítání",
-    description: "Použijte bezpečné techniky načítání pro zajištění dat.",
-    link: "/secure-loading",
+    title: "Optimalizace API",
+    description: "Zlepšete výkon vašeho API a zrychlete odpovědi.",
+    link: "optimalizace/api",
   },
 ];
 
