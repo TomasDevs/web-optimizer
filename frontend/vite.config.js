@@ -9,8 +9,8 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     base: "/",
     build: {
-      outDir: mode === "minified" ? "dist/minified" : "dist/unminified",
-      minify: mode === "minified" ? "terser" : false,
+      outDir: "dist",
+      minify: process.env.MODE === "minified" ? "terser" : false,
       rollupOptions: {
         output: {
           entryFileNames: `[name].js`,

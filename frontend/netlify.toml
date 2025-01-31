@@ -1,7 +1,7 @@
 [build]
-  base = "frontend"
-  publish = "frontend/dist/minified"
-  command = "npm run build"
+  base = "/"
+  command = "cd frontend && npm install && npm run build"
+  publish = "frontend/dist"
   functions = "api/functions"
 
 [[redirects]]
