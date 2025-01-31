@@ -6,18 +6,21 @@ const util = require("util");
 const gzip = util.promisify(zlib.gzip);
 
 const getData = (limit) => {
-  const dataPath = path.join(__dirname, "../../data/data.json");
-  let users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+  try {
+    const dataPath = path.join(__dirname, "../data/data.json");
+    const users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
 
-  if (!isNaN(limit) && limit > 0) {
-    users = users.slice(0, limit);
+    if (!isNaN(limit) && limit > 0) {
+      return users.slice(0, limit);
+    }
+    return users;
+  } catch (error) {
+    console.error("Error reading data:", error);
+    return [];
   }
-  return users;
 };
 
 exports.handler = async (event) => {
-  const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
-
   const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type",
@@ -27,13 +30,20 @@ exports.handler = async (event) => {
   };
 
   try {
+    const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
+    console.log("Processing compressed request with limit:", limit);
+
     const data = getData(limit);
     const jsonString = JSON.stringify({
       timestamp: new Date().toISOString(),
       data,
+      count: data.length,
+      compressed: true,
     });
 
+    console.log("Data size before compression:", jsonString.length);
     const compressed = await gzip(jsonString);
+    console.log("Data size after compression:", compressed.length);
 
     return {
       statusCode: 200,
@@ -42,13 +52,19 @@ exports.handler = async (event) => {
       isBase64Encoded: true,
     };
   } catch (error) {
+    console.error("Compressed handler error:", error);
     return {
       statusCode: 500,
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify({ error: "Internal server error" }),
+      body: JSON.stringify({
+        error: "Internal server error",
+        message: error.message,
+        details:
+          process.env.NODE_ENV === "development" ? error.stack : undefined,
+      }),
     };
   }
 };

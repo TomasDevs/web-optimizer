@@ -3,18 +3,21 @@ const fs = require("fs");
 const path = require("path");
 
 const getData = (limit) => {
-  const dataPath = path.join(__dirname, "../../data/data.json");
-  let users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+  try {
+    const dataPath = path.join(__dirname, "../data/data.json");
+    const users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
 
-  if (!isNaN(limit) && limit > 0) {
-    users = users.slice(0, limit);
+    if (!isNaN(limit) && limit > 0) {
+      return users.slice(0, limit);
+    }
+    return users;
+  } catch (error) {
+    console.error("Error reading data:", error);
+    return [];
   }
-  return users;
 };
 
 exports.handler = async (event) => {
-  const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
-
   const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type",
@@ -23,6 +26,9 @@ exports.handler = async (event) => {
   };
 
   try {
+    const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
+    console.log("Processing cached request with limit:", limit);
+
     const data = getData(limit);
 
     return {
@@ -31,13 +37,21 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         timestamp: new Date().toISOString(),
         data,
+        count: data.length,
+        cached: true,
       }),
     };
   } catch (error) {
+    console.error("Cached handler error:", error);
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: "Internal server error" }),
+      body: JSON.stringify({
+        error: "Internal server error",
+        message: error.message,
+        details:
+          process.env.NODE_ENV === "development" ? error.stack : undefined,
+      }),
     };
   }
 };
