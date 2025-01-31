@@ -8,8 +8,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode minified --outDir dist/minified",
-    "build:all": "vite build --mode unminified && vite build --mode minified",
-    "build:unminified": "vite build --mode unminified --outDir dist/unminified",
     "lint": "eslint .",
     "preview": "vite preview"
   },
