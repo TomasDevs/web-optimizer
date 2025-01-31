@@ -128,7 +128,7 @@ const Optimization = () => {
             <strong>Proč je to důležité?</strong> Nesprávně načítané skripty
             mohou blokovat vykreslování stránky, zhoršovat metriky jako{" "}
             <em>First Contentful Paint (FCP)</em> a{" "}
-            <em>Total Blocking Time (TBT)</em>a zpomalovat interaktivitu.
+            <em>Total Blocking Time (TBT) </em>a zpomalovat interaktivitu.
           </>,
           <>
             <strong>Jak na to?</strong> Používejte{" "}
@@ -144,24 +144,25 @@ const Optimization = () => {
       />
 
       <TipBlock
-        title="Využití CDN a efektivní cache"
+        title="CDN vs. vlastní hosting"
         content={[
           <>
-            <strong>Proč je to důležité?</strong> CDN (Content Delivery Network)
-            umožňuje distribuovat váš obsah na servery po celém světě.
-            Uživatelům se pak soubory načítají z geograficky bližších míst, což
-            zkracuje dobu odezvy.
+            <strong>Proč je to důležité?</strong> Načítání JavaScriptových
+            knihoven z CDN může urychlit vykreslování stránky, protože soubory
+            mohou být kešovány v prohlížeči uživatele nebo blízkém serveru. Na
+            druhou stranu, vlastní hosting může být rychlejší, pokud server běží
+            blízko uživatelů a minimalizuje latenci.
           </>,
           <>
-            <strong>Jak na to?</strong> Zvažte poskytovatele jako{" "}
-            <code>Cloudflare</code>, <code>Fastly</code> nebo{" "}
-            <code>Amazon CloudFront</code>. Nastavte si dlouhou expiraci cache
-            pro statické soubory (CSS, JS, obrázky), abyste zabránili
-            opakovanému stahování při dalších návštěvách uživatele.
+            <strong>Jak na to?</strong> Pro kritické skripty zvažte jejich
+            vlastní hostování, abyste měli plnou kontrolu nad verzemi a
+            dostupností. U často používaných knihoven může být výhodné využít
+            CDN jako jsDelivr nebo cdnjs, které distribuují soubory globálně a
+            optimalizují výkon.
           </>,
         ]}
-        link="/optimalizace/cdn-optimization"
-        linkText="Více o CDN a cachování"
+        link="/optimalizace/cdn"
+        linkText="Více o CDN"
       />
 
       <TipBlock

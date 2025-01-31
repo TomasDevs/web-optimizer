@@ -9,9 +9,10 @@ import CodeMinification from "./pages/Optimization/CodeMinification";
 import LazyLoading from "./pages/Optimization/LazyLoading";
 import ImageDisplayTesting from "./pages/Testing/ImageDisplayTesting";
 import ImageOptimization from "./pages/Optimization/ImageOptimization";
-
 import FontOptimization from "./pages/Optimization/FontOptimization";
 import ScriptLoading from "./pages/Optimization/ScriptLoading";
+import CDNOptimization from "./pages/Optimization/CDNOptimization";
+
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";
@@ -23,6 +24,7 @@ import ImageOptimizationTesting from "./pages/Testing/ImageOptimizationTesting";
 import LazyLoadingTesting from "./pages/Testing/LazyLoadingTesting";
 import FontOptimizationTesting from "./pages/Testing/FontOptimizationTesting";
 import ScriptLoadingTesting from "./pages/Testing/ScriptLoadingTesting";
+import CDNTesting from "./pages/Testing/CDNTesting";
 
 // Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
@@ -69,6 +71,7 @@ const App = () => {
             path="/optimalizace/optimalizace-obrazku"
             element={<ImageOptimization />}
           />
+          <Route path="/optimalizace/cdn" element={<CDNOptimization />} />
 
           {/* Testing Core Web Vitals */}
           <Route path="/testovani/lcp-testing" element={<LCPTesting />} />
@@ -100,6 +103,9 @@ const App = () => {
             path="/testovani/nacitani-skriptu"
             element={<ScriptLoadingTesting />}
           />
+          <Route path="/testovani/cdn" element={<CDNTesting />} />
+
+          {/* 404 */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

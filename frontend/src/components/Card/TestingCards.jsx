@@ -45,6 +45,12 @@ const tests = [
     link: "/testovani/nacitani-skriptu",
   },
   {
+    title: "CDN Test",
+    description:
+      "Porovnejte rychlost načítání knihoven z různých CDN a vlastního hostingu.",
+    link: "/testovani/cdn",
+  },
+  {
     title: "Minifikace kódu",
     description: "Otestujte dopad minifikace kódu na výkon webu.",
     link: "/testovani/minifikace-kodu",

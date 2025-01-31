@@ -36,8 +36,8 @@ const features = [
   },
   {
     title: "Využití CDN",
-    description: "Zjistěte, jak CDN zlepší výkon vašeho webu.",
-    link: "/cdn-optimization",
+    description: "Zrychlete načítání webu díky distribuovaným serverům CDN.",
+    link: "optimalizace/cdn",
   },
   {
     title: "Bezpečné načítání",
