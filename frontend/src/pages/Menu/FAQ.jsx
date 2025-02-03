@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const FAQ = () => {
+  const pageTitle = "FAQ | Web Optimizer";
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -59,6 +61,10 @@ const FAQ = () => {
 
   return (
     <div className="faq-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <div className="section-page flex">
         <div className="left-col">
           <FadeInOnScroll className="section-description">

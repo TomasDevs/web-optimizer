@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import TipBlock from "../../components/TipBlock";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const Optimization = () => {
+  const pageTitle = "Optimalizace webu | Web Optimizer";
   return (
     <div className="section-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>
 
