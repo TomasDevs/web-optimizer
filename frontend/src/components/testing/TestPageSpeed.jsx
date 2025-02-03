@@ -5,22 +5,36 @@ const TestPageSpeed = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL =
-    import.meta.env.VITE_API_URL || "https://weboptimizer.vercel.app/api";
+  const API_KEY = import.meta.env.VITE_PAGESPEED_API_KEY;
 
   const testPage = async (url) => {
+    setLoading(true);
+    setError(null);
+    setResult(null);
+
     try {
-      const response = await fetch(
-        `${API_BASE_URL}/api/pagespeed?url=${encodeURIComponent(url)}`
-      );
+      const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+        url
+      )}&key=${API_KEY}`;
+
+      console.log("Fetching:", apiUrl);
+
+      const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error(`HTTP chyba: ${response.status}`);
       }
+
       const data = await response.json();
-      setResult(data);
+      console.log("Výsledky API:", data);
+
+      if (!data.lighthouseResult) {
+        throw new Error("Neplatná odpověď z API.");
+      }
+
+      setResult(data.lighthouseResult);
     } catch (error) {
       console.error("Chyba při testování:", error);
-      setError("Něco se pokazilo. Zkontrolujte server nebo URL.");
+      setError("Něco se pokazilo. Zkontrolujte server nebo API klíč.");
     } finally {
       setLoading(false);
     }
@@ -43,18 +57,15 @@ const TestPageSpeed = () => {
           <h3>Výsledky:</h3>
           <p>
             <strong>LCP:</strong>{" "}
-            {result.lighthouseResult.audits["largest-contentful-paint"]
-              ?.displayValue || "N/A"}
+            {result.audits["largest-contentful-paint"]?.displayValue || "N/A"}
           </p>
           <p>
             <strong>CLS:</strong>{" "}
-            {result.lighthouseResult.audits["cumulative-layout-shift"]
-              ?.displayValue || "N/A"}
+            {result.audits["cumulative-layout-shift"]?.displayValue || "N/A"}
           </p>
           <p>
-            <strong>FID:</strong>{" "}
-            {result.lighthouseResult.audits["interactive"]?.displayValue ||
-              "N/A"}
+            <strong>INP:</strong>{" "}
+            {result.audits["interactive"]?.displayValue || "N/A"}
           </p>
         </div>
       )}

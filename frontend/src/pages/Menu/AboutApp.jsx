@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const AboutApp = () => {
+  const pageTitle = "O aplikaci | Web Optimizer";
   return (
     <div className="about-app">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <section className="section-page">
         <FadeInOnScroll className="section-description">
           <h1 className="subpage-title">O aplikaci</h1>
