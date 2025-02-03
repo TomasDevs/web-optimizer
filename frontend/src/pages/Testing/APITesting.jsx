@@ -234,23 +234,23 @@ const APITesting = () => {
                     <div className="results-grid">
                       <div className="result-group">
                         <h4>Časování</h4>
-                        <p>⏱️ TTFB: {results[api.name].ttfb}</p>
-                        <p>⚡ Síťový čas: {results[api.name].networkTime}</p>
-                        <p>⚙️ Zpracování: {results[api.name].processingTime}</p>
+                        <p>TTFB: {results[api.name].ttfb}</p>
+                        <p>Síťový čas: {results[api.name].networkTime}</p>
+                        <p>Zpracování: {results[api.name].processingTime}</p>
                       </div>
 
                       <div className="result-group">
                         <h4>Data</h4>
-                        <p>📦 Velikost: {results[api.name].rawSize}</p>
-                        <p>📩 Po kompresi: {results[api.name].transferSize}</p>
-                        <p>📉 Komprese: {results[api.name].compression}</p>
-                        <p>🔢 Položek: {results[api.name].itemCount}</p>
+                        <p>Velikost: {results[api.name].rawSize}</p>
+                        <p>Po kompresi: {results[api.name].transferSize}</p>
+                        <p>Komprese: {results[api.name].compression}</p>
+                        <p>Položek: {results[api.name].itemCount}</p>
                       </div>
 
                       <div className="result-group">
                         <h4>Hlavičky</h4>
-                        <p>🗄️ Cache: {results[api.name].cache}</p>
-                        <p>🔍 Status: {results[api.name].status}</p>
+                        <p>Cache: {results[api.name].cache}</p>
+                        <p>Status: {results[api.name].status}</p>
                       </div>
                     </div>
                   )}
@@ -262,11 +262,11 @@ const APITesting = () => {
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle">📊 Jak číst měření? </h2>
+        <h2 className="section-subtitle">Jak číst měření? </h2>
 
         <div className="section-text -top">
           <div className="section-text">
-            <h3>⏱️ Časování</h3>
+            <h3>Časování</h3>
             <p>
               <strong>TTFB</strong> - první odpověď serveru
             </p>
@@ -279,7 +279,7 @@ const APITesting = () => {
           </div>
 
           <div className="section-text">
-            <h3>📦 Data</h3>
+            <h3>Data</h3>
             <p>
               <strong>Velikost</strong> - před kompresí
             </p>
@@ -292,7 +292,7 @@ const APITesting = () => {
           </div>
 
           <div className="section-text">
-            <h3>🔒 Cache</h3>
+            <h3>Cache</h3>
             <p>Povoleno/Zakázáno</p>
             <p>Doba platnosti cache</p>
           </div>

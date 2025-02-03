@@ -138,14 +138,14 @@ const ScriptLoadingTesting = () => {
         <ul className="script-description-list">
           <li>
             <strong>
-              📌 Heavy Script (<code>heavy-script.js</code>)
+              Heavy Script (<code>heavy-script.js</code>)
             </strong>{" "}
             – Simuluje náročné operace, například zpracování dat. Stahuje 500
             záznamů z API a počítá s nimi.
           </li>
           <li>
             <strong>
-              ⚡ Utility Script (<code>utility-script.js</code>)
+              Utility Script (<code>utility-script.js</code>)
             </strong>{" "}
             – Opakovaně kontroluje, zda je dostupný element v DOM (
             <code>document.getElementById()</code>). Jakmile ho najde, změní
@@ -154,7 +154,7 @@ const ScriptLoadingTesting = () => {
           </li>
           <li>
             <strong>
-              ✅ Extra Script (<code>extra-script.js</code>)
+              Extra Script (<code>extra-script.js</code>)
             </strong>{" "}
             – Okamžitě se spustí a jen vypíše potvrzení o dokončení.
           </li>

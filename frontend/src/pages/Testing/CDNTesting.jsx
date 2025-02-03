@@ -287,77 +287,74 @@ const CDNTesting = () => {
         </p>
 
         <p className="section-text">
-          🛠️ <strong>Testujeme JavaScript knihovny:</strong>
+          <strong>Testujeme JavaScript knihovny:</strong>
         </p>
 
         <ul className="section-text">
           <li>
-            🔹 <strong>Lodash</strong> – usnadňuje práci s poli, objekty a
-            čísly.
+            <strong>Lodash</strong> – usnadňuje práci s poli, objekty a čísly.
           </li>
           <li>
-            📊 <strong>Chart.js</strong> – vizualizace dat pomocí grafů.
+            <strong>Chart.js</strong> – vizualizace dat pomocí grafů.
           </li>
           <li>
-            🤖 <strong>TensorFlow.js</strong> – strojové učení přímo v
-            prohlížeči.
+            <strong>TensorFlow.js</strong> – strojové učení přímo v prohlížeči.
           </li>
           <li>
-            🎲 <strong>Babylon.js</strong> – 3D grafika a renderování scén ve
+            <strong>Babylon.js</strong> – 3D grafika a renderování scén ve
             WebGL.
           </li>
         </ul>
 
         <p className="section-text">
-          📌 Test porovnává rychlost načítání těchto knihoven z různých CDN
-          (např. jsDelivr, cdnjs) a vlastního hostingu. Měříme dobu fetch a dobu
-          onload souboru.
+          Test porovnává rychlost načítání těchto knihoven z různých CDN (např.
+          jsDelivr, cdnjs) a vlastního hostingu. Měříme dobu fetch a dobu onload
+          souboru.
         </p>
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle">📈 Vliv na metriky Core Web Vitals</h2>
+        <h2 className="section-subtitle">Vliv na metriky Core Web Vitals</h2>
         <p className="section-text">
-          ⏳ <strong>Largest Contentful Paint (LCP)</strong> – Pokud se velké
+          <strong>Largest Contentful Paint (LCP)</strong> – Pokud se velké
           knihovny načítají pomalu, může to zpomalit vykreslení hlavního obsahu
           stránky a zhoršit LCP.
         </p>
 
         <p className="section-text">
-          🎭 <strong>First Input Delay (FID)</strong> – Zpoždění při načítání
+          <strong>First Input Delay (FID)</strong> – Zpoždění při načítání
           JavaScriptu může ovlivnit interaktivitu stránky, což způsobí delší
           odezvu na první uživatelskou akci.
         </p>
 
         <p className="section-text">
-          🎢 <strong>Cumulative Layout Shift (CLS)</strong> – Pokud se knihovny
+          <strong>Cumulative Layout Shift (CLS)</strong> – Pokud se knihovny
           načítají asynchronně bez správného prostorového rezervování, může
           dojít k nežádoucímu poskakování obsahu.
         </p>
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle">📊 Jak číst časy fetch a onload?</h2>
+        <h2 className="section-subtitle">Jak číst časy fetch a onload?</h2>
 
         <p className="section-text">
-          ✅ <strong>Fetch time</strong> – Doba, za kterou server odpoví na
+          <strong>Fetch time</strong> – Doba, za kterou server odpoví na
           požadavek. Čím nižší číslo, tím rychlejší přístup k souboru.
         </p>
 
         <p className="section-text">
-          ✅ <strong>Onload time</strong> – Doba, za kterou je soubor nejen
-          stažen, ale i proveden (vykonán) a připraven k použití.
+          <strong>Onload time</strong> – Doba, za kterou je soubor nejen stažen,
+          ale i proveden (vykonán) a připraven k použití.
         </p>
 
         <p className="section-text">
-          📌 <strong>Proč je rozdíl mezi CDN a vlastním hostingem?</strong>{" "}
+          <strong>Proč je rozdíl mezi CDN a vlastním hostingem?</strong>{" "}
           Načítání z CDN zahrnuje kroky jako{" "}
           <strong>DNS lookup, SSL handshake a síťovou latenci</strong>. Vlastní
           hosting může být rychlejší, pokud je blíže k uživateli.
         </p>
 
         <p className="section-text">
-          📌{" "}
           <strong>
             Proč mají soubory z CDN a vlastního hostingu různou velikost?
           </strong>{" "}
@@ -368,7 +365,7 @@ const CDNTesting = () => {
         </p>
 
         <p className="section-text">
-          📌 <strong>Proč některé CDN načítají rychleji než jiné? </strong>
+          <strong>Proč některé CDN načítají rychleji než jiné? </strong>
           Každá CDN má servery na různých místech. Rychlost závisí na tom, jak
           blízko je uživatel k danému uzlu a zda je soubor v keši daného
           serveru. Při prvním načtení může být soubor pomalejší, ale opakované
@@ -376,7 +373,7 @@ const CDNTesting = () => {
         </p>
 
         <p className="section-text">
-          📌 <strong>Proč DevTools ukazuje jiný čas než aplikace? </strong>
+          <strong>Proč DevTools ukazuje jiný čas než aplikace? </strong>
           <strong>Network tab</strong> v DevTools zobrazuje hlavně{" "}
           <strong>fetch time</strong> – tedy dobu přenosu souboru přes síť. V
           aplikaci navíc měříme <strong>onload time</strong>, který zahrnuje i
@@ -445,12 +442,12 @@ const CDNTesting = () => {
         <h2 className="section-subtitle">Ověření funkcionality knihoven</h2>
 
         <p id="lodash-test" className="section-text">
-          ✅ <strong>Test funkce Lodash:</strong> Vygeneruje náhodné číslo mezi
-          1 a 100: <strong>{randomNumber}</strong>
+          <strong>Test funkce Lodash:</strong> Vygeneruje náhodné číslo mezi 1 a
+          100: <strong>{randomNumber}</strong>
         </p>
 
         <p id="chart-test" className="section-text">
-          ✅ <strong>Test vykreslení grafu (Chart.js):</strong> Graf znázorňuje
+          <strong>Test vykreslení grafu (Chart.js):</strong> Graf znázorňuje
           růst návštěvnosti v čase pomocí spojnicového grafu.
         </p>
 
@@ -463,14 +460,14 @@ const CDNTesting = () => {
           }}></canvas>
 
         <p id="tensorflow-test" className="section-text">
-          ✅ <strong>Test TensorFlow.js:</strong> Neuronová síť se učí
-          jednoduchou lineární funkci <strong>x * 2</strong> a předpovídá výstup
-          pro nová čísla.
+          <strong>Test TensorFlow.js:</strong> Neuronová síť se učí jednoduchou
+          lineární funkci <strong>x * 2</strong> a předpovídá výstup pro nová
+          čísla.
         </p>
 
         <p id="babylon-test" className="section-text">
-          ✅ <strong>Test Babylon.js:</strong> Vytvoří 3D scénu s otočnou
-          kostkou vykreslenou pomocí WebGL.
+          <strong>Test Babylon.js:</strong> Vytvoří 3D scénu s otočnou kostkou
+          vykreslenou pomocí WebGL.
         </p>
 
         <canvas
