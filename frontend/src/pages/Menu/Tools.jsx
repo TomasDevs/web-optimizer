@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const Tools = () => {
+  const pageTitle = "Nástroje pro měření výkonu | Web Optimizer";
   return (
     <div className="tools-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <section className="section-page">
         <FadeInOnScroll className="section-description">
           <h1 className="subpage-title">Nástroje pro měření výkonu</h1>

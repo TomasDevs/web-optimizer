@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import TipBlock from "../../components/TipBlock";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const INPDetail = () => {
+  const pageTitle = "INP | Web Optimizer";
   return (
     <div className="page inp-detail-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Interaction to Next Paint (INP)</h1>
         <p className="section-text">

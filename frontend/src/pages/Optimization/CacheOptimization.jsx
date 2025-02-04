@@ -1,10 +1,15 @@
 import React from "react";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const CacheOptimization = () => {
+  const pageTitle = "Cache | Web Optimizer";
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Cache (Mezipaměť)</h1>
 

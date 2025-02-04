@@ -1,8 +1,11 @@
 import { useState } from "react";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const LazyLoading = () => {
+  const pageTitle = "Lazy Loading | Web Optimizer";
+
   const lazyLoadingExample = `
     <img src="/assets/images/image1.jpg" loading="lazy" alt="Obrázek 1" />
     <img src="/assets/images/image2.jpg" loading="lazy" alt="Obrázek 2" />
@@ -19,6 +22,9 @@ const LazyLoading = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">
           Lazy Loading: Efektivní načítání obrázků

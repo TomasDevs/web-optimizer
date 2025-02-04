@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const CodeMinification = () => {
+  const pageTitle = "Minifikace kódu | Web Optimizer";
   const [isCodeMinified, setIsCodeMinified] = useState(false);
 
   const unminifiedCode = `
@@ -27,6 +29,9 @@ const CodeMinification = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Minifikace kódu</h1>
 

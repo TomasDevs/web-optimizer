@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const FontOptimization = () => {
+  const pageTitle = "Optimalizace fontů | Web Optimizer";
+
   const googleFontsExample = `
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +28,9 @@ const FontOptimization = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Optimalizace fontů</h1>
         <p className="section-text">

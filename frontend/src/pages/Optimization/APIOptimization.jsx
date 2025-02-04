@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const APIOptimization = () => {
+  const pageTitle = "API | Web Optimizer";
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">
           API (Application Programming Interface)

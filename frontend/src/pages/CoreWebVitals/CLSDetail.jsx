@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import TipBlock from "../../components/TipBlock";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const CLSDetail = () => {
+  const pageTitle = "CLS | Web Optimizer";
   return (
     <div className="page cls-detail-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Cumulative Layout Shift (CLS)</h1>
         <p className="section-text">

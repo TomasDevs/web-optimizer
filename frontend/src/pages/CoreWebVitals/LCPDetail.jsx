@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import TipBlock from "../../components/TipBlock";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const LCPDetail = () => {
+  const pageTitle = "LCP | Web Optimizer";
   return (
     <div className="page lcp-detail-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Largest Contentful Paint (LCP)</h1>
         <p className="section-text">
