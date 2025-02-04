@@ -54,19 +54,24 @@ const TestPageSpeed = () => {
 
       {result && (
         <div className="test-page-speed__results">
-          <h3>Výsledky:</h3>
-          <p>
-            <strong>LCP:</strong>{" "}
-            {result.audits["largest-contentful-paint"]?.displayValue || "N/A"}
-          </p>
-          <p>
-            <strong>CLS:</strong>{" "}
-            {result.audits["cumulative-layout-shift"]?.displayValue || "N/A"}
-          </p>
-          <p>
-            <strong>INP:</strong>{" "}
-            {result.audits["interactive"]?.displayValue || "N/A"}
-          </p>
+          <h3>Výsledky Core Web Vitals:</h3>
+          <ul>
+            <li>
+              <strong>LCP (Largest Contentful Paint):</strong>{" "}
+              {result["largest-contentful-paint"]?.displayValue || "N/A"}{" "}
+              <span>– Rychlost vykreslení největšího prvku</span>
+            </li>
+            <li>
+              <strong>CLS (Cumulative Layout Shift):</strong>{" "}
+              {result["cumulative-layout-shift"]?.displayValue || "N/A"}{" "}
+              <span>– Míra vizuální stability</span>
+            </li>
+            <li>
+              <strong>INP (Interaction to Next Paint):</strong>{" "}
+              {result["interactive"]?.displayValue || "N/A"}{" "}
+              <span>– Rychlost interakce</span>
+            </li>
+          </ul>
         </div>
       )}
     </div>
