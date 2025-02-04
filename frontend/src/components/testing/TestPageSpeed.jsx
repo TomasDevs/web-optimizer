@@ -31,13 +31,32 @@ const TestPageSpeed = () => {
         throw new Error("Neplatná odpověď z API.");
       }
 
-      setResult(data.lighthouseResult);
+      setResult(data.lighthouseResult.audits);
     } catch (error) {
       console.error("Chyba při testování:", error);
       setError("Něco se pokazilo. Zkontrolujte server nebo API klíč.");
     } finally {
       setLoading(false);
     }
+  };
+
+  // Funkce pro určení barvy podle hodnoty metriky
+  const getColorForLCP = (value) => {
+    if (value <= 2.5) return "green";
+    if (value <= 4.0) return "orange";
+    return "red";
+  };
+
+  const getColorForCLS = (value) => {
+    if (value <= 0.1) return "green";
+    if (value <= 0.25) return "orange";
+    return "red";
+  };
+
+  const getColorForINP = (value) => {
+    if (value <= 200) return "green";
+    if (value <= 500) return "orange";
+    return "red";
   };
 
   return (
@@ -56,17 +75,33 @@ const TestPageSpeed = () => {
         <div className="test-page-speed__results">
           <h3>Výsledky Core Web Vitals:</h3>
           <ul>
-            <li>
+            <li
+              style={{
+                color: getColorForLCP(
+                  parseFloat(result["largest-contentful-paint"]?.numericValue) /
+                    1000
+                ),
+              }}>
               <strong>LCP (Largest Contentful Paint):</strong>{" "}
               {result["largest-contentful-paint"]?.displayValue || "N/A"}{" "}
               <span>– Rychlost vykreslení největšího prvku</span>
             </li>
-            <li>
+            <li
+              style={{
+                color: getColorForCLS(
+                  parseFloat(result["cumulative-layout-shift"]?.numericValue)
+                ),
+              }}>
               <strong>CLS (Cumulative Layout Shift):</strong>{" "}
               {result["cumulative-layout-shift"]?.displayValue || "N/A"}{" "}
               <span>– Míra vizuální stability</span>
             </li>
-            <li>
+            <li
+              style={{
+                color: getColorForINP(
+                  parseFloat(result["interactive"]?.numericValue)
+                ),
+              }}>
               <strong>INP (Interaction to Next Paint):</strong>{" "}
               {result["interactive"]?.displayValue || "N/A"}{" "}
               <span>– Rychlost interakce</span>
