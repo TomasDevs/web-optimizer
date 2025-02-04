@@ -1,8 +1,10 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const LCPTesting = () => {
+  const pageTitle = "Testování LCP | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -19,6 +21,10 @@ const LCPTesting = () => {
 
   return (
     <section className="section-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <h1 className="subpage-title">
         Testování Largest Contentful Paint (LCP)
       </h1>

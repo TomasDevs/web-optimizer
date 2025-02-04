@@ -1,8 +1,10 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CLSTesting = () => {
+  const pageTitle = "Testování CLS | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("cls") === "optimized";
 
@@ -18,6 +20,10 @@ const CLSTesting = () => {
 
   return (
     <section className="section-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <h1 className="subpage-title">Testování Cumulative Layout Shift (CLS)</h1>
 
       <p className="section-text">

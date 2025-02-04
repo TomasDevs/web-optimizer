@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useSearchParams } from "react-router-dom";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const CodeMinificationTesting = () => {
+  const pageTitle = "Testování minifikace kódu | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -20,8 +22,11 @@ const CodeMinificationTesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
-        <h1 className="subpage-title">Testování: Minifikace kódu</h1>
+        <h1 className="subpage-title">Testování minifikace kódu</h1>
         <p className="section-text">
           Stránka používá <strong>query parametry</strong> v URL pro přepínání
           minifikace kódu. Pokud je parametr{" "}

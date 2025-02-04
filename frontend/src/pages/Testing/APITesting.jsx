@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const APITesting = () => {
+  const pageTitle = "Testování výkonu API | Web Optimizer";
   const apiEndpoints = [
     {
       name: "Vlastní dataset (10 položek)",
@@ -205,6 +207,10 @@ const APITesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování výkonu API</h1>
 

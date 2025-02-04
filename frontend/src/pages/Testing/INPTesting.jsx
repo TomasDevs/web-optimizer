@@ -1,8 +1,10 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const InpTesting = () => {
+  const pageTitle = "Testování INP | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("inp") === "optimized";
   const [status, setStatus] = useState("Klikni na tlačítko pro test.");
@@ -38,6 +40,10 @@ const InpTesting = () => {
 
   return (
     <section className="section-page">
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <h1 className="subpage-title">
         Testování Interaction to Next Paint (INP)
       </h1>

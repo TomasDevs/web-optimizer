@@ -1,9 +1,12 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const FontOptimizationTesting = () => {
+  const pageTitle = "Testování fontů | Web Optimizer";
+
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,6 +63,10 @@ const FontOptimizationTesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování fontů</h1>
 

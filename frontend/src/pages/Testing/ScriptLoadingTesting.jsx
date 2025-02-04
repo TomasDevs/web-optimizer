@@ -1,8 +1,10 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const ScriptLoadingTesting = () => {
+  const pageTitle = "Testování načítání skriptů | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -80,6 +82,9 @@ const ScriptLoadingTesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování načítání skriptů</h1>
 

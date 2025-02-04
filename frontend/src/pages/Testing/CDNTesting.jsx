@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const CDNTesting = () => {
+  const pageTitle = "Testování CDN a vlastního hostingu | Web Optimizer";
   const sources = [
     {
       name: "Lodash.js",
@@ -277,6 +279,9 @@ const CDNTesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování CDN a vlastního hostingu</h1>
         <p className="section-text">

@@ -1,8 +1,11 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
 
 const ImageOptimizationTesting = () => {
+  const pageTitle = "Testování optimalizace obrázků | Web Optimizer";
+
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -38,6 +41,10 @@ const ImageOptimizationTesting = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování optimalizace obrázků</h1>
 
