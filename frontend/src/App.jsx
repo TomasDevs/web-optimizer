@@ -31,6 +31,7 @@ import FontOptimizationTesting from "./pages/Testing/FontOptimizationTesting";
 import ScriptLoadingTesting from "./pages/Testing/ScriptLoadingTesting";
 import CDNTesting from "./pages/Testing/CDNTesting";
 import APITesting from "./pages/Testing/APITesting";
+import BaselineTesting from "./pages/Testing/BaselineTesting";
 
 // Testing Core Web Vitals
 import LCPTesting from "./pages/Testing/LCPTesting";
@@ -115,6 +116,10 @@ const App = () => {
           />
           <Route path="/testovani/cdn" element={<CDNTesting />} />
           <Route path="/testovani/api" element={<APITesting />} />
+          <Route
+            path="/testovani/komplexni-analyza"
+            element={<BaselineTesting />}
+          />
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />

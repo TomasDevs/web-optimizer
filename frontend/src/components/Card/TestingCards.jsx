@@ -62,9 +62,9 @@ const tests = [
     link: "/testovani/minifikace-kodu",
   },
   {
-    title: "Všechny testy",
-    description: "Spusťte všechny testy najednou pro komplexní analýzu.",
-    link: "/testovani/vse",
+    title: "Komplexní analýza",
+    description: "Porovnejte výkon neoptimalizovaného a optimalizovaného webu.",
+    link: "/testovani/komplexni-analyza",
   },
 ];
 
