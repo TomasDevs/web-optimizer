@@ -77,14 +77,14 @@ const CLSTesting = () => {
         </p>
         <div className="ad-placeholder">
           {isOptimized ? (
-            <div style={{ width: "728px", height: "90px", background: "#ccc" }}>
+            <div style={{ width: "100%", height: "150px", background: "#ccc" }}>
               Rezervované místo pro reklamu
             </div>
           ) : (
             <iframe
-              src="https://www.bing.com"
-              width="728"
-              height="90"
+              src="https://www.seznam.cz/"
+              width="100%"
+              height="150"
               title="Ukázková reklama"
               style={{ border: "none" }}></iframe>
           )}

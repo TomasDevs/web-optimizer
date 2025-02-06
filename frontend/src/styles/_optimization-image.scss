@@ -1,11 +1,15 @@
 @use "variables" as vars;
+@use "mixins" as mx;
 
 .gallery {
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1rem;
     justify-items: center;
+    @include mx.breakpoint(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    }
 
     &.css-background {
       .gallery__item {
