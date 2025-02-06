@@ -482,10 +482,6 @@ const CDNTesting = () => {
             border: "1px solid black",
           }}></canvas>
       </FadeInOnScroll>
-
-      <FadeInOnScroll className="section-page">
-        <TestPageSpeed />
-      </FadeInOnScroll>
     </>
   );
 };

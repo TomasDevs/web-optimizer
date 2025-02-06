@@ -312,10 +312,6 @@ const APITesting = () => {
           .
         </p>
       </FadeInOnScroll>
-
-      <FadeInOnScroll className="section-page">
-        <TestPageSpeed />
-      </FadeInOnScroll>
     </>
   );
 };
