@@ -40,71 +40,40 @@ const TestPageSpeed = () => {
     }
   };
 
-  // Funkce pro určení barvy podle hodnoty metriky
-  const getColorForLCP = (value) => {
-    if (value <= 2.5) return "green";
-    if (value <= 4.0) return "orange";
-    return "red";
-  };
-
-  const getColorForCLS = (value) => {
-    if (value <= 0.1) return "green";
-    if (value <= 0.25) return "orange";
-    return "red";
-  };
-
-  const getColorForINP = (value) => {
-    if (value <= 200) return "green";
-    if (value <= 500) return "orange";
-    return "red";
-  };
-
   return (
     <div className="test-page-speed">
       <h2 className="section-subtitle -small">Testování stránky</h2>
+      <p className="section-text">
+        Test využívá <strong>Google PageSpeed Insights API</strong> pro měření
+        výkonu a Core Web Vitals.
+      </p>
       <button
         className="button -bottom"
         onClick={() => testPage(window.location.href)}
         disabled={loading}>
-        {loading ? "Testuji..." : "Otestovat stránku"}
+        {loading ? "Testuji stránku..." : "Otestovat stránku"}
       </button>
 
       {error && <p className="test-page-speed__error">{error}</p>}
 
       {result && (
         <div className="test-page-speed__results">
-          <h3>Výsledky Core Web Vitals:</h3>
+          <h3>Výsledky testu (PageSpeed Insights)</h3>
           <ul>
-            <li
-              style={{
-                color: getColorForLCP(
-                  parseFloat(result["largest-contentful-paint"]?.numericValue) /
-                    1000
-                ),
-              }}>
+            <li>
               <strong>LCP (Largest Contentful Paint):</strong>{" "}
-              {result["largest-contentful-paint"]?.displayValue || "N/A"}{" "}
-              <span>– Rychlost vykreslení největšího prvku</span>
+              {result["largest-contentful-paint"]?.displayValue || "N/A"} –
+              Rychlost vykreslení největšího prvku
             </li>
-            <li
-              style={{
-                color: getColorForCLS(
-                  parseFloat(result["cumulative-layout-shift"]?.numericValue)
-                ),
-              }}>
+            <li>
               <strong>CLS (Cumulative Layout Shift):</strong>{" "}
-              {result["cumulative-layout-shift"]?.displayValue || "N/A"}{" "}
-              <span>– Míra vizuální stability</span>
+              {result["cumulative-layout-shift"]?.displayValue || "N/A"} – Míra
+              vizuální stability
             </li>
-            <li
-              style={{
-                color: getColorForINP(
-                  parseFloat(result["interactive"]?.numericValue)
-                ),
-              }}>
+            <li>
               <strong>INP (Interaction to Next Paint):</strong>{" "}
-              {result["interactive"]?.displayValue || "N/A"}{" "}
-              <span>– Rychlost interakce</span>
+              {result["interactive"]?.displayValue || "N/A"} – Rychlost
+              interakce
             </li>
           </ul>
         </div>
