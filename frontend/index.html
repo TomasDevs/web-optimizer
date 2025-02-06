@@ -9,10 +9,44 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Web Optimizer - nástroj pro testování a optimalizaci webových stránek" />
+    <meta
+      name="keywords"
+      content="webová optimalizace, Core Web Vitals, rychlost webu, testování, výkon webu" />
+    <meta name="author" content="Tomas Stveracek" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#3a3678" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Web Optimizer" />
+    <meta
+      property="og:description"
+      content="Nástroj pro testování a optimalizaci webových stránek" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web-optimizer.netlify.app/" />
+    <meta property="og:image" content="/assets/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web Optimizer" />
+    <meta
+      name="twitter:description"
+      content="Nástroj pro testování a optimalizaci webových stránek" />
+    <meta name="twitter:image" content="/assets/images/twitter-card.jpg" />
+
     <title>Web Optimizer</title>
 
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
 
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -28,6 +62,7 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
     <!-- Dynamically load CSS and JS based on URL parameter -->
     <script>
       const urlParams = new URLSearchParams(window.location.search);
