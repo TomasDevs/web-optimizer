@@ -14,7 +14,7 @@ const NotFound = () => {
       </Helmet>
       <h1 className="not-found__title">404</h1>
       <p className="not-found__text">
-        Ups, tahle stránka se rozhodla <strong>zmizet na dovolenou!</strong> 🏖️
+        Ups, tahle stránka se rozhodla <strong>zmizet na dovolenou!</strong>
       </p>
       <p className="not-found__text">
         Stránku <code>{location.pathname + queryParams}</code> jsme nenašli.
