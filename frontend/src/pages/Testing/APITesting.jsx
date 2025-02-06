@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const APITesting = () => {
   const pageTitle = "Testování výkonu API | Web Optimizer";
@@ -304,12 +305,16 @@ const APITesting = () => {
           </div>
         </div>
         <p className="section-text">
-          Vícce informací o API naleznete na{" "}
+          Více informací o API naleznete na{" "}
           <Link to="optimalizace/api" className="highlight-link">
             API optimalizace
           </Link>
           .
         </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
       </FadeInOnScroll>
     </>
   );

@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const ImageOptimizationTesting = () => {
   const pageTitle = "Testování optimalizace obrázků | Web Optimizer";
@@ -115,6 +116,10 @@ const ImageOptimizationTesting = () => {
             />
           ))}
         </div>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
       </FadeInOnScroll>
     </>
   );

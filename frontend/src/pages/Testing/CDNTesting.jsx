@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CDNTesting = () => {
   const pageTitle = "Testování CDN a vlastního hostingu | Web Optimizer";
@@ -480,6 +481,10 @@ const CDNTesting = () => {
           style={{
             border: "1px solid black",
           }}></canvas>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
       </FadeInOnScroll>
     </>
   );

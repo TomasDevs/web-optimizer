@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useSearchParams } from "react-router-dom";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CodeMinificationTesting = () => {
   const pageTitle = "Testování minifikace kódu | Web Optimizer";
@@ -43,6 +44,10 @@ const CodeMinificationTesting = () => {
             ? "Přepnout na neminifikovanou verzi"
             : "Přepnout na minifikovanou verzi"}
         </button>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
       </FadeInOnScroll>
     </>
   );

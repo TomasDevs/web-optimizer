@@ -134,6 +134,10 @@ const FontOptimizationTesting = () => {
           </div>
         )}
       </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
+      </FadeInOnScroll>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CLSTesting = () => {
@@ -19,31 +20,35 @@ const CLSTesting = () => {
   };
 
   return (
-    <section className="section-page">
+    <>
       <Helmet>
         <title>{pageTitle}</title>
       </Helmet>
 
-      <h1 className="subpage-title">Testování Cumulative Layout Shift (CLS)</h1>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">
+          Testování Cumulative Layout Shift (CLS)
+        </h1>
 
-      <p className="section-text">
-        CLS měří vizuální stabilitu stránky během načítání. Pokud se prvky na
-        stránce pohybují nebo posouvají, může to uživatele zmást a vést ke
-        špatnému uživatelskému zážitku. Podle doporučení Googlu by hodnota CLS
-        měla být nižší než <strong>0,1</strong>.
-      </p>
+        <p className="section-text">
+          CLS měří vizuální stabilitu stránky během načítání. Pokud se prvky na
+          stránce pohybují nebo posouvají, může to uživatele zmást a vést ke
+          špatnému uživatelskému zážitku. Podle doporučení Googlu by hodnota CLS
+          měla být nižší než <strong>0,1</strong>.
+        </p>
 
-      <button onClick={handleClsToggle} className="button -margin">
-        Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-        verzi
-      </button>
+        <button onClick={handleClsToggle} className="button -margin">
+          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+          verzi
+        </button>
 
-      <p className="status-text">
-        Aktuální verze:{" "}
-        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
-      </p>
+        <p className="status-text">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
         <p className="section-text">
           {isOptimized
@@ -61,9 +66,9 @@ const CLSTesting = () => {
             />
           ))}
         </div>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Reklamy</h2>
         <p className="section-text">
           {isOptimized
@@ -84,9 +89,9 @@ const CLSTesting = () => {
               style={{ border: "none" }}></iframe>
           )}
         </div>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Načítání fontů</h2>
         <p className="section-text">
           {isOptimized
@@ -100,9 +105,9 @@ const CLSTesting = () => {
           }}>
           Ukázkový text s různými způsoby načítání fontů.
         </p>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Dynamický obsah</h2>
         <p className="section-text">
           {isOptimized
@@ -118,9 +123,9 @@ const CLSTesting = () => {
             <p>Dynamický obsah se načítá...</p>
           )}
         </div>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p className="section-text">
           Optimalizovaná verze má pevně definované rozměry prvků pro
@@ -129,12 +134,12 @@ const CLSTesting = () => {
           layoutu. Prostor pro dynamický obsah je předem stanoven pro plynulejší
           vykreslování stránky.
         </p>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <TestPageSpeed />
-      </section>
-    </section>
+      </FadeInOnScroll>
+    </>
   );
 };
 

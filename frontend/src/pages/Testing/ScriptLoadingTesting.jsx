@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const ScriptLoadingTesting = () => {
   const pageTitle = "Testování načítání skriptů | Web Optimizer";
@@ -178,6 +179,10 @@ const ScriptLoadingTesting = () => {
           že se skripty vykonají ve správném pořadí, zatímco{" "}
           <strong>async</strong> je spustí nezávisle na sobě.
         </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <TestPageSpeed />
       </FadeInOnScroll>
     </>
   );
