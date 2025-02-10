@@ -56,7 +56,7 @@ const CLSTesting = () => {
             : "Obrázky nemají pevné rozměry, což může způsobit posuny layoutu."}
         </p>
         <div className="gallery__container">
-          {Array.from({ length: 4 }, (_, index) => (
+          {Array.from({ length: 10 }, (_, index) => (
             <img
               key={index}
               src={`/assets/images/image${index + 1}.jpg`}

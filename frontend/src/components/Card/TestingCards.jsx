@@ -5,14 +5,14 @@ import FadeInOnScroll from "../FadeInOnScroll";
 
 const tests = [
   {
-    title: "CLS Test",
-    description: "Otestujte vizuální stabilitu svého webu.",
-    link: "/testovani/cls-testing",
-  },
-  {
     title: "LCP Test",
     description: "Zjistěte, jak optimalizovat hlavní obsah stránky.",
     link: "/testovani/lcp-testing",
+  },
+  {
+    title: "CLS Test",
+    description: "Otestujte vizuální stabilitu svého webu.",
+    link: "/testovani/cls-testing",
   },
   {
     title: "INP Test",
