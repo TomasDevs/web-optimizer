@@ -8,12 +8,8 @@ const getData = async (limit) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const users = await response.json();
-
-    if (!isNaN(limit) && limit > 0) {
-      return users.slice(0, limit);
-    }
-    return users;
+    const data = await response.json();
+    return limit ? data.slice(0, limit) : data;
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];

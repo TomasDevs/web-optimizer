@@ -1,4 +1,3 @@
-// api/functions/data.js
 const fetch = require("node-fetch");
 
 exports.handler = async (event) => {
@@ -10,8 +9,8 @@ exports.handler = async (event) => {
 
   try {
     const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
+    console.log("Processing request with limit:", limit);
 
-    // Aktualizovaná URL pro data.json
     const response = await fetch(
       "https://web-optimizer.netlify.app/data/data.json"
     );
@@ -20,16 +19,17 @@ exports.handler = async (event) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const jsonData = await response.json();
-    const data = jsonData.slice(0, limit);
+    const data = await response.json();
+    const limitedData = data.slice(0, limit);
 
     return {
       statusCode: 200,
       headers,
       body: JSON.stringify({
         timestamp: new Date().toISOString(),
-        data,
-        count: data.length,
+        data: limitedData,
+        count: limitedData.length,
+        totalCount: data.length,
       }),
     };
   } catch (error) {
