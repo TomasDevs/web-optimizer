@@ -1,7 +1,8 @@
-const fetch = require("node-fetch");
-const zlib = require("zlib");
-const util = require("util");
-const gzip = util.promisify(zlib.gzip);
+import fetch from "node-fetch";
+import { gzip } from "zlib";
+import { promisify } from "util";
+
+const gzipPromise = promisify(gzip);
 
 const getData = async (limit) => {
   try {
@@ -19,7 +20,7 @@ const getData = async (limit) => {
   }
 };
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type",
@@ -41,7 +42,7 @@ exports.handler = async (event) => {
     });
 
     console.log("Data size before compression:", jsonString.length);
-    const compressed = await gzip(jsonString);
+    const compressed = await gzipPromise(jsonString);
     console.log("Data size after compression:", compressed.length);
 
     return {
