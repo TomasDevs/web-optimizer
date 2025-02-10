@@ -1,21 +1,24 @@
-// api/functions/data-compressed.js
-const fs = require("fs");
-const path = require("path");
+const fetch = require("node-fetch");
 const zlib = require("zlib");
 const util = require("util");
 const gzip = util.promisify(zlib.gzip);
 
-const getData = (limit) => {
+const getData = async (limit) => {
   try {
-    const dataPath = path.join(__dirname, "../data/data.json");
-    const users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+    const response = await fetch(
+      "https://web-optimizer.netlify.app/data/data.json"
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const users = await response.json();
 
     if (!isNaN(limit) && limit > 0) {
       return users.slice(0, limit);
     }
     return users;
   } catch (error) {
-    console.error("Error reading data:", error);
+    console.error("Error fetching data:", error);
     return [];
   }
 };
@@ -33,7 +36,7 @@ exports.handler = async (event) => {
     const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
     console.log("Processing compressed request with limit:", limit);
 
-    const data = getData(limit);
+    const data = await getData(limit);
     const jsonString = JSON.stringify({
       timestamp: new Date().toISOString(),
       data,

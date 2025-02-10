@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
           chunkFileNames: `[name].js`,
         },
       },
+      copyPublicDir: true,
     },
     publicDir: resolve(__dirname, "public"),
     server: {

@@ -53,7 +53,7 @@ const LazyLoadingTesting = () => {
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
 
         <div className="gallery__container">
-          {Array.from({ length: 10 }, (_, index) => (
+          {Array.from({ length: 20 }, (_, index) => (
             <img
               key={index}
               src={`/assets/images/image${index + 1}.jpg`}

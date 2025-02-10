@@ -1,4 +1,3 @@
-// api/functions/pagespeed.js
 const axios = require("axios");
 require("dotenv").config();
 

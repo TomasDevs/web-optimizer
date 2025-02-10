@@ -2,24 +2,29 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/FadeInOnScroll";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const APITesting = () => {
   const pageTitle = "Testování výkonu API | Web Optimizer";
+
+  const BASE_URL =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "/.netlify/functions";
+
   const apiEndpoints = [
     {
       name: "Vlastní dataset (10 položek)",
-      url: "/.netlify/functions/data?limit=10",
+      url: `${BASE_URL}/data?limit=10`,
       description: "Test s malým množstvím dat",
     },
     {
       name: "Vlastní dataset (1000 položek)",
-      url: "/.netlify/functions/data?limit=1000",
+      url: `${BASE_URL}/data?limit=1000`,
       description: "Test s velkým množstvím dat",
     },
     {
       name: "Vlastní api s cache (60s)",
-      url: "/.netlify/functions/data-cached?limit=1000",
+      url: `${BASE_URL}/data-cached?limit=1000`,
       description: "Test s cachováním na 60s",
       options: {
         headers: {
@@ -29,7 +34,7 @@ const APITesting = () => {
     },
     {
       name: "Vlastní api s kompresí",
-      url: "/.netlify/functions/data-compressed?limit=1000",
+      url: `${BASE_URL}/data-compressed?limit=1000`,
       description: "Test s Gzip kompresí",
       options: {
         headers: {

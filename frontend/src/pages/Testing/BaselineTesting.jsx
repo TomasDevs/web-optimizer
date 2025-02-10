@@ -200,7 +200,7 @@ const BaselineTesting = () => {
             : "Obrázky bez definovaných rozměrů způsobují layout shift."}
         </p>
         <div className="gallery__container">
-          {Array.from({ length: 10 }, (_, i) => (
+          {Array.from({ length: 20 }, (_, i) => (
             <img
               key={i}
               src={
@@ -212,6 +212,7 @@ const BaselineTesting = () => {
               width={isOptimized ? 400 : undefined}
               height={isOptimized ? 400 : undefined}
               loading="lazy"
+              className="gallery__item"
             />
           ))}
         </div>

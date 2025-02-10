@@ -1,21 +1,5 @@
 // api/functions/data.js
-const fs = require("fs");
-const path = require("path");
-
-const getData = (limit) => {
-  try {
-    const dataPath = path.join(__dirname, "../data/data.json");
-    const users = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-
-    if (!isNaN(limit) && limit > 0) {
-      return users.slice(0, limit);
-    }
-    return users;
-  } catch (error) {
-    console.error("Error reading data:", error);
-    return [];
-  }
-};
+const fetch = require("node-fetch");
 
 exports.handler = async (event) => {
   const headers = {
@@ -26,9 +10,18 @@ exports.handler = async (event) => {
 
   try {
     const limit = parseInt(event.queryStringParameters?.limit, 10) || 1000;
-    console.log("Processing request with limit:", limit);
 
-    const data = getData(limit);
+    // Aktualizovaná URL pro data.json
+    const response = await fetch(
+      "https://web-optimizer.netlify.app/data/data.json"
+    );
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const jsonData = await response.json();
+    const data = jsonData.slice(0, limit);
 
     return {
       statusCode: 200,
@@ -47,8 +40,6 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         error: "Internal server error",
         message: error.message,
-        details:
-          process.env.NODE_ENV === "development" ? error.stack : undefined,
       }),
     };
   }
