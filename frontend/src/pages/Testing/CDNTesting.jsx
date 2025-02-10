@@ -91,10 +91,8 @@ const CDNTesting = () => {
       const end = performance.now();
 
       // Get file size
-      const contentLength = response.headers.get("content-length");
-      let fileSize = contentLength
-        ? `${(contentLength / 1024).toFixed(2)} KB`
-        : "Neznámá velikost";
+      const blob = await response.blob();
+      const fileSize = `${(blob.size / 1024).toFixed(2)} KB`;
 
       // Load script and measure onload time
       const loadStart = performance.now();
@@ -418,7 +416,10 @@ const CDNTesting = () => {
         <h2 className="section-subtitle">Lokální Test</h2>
         <ul>
           {sources
-            .filter((source) => source.urlLocal)
+            .filter(
+              (source) =>
+                source.urlLocal && source.name !== "Neexistující knihovna"
+            )
             .map((source) => (
               <li key={`${source.name} (Lokální)`} className="section-text">
                 <p>
