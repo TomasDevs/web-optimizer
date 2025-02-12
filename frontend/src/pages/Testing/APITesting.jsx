@@ -7,117 +7,102 @@ const APITesting = () => {
   const pageTitle = "Testování výkonu API | Web Optimizer";
 
   const apiEndpoints = [
+    // Malé, rychlé odpovědi
     {
-      name: "JSONPlaceholder",
-      url: "https://jsonplaceholder.typicode.com/posts",
-      description: "Rychlé mock API pro testování",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "Random User API",
-      url: "https://randomuser.me/api/?results=1000",
-      description: "Generování náhodných uživatelských dat",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "GitHub API",
-      url: "https://api.github.com/users",
-      description: "Test veřejného API pro srovnání",
+      name: "IP Info",
+      url: "https://ipapi.co/json/",
+      description: "Jednoduchá odpověď - základní IP info",
       options: {
         headers: { Accept: "application/json" },
       },
     },
     {
-      name: "OpenLibrary API",
-      url: "https://openlibrary.org/subjects/programming.json",
-      description: "Seznam programovacích knih (velký JSON)",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "REST Countries",
-      //   url: "https://restcountries.com/v3.1/all",
-      url: "https://restcountries.com/v3.1/all?fields=name,capital,population,languages,currencies,flags,timezones,borders",
-      description: "Informace o všech zemích",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "Hacker News API",
-      url: "https://hacker-news.firebaseio.com/v0/topstories.json",
-      description: "Seznam top příběhů (větší dataset)",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "PokeAPI",
-      url: "https://pokeapi.co/api/v2/pokemon?limit=600",
-      description: "Seznam prvních 500 pokémonů",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "Dog CEO API",
-      url: "https://dog.ceo/api/breeds/list/all",
-      description: "Seznam všech psích plemen",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "CoinGecko",
-      url: "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd",
-      description: "Aktuální ceny kryptoměn",
-      options: {
-        headers: {
-          Accept: "application/json",
-        },
-      },
-    },
-    {
-      name: "Cat Facts",
+      name: "Cat Fact",
       url: "https://catfact.ninja/fact",
-      description: "Náhodný fact o kočkách",
+      description: "Jednoduchá odpověď - jeden záznam",
       options: {
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
       },
     },
     {
-      name: "IP API",
-      url: "https://ipapi.co/json/",
-      description: "Informace o IP adrese",
+      name: "Crypto Prices",
+      url: "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd",
+      description: "Malý JSON s real-time daty",
       options: {
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
+      },
+    },
+
+    // Střední velikost, dobrá rychlost
+    {
+      name: "JSONPlaceholder Posts",
+      url: "https://jsonplaceholder.typicode.com/posts",
+      description: "Mock API - 100 záznamů s cachováním",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+    {
+      name: "Dog Breeds",
+      url: "https://dog.ceo/api/breeds/list/all",
+      description: "Střední dataset s cachováním",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+    {
+      name: "GitHub Users",
+      url: "https://api.github.com/users",
+      description: "Reálná data s rate-limitingem",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+
+    // Větší datasety
+    {
+      name: "Random Users (1000)",
+      url: "https://randomuser.me/api/?results=1000",
+      description: "Velký dataset s náhodnými daty",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+    {
+      name: "Countries (Detailed)",
+      url: "https://restcountries.com/v3.1/all?fields=name,capital,population,languages,currencies,flags,timezones,borders",
+      description: "Komplexní data o zemích s kompresí",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+    {
+      name: "Pokemon (500)",
+      url: "https://pokeapi.co/api/v2/pokemon?limit=500",
+      description: "Velký dataset s cachováním",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+
+    // Největší datasety
+    {
+      name: "Programming Books",
+      url: "https://openlibrary.org/subjects/programming.json",
+      description: "Rozsáhlá knihovna s kompresí",
+      options: {
+        headers: { Accept: "application/json" },
+      },
+    },
+    {
+      name: "Hacker News Stories",
+      url: "https://hacker-news.firebaseio.com/v0/topstories.json",
+      description: "Real-time velký dataset",
+      options: {
+        headers: { Accept: "application/json" },
       },
     },
   ];
-
   const [results, setResults] = useState({});
   const [loading, setLoading] = useState({});
 
