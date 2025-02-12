@@ -19,7 +19,7 @@ const APITesting = () => {
     },
     {
       name: "Random User API",
-      url: "https://randomuser.me/api/?results=50",
+      url: "https://randomuser.me/api/?results=1000",
       description: "Generování náhodných uživatelských dat",
       options: {
         headers: {
@@ -47,7 +47,8 @@ const APITesting = () => {
     },
     {
       name: "REST Countries",
-      url: "https://restcountries.com/v3.1/all",
+      //   url: "https://restcountries.com/v3.1/all",
+      url: "https://restcountries.com/v3.1/all?fields=name,capital,population,languages,currencies,flags,timezones,borders",
       description: "Informace o všech zemích",
       options: {
         headers: {
@@ -67,8 +68,8 @@ const APITesting = () => {
     },
     {
       name: "PokeAPI",
-      url: "https://pokeapi.co/api/v2/pokemon?limit=100",
-      description: "Seznam prvních 100 pokémonů",
+      url: "https://pokeapi.co/api/v2/pokemon?limit=600",
+      description: "Seznam prvních 500 pokémonů",
       options: {
         headers: {
           Accept: "application/json",
@@ -324,13 +325,6 @@ const APITesting = () => {
             <p>Doba platnosti cache</p>
           </div>
         </div>
-        <p className="section-text">
-          Více informací o API naleznete na{" "}
-          <Link to="optimalizace/api" className="highlight-link">
-            API optimalizace
-          </Link>
-          .
-        </p>
       </FadeInOnScroll>
     </>
   );
