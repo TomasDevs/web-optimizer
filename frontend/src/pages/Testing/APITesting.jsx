@@ -6,25 +6,30 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const APITesting = () => {
   const pageTitle = "Testování výkonu API | Web Optimizer";
 
-  const BASE_URL =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : "/.netlify/functions";
+  //   const BASE_URL = import.meta.env.DEV
+  //     ? "http://localhost:3000"
+  //     : "https://web-optimizer.netlify.app";
+
+  const BASE_URL = import.meta.env.DEV
+    ? "http://localhost:3000"
+    : "https://web-optimizer.netlify.app/.netlify/functions";
 
   const apiEndpoints = [
     {
       name: "Vlastní dataset (10 položek)",
-      url: `${BASE_URL}/data?limit=10`,
+      url: `${BASE_URL}${import.meta.env.DEV ? "/data" : "/data"}?limit=10`,
       description: "Test s malým množstvím dat",
     },
     {
       name: "Vlastní dataset (1000 položek)",
-      url: `${BASE_URL}/data?limit=1000`,
+      url: `${BASE_URL}${import.meta.env.DEV ? "/data" : "/data"}?limit=1000`,
       description: "Test s velkým množstvím dat",
     },
     {
       name: "Vlastní api s cache (60s)",
-      url: `${BASE_URL}/data-cached?limit=1000`,
+      url: `${BASE_URL}${
+        import.meta.env.DEV ? "/data-cached" : "/data-cached"
+      }?limit=1000`,
       description: "Test s cachováním na 60s",
       options: {
         headers: {
@@ -34,7 +39,9 @@ const APITesting = () => {
     },
     {
       name: "Vlastní api s kompresí",
-      url: `${BASE_URL}/data-compressed?limit=1000`,
+      url: `${BASE_URL}${
+        import.meta.env.DEV ? "/data-compressed" : "/data-compressed"
+      }?limit=1000`,
       description: "Test s Gzip kompresí",
       options: {
         headers: {
