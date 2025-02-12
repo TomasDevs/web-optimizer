@@ -6,45 +6,7 @@ import FadeInOnScroll from "../../components/FadeInOnScroll";
 const APITesting = () => {
   const pageTitle = "Testování výkonu API | Web Optimizer";
 
-  const DATA_URL = "https://web-optimizer.netlify.app/data/data.json";
-
   const apiEndpoints = [
-    {
-      name: "Vlastní dataset (10 položek)",
-      url: DATA_URL,
-      description: "Test s malým množstvím dat",
-      transformResponse: (data) => data.slice(0, 10),
-    },
-    {
-      name: "Vlastní dataset (1000 položek)",
-      url: DATA_URL,
-      description: "Test s velkým množstvím dat",
-      transformResponse: (data) => data.slice(0, 1000),
-    },
-    {
-      name: "Vlastní api s cache (60s)",
-      url: DATA_URL,
-      description: "Test s cachováním na 60s",
-      options: {
-        headers: {
-          Accept: "application/json",
-          "Cache-Control": "public, max-age=60",
-        },
-      },
-      transformResponse: (data) => data.slice(0, 1000),
-    },
-    {
-      name: "Vlastní api s kompresí",
-      url: DATA_URL,
-      description: "Test s Gzip kompresí",
-      options: {
-        headers: {
-          Accept: "application/json",
-          "Accept-Encoding": "gzip",
-        },
-      },
-      transformResponse: (data) => data.slice(0, 1000),
-    },
     {
       name: "JSONPlaceholder",
       url: "https://jsonplaceholder.typicode.com/posts",
@@ -97,6 +59,56 @@ const APITesting = () => {
       name: "Hacker News API",
       url: "https://hacker-news.firebaseio.com/v0/topstories.json",
       description: "Seznam top příběhů (větší dataset)",
+      options: {
+        headers: {
+          Accept: "application/json",
+        },
+      },
+    },
+    {
+      name: "PokeAPI",
+      url: "https://pokeapi.co/api/v2/pokemon?limit=100",
+      description: "Seznam prvních 100 pokémonů",
+      options: {
+        headers: {
+          Accept: "application/json",
+        },
+      },
+    },
+    {
+      name: "Dog CEO API",
+      url: "https://dog.ceo/api/breeds/list/all",
+      description: "Seznam všech psích plemen",
+      options: {
+        headers: {
+          Accept: "application/json",
+        },
+      },
+    },
+    {
+      name: "CoinGecko",
+      url: "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd",
+      description: "Aktuální ceny kryptoměn",
+      options: {
+        headers: {
+          Accept: "application/json",
+        },
+      },
+    },
+    {
+      name: "Cat Facts",
+      url: "https://catfact.ninja/fact",
+      description: "Náhodný fact o kočkách",
+      options: {
+        headers: {
+          Accept: "application/json",
+        },
+      },
+    },
+    {
+      name: "IP API",
+      url: "https://ipapi.co/json/",
+      description: "Informace o IP adrese",
       options: {
         headers: {
           Accept: "application/json",
