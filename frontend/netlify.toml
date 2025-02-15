@@ -5,24 +5,20 @@
   functions = "api/functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-# Přesměrování pro neminifikovanou verzi
-[[redirects]]
   from = "/unminified/*"
   to = "/unminified/:splat"
   status = 200
+  force = true
 
-# Přesměrování pro minifikovanou verzi
 [[redirects]]
   from = "/minified/*"
   to = "/minified/:splat"
   status = 200
+  force = true
 
-# Přesměrování pro SPA (React Router)
+# React Router přesměrování pro SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
