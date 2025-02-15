@@ -69,7 +69,7 @@ const CodeMinification = () => {
           rychlost načítání stránky.
         </p>
 
-        <Link to="/testovani/minifikace" className="button -bottom">
+        <Link to="/testovani/minifikace-kodu" className="button -bottom">
           Testování minifikace
         </Link>
       </FadeInOnScroll>

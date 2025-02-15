@@ -6,16 +6,17 @@
   top: 0;
   right: 0;
   height: 100dvh;
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: vars.$light-color;
   z-index: 20;
   transform: translateX(100%);
   transition: transform 0.4s ease;
+  overflow-y: auto;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.25);
 
-  @include mx.breakpoint(xs) {
+  @include mx.breakpoint(sm) {
     width: 75%;
   }
 
@@ -176,5 +177,17 @@
         }
       }
     }
+  }
+
+  // Overlay for mobile menu
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(vars.$dark-color, 0.5);
+    z-index: 19;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 }

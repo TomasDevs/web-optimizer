@@ -48,12 +48,18 @@ const Menu = () => {
         <span className="menu__bar"></span>
       </button>
 
+      {isOpen && (
+        <div className="menu__overlay" onClick={() => setIsOpen(false)}></div>
+      )}
+
       <nav className={`menu ${isOpen ? "menu--open" : ""}`} ref={menuRef}>
         <ul className="menu__list">
           {menuItems.map((item, index) => (
             <li
               className={`menu__item ${
-                location.pathname === item.href ? "menu__item--active" : ""
+                location.pathname.startsWith(item.href)
+                  ? "menu__item--active"
+                  : ""
               }`}
               key={index}>
               <MenuLink href={item.href} onClick={handleLinkClick}>

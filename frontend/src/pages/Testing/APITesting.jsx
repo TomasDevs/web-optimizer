@@ -19,7 +19,7 @@ const APITesting = () => {
     {
       name: "Cat Fact",
       url: "https://catfact.ninja/fact",
-      description: "Jednoduchá odpověď - jeden záznam",
+      description: "Jednoduchý JSON",
       options: {
         headers: { Accept: "application/json" },
       },
@@ -77,8 +77,8 @@ const APITesting = () => {
       },
     },
     {
-      name: "Pokemon (500)",
-      url: "https://pokeapi.co/api/v2/pokemon?limit=500",
+      name: "Pokemon (1000 záznamů)",
+      url: "https://pokeapi.co/api/v2/pokemon?limit=1000",
       description: "Velký dataset s cachováním",
       options: {
         headers: { Accept: "application/json" },

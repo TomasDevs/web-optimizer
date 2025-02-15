@@ -94,19 +94,19 @@ const ScriptLoading = () => {
           Kdy použít async, defer nebo module?
         </h2>
         <p className="section-text">
-          <strong>✅ Použít async:</strong> pokud skript není závislý na DOM
-          (např. analytické skripty, reklamy, widgety třetích stran).
+          <strong>Použít async:</strong> pokud skript není závislý na DOM (např.
+          analytické skripty, reklamy, widgety třetích stran).
         </p>
         <p className="section-text">
-          <strong>✅ Použít defer:</strong> pokud skript potřebuje DOM (např.
+          <strong>Použít defer:</strong> pokud skript potřebuje DOM (např.
           JavaScript aplikace, interaktivní prvky).
         </p>
         <p className="section-text">
-          <strong>✅ Použít module:</strong> pokud používáš moderní ES6 kód s
+          <strong>Použít module:</strong> pokud používáš moderní ES6 kód s
           importy.
         </p>
         <p className="section-text">
-          <strong>❌ Nepoužívat synchronní načítání</strong>, pokud skript není
+          <strong>Nepoužívat synchronní načítání</strong>, pokud skript není
           kritický pro inicializaci stránky.
         </p>
       </FadeInOnScroll>
@@ -118,7 +118,7 @@ const ScriptLoading = () => {
         </p>
 
         <h3 className="section-subtitle -small">
-          ✅ Příklady použití <code className="inline-code">async</code>
+          Příklady použití <code className="inline-code">async</code>
         </h3>
         <pre className="code-block">
           {`<!-- Google Analytics -->
@@ -132,7 +132,7 @@ const ScriptLoading = () => {
         </pre>
 
         <h3 className="section-subtitle -small">
-          ✅ Příklady použití <code className="inline-code">defer</code>
+          Příklady použití <code className="inline-code">defer</code>
         </h3>
         <pre className="code-block">
           {`<!-- Hlavní logika aplikace -->
@@ -146,7 +146,7 @@ const ScriptLoading = () => {
 <script defer src="api-client.js"></script>`}
         </pre>
 
-        <h3 className="section-subtitle -small">🔹 Konkrétní scénáře:</h3>
+        <h3 className="section-subtitle -small">Konkrétní scénáře:</h3>
         <h4>E-shop:</h4>
         <pre className="code-block">
           {`<!-- Analytika -->

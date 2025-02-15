@@ -212,12 +212,12 @@ const CDNTesting = () => {
 
         prediction.data().then((values) => {
           document.getElementById("tensorflow-test").innerHTML = `
-        ✅ <strong>Test TensorFlow.js:</strong> Neuronová síť se učí jednoduchou lineární funkci x * 2 a předpovídá výstup pro nová čísla.<br>
-        🏋️‍♂️ <strong>Model se naučil vztah: x * 2</strong><br>
-        🔍 <strong>Predikce pro [6, 7, 8]:</strong> ${values
-          .map((v) => v.toFixed(2))
-          .join(", ")}
-      `;
+            <strong>Test TensorFlow.js:</strong> Neuronová síť se učí jednoduchou lineární funkci x * 2 a předpovídá výstup pro nová čísla.<br>
+            <strong>Model se naučil vztah: x * 2</strong><br>
+            <strong>Predikce pro [6, 7, 8]:</strong> ${values
+              .map((v) => v.toFixed(2))
+              .join(", ")}
+            `;
         });
       });
     }

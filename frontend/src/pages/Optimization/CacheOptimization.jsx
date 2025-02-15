@@ -124,46 +124,6 @@ const CacheOptimization = () => {
           </li>
         </ul>
       </FadeInOnScroll>
-
-      <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle">Kdy použít jakou strategii?</h2>
-
-        <h3 className="section-subtitle -small">Agresivní cache</h3>
-        <ul className="section-text">
-          <li>Statické soubory (JS, CSS, obrázky)</li>
-          <li>Knihovny a fonty</li>
-          <li>Obsah, který se mění zřídka</li>
-        </ul>
-
-        <h3 className="section-subtitle -small">
-          Validace při každém požadavku
-        </h3>
-        <ul className="section-text">
-          <li>Dynamický obsah</li>
-          <li>Personalizovaná data</li>
-          <li>Kritické aplikační stavy</li>
-        </ul>
-
-        <h3 className="section-subtitle -small">Žádná cache</h3>
-        <ul className="section-text">
-          <li>Citlivá data</li>
-          <li>Real-time informace</li>
-          <li>Analytika a měření</li>
-        </ul>
-      </FadeInOnScroll>
-
-      <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle">Testování cache</h2>
-        <p className="section-text">
-          Na této stránce můžete{" "}
-          <strong>otestovat různé cache strategie</strong> a jejich vliv na
-          výkon webu.
-        </p>
-
-        <Link to="/testovani/cache" className="button -bottom">
-          Testování Cache
-        </Link>
-      </FadeInOnScroll>
     </>
   );
 };
