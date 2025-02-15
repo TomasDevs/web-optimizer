@@ -9,7 +9,19 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+# Přesměrování pro neminifikovanou verzi
+[[redirects]]
+  from = "/unminified/*"
+  to = "/unminified/:splat"
+  status = 200
 
+# Přesměrování pro minifikovanou verzi
+[[redirects]]
+  from = "/minified/*"
+  to = "/minified/:splat"
+  status = 200
+
+# Přesměrování pro SPA (React Router)
 [[redirects]]
   from = "/*"
   to = "/index.html"

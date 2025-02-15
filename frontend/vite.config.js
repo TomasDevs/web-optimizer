@@ -3,14 +3,12 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
 export default defineConfig(({ mode }) => {
-  const isMinified = mode === "minified";
-
   return {
     plugins: [react()],
     base: "/",
     build: {
-      outDir: "dist",
-      minify: process.env.MODE === "minified" ? "terser" : false,
+      outDir: mode === "minified" ? "dist/minified" : "dist/unminified",
+      minify: mode === "minified" ? "terser" : false,
       rollupOptions: {
         output: {
           entryFileNames: `[name].js`,
