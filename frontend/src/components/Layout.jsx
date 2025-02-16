@@ -7,21 +7,34 @@ import Additional from "./Additional/Additional";
 
 const Layout = () => {
   const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const isMinified = searchParams.get("minified") !== "false";
+
+  // Add minification only to testing pages
+  const isTestingPage =
+    location.pathname === "/testovani/minifikace-kodu" ||
+    location.pathname === "/testovani/komplexni-analyza";
 
   return (
     <>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          href={isMinified ? "/minified-index.css" : "/unminified-index.css"}
-        />
-        <script
-          type="module"
-          src={isMinified ? "/minified-index.js" : "/unminified-index.js"}
-        />
-      </Helmet>
+      {isTestingPage && (
+        <Helmet>
+          <link
+            rel="stylesheet"
+            href={
+              new URLSearchParams(location.search).get("minified") !== "false"
+                ? "/minified-index.css"
+                : "/unminified-index.css"
+            }
+          />
+          <script
+            type="module"
+            src={
+              new URLSearchParams(location.search).get("minified") !== "false"
+                ? "/minified-index.js"
+                : "/unminified-index.js"
+            }
+          />
+        </Helmet>
+      )}
 
       <div className="container">
         <Header />
