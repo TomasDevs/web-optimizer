@@ -60,15 +60,14 @@ const AboutApp = () => {
           </h2>
           <p className="section-text">
             Weby musí být rychlé a plynulé, jinak ztrácí uživatele. Tento
-            projekt se zaměřuje na testování a implementaci technik jako
-            minifikace kódu, optimalizace obrázků a lazy loading, které mohou
-            výrazně zlepšit výkon aplikací.
+            projekt se zaměřuje například na testování a implementaci technik
+            jako minifikace kódu, optimalizace obrázků a lazy loading, které
+            mohou výrazně zlepšit výkon aplikací.
           </p>
           <p className="section-text">
             Aplikace <strong>Web Optimizer</strong> umožňuje porovnat výkon
-            tohoto webu před a po optimalizaci pomocí metrik Core Web Vitals. K
-            analýze výkonu používá nástroje jako PageSpeed Insights, GTmetrix a
-            WebPageTest a pomáhá identifikovat oblasti pro zlepšení.
+            jednotlivých stránek webu před a po optimalizaci pomocí metrik Core
+            Web Vitals prostřednictvím PageSpeed Insights API.
           </p>
         </FadeInOnScroll>
       </section>
