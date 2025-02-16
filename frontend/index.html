@@ -76,24 +76,6 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-
-    <!-- Dynamically load CSS and JS based on URL parameter -->
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const isMinified = urlParams.get("minified") === "true";
-
-      const basePath = isMinified ? "/minified" : "/unminified";
-
-      const linkElement = document.createElement("link");
-      linkElement.rel = "stylesheet";
-      linkElement.href = `${basePath}/assets/index.css`;
-      document.head.appendChild(linkElement);
-
-      const scriptElement = document.createElement("script");
-      scriptElement.src = `${basePath}/assets/index.js`;
-      scriptElement.defer = true;
-      document.body.appendChild(scriptElement);
-    </script>
   </head>
   <body>
     <div id="root"></div>
