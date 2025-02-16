@@ -63,6 +63,42 @@ const BaselineTesting = () => {
     }
   };
 
+  const videoIds = [
+    "4N1iwQxiHrs", // The Outfield - Your Love (Josie on a Vacation)
+    "8SbUC-UaAxE", // Guns N' Roses - November Rain
+    "dQw4w9WgXcQ", // Rick Astley - Never Gonna Give You Up
+    "ktvTqknDobU", // Imagine Dragons - Radioactive
+    "fJ9rUzIMcZQ", // Queen - Don't Stop Me Now
+    "VBmMU_iwe6U", // Beyoncé - Run the World (Girls)
+  ];
+
+  // Lazy-loaded YouTube embed component
+  const LazyYoutubeEmbed = ({ videoId, isOptimized }) => {
+    const [isLoaded, setIsLoaded] = React.useState(false);
+
+    return (
+      <div className="youtube-container" onClick={() => setIsLoaded(true)}>
+        {isLoaded || !isOptimized ? (
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0&modestbranding=1`}
+            title="YouTube video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading={isOptimized ? "lazy" : "eager"}></iframe>
+        ) : (
+          <img
+            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+            alt="YouTube video preview"
+            className="youtube-preview"
+          />
+        )}
+      </div>
+    );
+  };
+
   // Fetch mock data
   useEffect(() => {
     const fetchData = async () => {
@@ -163,6 +199,26 @@ const BaselineTesting = () => {
             loading={isOptimized ? "eager" : "lazy"}
             fetchPriority={isOptimized ? "high" : undefined}
           />
+        </div>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">
+          Optimalizované načítání YouTube videí
+        </h2>
+        <p className="section-text">
+          {isOptimized
+            ? "YouTube video se nejprve zobrazí jako náhledový obrázek a iframe se načte až po kliknutí. To zlepšuje výkon a snižuje zátěž stránky."
+            : "Iframe s videem se načítá ihned, což může zpomalit načítání stránky."}
+        </p>
+        <div className="youtube__grid">
+          {videoIds.map((videoId, index) => (
+            <LazyYoutubeEmbed
+              key={index}
+              videoId={videoId}
+              isOptimized={isOptimized}
+            />
+          ))}
         </div>
       </FadeInOnScroll>
 
