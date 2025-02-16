@@ -223,6 +223,44 @@ const BaselineTesting = () => {
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">
+          Optimalizované vs. neoptimalizované video
+        </h2>
+        <p className="section-text">
+          {isOptimized
+            ? "Optimalizovaná verze používá WebM a lazy loading pro rychlejší načítání."
+            : "Neoptimalizované video se načítá okamžitě, což zpomaluje stránku."}
+        </p>
+        <video
+          width="100%"
+          height="auto"
+          muted
+          loop
+          autoPlay
+          loading={isOptimized ? "lazy" : "eager"}
+          poster={isOptimized ? "/assets/images/video-preview.jpg" : undefined}
+          preload={isOptimized ? "metadata" : "auto"}>
+          <source
+            src={
+              isOptimized
+                ? "/assets/videos/video-optimalized.webm"
+                : "/assets/videos/video-unoptimalized.webm"
+            }
+            type="video/webm"
+          />
+          <source
+            src={
+              isOptimized
+                ? "/assets/videos/video-optimalized.mp4"
+                : "/assets/videos/video-unoptimalized.mp4"
+            }
+            type="video/mp4"
+          />
+          Váš prohlížeč nepodporuje video tag.
+        </video>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
         <p className="section-text">
           {isOptimized
