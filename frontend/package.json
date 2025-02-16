@@ -7,7 +7,9 @@
   "author": "Tomas Stveracek",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:minified": "vite build --mode minified",
+    "build:unminified": "vite build --mode development",
+    "build": "npm run build:unminified && npm run build:minified && node scripts/merge-builds.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -26,6 +28,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
+    "fs-extra": "^11.3.0",
     "globals": "^15.14.0",
     "sass": "^1.83.0",
     "terser": "^5.37.0",

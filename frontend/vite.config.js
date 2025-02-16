@@ -3,17 +3,24 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
 export default defineConfig(({ mode }) => {
+  const isMinified = mode === "minified";
   return {
     plugins: [react()],
     base: "/",
     build: {
-      outDir: "dist",
-      minify: "terser",
+      outDir: isMinified ? "dist-minified" : "dist-unminified", // Každý build do jiné složky
+      minify: isMinified ? "terser" : false,
       rollupOptions: {
         output: {
-          entryFileNames: `[name].js`,
-          assetFileNames: `[name].[ext]`,
-          chunkFileNames: `[name].js`,
+          entryFileNames: isMinified
+            ? "minified-index.js"
+            : "unminified-index.js",
+          assetFileNames: isMinified
+            ? "minified-index.[ext]"
+            : "unminified-index.[ext]",
+          chunkFileNames: isMinified
+            ? "minified-[name].js"
+            : "unminified-[name].js",
         },
       },
       copyPublicDir: true,

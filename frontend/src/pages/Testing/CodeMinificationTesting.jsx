@@ -27,11 +27,11 @@ const CodeMinificationTesting = () => {
         <title>{pageTitle}</title>
         <link
           rel="stylesheet"
-          href={isMinified ? "/minified/index.css" : "/unminified/index.css"}
+          href={isMinified ? "/minified-index.css" : "/unminified-index.css"}
         />
         <script
           type="module"
-          src={isMinified ? "/minified/index.js" : "/unminified/index.js"}
+          src={isMinified ? "/minified-index.js" : "/unminified-index.js"}
         />
       </Helmet>
 
