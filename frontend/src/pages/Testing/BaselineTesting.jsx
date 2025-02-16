@@ -10,15 +10,21 @@ const BaselineTesting = () => {
   const [status, setStatus] = useState("Připraveno k testu");
   const [mockData, setMockData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Get URL search params
   const isOptimized = searchParams.get("version") === "optimized";
+  const isMinified = searchParams.get("minified") !== "false";
 
   useEffect(() => {
     if (!searchParams.has("version")) {
-      setSearchParams({ version: "unoptimized" }, { replace: true });
+      setSearchParams(
+        { version: "unoptimized", minified: "false" },
+        { replace: true }
+      );
     }
   }, [searchParams, setSearchParams]);
 
-  // Načítání fontů
+  // Load fonts based on optimization
   useEffect(() => {
     const fontLink = document.createElement("link");
     fontLink.rel = "stylesheet";
@@ -82,9 +88,11 @@ const BaselineTesting = () => {
     fetchData();
   }, [isOptimized]);
 
+  // Toggle between optimized and unoptimized version
   const handleVersionToggle = () => {
     setSearchParams({
       version: isOptimized ? "unoptimized" : "optimized",
+      minified: isOptimized ? "false" : "true",
     });
   };
 
@@ -92,6 +100,15 @@ const BaselineTesting = () => {
     <>
       <Helmet>
         <title>{pageTitle}</title>
+        <link
+          rel="stylesheet"
+          href={isMinified ? "/minified-index.css" : "/unminified-index.css"}
+        />
+        <script
+          type="module"
+          src={isMinified ? "/minified-index.js" : "/unminified-index.js"}
+        />
+
         {isOptimized && (
           <link
             rel="preload"
@@ -116,9 +133,13 @@ const BaselineTesting = () => {
           verzi
         </button>
 
-        <p className="status-text">
+        <p className="status-text -bottom">
           Aktuální verze:{" "}
           <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
+
+        <p className="status-text">
+          Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
         </p>
       </FadeInOnScroll>
 
