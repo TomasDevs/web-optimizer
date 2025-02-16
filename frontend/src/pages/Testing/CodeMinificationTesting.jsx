@@ -25,7 +25,16 @@ const CodeMinificationTesting = () => {
     <>
       <Helmet>
         <title>{pageTitle}</title>
+        <link
+          rel="stylesheet"
+          href={isMinified ? "/minified/index.css" : "/unminified/index.css"}
+        />
+        <script
+          type="module"
+          src={isMinified ? "/minified/index.js" : "/unminified/index.js"}
+        />
       </Helmet>
+
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Testování minifikace kódu</h1>
         <p className="section-text">

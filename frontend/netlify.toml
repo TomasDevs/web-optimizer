@@ -4,21 +4,14 @@
   publish = "frontend/dist"
   functions = "api/functions"
 
+# Přesměrování API
 [[redirects]]
-  from = "/unminified/*"
-  to = "/unminified/:splat"
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
   status = 200
-  force = true
 
-[[redirects]]
-  from = "/minified/*"
-  to = "/minified/:splat"
-  status = 200
-  force = true
-
-# React Router přesměrování pro SPA
+# Přesměrování pro React Router SPA (zůstává)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = true
