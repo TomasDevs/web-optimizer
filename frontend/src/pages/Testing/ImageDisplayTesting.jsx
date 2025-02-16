@@ -75,7 +75,7 @@ const ImageDisplayTesting = () => {
           className={`gallery__container ${
             displayMethod === "css" ? "css-background" : ""
           }`}>
-          {Array.from({ length: 20 }, (_, index) =>
+          {Array.from({ length: 24 }, (_, index) =>
             displayMethod === "img" ? (
               <img
                 key={index}
