@@ -1,5 +1,27 @@
 import React, { useState } from "react";
 
+const fetchPageSpeedResults = async (url, apiKey) => {
+  const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+    url
+  )}&key=${apiKey}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`Chyba API: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    if (!data.lighthouseResult) {
+      throw new Error("Neplatná odpověď z API.");
+    }
+
+    return data.lighthouseResult.audits;
+  } catch (error) {
+    throw new Error(error.message || "Nepodařilo se načíst data.");
+  }
+};
+
 const TestPageSpeed = () => {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -13,28 +35,10 @@ const TestPageSpeed = () => {
     setResult(null);
 
     try {
-      const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
-        url
-      )}&key=${API_KEY}`;
-
-      console.log("Fetching:", apiUrl);
-
-      const response = await fetch(apiUrl);
-      if (!response.ok) {
-        throw new Error(`HTTP chyba: ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.log("Výsledky API:", data);
-
-      if (!data.lighthouseResult) {
-        throw new Error("Neplatná odpověď z API.");
-      }
-
-      setResult(data.lighthouseResult.audits);
+      const audits = await fetchPageSpeedResults(url, API_KEY);
+      setResult(audits);
     } catch (error) {
-      console.error("Chyba při testování:", error);
-      setError("Něco se pokazilo. Zkontrolujte server nebo API klíč.");
+      setError(error.message);
     } finally {
       setLoading(false);
     }
@@ -51,10 +55,10 @@ const TestPageSpeed = () => {
         className="button -bottom"
         onClick={() => testPage(window.location.href)}
         disabled={loading}>
-        {loading ? "Testuji stránku..." : "Otestovat stránku"}
+        {loading ? <span>Testuji stránku...</span> : "Otestovat stránku"}
       </button>
 
-      {error && <p className="test-page-speed__error">{error}</p>}
+      {error && <p className="test-page-speed__error">⚠ {error}</p>}
 
       {result && (
         <div className="test-page-speed__results">
