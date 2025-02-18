@@ -1,9 +1,7 @@
 import React from "react";
-import Card from "./Card";
-import { Link } from "react-router-dom";
-import FadeInOnScroll from "../FadeInOnScroll";
+import CardList from "./CardList";
 
-const tests = [
+const testFeatures = [
   {
     title: "LCP Test",
     description: "Zjistěte, jak optimalizovat hlavní obsah stránky.",
@@ -68,30 +66,14 @@ const tests = [
   },
 ];
 
-const TestingCards = () => {
-  return (
-    <section className="section testing-cards">
-      <FadeInOnScroll className="section-description">
-        <h2 className="section-subtitle">
-          Nastal čas{" "}
-          <Link to={"/testovani"} className="highlight-link">
-            testování
-          </Link>
-        </h2>
-
-        <div className="cards__container">
-          {tests.map((test, index) => (
-            <Card
-              key={index}
-              title={test.title}
-              description={test.description}
-              link={test.link}
-            />
-          ))}
-        </div>
-      </FadeInOnScroll>
-    </section>
-  );
-};
+const TestingCards = () => (
+  <CardList
+    title="Nastal čas"
+    highlightText="testování"
+    link="/testovani"
+    items={testFeatures}
+    className="testing-cards"
+  />
+);
 
 export default TestingCards;
