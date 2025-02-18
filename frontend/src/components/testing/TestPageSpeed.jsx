@@ -48,8 +48,8 @@ const TestPageSpeed = () => {
     <div className="test-page-speed">
       <h2 className="section-subtitle -small">Testování stránky</h2>
       <p className="section-text">
-        Test využívá <strong>Google PageSpeed Insights API</strong> pro měření
-        výkonu a Core Web Vitals.
+        Test využívá <strong>Google PageSpeed Insights API</strong> pro zjištění
+        metrik Core Web Vitals.
       </p>
       <button
         className="button -bottom"
@@ -58,7 +58,7 @@ const TestPageSpeed = () => {
         {loading ? <span>Testuji stránku...</span> : "Otestovat stránku"}
       </button>
 
-      {error && <p className="test-page-speed__error">⚠ {error}</p>}
+      {error && <p className="test-page-speed__error">{error}</p>}
 
       {result && (
         <div className="test-page-speed__results">
