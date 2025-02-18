@@ -9,8 +9,12 @@ export default defineConfig(({ mode }) => {
     base: "/",
     build: {
       outDir: isMinified ? "dist-minified" : "dist-unminified", // Každý build do jiné složky
+      emptyOutDir: true,
       minify: isMinified ? "terser" : false,
       rollupOptions: {
+        input: {
+          main: resolve(__dirname, "index.html"),
+        },
         output: {
           entryFileNames: isMinified
             ? "minified-index.js"
