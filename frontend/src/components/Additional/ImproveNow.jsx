@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AdditionalSection from "./AdditionalSection";
 
 const ImproveNow = () => {
   return (
-    <div className="additional__section -improve">
-      <h3 className="additional__title">Zlepšete svůj web ještě dnes!</h3>
+    <AdditionalSection
+      title="Zlepšete svůj web ještě dnes!"
+      className="-improve">
       <p className="additional__text">
         Rychlý a hladký web je cesta k úspěchu.
         <br />
@@ -13,7 +15,7 @@ const ImproveNow = () => {
       <Link to="/nastroje" className="additional__button">
         Začněte optimalizovat
       </Link>
-    </div>
+    </AdditionalSection>
   );
 };
 
