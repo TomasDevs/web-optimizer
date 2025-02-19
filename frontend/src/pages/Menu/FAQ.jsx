@@ -55,9 +55,9 @@ const FAQ = () => {
     },
   ];
 
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+  const toggleAccordion = useCallback((index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  }, []);
 
   return (
     <div className="faq-page">

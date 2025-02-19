@@ -1,29 +1,15 @@
 import { useState } from "react";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
+import LazyLoadingExample from "../../components/UI/LazyLoadingExample";
 
 const LazyLoading = () => {
-  const pageTitle = "Lazy Loading | Web Optimizer";
-
-  const lazyLoadingExample = `
-    <img src="/assets/images/image1.jpg" loading="lazy" alt="Obrázek 1" />
-    <img src="/assets/images/image2.jpg" loading="lazy" alt="Obrázek 2" />
-    <img src="/assets/images/image3.jpg" loading="lazy" alt="Obrázek 3" />
-  `;
-
-  const eagerLoadingExample = `
-    <img src="/assets/images/image1.jpg" loading="eager" alt="Obrázek 1" />
-    <img src="/assets/images/image2.jpg" loading="eager" alt="Obrázek 2" />
-    <img src="/assets/images/image3.jpg" loading="eager" alt="Obrázek 3" />
-  `;
-
-  const [showLazyCode, setShowLazyCode] = useState(true);
-
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Lazy Loading | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">
@@ -80,16 +66,7 @@ const LazyLoading = () => {
 
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Příklad kódu</h2>
-
-        <button
-          onClick={() => setShowLazyCode(!showLazyCode)}
-          className="button button -bottom">
-          {showLazyCode ? "Zobrazit eager loading" : "Zobrazit lazy loading"}
-        </button>
-
-        <pre className="code-block">
-          {showLazyCode ? lazyLoadingExample : eagerLoadingExample}
-        </pre>
+        <LazyLoadingExample />
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
@@ -100,9 +77,11 @@ const LazyLoading = () => {
           obrázků, přejděte na testovací stránku.
         </p>
 
-        <Link to="/testovani/lazy-loading" className="button -bottom">
-          Testování lazy loading
-        </Link>
+        <TestButton
+          to="/testovani/lazy-loading"
+          label="Testování lazy loading"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

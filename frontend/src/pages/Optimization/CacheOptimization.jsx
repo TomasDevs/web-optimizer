@@ -3,11 +3,10 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Helmet } from "react-helmet";
 
 const CacheOptimization = () => {
-  const pageTitle = "Cache | Web Optimizer";
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Cache | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Cache (Mezipaměť)</h1>

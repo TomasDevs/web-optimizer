@@ -28,7 +28,8 @@ const Tools = () => {
                 href="https://pagespeed.web.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít PageSpeed Insights v novém okně">
                 PageSpeed Insights
               </a>
               <p className="section-text">
@@ -41,7 +42,8 @@ const Tools = () => {
                 href="https://developers.google.com/web/tools/lighthouse"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít Google Lighthouse v novém okně">
                 Google Lighthouse
               </a>
               <p className="section-text">
@@ -54,7 +56,8 @@ const Tools = () => {
                 href="https://gtmetrix.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít GTmetrix v novém okně">
                 GTmetrix
               </a>
               <p className="section-text">
@@ -67,7 +70,8 @@ const Tools = () => {
                 href="https://webpagetest.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít WebPageTest v novém okně">
                 WebPageTest
               </a>
               <p className="section-text">
@@ -80,7 +84,8 @@ const Tools = () => {
                 href="https://tools.pingdom.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít Pingdom Tools v novém okně">
                 Pingdom Tools
               </a>
               <p className="section-text">
@@ -92,7 +97,8 @@ const Tools = () => {
                 href="https://pagespeed.cz/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít PageSpeed.cz Tester v novém okně">
                 PageSpeed.cz Tester
               </a>
               <p className="section-text">
@@ -105,7 +111,8 @@ const Tools = () => {
                 href="https://analytics.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít Google Analytics v novém okně">
                 Google Analytics
               </a>
               <p className="section-text">
@@ -118,7 +125,8 @@ const Tools = () => {
                 href="https://developer.chrome.com/docs/devtools/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít Chrome DevTools v novém okně">
                 Chrome DevTools
               </a>
               <p className="section-text">
@@ -131,7 +139,8 @@ const Tools = () => {
                 href="https://speedcurve.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít SpeedCurve v novém okně">
                 SpeedCurve
               </a>
               <p className="section-text">
@@ -154,7 +163,8 @@ const Tools = () => {
                 href="https://www.ilincev.com/rychlost-webu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít článek 9 možností, jak zrychlit web a zvýšit tím konverze v novém okně">
                 9 možností, jak zrychlit web a zvýšit tím konverze
               </a>
             </li>
@@ -164,7 +174,8 @@ const Tools = () => {
                 href="https://docs.pagespeed.cz/docs/why-page-speed"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít článek Proč optimalizovat rychlost webu? v novém okně">
                 Proč optimalizovat rychlost webu?
               </a>
             </li>
@@ -174,7 +185,8 @@ const Tools = () => {
                 href="https://unifer.cz/nova-metrika-google-inp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="highlight-link -external">
+                className="highlight-link -external"
+                aria-label="Otevřít článek Google INP: Co je to a proč na tom záleží v novém okně">
                 Googlu na tom záleží
               </a>
             </li>

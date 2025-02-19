@@ -1,14 +1,14 @@
 import React from "react";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
 
 const ScriptLoading = () => {
-  const pageTitle = "Optimalizace načítání skriptů | Web Optimizer";
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Optimalizace načítání skriptů | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Optimalizace načítání skriptů</h1>
@@ -173,9 +173,12 @@ const ScriptLoading = () => {
           Chcete-li otestovat vliv jednotlivých metod načítání skriptů na výkon
           stránky, přejděte na testovací stránku.
         </p>
-        <Link to="/testovani/nacitani-skriptu" className="button -bottom">
-          Testování načítání skriptů
-        </Link>
+
+        <TestButton
+          to="/testovani/nacitani-skriptu"
+          label="Testování načítání skriptů"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

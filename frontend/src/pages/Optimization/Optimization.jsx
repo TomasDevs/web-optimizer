@@ -5,11 +5,10 @@ import TipBlock from "../../components/UI/TipBlock";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const Optimization = () => {
-  const pageTitle = "Optimalizace webu | Web Optimizer";
   return (
     <div className="section-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Optimalizace webu | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>

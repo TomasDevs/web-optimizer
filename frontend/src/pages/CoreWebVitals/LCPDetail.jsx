@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import TipBlock from "../../components/UI/TipBlock";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
 
 const LCPDetail = () => {
-  const pageTitle = "LCP | Web Optimizer";
   return (
     <div className="page lcp-detail-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>LCP | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Largest Contentful Paint (LCP)</h1>
@@ -27,10 +27,7 @@ const LCPDetail = () => {
           zajímá více teorie, mrkněte na praktické články v dolní části stránky.
         </p>
 
-        <Link to="/testovani/lcp-testing" className="button">
-          {" "}
-          Testování LCP
-        </Link>
+        <TestButton to="/testovani/lcp-testing" label="Testování LCP" />
       </FadeInOnScroll>
 
       <TipBlock

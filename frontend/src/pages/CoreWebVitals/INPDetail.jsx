@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import TipBlock from "../../components/UI/TipBlock";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
 
 const INPDetail = () => {
-  const pageTitle = "INP | Web Optimizer";
   return (
     <div className="page inp-detail-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>INP | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Interaction to Next Paint (INP)</h1>
@@ -26,10 +26,7 @@ const INPDetail = () => {
           Další informace můžete prozkoumat v odkazech na konci stránky.
         </p>
 
-        <Link to="/testovani/inp-testing" className="button">
-          {" "}
-          Testování INP
-        </Link>
+        <TestButton to="/testovani/inp-testing" label="Testování INP" />
       </FadeInOnScroll>
 
       <TipBlock

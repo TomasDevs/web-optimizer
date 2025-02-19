@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import TipBlock from "../../components/UI/TipBlock";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
 
 const CLSDetail = () => {
   const pageTitle = "CLS | Web Optimizer";
   return (
     <div className="page cls-detail-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>CLS | Web Optimizer</title>
       </Helmet>
-
       <FadeInOnScroll className="section-description">
         <h1 className="subpage-title">Cumulative Layout Shift (CLS)</h1>
         <p className="section-text">
@@ -28,10 +28,7 @@ const CLSDetail = () => {
           stránky.
         </p>
 
-        <Link to="/testovani/cls-testing" className="button">
-          {" "}
-          Testování CLS
-        </Link>
+        <TestButton to="/testovani/cls-testing" label="Testování CLS" />
       </FadeInOnScroll>
 
       <TipBlock

@@ -6,11 +6,10 @@ import OptimizationCards from "../components/Card/OptimizationCards";
 import CoreWebVitalsCards from "../components/Card/CoreWebVitalsCards";
 
 const Home = () => {
-  const pageTitle = "Web Optimizer | Optimalizace a testování webu";
   return (
     <div className="home">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Web Optimizer | Optimalizace a testování webu</title>
       </Helmet>
       <Hero />
       <OptimizationCards />

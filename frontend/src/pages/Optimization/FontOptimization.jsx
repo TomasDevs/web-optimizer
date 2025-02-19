@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
+import FontExampleToggle from "../../components/UI/FontExampleToggle";
 
 const FontOptimization = () => {
-  const pageTitle = "Optimalizace fontů | Web Optimizer";
-
   const googleFontsExample = `
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +24,10 @@ const FontOptimization = () => {
     }
   `;
 
-  const [showFontExample, setShowFontExample] = useState(false);
-
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Optimalizace fontů | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Optimalizace fontů</h1>
@@ -40,6 +38,7 @@ const FontOptimization = () => {
           pokud nejsou správně optimalizovány.
         </p>
       </FadeInOnScroll>
+
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">
           Proč je optimalizace fontů důležitá?
@@ -52,6 +51,7 @@ const FontOptimization = () => {
           <code className="inline-code">Largest Contentful Paint (LCP)</code>.
         </p>
       </FadeInOnScroll>
+
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Hlavní techniky optimalizace fontů</h2>
         <p className="section-text">
@@ -84,6 +84,7 @@ const FontOptimization = () => {
           font.
         </p>
       </FadeInOnScroll>
+
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Příklad kódu</h2>
         <p className="section-text">
@@ -92,15 +93,12 @@ const FontOptimization = () => {
           <code className="inline-code">preconnect</code> urychluje připojení k
           externím zdrojům.
         </p>
-        <button
-          onClick={() => setShowFontExample(!showFontExample)}
-          className="button button -bottom">
-          {showFontExample ? "Zobrazit Google Fonts" : "Zobrazit lokální fonty"}
-        </button>
-        <pre className="code-block">
-          {showFontExample ? localFontsExample : googleFontsExample}
-        </pre>
+        <FontExampleToggle
+          googleFontsExample={googleFontsExample}
+          localFontsExample={localFontsExample}
+        />
       </FadeInOnScroll>
+
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Výhody lokálních fontů</h2>
         <p className="section-text">
@@ -116,9 +114,12 @@ const FontOptimization = () => {
           Otestujte rozdíly mezi lokálními fonty a Google Fonts na testovací
           stránce.
         </p>
-        <Link to="/testovani/fonty" className="button -bottom">
-          Testování fontů
-        </Link>
+
+        <TestButton
+          to="/testovani/fonty"
+          label="Testování fontů"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

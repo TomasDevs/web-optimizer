@@ -3,22 +3,20 @@ import { Helmet } from "react-helmet";
 import { useLocation, Link } from "react-router-dom";
 
 const NotFound = () => {
-  const pageTitle = "Stránka nenalezena | Web Optimizer";
-  const location = useLocation();
-  const queryParams = location.search;
+  const { pathname, search } = useLocation();
 
   return (
     <section className="section-page not-found">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Stránka nenalezena | Web Optimizer</title>
       </Helmet>
       <h1 className="not-found__title">404</h1>
       <p className="not-found__text">
         Ups, tahle stránka se rozhodla <strong>zmizet na dovolenou!</strong>
       </p>
       <p className="not-found__text">
-        Stránku <code>{location.pathname + queryParams}</code> jsme nenašli.
-        Možná se někde <strong>vyhřívá na slunci.</strong>
+        Stránku <code>{pathname + search}</code> jsme nenašli. Možná se někde{" "}
+        <strong>vyhřívá na slunci.</strong>
       </p>
       <p className="not-found__text">
         Ale nemusíte zoufat, <strong>my vám pomůžeme</strong> najít cestu zpět.

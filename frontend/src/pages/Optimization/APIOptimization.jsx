@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
 
 const APIOptimization = () => {
   const pageTitle = "API | Web Optimizer";
@@ -211,9 +212,11 @@ const APIOptimization = () => {
           veřejné API s vlastním backendem.
         </p>
 
-        <Link to="/testovani/api" className="button -bottom">
-          Testování API
-        </Link>
+        <TestButton
+          to="/testovani/api"
+          label="Testování API"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

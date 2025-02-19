@@ -1,14 +1,13 @@
 import React from "react";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import TestButton from "../../components/UI/TestButton";
 
 const CDNOptimization = () => {
-  const pageTitle = "CDN | Web Optimizer";
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>CDN | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">CDN (Content Delivery Network)</h1>
@@ -158,9 +157,11 @@ const CDNOptimization = () => {
           stejného souboru z různých CDN poskytovatelů a porovnat jejich výkon.
         </p>
 
-        <Link to="/testovani/cdn" className="button -bottom">
-          Testování CDN
-        </Link>
+        <TestButton
+          to="/testovani/cdn"
+          label="Testování CDN"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

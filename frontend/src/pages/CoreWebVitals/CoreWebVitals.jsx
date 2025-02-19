@@ -5,11 +5,10 @@ import TipBlock from "../../components/UI/TipBlock";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const CoreWebVitals = () => {
-  const pageTitle = "Core Web Vitals | Web Optimizer";
   return (
     <div className="section-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Core Web Vitals | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-description">

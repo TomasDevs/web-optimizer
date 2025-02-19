@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import TestButton from "../../components/UI/TestButton";
+import CodeToggle from "../../components/UI/CodeToggle";
 
 const CodeMinification = () => {
-  const pageTitle = "Minifikace kódu | Web Optimizer";
-  const [isCodeMinified, setIsCodeMinified] = useState(false);
-
   const unminifiedCode = `
     function add(a, b) {
       // Přičte dvě čísla
@@ -23,15 +21,12 @@ const CodeMinification = () => {
 
   const minifiedCode = `function add(a,b){console.log("Výpočet:",a+b);return a+b;}function subtract(a,b){console.log("Výpočet:",a-b);return a-b;}`;
 
-  const handleLocalMinification = () => {
-    setIsCodeMinified(!isCodeMinified);
-  };
-
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Minifikace kódu | Web Optimizer</title>
       </Helmet>
+
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Minifikace kódu</h1>
 
@@ -53,15 +48,12 @@ const CodeMinification = () => {
 
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Příklad kódu</h2>
-        <button onClick={handleLocalMinification} className="button -bottom">
-          {isCodeMinified
-            ? "Zobrazit neminifikovaný kód"
-            : "Zobrazit minifikovaný kód"}
-        </button>
-        <pre className="code-block">
-          {isCodeMinified ? minifiedCode : unminifiedCode}
-        </pre>
+        <CodeToggle
+          unminifiedCode={unminifiedCode}
+          minifiedCode={minifiedCode}
+        />
       </FadeInOnScroll>
+
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle"> Testování minifikace</h2>
         <p className="section-text">
@@ -69,9 +61,11 @@ const CodeMinification = () => {
           rychlost načítání stránky.
         </p>
 
-        <Link to="/testovani/minifikace-kodu" className="button -bottom">
-          Testování minifikace
-        </Link>
+        <TestButton
+          to="/testovani/minifikace-kodu"
+          label="Testování minifikace"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );

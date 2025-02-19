@@ -1,14 +1,15 @@
 import React from "react";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import TestButton from "../../components/UI/TestButton";
+import ImageFormatList from "../../components/UI/ImageFormatList";
 
 const ImageOptimization = () => {
-  const pageTitle = "Optimalizace obrázků | Web Optimizer";
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Optimalizace obrázků | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Optimalizace obrázků</h1>
@@ -23,23 +24,7 @@ const ImageOptimization = () => {
 
       <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Výběr správného formátu</h2>
-        <p className="section-text">
-          Použití vhodného formátu obrázků je základem optimalizace:
-          <ul>
-            <li>
-              <code className="inline-code">JPG</code>: Ideální pro fotografie,
-              díky dobré kompresi a kvalitě.
-            </li>
-            <li>
-              <code className="inline-code">WebP</code>: Nabízí lepší kompresi a
-              kvalitu než JPG, včetně podpory průhlednosti.
-            </li>
-            <li>
-              <code className="inline-code">AVIF</code>: Nejmodernější formát s
-              nejvyšší úrovní komprese a kvality.
-            </li>
-          </ul>
-        </p>
+        <ImageFormatList />
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
@@ -186,9 +171,12 @@ const ImageOptimization = () => {
           Chcete-li otestovat různé techniky optimalizace obrázků, přejděte na
           testovací stránku.
         </p>
-        <Link to="/testovani/optimalizace-obrazku" className="button -bottom">
-          Testování optimalizace obrázků
-        </Link>
+
+        <TestButton
+          to="/testovani/optimalizace-obrazku"
+          label="Testování optimalizace obrázků"
+          className="-bottom"
+        />
       </FadeInOnScroll>
     </>
   );
