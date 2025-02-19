@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import TipBlock from "../../components/TipBlock";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import TipBlock from "../../components/UI/TipBlock";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const CoreWebVitals = () => {
   const pageTitle = "Core Web Vitals | Web Optimizer";

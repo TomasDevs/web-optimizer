@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const APIOptimization = () => {
   const pageTitle = "API | Web Optimizer";

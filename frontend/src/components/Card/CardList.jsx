@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
-import FadeInOnScroll from "../FadeInOnScroll";
+import FadeInOnScroll from "../UI/FadeInOnScroll";
 
 const CardList = ({ title, highlightText, link, items, className }) => {
   return (

@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Helmet } from "react-helmet";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const CDNTesting = () => {
   const pageTitle = "Testování CDN a vlastního hostingu | Web Optimizer";

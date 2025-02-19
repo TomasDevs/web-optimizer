@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 

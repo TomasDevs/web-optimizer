@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Layout
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 // Scroll to top
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/Layout/ScrollToTop";
 
 // Optimization
 import Optimization from "./pages/Optimization/Optimization";

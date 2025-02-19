@@ -1,6 +1,5 @@
 import React from "react";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
-import { Link } from "react-router-dom";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Helmet } from "react-helmet";
 
 const CacheOptimization = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import FadeInOnScroll from "./FadeInOnScroll";
+import FadeInOnScroll from "../UI/FadeInOnScroll";
 
 const Hero = () => {
   return (

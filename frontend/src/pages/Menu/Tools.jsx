@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const Tools = () => {
   const pageTitle = "Nástroje pro měření výkonu | Web Optimizer";

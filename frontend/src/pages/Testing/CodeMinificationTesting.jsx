@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useSearchParams } from "react-router-dom";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CodeMinificationTesting = () => {

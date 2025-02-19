@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import FadeInOnScroll from "../../components/FadeInOnScroll";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 

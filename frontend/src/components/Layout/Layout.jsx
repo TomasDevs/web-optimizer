@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
 import Footer from "./Footer";
-import Additional from "./Additional/Additional";
+import Additional from "../Additional/Additional";
 
 const Layout = () => {
   const location = useLocation();
