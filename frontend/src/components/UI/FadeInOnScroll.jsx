@@ -2,9 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 
 const FadeInOnScroll = ({ children, className = "", threshold = 0.2 }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
+    // Vytvoření observeru
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -22,6 +23,7 @@ const FadeInOnScroll = ({ children, className = "", threshold = 0.2 }) => {
       if (ref.current) {
         observer.unobserve(ref.current);
       }
+      observer.disconnect(); // Odpojení observeru
     };
   }, [threshold]);
 
