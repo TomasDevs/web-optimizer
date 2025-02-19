@@ -1,19 +1,18 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Layout/Header";
+import Footer from "../Layout/Footer";
 import Additional from "../Additional/Additional";
 
 const Layout = () => {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
+  const { pathname, search } = useLocation();
+  const searchParams = new URLSearchParams(search);
 
-  // Add minification only to testing pages
-  const isTestingPage =
-    location.pathname === "/testovani/minifikace-kodu" ||
-    location.pathname === "/testovani/komplexni-analyza";
-
+  const isTestingPage = [
+    "/testovani/minifikace-kodu",
+    "/testovani/komplexni-analyza",
+  ].includes(pathname);
   const isMinified = searchParams.get("minified") !== "false";
 
   return (
