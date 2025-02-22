@@ -5,7 +5,6 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CLSTesting = () => {
-  const pageTitle = "Testování CLS | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("cls") === "optimized";
 
@@ -22,7 +21,7 @@ const CLSTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování CLS | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">

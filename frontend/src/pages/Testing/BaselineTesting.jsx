@@ -3,9 +3,10 @@ import { useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import LazyYoutubeEmbed from "../../components/testing/LazyYoutubeEmbed";
+import { heavyComputation, fetchMockData } from "./utils/testingUtils";
 
 const BaselineTesting = () => {
-  const pageTitle = "Komplexní analýza | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
   const [status, setStatus] = useState("Připraveno k testu");
   const [mockData, setMockData] = useState([]);
@@ -43,12 +44,6 @@ const BaselineTesting = () => {
     };
   }, [isOptimized]);
 
-  // Simulace těžkého výpočtu pro INP test
-  const heavyComputation = (num) => {
-    if (num <= 1) return num;
-    return heavyComputation(num - 1) + heavyComputation(num - 2);
-  };
-
   const handleComputationClick = () => {
     setStatus("Výpočet probíhá...");
 
@@ -72,56 +67,9 @@ const BaselineTesting = () => {
     "VBmMU_iwe6U", // Beyoncé - Run the World (Girls)
   ];
 
-  // Lazy-loaded YouTube embed component
-  const LazyYoutubeEmbed = ({ videoId, isOptimized }) => {
-    const [isLoaded, setIsLoaded] = React.useState(false);
-
-    return (
-      <div className="youtube-container" onClick={() => setIsLoaded(true)}>
-        {isLoaded || !isOptimized ? (
-          <iframe
-            width="100%"
-            height="100%"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0&modestbranding=1`}
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading={isOptimized ? "lazy" : "eager"}></iframe>
-        ) : (
-          <img
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="YouTube video preview"
-            className="youtube-preview"
-          />
-        )}
-      </div>
-    );
-  };
-
   // Fetch mock data
   useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      try {
-        // Simulace rozdílných rychlostí načítání
-        await new Promise((resolve) =>
-          setTimeout(resolve, isOptimized ? 500 : 2000)
-        );
-
-        const response = await fetch(
-          "https://jsonplaceholder.typicode.com/comments"
-        );
-        const result = await response.json();
-        setMockData(result.slice(0, 6));
-      } catch (error) {
-        console.error("Error fetching mock data:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
+    fetchMockData(isOptimized, setMockData, setIsLoading);
   }, [isOptimized]);
 
   // Toggle between optimized and unoptimized version
@@ -135,7 +83,7 @@ const BaselineTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Komplexní analýza | Web Optimizer</title>
         <link
           rel="stylesheet"
           href={isMinified ? "/minified-index.css" : "/unminified-index.css"}
@@ -342,14 +290,22 @@ const BaselineTesting = () => {
         </p>
         <div className="ad-placeholder">
           {isOptimized ? (
-            <div style={{ width: "100%", height: "150px", background: "#ccc" }}>
+            <div style={{ width: "100%", height: "600px", background: "#ccc" }}>
               Rezervované místo pro reklamu
+              <iframe
+                src="https://osel.cz/"
+                width="100%"
+                height="600"
+                title="Ukázková reklama"
+                style={{ border: "none" }}
+                loading="lazy"
+              />
             </div>
           ) : (
             <iframe
-              src="https://www.seznam.cz/"
+              src="https://osel.cz/"
               width="100%"
-              height="150"
+              height="600"
               title="Ukázková reklama"
               style={{ border: "none" }}
             />

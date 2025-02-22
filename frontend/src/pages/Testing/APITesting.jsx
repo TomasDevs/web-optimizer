@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import {
+  formatBytes,
+  getItemCount,
+  measureTransferSize,
+  calculateCompression,
+  getCacheStatus,
+} from "./utils/apiUtils";
 
 const APITesting = () => {
-  const pageTitle = "Testování výkonu API | Web Optimizer";
-
   const apiEndpoints = [
     // Malé, rychlé odpovědi
     {
@@ -102,51 +107,9 @@ const APITesting = () => {
       },
     },
   ];
+
   const [results, setResults] = useState({});
   const [loading, setLoading] = useState({});
-
-  // Formátování velikosti
-  const formatBytes = (bytes) => {
-    if (bytes === 0 || bytes === "N/A") return "N/A";
-    if (bytes < 1024) return `${bytes} B`;
-    const sizes = ["B", "kB", "MB"];
-    const i = Math.floor(Math.log(bytes) / Math.log(1024));
-    return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sizes[i]}`;
-  };
-
-  // Získání počtu položek
-  const getItemCount = (data) => {
-    if (!data) return "N/A";
-    if (Array.isArray(data)) return data.length;
-    if (data.results) return data.results.length;
-    if (data.data && Array.isArray(data.data)) return data.data.length;
-    return Object.keys(data).length;
-  };
-
-  // Měření velikosti přenosu
-  const measureTransferSize = async (response) => {
-    try {
-      const contentLength = response.headers.get("content-length");
-      if (contentLength) {
-        return parseInt(contentLength, 10);
-      }
-
-      // Pokud není dostupná hlavička, použijeme arrayBuffer
-      const clone = response.clone();
-      const buffer = await clone.arrayBuffer();
-      return buffer.byteLength;
-    } catch (error) {
-      console.error("Chyba při měření velikosti:", error);
-      return "N/A";
-    }
-  };
-
-  // Výpočet komprese
-  const calculateCompression = (originalSize, compressedSize) => {
-    if (!originalSize || !compressedSize || originalSize === compressedSize)
-      return null;
-    return (((originalSize - compressedSize) / originalSize) * 100).toFixed(1);
-  };
 
   // Testování API
   const testAPI = async (api) => {
@@ -163,24 +126,10 @@ const APITesting = () => {
       const processingTime = performance.now() - processStart;
       const rawSize = new Blob([text]).size;
       const compression = calculateCompression(rawSize, transferSize);
-
-      // Celkový čas
       const networkTime = performance.now() - startTime;
 
       // Cache info
-      const cacheControl =
-        response.headers.get("cache-control") || "není nastaveno";
-      let cacheStatus = "Není nastaveno";
-
-      if (
-        cacheControl.includes("no-cache") ||
-        cacheControl.includes("no-store")
-      ) {
-        cacheStatus = "Zakázáno";
-      } else if (cacheControl.includes("max-age")) {
-        const maxAge = cacheControl.match(/max-age=(\d+)/);
-        cacheStatus = `Povoleno (${maxAge[1]}s)`;
-      }
+      const cacheStatus = getCacheStatus(response.headers);
 
       // Komprese
       //   const contentEncoding = response.headers.get("content-encoding");
@@ -214,7 +163,7 @@ const APITesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování výkonu API | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">

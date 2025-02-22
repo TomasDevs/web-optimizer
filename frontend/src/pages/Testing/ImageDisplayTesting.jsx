@@ -5,8 +5,6 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const ImageDisplayTesting = () => {
-  const pageTitle = "Testování zobrazení obrázků | Web Optimizer";
-
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -25,7 +23,7 @@ const ImageDisplayTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování zobrazení obrázků | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">

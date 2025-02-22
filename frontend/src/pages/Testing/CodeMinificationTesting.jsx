@@ -5,7 +5,6 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const CodeMinificationTesting = () => {
-  const pageTitle = "Testování minifikace kódu | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -24,7 +23,7 @@ const CodeMinificationTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování minifikace kódu | Web Optimizer</title>
         <link
           rel="stylesheet"
           href={isMinified ? "/minified-index.css" : "/unminified-index.css"}

@@ -1,10 +1,10 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const InpTesting = () => {
-  const pageTitle = "Testování INP | Web Optimizer";
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("inp") === "optimized";
   const [status, setStatus] = useState("Klikni na tlačítko pro test.");
@@ -39,48 +39,55 @@ const InpTesting = () => {
   };
 
   return (
-    <section className="section-page">
+    <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování INP | Web Optimizer</title>
       </Helmet>
 
-      <h1 className="subpage-title">
-        Testování Interaction to Next Paint (INP)
-      </h1>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">
+          Testování Interaction to Next Paint (INP)
+        </h1>
 
-      <p className="section-text">
-        Interaction to Next Paint (INP) měří dobu odezvy na uživatelskou
-        interakci. Přepni mezi optimalizovanou a neoptimalizovanou verzí a
-        sleduj vliv na responzivitu stránky.
-      </p>
-      <p className="section-text">
-        V tomto testu provádíme výpočet Fibonacciho sekvence pomocí rekurzivního
-        algoritmu. Fibonacciho sekvence je řada čísel, kde každé číslo je
-        součtem dvou předchozích.
-      </p>
-      <pre className="code-block">
-        {`function fibonacci(n) {
+        <p className="section-text">
+          Interaction to Next Paint (INP) měří dobu odezvy na uživatelskou
+          interakci. Přepni mezi optimalizovanou a neoptimalizovanou verzí a
+          sleduj vliv na responzivitu stránky.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <p className="section-text">
+          V tomto testu provádíme výpočet Fibonacciho sekvence pomocí
+          rekurzivního algoritmu. Fibonacciho sekvence je řada čísel, kde každé
+          číslo je součtem dvou předchozích.
+        </p>
+        <pre className="code-block">
+          {`function fibonacci(n) {
   if (n <= 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }`}
-      </pre>
-      <p className="section-text">
-        Optimalizovaná verze používá funkci <code>setTimeout</code>, která
-        umožňuje UI reagovat na uživatelské akce okamžitě, zatímco
-        neoptimalizovaná verze blokuje hlavní vlákno.
-      </p>
+        </pre>
+        <p className="section-text">
+          Optimalizovaná verze používá funkci <code>setTimeout</code>, která
+          umožňuje UI reagovat na uživatelské akce okamžitě, zatímco
+          neoptimalizovaná verze blokuje hlavní vlákno.
+        </p>
+      </FadeInOnScroll>
 
-      <button onClick={handleInpToggle} className="button -bottom">
-        Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-        verzi
-      </button>
+      <FadeInOnScroll className="section-page">
+        <button onClick={handleInpToggle} className="button -bottom">
+          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+          verzi
+        </button>
 
-      <p className="status-text">
-        Aktuální verze:{" "}
-        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
-      </p>
+        <p className="status-text">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
+      </FadeInOnScroll>
 
-      <section className="section">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle -small">Test interakce</h2>
         <p className="section-text">
           Kliknutím na tlačítko spustíte výpočet. Optimalizovaná verze rozkládá
@@ -92,9 +99,9 @@ const InpTesting = () => {
         <div id="inp-test-output" className="status-text">
           {status}
         </div>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p className="section-text">
           Optimalizovaná verze používá asynchronní zpracování pomocí setTimeout.
@@ -103,12 +110,12 @@ const InpTesting = () => {
           probíhá...", což umožňuje UI reagovat na další akce. Optimální
           kódování zahrnuje asynchronní přístupy ke zpracování úloh.
         </p>
-      </section>
+      </FadeInOnScroll>
 
-      <section className="section-page">
+      <FadeInOnScroll className="section-page">
         <TestPageSpeed />
-      </section>
-    </section>
+      </FadeInOnScroll>
+    </>
   );
 };
 

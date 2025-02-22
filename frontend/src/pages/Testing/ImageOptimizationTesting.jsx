@@ -3,10 +3,9 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import Gallery from "./utils//Gallery";
 
 const ImageOptimizationTesting = () => {
-  const pageTitle = "Testování optimalizace obrázků | Web Optimizer";
-
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -43,7 +42,7 @@ const ImageOptimizationTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování optimalizace obrázků | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">
@@ -101,22 +100,11 @@ const ImageOptimizationTesting = () => {
         </button>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="section-page gallery">
-        <h2 className="section-subtitle -small">Galerie obrázků</h2>
-        <div className="gallery__container">
-          {Array.from({ length: 24 }, (_, index) => (
-            <img
-              key={index}
-              src={`/assets/images/image${index + 1}.${format}`}
-              alt={`Obrázek ${index + 1} ve formátu ${format.toUpperCase()}`}
-              className="gallery__item"
-              loading={isLazy ? "lazy" : "eager"}
-              width={showAttributes ? "800" : undefined}
-              height={showAttributes ? "600" : undefined}
-            />
-          ))}
-        </div>
-      </FadeInOnScroll>
+      <Gallery
+        format={format}
+        isLazy={isLazy}
+        showAttributes={showAttributes}
+      />
 
       <FadeInOnScroll className="section-page">
         <TestPageSpeed />

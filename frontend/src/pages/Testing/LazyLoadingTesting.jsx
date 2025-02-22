@@ -5,8 +5,6 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const LazyLoadingTesting = () => {
-  const pageTitle = "Testování Lazy Loadingu | Web Optimizer";
-
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -25,7 +23,7 @@ const LazyLoadingTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování Lazy Loadingu | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">

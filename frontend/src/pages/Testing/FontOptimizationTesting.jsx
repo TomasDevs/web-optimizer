@@ -5,8 +5,6 @@ import { Helmet } from "react-helmet";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 
 const FontOptimizationTesting = () => {
-  const pageTitle = "Testování fontů | Web Optimizer";
-
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -64,7 +62,7 @@ const FontOptimizationTesting = () => {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Testování fontů | Web Optimizer</title>
       </Helmet>
 
       <FadeInOnScroll className="section-page">
