@@ -5,7 +5,7 @@ const CreditGallery = ({ source, link }) => (
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="highlight-link">
+      className="highlight-link -external">
       {source}
     </a>
     .
