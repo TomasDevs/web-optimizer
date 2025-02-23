@@ -1,4 +1,5 @@
 import FadeInOnScroll from "../../../components/UI/FadeInOnScroll";
+import CreditGallery from "./CreditGallery";
 
 const Gallery = ({ format, isLazy, showAttributes }) => (
   <FadeInOnScroll className="section-page gallery">
@@ -16,6 +17,8 @@ const Gallery = ({ format, isLazy, showAttributes }) => (
         />
       ))}
     </div>
+
+    <CreditGallery source="Unsplash" link="https://unsplash.com" />
   </FadeInOnScroll>
 );
 

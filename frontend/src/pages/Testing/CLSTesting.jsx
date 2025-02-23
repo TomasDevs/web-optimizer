@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import CreditGallery from "./utils/CreditGallery";
 
 const CLSTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,30 +63,42 @@ const CLSTesting = () => {
               width={isOptimized ? "800" : undefined}
               height={isOptimized ? "600" : undefined}
               alt={`Obrázek ${index + 1}`}
+              className="gallery__item"
             />
           ))}
         </div>
+
+        <CreditGallery source="Unsplash" link="https://unsplash.com" />
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle -small">Reklamy</h2>
+        <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
         <p className="section-text">
           {isOptimized
-            ? "Reklamní prostor je předem rezervován, aby se zabránilo posunům layoutu."
-            : "Reklama se načítá dynamicky, což způsobuje posuny layoutu."}
+            ? "Reklamní prostor je předem rezervován."
+            : "Reklama se načítá dynamicky a způsobuje posuny."}
         </p>
         <div className="ad-placeholder">
           {isOptimized ? (
-            <div style={{ width: "100%", height: "150px", background: "#ccc" }}>
+            <div style={{ width: "100%", height: "600px", background: "#ccc" }}>
               Rezervované místo pro reklamu
+              <iframe
+                src="https://osel.cz/"
+                width="100%"
+                height="600"
+                title="Ukázková reklama"
+                style={{ border: "none" }}
+                loading="lazy"
+              />
             </div>
           ) : (
             <iframe
-              src="https://www.seznam.cz/"
+              src="https://osel.cz/"
               width="100%"
-              height="150"
+              height="600"
               title="Ukázková reklama"
-              style={{ border: "none" }}></iframe>
+              style={{ border: "none" }}
+            />
           )}
         </div>
       </FadeInOnScroll>

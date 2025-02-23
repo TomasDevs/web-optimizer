@@ -51,4 +51,9 @@
     box-shadow: 0 4px 8px rgba(vars.$primary-color, 0.2);
     border-radius: vars.$border-radius-md;
   }
+
+  &__credit {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
 }

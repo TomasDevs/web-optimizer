@@ -5,6 +5,7 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
 import LazyYoutubeEmbed from "../../components/testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
+import CreditGallery from "./utils/CreditGallery";
 
 const BaselineTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -279,6 +280,8 @@ const BaselineTesting = () => {
             />
           ))}
         </div>
+
+        <CreditGallery source="Unsplash" link="https://unsplash.com" />
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">

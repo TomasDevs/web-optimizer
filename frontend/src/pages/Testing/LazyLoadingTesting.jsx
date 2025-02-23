@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import CreditGallery from "./utils/CreditGallery";
 
 const LazyLoadingTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -61,6 +62,8 @@ const LazyLoadingTesting = () => {
             />
           ))}
         </div>
+
+        <CreditGallery source="Unsplash" link="https://unsplash.com" />
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
