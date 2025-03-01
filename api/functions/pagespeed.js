@@ -21,10 +21,11 @@ exports.handler = async (event) => {
     const response = await axios.get(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
         url
-      )}&key=${process.env.VITE_PAGESPEED_API_KEY}`
+      )}&key=${process.env.VITE_PAGESPEED_API_KEY}`,
+      { timeout: 9000 }
     );
 
-    console.log("✅ API Response:", response.data);
+    console.log("API Response:", response.data);
 
     return {
       statusCode: 200,
@@ -36,6 +37,7 @@ exports.handler = async (event) => {
     };
   } catch (error) {
     console.error("Error fetching PageSpeed Insights:", error.message);
+
     return {
       statusCode: 500,
       body: JSON.stringify({
