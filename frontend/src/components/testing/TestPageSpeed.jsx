@@ -1,24 +1,27 @@
 import React, { useState } from "react";
 
-// Fetch data from the API
 const fetchPageSpeedResults = async (url) => {
-  // Call the API with the URL
   const apiUrl = `https://web-optimizer.netlify.app/api/pagespeed?url=${encodeURIComponent(
     url
   )}`;
 
   try {
     const response = await fetch(apiUrl);
+    console.log("🔍 Content-Type:", response.headers.get("content-type")); // LOG pro kontrolu!
+
     if (!response.ok) {
       throw new Error(`Chyba API: ${response.status} ${response.statusText}`);
     }
 
-    const data = await response.json();
-    if (!data.lighthouseResult) {
-      throw new Error("Neplatná odpověď z API.");
-    }
+    const text = await response.text(); // Načti odpověď jako text a vypiš do konzole
+    console.log("📜 Raw Response:", text);
 
-    return data.lighthouseResult.audits;
+    try {
+      const data = JSON.parse(text); // Ověř, že je to opravdu JSON
+      return data.lighthouseResult.audits;
+    } catch (error) {
+      throw new Error("❌ Chyba při parsování JSON: " + text);
+    }
   } catch (error) {
     throw new Error(error.message || "Nepodařilo se načíst data.");
   }
