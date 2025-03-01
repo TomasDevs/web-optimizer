@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 const fetchPageSpeedResults = async (url) => {
-  const apiUrl = `https://web-optimizer.netlify.app/api/pagespeed?url=${encodeURIComponent(
-    url
-  )}`;
+  const apiUrl = `/.netlify/functions/pagespeed?url=${encodeURIComponent(url)}`;
 
   try {
     const response = await fetch(apiUrl);
