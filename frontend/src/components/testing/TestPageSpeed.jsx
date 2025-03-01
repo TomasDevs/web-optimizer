@@ -1,42 +1,19 @@
 import React, { useState } from "react";
 
 const fetchPageSpeedResults = async (url) => {
-  const apiUrl = `/.netlify/functions/pagespeed?url=${encodeURIComponent(url)}`;
+  const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+    url
+  )}&key=${import.meta.env.VITE_PAGESPEED_API_KEY}`;
 
   try {
     const response = await fetch(apiUrl);
-    console.log("🔍 Content-Type:", response.headers.get("content-type")); // LOG pro kontrolu
-
     if (!response.ok) {
       throw new Error(`Chyba API: ${response.status} ${response.statusText}`);
     }
 
-    const text = await response.text(); // Načti odpověď jako text a vypiš do konzole
-    console.log("📜 Raw Response:", text);
-
-    try {
-      const data = JSON.parse(text); // Ověř, že je to opravdu JSON
-      console.log("✅ JSON Data:", data);
-
-      if (!data.lighthouseResult) {
-        throw new Error(
-          "❌ API odpověď neobsahuje Lighthouse data: " + JSON.stringify(data)
-        );
-      }
-
-      if (!data.lighthouseResult.audits) {
-        throw new Error(
-          "⚠️ Lighthouse odpověď neobsahuje audits: " +
-            JSON.stringify(data.lighthouseResult)
-        );
-      }
-
-      return data.lighthouseResult.audits;
-    } catch (error) {
-      throw new Error("❌ Chyba při parsování JSON: " + text);
-    }
+    const data = await response.json();
+    return data.lighthouseResult.audits;
   } catch (error) {
-    console.error("🚨 API Fetch Error:", error);
     throw new Error(error.message || "Nepodařilo se načíst data.");
   }
 };
