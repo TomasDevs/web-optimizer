@@ -2,18 +2,13 @@
   "name": "web-optimizer",
   "version": "2.0.0",
   "description": "A test platform for implementing and evaluating web performance optimization techniques.",
-  "main": "server.js",
   "dependencies": {
     "@netlify/functions": "^2.0.0",
     "axios": "^1.7.9",
-    "compression": "^1.7.5",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7"
   },
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
-    "start": "node /api/server.js",
     "dev": "cd frontend && npm run dev",
     "lint": "cd frontend && npm run lint",
     "preview": "cd frontend && npm run preview"

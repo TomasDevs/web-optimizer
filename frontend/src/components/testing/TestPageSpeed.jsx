@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const fetchPageSpeedResults = async (url, apiKey) => {
-  const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
-    url
-  )}&key=${apiKey}`;
+// Fetch data from the API
+const fetchPageSpeedResults = async (url) => {
+  // Call the API with the URL
+  const apiUrl = `/api/pagespeed?url=${encodeURIComponent(url)}`;
 
   try {
     const response = await fetch(apiUrl);
@@ -27,15 +27,13 @@ const TestPageSpeed = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_KEY = import.meta.env.VITE_PAGESPEED_API_KEY;
-
   const testPage = async (url) => {
     setLoading(true);
     setError(null);
     setResult(null);
 
     try {
-      const audits = await fetchPageSpeedResults(url, API_KEY);
+      const audits = await fetchPageSpeedResults(url);
       setResult(audits);
     } catch (error) {
       setError(error.message);
