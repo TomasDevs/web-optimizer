@@ -5,7 +5,7 @@ const fetchPageSpeedResults = async (url) => {
 
   try {
     const response = await fetch(apiUrl);
-    console.log("🔍 Content-Type:", response.headers.get("content-type")); // LOG pro kontrolu!
+    console.log("🔍 Content-Type:", response.headers.get("content-type")); // LOG pro kontrolu
 
     if (!response.ok) {
       throw new Error(`Chyba API: ${response.status} ${response.statusText}`);
@@ -16,11 +16,27 @@ const fetchPageSpeedResults = async (url) => {
 
     try {
       const data = JSON.parse(text); // Ověř, že je to opravdu JSON
+      console.log("✅ JSON Data:", data);
+
+      if (!data.lighthouseResult) {
+        throw new Error(
+          "❌ API odpověď neobsahuje Lighthouse data: " + JSON.stringify(data)
+        );
+      }
+
+      if (!data.lighthouseResult.audits) {
+        throw new Error(
+          "⚠️ Lighthouse odpověď neobsahuje audits: " +
+            JSON.stringify(data.lighthouseResult)
+        );
+      }
+
       return data.lighthouseResult.audits;
     } catch (error) {
       throw new Error("❌ Chyba při parsování JSON: " + text);
     }
   } catch (error) {
+    console.error("🚨 API Fetch Error:", error);
     throw new Error(error.message || "Nepodařilo se načíst data.");
   }
 };
