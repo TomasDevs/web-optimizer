@@ -16,11 +16,15 @@ exports.handler = async (event) => {
   }
 
   try {
+    console.log("🔍 Fetching PageSpeed Insights for:", url);
+
     const response = await axios.get(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
         url
       )}&key=${process.env.VITE_PAGESPEED_API_KEY}`
     );
+
+    console.log("✅ API Response:", response.data);
 
     return {
       statusCode: 200,
@@ -31,10 +35,13 @@ exports.handler = async (event) => {
       },
     };
   } catch (error) {
-    console.error("Error fetching PageSpeed Insights:", error);
+    console.error("Error fetching PageSpeed Insights:", error.message);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to fetch PageSpeed Insights" }),
+      body: JSON.stringify({
+        error: "Failed to fetch PageSpeed Insights",
+        details: error.message,
+      }),
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
