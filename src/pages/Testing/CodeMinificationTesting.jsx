@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useSearchParams } from "react-router-dom";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
-import TestPageSpeed from "../../components/testing/TestPageSpeed";
+import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 
 const CodeMinificationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
