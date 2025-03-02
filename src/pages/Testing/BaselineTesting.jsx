@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
-import LazyYoutubeEmbed from "../../components/testing/LazyYoutubeEmbed";
+import LazyYoutubeEmbed from "../../components/Testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
 import CreditGallery from "./utils/CreditGallery";
 
