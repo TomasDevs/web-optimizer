@@ -1,15 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestButton from "../../components/UI/TestButton";
 
 const APIOptimization = () => {
-  const pageTitle = "API | Web Optimizer";
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>API | Web Optimizer</title>
       </Helmet>
       <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">

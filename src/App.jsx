@@ -17,6 +17,7 @@ import CDNOptimization from "./pages/Optimization/CDNOptimization";
 import APIOptimization from "./pages/Optimization/APIOptimization";
 import CacheOptimization from "./pages/Optimization/CacheOptimization";
 
+// Core Web Vitals
 import CoreWebVitals from "./pages/CoreWebVitals/CoreWebVitals";
 import LCPDetail from "./pages/CoreWebVitals/LCPDetail";
 import CLSDetail from "./pages/CoreWebVitals/CLSDetail";

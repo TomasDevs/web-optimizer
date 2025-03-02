@@ -1,4 +1,4 @@
-// Simulace těžkého výpočtu pro INP test
+// Simulace těžkého výpočtu pro INP test (Fibonacci)
 export const heavyComputation = (num) => {
   if (num <= 1) return num;
   return heavyComputation(num - 1) + heavyComputation(num - 2);
@@ -8,7 +8,7 @@ export const heavyComputation = (num) => {
 export const fetchMockData = async (isOptimized, setMockData, setIsLoading) => {
   setIsLoading(true);
   try {
-    // Simulace rozdílných rychlostí načítání
+    // Simulace rozdílných rychlostí načítání (500ms optimalizované, 2000ms neoptimalizované)
     await new Promise((resolve) =>
       setTimeout(resolve, isOptimized ? 500 : 2000)
     );

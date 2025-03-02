@@ -7,6 +7,7 @@ import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 const ScriptLoadingTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametr "script" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("script")) {
       setSearchParams({ script: "async" }, { replace: true });
@@ -15,39 +16,38 @@ const ScriptLoadingTesting = () => {
 
   const scriptType = searchParams.get("script") || "async";
 
+  // Přepnutí mezi metodami načítání skriptů (async, defer, sync)
   const handleScriptToggle = () => {
     const newType =
       scriptType === "async"
         ? "defer"
         : scriptType === "defer"
         ? "sync"
-        : scriptType === "sync"
-        ? "module"
         : "async";
     setSearchParams({ script: newType });
   };
 
+  // Dynamické přidání a odstranění testovacích skriptů při změně typu načítání
   useEffect(() => {
-    // Odebrání všech testovacích skriptů
+    // Odebrání předchozích skriptů
     ["test-script-1", "test-script-2", "extra-script"].forEach((id) => {
       document.getElementById(id)?.remove();
     });
 
-    // Hlavní výpočetní skript
+    // Vytvoření a konfigurace testovacích skriptů
     const script1 = document.createElement("script");
     script1.src = "/assets/scripts/heavy-script.js";
     script1.id = "test-script-1";
 
-    // Utility skript (čeká na DOM)
     const script2 = document.createElement("script");
     script2.src = "/assets/scripts/utility-script.js";
     script2.id = "test-script-2";
 
-    // Další testovací skript
     const script3 = document.createElement("script");
     script3.src = "/assets/scripts/extra-script.js";
     script3.id = "extra-script";
 
+    // Nastavení atributů pro asynchronní, odložené nebo synchronní načítání
     if (scriptType === "async") {
       script1.async = true;
       script2.async = true;
@@ -62,10 +62,12 @@ const ScriptLoadingTesting = () => {
       script3.async = false;
     }
 
+    // Přidání skriptů do DOM
     document.body.appendChild(script1);
     document.body.appendChild(script2);
     document.body.appendChild(script3);
 
+    // Vyčištění při změně parametru
     return () => {
       ["test-script-1", "test-script-2", "extra-script"].forEach((id) => {
         document.getElementById(id)?.remove();
@@ -73,6 +75,7 @@ const ScriptLoadingTesting = () => {
     };
   }, [scriptType]);
 
+  // Aktualizace výstupu utility skriptu při změně parametru
   useEffect(() => {
     const outputElement = document.getElementById("utility-script-output");
     if (outputElement) {
@@ -91,9 +94,8 @@ const ScriptLoadingTesting = () => {
         <p className="section-text">
           Tato stránka umožňuje testovat různé způsoby načítání skriptů:{" "}
           <code className="inline-code">async</code>,{" "}
-          <code className="inline-code">defer</code>,{" "}
-          <code className="inline-code">sync</code> a{" "}
-          <code className="inline-code">module</code>. Pomocí tlačítka níže lze
+          <code className="inline-code">defer</code> a{" "}
+          <code className="inline-code">sync</code>. Pomocí tlačítka níže lze
           přepínat mezi metodami a sledovat jejich vliv na metriky jako{" "}
           <strong>FCP</strong>, <strong>LCP</strong> a <strong>TBT</strong>.
         </p>
@@ -110,8 +112,6 @@ const ScriptLoadingTesting = () => {
             ? "defer"
             : scriptType === "defer"
             ? "sync"
-            : scriptType === "sync"
-            ? "module"
             : "async"}
         </button>
       </FadeInOnScroll>
@@ -164,13 +164,6 @@ const ScriptLoadingTesting = () => {
             – Okamžitě se spustí a jen vypíše potvrzení o dokončení.
           </li>
         </ul>
-
-        <p className="section-text">
-          <strong>Info:</strong> Pro tento test není{" "}
-          <code className="inline-code">type="module"</code> relevantní, protože
-          žádný skript nevyužívá importy/exporty. Moduly se přirozeně chovají
-          jako defer, takže by v tomto scénáři neukázaly výrazný rozdíl.
-        </p>
 
         <p className="section-text">
           Pozoruj, jak jednotlivé skripty reagují při přepínání mezi různými

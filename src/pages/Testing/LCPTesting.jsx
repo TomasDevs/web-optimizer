@@ -7,6 +7,7 @@ import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 const LCPTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametr "optimized" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("optimized")) {
       setSearchParams({ optimized: "false" }, { replace: true });
@@ -15,6 +16,7 @@ const LCPTesting = () => {
 
   const isOptimized = searchParams.get("optimized") === "true";
 
+  // Přepnutí mezi optimalizovanou a neoptimalizovanou verzí stránky
   const handleLCPChange = () => {
     setSearchParams({ optimized: !isOptimized });
   };

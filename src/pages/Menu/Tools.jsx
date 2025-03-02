@@ -3,11 +3,10 @@ import { Helmet } from "react-helmet";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const Tools = () => {
-  const pageTitle = "Nástroje pro měření výkonu | Web Optimizer";
   return (
     <div className="tools-page">
       <Helmet>
-        <title>{pageTitle}</title>
+        <title>Nástroje pro měření výkonu | Web Optimizer</title>
       </Helmet>
       <section className="section-page">
         <FadeInOnScroll className="section-description">

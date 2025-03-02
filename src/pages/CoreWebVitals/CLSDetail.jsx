@@ -6,7 +6,6 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestButton from "../../components/UI/TestButton";
 
 const CLSDetail = () => {
-  const pageTitle = "CLS | Web Optimizer";
   return (
     <div className="page cls-detail-page">
       <Helmet>

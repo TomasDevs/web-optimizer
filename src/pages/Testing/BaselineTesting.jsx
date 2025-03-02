@@ -13,10 +13,11 @@ const BaselineTesting = () => {
   const [mockData, setMockData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Get URL search params
+  // Získání parametrů z URL
   const isOptimized = searchParams.get("version") === "optimized";
   const isMinified = searchParams.get("minified") !== "false";
 
+  // Pokud nejsou parametry v URL, nastavíme výchozí hodnoty
   useEffect(() => {
     if (!searchParams.has("version")) {
       setSearchParams(
@@ -26,13 +27,13 @@ const BaselineTesting = () => {
     }
   }, [searchParams, setSearchParams]);
 
-  // Load fonts based on optimization
+  // Dynamické načítání fontů podle verze
   useEffect(() => {
     const fontLink = document.createElement("link");
     fontLink.rel = "stylesheet";
 
     if (isOptimized) {
-      fontLink.href = "/assets/fonts/fonts.css";
+      fontLink.href = "/assets/fonts/fonts.css"; // Lokální fonty
     } else {
       fontLink.href =
         "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap";
@@ -45,6 +46,7 @@ const BaselineTesting = () => {
     };
   }, [isOptimized]);
 
+  // Simulace těžkého výpočtu (blokující výpočet vs. asynchronní zpracování)
   const handleComputationClick = () => {
     setStatus("Výpočet probíhá...");
 
@@ -52,13 +54,14 @@ const BaselineTesting = () => {
       setTimeout(() => {
         const result = heavyComputation(40);
         setStatus(`Výpočet dokončen: ${result}`);
-      }, 0);
+      }, 0); // Asynchronní zpracování
     } else {
       const result = heavyComputation(40);
-      setStatus(`Výpočet dokončen: ${result}`);
+      setStatus(`Výpočet dokončen: ${result}`); // Blokující výpočet
     }
   };
 
+  // ID videí pro načítání
   const videoIds = [
     "4N1iwQxiHrs", // The Outfield - Your Love (Josie on a Vacation)
     "8SbUC-UaAxE", // Guns N' Roses - November Rain
@@ -68,12 +71,12 @@ const BaselineTesting = () => {
     "VBmMU_iwe6U", // Beyoncé - Run the World (Girls)
   ];
 
-  // Fetch mock data
+  // Načtení testovacích dat (mock data)
   useEffect(() => {
     fetchMockData(isOptimized, setMockData, setIsLoading);
   }, [isOptimized]);
 
-  // Toggle between optimized and unoptimized version
+  // Přepínání mezi verzemi optimalizace
   const handleVersionToggle = () => {
     setSearchParams({
       version: isOptimized ? "unoptimized" : "optimized",

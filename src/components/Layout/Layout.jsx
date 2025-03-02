@@ -6,17 +6,21 @@ import Footer from "../Layout/Footer";
 import Additional from "../Additional/Additional";
 
 const Layout = () => {
-  const { pathname, search } = useLocation();
+  const { pathname, search } = useLocation(); // Získání aktuální URL
   const searchParams = new URLSearchParams(search);
 
+  // Kontrola, zda se jedná o testovací stránku
   const isTestingPage = [
     "/testovani/minifikace-kodu",
     "/testovani/komplexni-analyza",
   ].includes(pathname);
+
+  // Kontrola, zda je stránka minifikovaná
   const isMinified = searchParams.get("minified") !== "false";
 
   return (
     <>
+      {/* Pokud jde o testovací stránku, dynamicky nastaví odpovídající CSS a JS */}
       {isTestingPage && (
         <Helmet>
           <link

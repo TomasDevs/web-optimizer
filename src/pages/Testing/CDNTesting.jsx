@@ -19,11 +19,11 @@ const CDNTesting = () => {
       }
       const end = performance.now();
 
-      // Get file size
+      // Získání velikosti souboru
       const blob = await response.blob();
       const fileSize = `${(blob.size / 1024).toFixed(2)} KB`;
 
-      // Load script and measure onload time
+      // Dynamické načtení skriptu a měření doby onload
       const loadStart = performance.now();
       const script = document.createElement("script");
       script.src = url;
@@ -44,10 +44,12 @@ const CDNTesting = () => {
         }));
         executeTest(source.name);
       };
+
+      // Ošetření chyby při načítání skriptu
       script.onerror = () => {
         setLoadTimes((prev) => ({
           ...prev,
-          [`${source.name} (${type})`]: "❌ Soubor nenalezen",
+          [`${source.name} (${type})`]: "Soubor nenalezen",
         }));
         setLoadedLibraries((prev) => ({
           ...prev,
@@ -58,24 +60,26 @@ const CDNTesting = () => {
     } catch (error) {
       setLoadTimes((prev) => ({
         ...prev,
-        [`${source.name} (${type})`]: "❌ Soubor nenalezen",
+        [`${source.name} (${type})`]: "Soubor nenalezen",
       }));
     }
   };
 
-  // Execute test for each library
+  // Otestování funkcionality načtených knihoven
   const executeTest = (name) => {
+    // Test Lodash.js
     if (name === "Lodash.js" && window._) {
       setRandomNumber(window._.random(1, 100));
     }
 
+    // Test Babylon.js
     if (name === "Babylon.js" && window.BABYLON) {
       console.log("Babylon.js úspěšně načten!");
 
       requestAnimationFrame(() => {
         const canvas = document.getElementById("babylon-canvas");
         if (!canvas) {
-          console.error("❌ Chyba: Nenalezen <canvas> prvek!");
+          console.error("Chyba: Nenalezen <canvas> prvek!");
           return;
         }
 
@@ -98,6 +102,7 @@ const CDNTesting = () => {
           scene
         );
 
+        // Vytvoření kostky a rotace
         const box = window.BABYLON.MeshBuilder.CreateBox(
           "box",
           { size: 1 },
@@ -121,6 +126,7 @@ const CDNTesting = () => {
       });
     }
 
+    // Test TensorFlow.js - jednoduchý model pro učení
     if (name === "TensorFlow.js" && window.tf) {
       console.log("TensorFlow.js úspěšně načten!");
 
@@ -151,6 +157,7 @@ const CDNTesting = () => {
       });
     }
 
+    // Test Chart.js - vykreslení grafu
     if (name === "Chart.js" && window.Chart && !chartInitialized) {
       setTimeout(() => {
         const ctx = canvasRef.current.getContext("2d");
@@ -369,7 +376,7 @@ const CDNTesting = () => {
         <h2 className="section-subtitle">Ověření načtení knihoven</h2>
         {Object.entries(loadedLibraries).map(([name, status]) => (
           <p key={name} className="section-text">
-            <strong>{name}:</strong> {status ? "✅ Načteno" : "❌ Nenačteno"}
+            <strong>{name}:</strong> {status ? "Načteno" : "Nenačteno"}
           </p>
         ))}
       </FadeInOnScroll>

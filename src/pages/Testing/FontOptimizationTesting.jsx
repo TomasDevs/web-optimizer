@@ -9,6 +9,7 @@ const FontOptimizationTesting = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Zajištění, že parametr "fonts" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("fonts")) {
       setSearchParams({ fonts: "local" }, { replace: true });
@@ -17,10 +18,12 @@ const FontOptimizationTesting = () => {
 
   const isGoogleFonts = searchParams.get("fonts") === "google";
 
+  // Přepínání mezi lokálními fonty a Google Fonts
   const handleFontToggle = () => {
     setSearchParams({ fonts: isGoogleFonts ? "local" : "google" });
   };
 
+  // Dynamické načítání fontů podle vybraného zdroje
   useEffect(() => {
     const fontLink = document.createElement("link");
     fontLink.rel = "stylesheet";
@@ -39,7 +42,7 @@ const FontOptimizationTesting = () => {
     };
   }, [isGoogleFonts]);
 
-  // Fetch data from JSONPlaceholder
+  // Načtení testovacích dat (mock data) z JSONPlaceholder API
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -48,7 +51,7 @@ const FontOptimizationTesting = () => {
           "https://jsonplaceholder.typicode.com/comments"
         );
         const result = await response.json();
-        setData(result.slice(0, 50));
+        setData(result.slice(0, 50)); // Omezení dat na 50 položek
       } catch (error) {
         console.error("Error fetching mock data:", error);
       } finally {

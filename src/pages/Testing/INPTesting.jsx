@@ -9,21 +9,25 @@ const InpTesting = () => {
   const isOptimized = searchParams.get("inp") === "optimized";
   const [status, setStatus] = useState("Klikni na tlačítko pro test.");
 
+  // Zajištění, že parametr "inp" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("inp")) {
       setSearchParams({ inp: "unoptimized" }, { replace: true });
     }
   }, [searchParams, setSearchParams]);
 
+  // Výpočet Fibonacciho sekvence rekurzivní metodou (náročný na výkon)
   const heavyComputation = (num) => {
     if (num <= 1) return num;
     return heavyComputation(num - 1) + heavyComputation(num - 2);
   };
 
+  // Přepnutí mezi optimalizovanou a neoptimalizovanou verzí
   const handleInpToggle = () => {
     setSearchParams({ inp: isOptimized ? "unoptimized" : "optimized" });
   };
 
+  // Spuštění výpočtu s blokováním UI (neoptimalizovaná verze) nebo bez něj (optimalizovaná)
   const handleClick = () => {
     setStatus("Skript probíhá...");
 
@@ -31,10 +35,10 @@ const InpTesting = () => {
       setTimeout(() => {
         const result = heavyComputation(40);
         setStatus(`Výpočet dokončen: ${result}`);
-      }, 0);
+      }, 0); // Výpočet je asynchronní, takže UI zůstává responzivní
     } else {
       const result = heavyComputation(40);
-      setStatus(`Výpočet dokončen: ${result}`);
+      setStatus(`Výpočet dokončen: ${result}`); // Výpočet blokuje UI
     }
   };
 

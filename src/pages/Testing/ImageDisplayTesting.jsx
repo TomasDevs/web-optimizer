@@ -8,6 +8,7 @@ import CreditGallery from "./utils/CreditGallery";
 const ImageDisplayTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametr "display" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("display")) {
       setSearchParams({ display: "img" }, { replace: true });
@@ -16,6 +17,7 @@ const ImageDisplayTesting = () => {
 
   const displayMethod = searchParams.get("display") || "img";
 
+  // Přepnutí mezi metodami zobrazení obrázků (IMG tag vs. CSS background)
   const handleDisplayToggle = () => {
     const newDisplay = displayMethod === "img" ? "css" : "img";
     setSearchParams({ display: newDisplay });

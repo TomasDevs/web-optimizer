@@ -8,6 +8,7 @@ import CreditGallery from "./utils/CreditGallery";
 const LazyLoadingTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametr "lazy" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("lazy")) {
       setSearchParams({ lazy: "false" }, { replace: true });
@@ -16,9 +17,10 @@ const LazyLoadingTesting = () => {
 
   const isLazyLoading = searchParams.get("lazy") === "true";
 
+  // Přepnutí mezi lazy loadingem a okamžitým načítáním obrázků
   const handleLazyLoadingToggle = () => {
     const newUrl = isLazyLoading ? "?lazy=false" : "?lazy=true";
-    window.location.search = newUrl;
+    window.location.search = newUrl; // Přesměrování na URL s novým parametrem
   };
 
   return (

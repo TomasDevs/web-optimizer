@@ -3,11 +3,14 @@ import MenuToggle from "./MenuToggle";
 import MenuItems from "./MenuItems";
 
 const Menu = () => {
+  // State pro otevření/zavření menu
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
+  // Funkce pro zavření menu po kliknutí na odkaz
   const handleLinkClick = () => setIsOpen(false);
 
+  // Funkce pro zavření menu po kliknutí mimo něj
   const handleClickOutside = useCallback((event) => {
     if (
       menuRef.current &&
@@ -19,6 +22,7 @@ const Menu = () => {
   }, []);
 
   useEffect(() => {
+    // Přidání posluchače události pro zavření menu
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [handleClickOutside]);

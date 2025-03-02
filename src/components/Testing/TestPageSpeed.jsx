@@ -1,28 +1,34 @@
 import React, { useState } from "react";
 
+// Funkce pro volání Google PageSpeed Insights API
 const fetchPageSpeedResults = async (url) => {
+  // Vytvoření URL pro volání API
   const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
     url
   )}&key=${import.meta.env.VITE_PAGESPEED_API_KEY}`;
 
   try {
+    // Odeslání požadavku na API
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Chyba API: ${response.status} ${response.statusText}`);
     }
 
+    // Zpracování odpovědi do formátu JSON
     const data = await response.json();
-    return data.lighthouseResult.audits;
+    return data.lighthouseResult.audits; // Vrácení klíčových metrik z odpovědi API
   } catch (error) {
     throw new Error(error.message || "Nepodařilo se načíst data.");
   }
 };
 
 const TestPageSpeed = () => {
+  // Stav pro ukládání výsledků testu, stavu načítání a chybové hlášky
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // Funkce pro spuštění testu
   const testPage = async (url) => {
     setLoading(true);
     setError(null);

@@ -9,6 +9,7 @@ import {
   getCacheStatus,
 } from "./utils/apiUtils";
 
+// Seznam API endpointů rozdělených podle velikosti odpovědi
 const APITesting = () => {
   const apiEndpoints = [
     // Malé, rychlé odpovědi
@@ -37,7 +38,7 @@ const APITesting = () => {
       },
     },
 
-    // Střední velikost, dobrá rychlost
+    // Střední datasety
     {
       name: "JSONPlaceholder Posts",
       url: "https://jsonplaceholder.typicode.com/posts",
@@ -108,10 +109,11 @@ const APITesting = () => {
     },
   ];
 
+  // Stav aplikace pro ukládání výsledků a stavu načítání
   const [results, setResults] = useState({});
   const [loading, setLoading] = useState({});
 
-  // Testování API
+  // Funkce pro testování API výkonu
   const testAPI = async (api) => {
     setLoading((prev) => ({ ...prev, [api.name]: true }));
 
@@ -119,21 +121,23 @@ const APITesting = () => {
       const startTime = performance.now();
       const response = await fetch(api.url, api.options);
       const ttfb = performance.now() - startTime;
+
+      // Měření velikosti přenesených dat
       const transferSize = await measureTransferSize(response);
       const processStart = performance.now();
       const text = await response.text();
       const data = JSON.parse(text);
       const processingTime = performance.now() - processStart;
+
+      // Výpočet komprese
       const rawSize = new Blob([text]).size;
       const compression = calculateCompression(rawSize, transferSize);
       const networkTime = performance.now() - startTime;
 
-      // Cache info
+      // Kontrola cachování v hlavičkách odpovědi
       const cacheStatus = getCacheStatus(response.headers);
 
-      // Komprese
-      //   const contentEncoding = response.headers.get("content-encoding");
-
+      // Uložení výsledků testu
       setResults((prev) => ({
         ...prev,
         [api.name]: {
@@ -149,6 +153,7 @@ const APITesting = () => {
         },
       }));
     } catch (error) {
+      // Zpracování chyby a její zobrazení ve výsledcích
       setResults((prev) => ({
         ...prev,
         [api.name]: {

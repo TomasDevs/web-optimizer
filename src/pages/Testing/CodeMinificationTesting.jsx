@@ -7,6 +7,7 @@ import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 const CodeMinificationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametr "minified" je vždy přítomen v URL
   useEffect(() => {
     if (!searchParams.has("minified")) {
       setSearchParams({ minified: "false" }, { replace: true });
@@ -15,6 +16,7 @@ const CodeMinificationTesting = () => {
 
   const isMinified = searchParams.get("minified") === "true";
 
+  // Přepínání mezi minifikovanou a neminifikovanou verzí
   const handleToggleMinification = () => {
     const newUrl = isMinified ? "?minified=false" : "?minified=true";
     window.location.search = newUrl;

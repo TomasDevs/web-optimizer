@@ -1,6 +1,7 @@
 import React from "react";
 import CardList from "./CardList";
 
+// Seznam testovacích funkcí
 const testFeatures = [
   {
     title: "LCP Test",

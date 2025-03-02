@@ -9,12 +9,14 @@ const CLSTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const isOptimized = searchParams.get("cls") === "optimized";
 
+  // Při prvním načtení stránky nastavíme parametr cls na unoptimized
   useEffect(() => {
     if (!searchParams.has("cls")) {
       setSearchParams({ cls: "unoptimized" }, { replace: true });
     }
   }, [searchParams, setSearchParams]);
 
+  // Přepínání mezi optimalizovanou a neoptimalizovanou verzí
   const handleClsToggle = () => {
     setSearchParams({ cls: isOptimized ? "unoptimized" : "optimized" });
   };

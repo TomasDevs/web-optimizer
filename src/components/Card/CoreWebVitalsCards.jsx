@@ -1,6 +1,7 @@
 import React from "react";
 import CardList from "./CardList";
 
+// Seznam funkcí Core Web Vitals
 const coreWebVitalsFeatures = [
   {
     title: "Largest Contentful Paint (LCP)",

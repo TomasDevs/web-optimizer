@@ -4,7 +4,6 @@ import TestingCards from "../../components/Card/TestingCards";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const TestingPage = () => {
-  const pageTitle = "";
   return (
     <div className="section-page">
       <Helmet>

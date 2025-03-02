@@ -8,6 +8,7 @@ import Gallery from "./utils//Gallery";
 const ImageOptimizationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // Zajištění, že parametry "format", "lazy" a "attributes" jsou vždy přítomné v URL
   useEffect(() => {
     if (!searchParams.has("format")) {
       setSearchParams(
@@ -21,6 +22,7 @@ const ImageOptimizationTesting = () => {
   const isLazy = searchParams.get("lazy") === "true";
   const showAttributes = searchParams.get("attributes") === "true";
 
+  // Přepnutí mezi formáty obrázků (JPG, WebP, AVIF)
   const handleFormatToggle = () => {
     const newFormat =
       format === "jpg" ? "webp" : format === "webp" ? "avif" : "jpg";
@@ -31,10 +33,12 @@ const ImageOptimizationTesting = () => {
     });
   };
 
+  // Přepnutí lazy loadingu obrázků
   const handleLazyToggle = () => {
     setSearchParams({ format, lazy: !isLazy, attributes: showAttributes });
   };
 
+  // Přepnutí přidání atributů width/height pro prevenci CLS
   const handleAttributesToggle = () => {
     setSearchParams({ format, lazy: isLazy, attributes: !showAttributes });
   };

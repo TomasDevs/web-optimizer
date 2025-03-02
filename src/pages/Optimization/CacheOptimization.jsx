@@ -122,6 +122,20 @@ const CacheOptimization = () => {
           </li>
         </ul>
       </FadeInOnScroll>
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Testování CDN</h2>
+        <p className="section-text">
+          Testování CDN z různých CDN poskytovatelů může pomoci zjistit, který
+          poskytovatel nabízí nejlepší výkon a dostupnost pro vaše webové
+          stránky.
+        </p>
+
+        <TestButton
+          to="/testovani/cdn"
+          label="Testování CDN"
+          className="-bottom"
+        />
+      </FadeInOnScroll>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import CardList from "./CardList";
 
+// Seznam optimalizačních funkcí
 const optimizationFeatures = [
   {
     title: "Minifikace kódu",
