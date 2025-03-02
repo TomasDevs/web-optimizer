@@ -34,4 +34,4 @@ indexContent = indexContent.replace(
 // Zajištění, že `index.html` má vždy minifikované soubory
 writeFileSync(indexPath, indexContent, "utf8");
 
-console.log("Soubory úspěšně sloučeny do dist/ a index.html opraven!");
+console.log("Soubory úspěšně sloučeny do dist/ a index.html opraven");

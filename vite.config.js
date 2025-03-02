@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
       minify: isMinified ? "terser" : false,
       rollupOptions: {
         input: {
-          main: resolve(__dirname, "index.html"),
+          main: resolve("index.html"),
         },
         output: {
           entryFileNames: isMinified
@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
       },
       copyPublicDir: true,
     },
-    publicDir: resolve(__dirname, "public"),
+    publicDir: resolve("public"),
     server: {
       headers: {
         "Cache-Control":

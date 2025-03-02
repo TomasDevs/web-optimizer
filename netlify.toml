@@ -1,7 +1,7 @@
 [build]
   base = "/"
   command = "npm install && npm run build"
-  publish = "frontend/dist"
+  publish = "dist"
   functions = "api/functions"
 
 # Přesměrování API
