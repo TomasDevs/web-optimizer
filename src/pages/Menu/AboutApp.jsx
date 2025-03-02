@@ -68,15 +68,100 @@ const AboutApp = () => {
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Technologie a hosting</h2>
+        <p className="section-text">
+          <strong>Web Optimizer</strong> je postaven na moderních webových
+          technologiích. Používá{" "}
+          <a
+            href="https://react.dev/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            React
+          </a>{" "}
+          pro frontend,{" "}
+          <a
+            href="https://vitejs.dev/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            Vite
+          </a>{" "}
+          pro rychlou vývojovou konfiguraci a{" "}
+          <a
+            href="https://sass-lang.com/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            SCSS
+          </a>{" "}
+          pro stylování. Měření výkonu je zajištěno pomocí{" "}
+          <a
+            href="https://developers.google.com/speed/pagespeed/insights/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google PageSpeed Insights API
+          </a>
+          .
+        </p>
+        <p className="section-text">
+          Aplikace je hostována na{" "}
+          <a
+            href="https://www.netlify.com/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            Netlify
+          </a>
+          , což umožňuje automatické nasazování a rychlou dostupnost.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
+        <h2 className="section-subtitle">Zdrojový kód</h2>
+        <p className="section-text">
+          Celý projekt je veřejně dostupný na GitHubu:{" "}
+          <a
+            href="https://github.com/tomasdevs/web-optimizer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="highlight-link -external">
+            GitHub – Web Optimizer
+          </a>
+          .<br></br>
+          <strong>Upozornění:</strong> Projekt je určen pro akadamické účely a
+          nemá veřejnou licenci.
+        </p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="section-page">
         <h2 className="section-subtitle">Použité zdroje</h2>
         <p className="section-text">
           Obrázky použité v této aplikaci pocházejí z{" "}
           <a
             href="https://unsplash.com"
+            className="highlight-link -external"
             target="_blank"
-            rel="noopener noreferrer"
-            className="highlight-link -external">
+            rel="noopener noreferrer">
             Unsplash
+          </a>
+          . <br></br>
+          Při vývoji aplikace byly využity informace a doporučení z{" "}
+          <a
+            href="https://web.dev/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            web.dev
+          </a>{" "}
+          a{" "}
+          <a
+            href="https://developer.mozilla.org/en-US/"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            MDN Web Docs
           </a>
           .
         </p>
