@@ -7,18 +7,19 @@ import CreditGallery from "./utils/CreditGallery";
 
 const CLSTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const isOptimized = searchParams.get("cls") === "optimized";
 
-  // Při prvním načtení stránky nastavíme parametr cls na unoptimized
+  // Při prvním načtení stránky nastavíme parametr "optimized" na false
   useEffect(() => {
-    if (!searchParams.has("cls")) {
-      setSearchParams({ cls: "unoptimized" }, { replace: true });
+    if (!searchParams.has("optimized")) {
+      setSearchParams({ optimized: "false" }, { replace: true });
     }
   }, [searchParams, setSearchParams]);
 
+  const isOptimized = searchParams.get("optimized") === "true";
+
   // Přepínání mezi optimalizovanou a neoptimalizovanou verzí
   const handleClsToggle = () => {
-    setSearchParams({ cls: isOptimized ? "unoptimized" : "optimized" });
+    setSearchParams({ optimized: !isOptimized });
   };
 
   return (
