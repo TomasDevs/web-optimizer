@@ -6,15 +6,16 @@ import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 
 const InpTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const isOptimized = searchParams.get("inp") === "optimized";
   const [status, setStatus] = useState("Klikni na tlačítko pro test.");
 
-  // Zajištění, že parametr "inp" je vždy přítomen v URL
+  // Při prvním načtení stránky nastavíme parametr "optimized" na false
   useEffect(() => {
-    if (!searchParams.has("inp")) {
-      setSearchParams({ inp: "unoptimized" }, { replace: true });
+    if (!searchParams.has("optimized")) {
+      setSearchParams({ optimized: "false" }, { replace: true });
     }
   }, [searchParams, setSearchParams]);
+
+  const isOptimized = searchParams.get("optimized") === "true";
 
   // Výpočet Fibonacciho sekvence rekurzivní metodou (náročný na výkon)
   const heavyComputation = (num) => {
@@ -24,7 +25,7 @@ const InpTesting = () => {
 
   // Přepnutí mezi optimalizovanou a neoptimalizovanou verzí
   const handleInpToggle = () => {
-    setSearchParams({ inp: isOptimized ? "unoptimized" : "optimized" });
+    setSearchParams({ optimized: !isOptimized });
   };
 
   // Spuštění výpočtu s blokováním UI (neoptimalizovaná verze) nebo bez něj (optimalizovaná)
