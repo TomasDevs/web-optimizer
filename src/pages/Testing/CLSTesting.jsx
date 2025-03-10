@@ -28,10 +28,33 @@ const CLSTesting = () => {
         <title>Testování CLS | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">
           Testování Cumulative Layout Shift (CLS)
         </h1>
+
+        <div className="section-page">
+          <h2 className="section-subtitle -small">Galerie obrázků</h2>
+          <p className="section-text">
+            {isOptimized
+              ? "Obrázky mají pevně definované rozměry, aby se zabránilo posunům layoutu."
+              : "Obrázky nemají pevné rozměry, což může způsobit posuny layoutu."}
+          </p>
+          <div className="gallery__container">
+            {Array.from({ length: 12 }, (_, index) => (
+              <img
+                key={index}
+                src={`/assets/images/image${index + 1}.jpg`}
+                width={isOptimized ? "800" : undefined}
+                height={isOptimized ? "600" : undefined}
+                alt={`Obrázek ${index + 1}`}
+                className="gallery__item"
+              />
+            ))}
+          </div>
+
+          <CreditGallery source="Unsplash" link="https://unsplash.com" />
+        </div>
 
         <p className="section-text">
           CLS měří vizuální stabilitu stránky během načítání. Pokud se prvky na
@@ -49,29 +72,6 @@ const CLSTesting = () => {
           Aktuální verze:{" "}
           <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
         </p>
-      </FadeInOnScroll>
-
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Galerie obrázků</h2>
-        <p className="section-text">
-          {isOptimized
-            ? "Obrázky mají pevně definované rozměry, aby se zabránilo posunům layoutu."
-            : "Obrázky nemají pevné rozměry, což může způsobit posuny layoutu."}
-        </p>
-        <div className="gallery__container">
-          {Array.from({ length: 12 }, (_, index) => (
-            <img
-              key={index}
-              src={`/assets/images/image${index + 1}.jpg`}
-              width={isOptimized ? "800" : undefined}
-              height={isOptimized ? "600" : undefined}
-              alt={`Obrázek ${index + 1}`}
-              className="gallery__item"
-            />
-          ))}
-        </div>
-
-        <CreditGallery source="Unsplash" link="https://unsplash.com" />
       </section>
 
       <FadeInOnScroll className="section-page">
