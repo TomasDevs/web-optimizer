@@ -1,0 +1,217 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.cls-test {
+  &__content {
+    background-color: rgba(vars.$background-color, 0.8);
+    border: 1px solid color.adjust(vars.$background-color, $lightness: -10%);
+    border-radius: vars.$border-radius-md;
+    padding: 1.5rem;
+    margin-bottom: vars.$spacing-md;
+  }
+}
+
+.cls-monitor {
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.cls-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: vars.$border-radius-sm;
+  background-color: transparent;
+  border-left: 3px solid transparent;
+
+  &--good {
+    border-left-color: #4caf50;
+
+    .cls-value__number {
+      color: #4caf50;
+    }
+  }
+
+  &--bad {
+    border-left-color: #f44336;
+
+    .cls-value__number {
+      color: #f44336;
+    }
+  }
+
+  &__number {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: vars.$text-color;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+
+.gallery {
+  &__container {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+    &.no-dimensions {
+      .gallery__item {
+        aspect-ratio: unset;
+      }
+    }
+  }
+}
+
+.ad-container {
+  width: 100%;
+  margin: 1.5rem 0;
+  background-color: rgba(vars.$background-color, 0.5);
+  border: 1px dashed color.adjust(vars.$primary-color, $lightness: 30%);
+  border-radius: vars.$border-radius-md;
+  position: relative;
+  overflow: hidden;
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    background-color: rgba(vars.$primary-color, 0.1);
+    color: vars.$primary-color;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+
+  &__loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: color.adjust(vars.$text-color, $lightness: 20%);
+    background-color: rgba(vars.$background-color, 0.5);
+    border-radius: vars.$border-radius-md;
+  }
+}
+
+.product-card {
+  background-color: vars.$light-color;
+  border-radius: vars.$border-radius-sm;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(vars.$dark-color, 0.08);
+
+  &__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: vars.$primary-color;
+  }
+}
+
+.font-test {
+  margin: 1.5rem 0;
+
+  &__container {
+    background-color: vars.$light-color;
+    padding: 1.5rem;
+    border-radius: vars.$border-radius-md;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(vars.$dark-color, 0.05);
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: vars.$primary-color;
+  }
+
+  &__example {
+    transition: font-family 0.3s ease;
+
+    h4 {
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    &--loaded {
+    }
+  }
+}
+
+.content-below {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid color.adjust(vars.$background-color, $lightness: -10%);
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.cls-techniques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cls-technique {
+  background-color: rgba(vars.$background-color, 0.5);
+  border-radius: vars.$border-radius-md;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(vars.$primary-color, 0.08);
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: vars.$primary-color;
+  }
+
+  &__text {
+    line-height: 1.6;
+    color: vars.$text-color;
+  }
+}
+
+.content-block {
+  margin: 1.5rem 0;
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+}

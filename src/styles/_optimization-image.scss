@@ -11,6 +11,12 @@
       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     }
 
+    &.no-dimensions {
+      .gallery__item {
+        aspect-ratio: unset;
+      }
+    }
+
     &.css-background {
       .gallery__item {
         background-size: cover;
