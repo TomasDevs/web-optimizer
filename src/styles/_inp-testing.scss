@@ -1,0 +1,60 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.inp-test {
+  &__content {
+    background-color: rgba(vars.$background-color, 0.8);
+    border: 1px solid color.adjust(vars.$background-color, $lightness: -10%);
+    border-radius: vars.$border-radius-md;
+    padding: 1.5rem;
+    margin-bottom: vars.$spacing-md;
+  }
+
+  &__actions {
+    margin: 1.5rem 0;
+  }
+
+  &__result {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color.adjust(vars.$dark-color, $lightness: 10%);
+  }
+
+  &__form {
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form-group {
+    margin-bottom: vars.$spacing-sm;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: vars.$text-color;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid vars.$background-color;
+      border-radius: vars.$border-radius-sm;
+      font-size: vars.$base-font-size;
+      color: vars.$text-color;
+
+      &:focus {
+        border-color: vars.$primary-color;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(vars.$primary-color, 0.2);
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+}
