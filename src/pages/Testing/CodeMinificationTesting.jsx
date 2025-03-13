@@ -127,10 +127,10 @@ const CodeMinificationTesting = () => {
         />
       </Helmet>
 
-      <div className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování minifikace kódu</h1>
 
-        <div className="flex-gap">
+        <div className="flex-gap metrics-container">
           <div className="metric-item">
             <span>
               LCP: <strong>{metrics.lcp} ms</strong>
@@ -153,16 +153,16 @@ const CodeMinificationTesting = () => {
           vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
         </p>
 
-        <p className="status-text">
-          Aktuálně je minifikace{" "}
-          <strong>{isMinified ? "zapnutá" : "vypnutá"}</strong>.
-        </p>
-
-        <button onClick={handleToggleMinification} className="button">
+        <button onClick={handleToggleMinification} className="button -margin">
           {isMinified
             ? "Přepnout na neminifikovanou verzi"
             : "Přepnout na minifikovanou verzi"}
         </button>
+
+        <p className="status-text">
+          Aktuálně je minifikace{" "}
+          <strong>{isMinified ? "zapnutá" : "vypnutá"}</strong>.
+        </p>
 
         {fileInfo.jsSize && (
           <div className="info">
@@ -209,7 +209,7 @@ const CodeMinificationTesting = () => {
             <li>Optimalizace výrazů a struktur</li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <section className="section-page">
         <TestPageSpeed />

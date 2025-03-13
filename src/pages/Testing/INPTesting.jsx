@@ -42,9 +42,7 @@ const InpTesting = () => {
           interakci. Dobrá hodnota INP je pod 200 ms, zatímco hodnota nad 500 ms
           je považována za špatnou.
         </p>
-      </section>
 
-      <section className="section-page">
         <div className="inp-test__controls">
           <button onClick={handleInpToggle} className="button -bottom">
             Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
@@ -58,6 +56,11 @@ const InpTesting = () => {
             </strong>
           </p>
         </div>
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+          Pomůže to změřit CLS přesněji při opětovném načtení stránky.
+        </p>
       </section>
 
       <section className="section-page">

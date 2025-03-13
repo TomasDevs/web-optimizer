@@ -52,7 +52,7 @@ const ImageDisplayTesting = () => {
         <title>Testování zobrazení obrázků | Web Optimizer</title>
       </Helmet>
 
-      <div className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Porovnání zobrazení obrázků</h1>
 
         <div className="cls-monitor">
@@ -78,28 +78,25 @@ const ImageDisplayTesting = () => {
           </div>
         </div>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-          Pomůže to změřit CLS přesněji při opětovném načtení stránky.
-        </p>
-      </div>
+        <button onClick={handleDisplayToggle} className="button -margin">
+          Přepnout na {displayMethod === "img" ? "CSS background" : "IMG tag"}
+        </button>
 
-      <div className="section-page">
         <p className="status-text">
           Aktuální metoda zobrazení:{" "}
           <strong>
             {displayMethod === "img" ? "IMG tag" : "CSS background"}
           </strong>
         </p>
-        <button onClick={handleDisplayToggle} className="button -margin">
-          Přepnout na {displayMethod === "img" ? "CSS background" : "IMG tag"}
-        </button>
-      </div>
 
-      <div className="gallery section-page">
-        <h2 className="section-subtitle -small">Galerie obrázků</h2>
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+          Pomůže to změřit CLS přesněji při opětovném načtení stránky.
+        </p>
+      </section>
 
+      <section className="gallery section-page">
         <div
           className={`gallery__container ${
             displayMethod === "css" ? "css-background" : ""
@@ -122,7 +119,7 @@ const ImageDisplayTesting = () => {
         </div>
 
         <CreditGallery source="Unsplash" link="https://unsplash.com" />
-      </div>
+      </section>
 
       <section className="section-page">
         <p className="section-text">

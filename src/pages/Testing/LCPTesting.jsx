@@ -47,7 +47,7 @@ const LCPTesting = () => {
           <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
         </p>
 
-        <div className="section">
+        <div className="section-page">
           {isOptimized ? (
             <>
               <img
@@ -75,11 +75,11 @@ const LCPTesting = () => {
 
       <section className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
-        <p>
+        <p className="section-text">
           Optimalizovaná verze využívá moderní formát obrázků WebP, atribut{" "}
-          <code>fetchPriority</code> a vhodné načítání obrázků pomocí{" "}
-          <code>loading="eager"</code>. Neoptimalizovaná verze používá formát
-          JPG bez prioritizace načítání.
+          <code className="code-block">fetchPriority</code> a vhodné načítání
+          obrázků pomocí <code className="code-block">loading="eager"</code>.
+          Neoptimalizovaná verze používá formát JPG bez prioritizace načítání.
         </p>
       </section>
 

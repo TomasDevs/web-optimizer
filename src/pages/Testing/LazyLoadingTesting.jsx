@@ -40,14 +40,14 @@ const LazyLoadingTesting = () => {
           <code className="inline-code">?lazy=false</code>.
         </p>
 
+        <button onClick={handleLazyLoadingToggle} className="button -margin">
+          {isLazyLoading ? "Vypnout Lazy Loading" : "Zapnout Lazy Loading"}
+        </button>
+
         <p className="status-text">
           Aktuálně je lazy loading{" "}
           <strong>{isLazyLoading ? "zapnutý" : "vypnutý"}</strong>.
         </p>
-
-        <button onClick={handleLazyLoadingToggle} className="button -margin">
-          {isLazyLoading ? "Vypnout Lazy Loading" : "Zapnout Lazy Loading"}
-        </button>
       </section>
 
       <section className="section-page gallery">

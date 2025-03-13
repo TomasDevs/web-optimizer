@@ -106,9 +106,8 @@ const FontOptimizationTesting = () => {
         <title>Testování fontů | Web Optimizer</title>
       </Helmet>
 
-      <div className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování fontů</h1>
-
         <div className="cls-monitor">
           <h2 className="section-subtitle -small">Výkonnostní metriky</h2>
           <div className="flex-gap">
@@ -129,28 +128,26 @@ const FontOptimizationTesting = () => {
             </div>
           </div>
         </div>
+        <button onClick={handleFontToggle} className="button -margin">
+          {isGoogleFonts
+            ? "Přepnout na lokální fonty"
+            : "Přepnout na Google Fonts"}
+        </button>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-        </p>
-      </div>
-
-      <div className="section-page">
         <p className="status-text">
           Aktuálně jsou fonty načítány z{" "}
           <strong>
             {isGoogleFonts ? "Google Fonts" : "lokálního úložiště"}
           </strong>
         </p>
-        <button onClick={handleFontToggle} className="button -margin">
-          {isGoogleFonts
-            ? "Přepnout na lokální fonty"
-            : "Přepnout na Google Fonts"}
-        </button>
-      </div>
 
-      <div className="section-page">
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+        </p>
+      </section>
+
+      <section className="section-page">
         <h2 className="section-subtitle -small">Mock data</h2>
         <p className="section-text">
           Zde jsou zobrazeny mock data z veřejné API{" "}
@@ -181,7 +178,7 @@ const FontOptimizationTesting = () => {
             ))}
           </div>
         )}
-      </div>
+      </section>
 
       <section className="section-page">
         <p className="section-text">

@@ -157,6 +157,7 @@
 
     @include mx.breakpoint(lg) {
       text-align: left;
+      margin: 0;
     }
 
     &--active {

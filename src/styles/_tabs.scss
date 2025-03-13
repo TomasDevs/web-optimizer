@@ -4,34 +4,58 @@
 
 .tabs {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   position: relative;
+  gap: 0.25rem;
+
+  @include mx.breakpoint(md) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
   &__item {
     position: relative;
-    padding: 0.75rem 1.25rem;
-    margin-right: 0.25rem;
+    padding: 0.5rem 0.75rem;
     cursor: pointer;
     border: none;
     background: rgba(vars.$text-color, 0.05);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: rgba(vars.$text-color, 0.8);
-    border-radius: vars.$border-radius-sm vars.$border-radius-sm 0 0;
-    transition: color 0.2s ease;
+    border-radius: vars.$border-radius-sm;
+    transition: color 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    max-width: calc(50% - 0.25rem);
+    text-align: center;
+
+    @include mx.breakpoint(xs) {
+      max-width: calc(33.333% - 0.25rem);
+    }
+
+    @include mx.breakpoint(md) {
+      padding: 0.75rem 1.25rem;
+      font-size: 1.2rem;
+      flex: 0 1 auto;
+      max-width: none;
+      border-radius: vars.$border-radius-sm vars.$border-radius-sm 0 0;
+    }
 
     &:hover {
       color: vars.$primary-color;
+      background: rgba(vars.$text-color, 0.08);
     }
 
     &--active {
       color: vars.$primary-color;
       font-weight: 600;
+      background: rgba(vars.$primary-color, 0.05);
 
       &::after {
         content: "";
         position: absolute;
-        bottom: -1px;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 2px;

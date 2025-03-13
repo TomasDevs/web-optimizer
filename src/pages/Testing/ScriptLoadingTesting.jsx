@@ -129,10 +129,10 @@ const ScriptLoadingTesting = () => {
         <title>Testování načítání skriptů | Web Optimizer</title>
       </Helmet>
 
-      <div className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování načítání skriptů</h1>
 
-        <div className="flex-gap">
+        <div className="flex-gap metrics-container">
           <div className="metric-item">
             <span>
               LCP: <strong>{metrics.lcp} ms</strong>
@@ -155,16 +155,6 @@ const ScriptLoadingTesting = () => {
           </div>
         </div>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-        </p>
-      </div>
-
-      <div className="section-page">
-        <p className="status-text">
-          Aktuální metoda načítání skriptů: <strong>{scriptType}</strong>
-        </p>
         <button onClick={handleScriptToggle} className="button -margin">
           Přepnout na{" "}
           {scriptType === "async"
@@ -173,9 +163,18 @@ const ScriptLoadingTesting = () => {
             ? "sync"
             : "async"}
         </button>
-      </div>
 
-      <div className="section-page">
+        <p className="status-text">
+          Aktuální metoda načítání skriptů: <strong>{scriptType}</strong>
+        </p>
+
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+        </p>
+      </section>
+
+      <section className="section-page">
         <h2 className="section-subtitle -small">Výsledek skriptů</h2>
         <div id="script-test-output" className="status-text">
           Skript načítá JSON data...
@@ -186,7 +185,7 @@ const ScriptLoadingTesting = () => {
         <div id="extra-script-output" className="status-text">
           Extra script nebyl zatím spuštěn...
         </div>
-      </div>
+      </section>
 
       <section className="section-page">
         <p className="section-text">
