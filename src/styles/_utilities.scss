@@ -123,6 +123,12 @@
   display: flex;
 }
 
+.flex-gap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -184,6 +190,20 @@
   background-color: color.scale(vars.$highlight-color, $lightness: 60%);
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
+}
+
+.hints {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.info {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: color.scale(vars.$background-color, $lightness: 10%);
+  border-left: 4px solid vars.$highlight-color;
+  border-radius: vars.$border-radius-md;
 }
 
 .sr-only {
