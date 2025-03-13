@@ -64,7 +64,8 @@ const CLSTesting = () => {
 
         <p className="section-text">
           CLS měří stabilitu stránky během načítání. Hodnota pod{" "}
-          <strong>0,1</strong> je podle Google považována za dobrou.
+          <strong>0,1</strong> je podle Google považována za dobrou, hodnota nad
+          0.25 za špatnou.
         </p>
 
         <div className="cls-monitor">
