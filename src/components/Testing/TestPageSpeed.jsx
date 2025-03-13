@@ -49,7 +49,16 @@ const TestPageSpeed = () => {
       <h2 className="section-subtitle -small">Testování stránky</h2>
       <p className="section-text">
         Test využívá <strong>Google PageSpeed Insights API</strong> pro zjištění
-        metrik Core Web Vitals.
+        metrik Core Web Vitals. Mějte na paměti, že tento rychlý test má určitá
+        omezení: INP (Interaction to Next Paint) se přesně měří až po skutečné
+        interakci uživatele, zde je pouze odhadován na základě simulovaných
+        podmínek. Pro komplexnější testování a sledování metrik v reálném
+        provozu doporučuji vložit URL této stránky do specializovaných online
+        nástrojů. Přehled doporučených testovacích nástrojů najdete na stránce{" "}
+        <a href="/nastroje" className="highlight-link">
+          Nástroje
+        </a>
+        .
       </p>
       <button
         className="button -bottom"
