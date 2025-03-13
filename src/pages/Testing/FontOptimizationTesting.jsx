@@ -183,7 +183,7 @@ const FontOptimizationTesting = () => {
         )}
       </div>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <p className="section-text">
           Tato stránka umožňuje testovat načítání{" "}
           <strong>lokálních fontů</strong> oproti <strong>Google Fonts</strong>.
@@ -215,7 +215,7 @@ const FontOptimizationTesting = () => {
           </ul>
         </div>
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

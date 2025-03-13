@@ -124,7 +124,7 @@ const ImageDisplayTesting = () => {
         <CreditGallery source="Unsplash" link="https://unsplash.com" />
       </div>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <p className="section-text">
           Tato stránka porovnává dvě metody zobrazení obrázků: pomocí{" "}
           <code className="inline-code">img</code> tagu s atributy rozměrů a
@@ -147,7 +147,7 @@ const ImageDisplayTesting = () => {
           </p>
         </div>
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

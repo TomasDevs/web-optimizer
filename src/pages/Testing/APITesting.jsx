@@ -171,7 +171,7 @@ const APITesting = () => {
         <title>Testování výkonu API | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování výkonu API</h1>
 
         <p className="section-text">
@@ -225,9 +225,9 @@ const APITesting = () => {
             </div>
           ))}
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Jak číst měření? </h2>
 
         <div className="section-text -top">
@@ -263,7 +263,7 @@ const APITesting = () => {
             <p>Doba platnosti cache</p>
           </div>
         </div>
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

@@ -29,7 +29,7 @@ const LazyLoadingTesting = () => {
         <title>Testování Lazy Loadingu | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování Lazy Loadingu</h1>
 
         <p className="section-text">
@@ -48,9 +48,9 @@ const LazyLoadingTesting = () => {
         <button onClick={handleLazyLoadingToggle} className="button -margin">
           {isLazyLoading ? "Vypnout Lazy Loading" : "Zapnout Lazy Loading"}
         </button>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page gallery">
+      <section className="section-page gallery">
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
 
         <div className="gallery__container">
@@ -66,11 +66,11 @@ const LazyLoadingTesting = () => {
         </div>
 
         <CreditGallery source="Unsplash" link="https://unsplash.com" />
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

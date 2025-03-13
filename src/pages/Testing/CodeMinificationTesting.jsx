@@ -211,9 +211,9 @@ const CodeMinificationTesting = () => {
         </div>
       </div>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

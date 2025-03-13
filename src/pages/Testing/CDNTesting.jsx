@@ -217,7 +217,7 @@ const CDNTesting = () => {
       <Helmet>
         <title>Testování CDN a vlastního hostingu | Web Optimizer</title>
       </Helmet>
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování CDN a vlastního hostingu</h1>
         <p className="section-text">
           Tento test měří dobu načítání souborů z různých CDN poskytovatelů a z
@@ -251,9 +251,9 @@ const CDNTesting = () => {
           jsDelivr, cdnjs) a vlastního hostingu. Měříme dobu fetch a dobu onload
           souboru.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Vliv na metriky Core Web Vitals</h2>
         <p className="section-text">
           <strong>Largest Contentful Paint (LCP)</strong> – Pokud se velké
@@ -272,9 +272,9 @@ const CDNTesting = () => {
           načítají asynchronně bez správného prostorového rezervování, může
           dojít k nežádoucímu poskakování obsahu.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Jak číst časy fetch a onload?</h2>
 
         <p className="section-text">
@@ -319,9 +319,9 @@ const CDNTesting = () => {
           aplikaci navíc měříme <strong>onload time</strong>, který zahrnuje i
           dobu zpracování skriptu.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">CDN Test</h2>
         <ul>
           {sources.map((source) =>
@@ -346,9 +346,9 @@ const CDNTesting = () => {
             ))
           )}
         </ul>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Lokální Test</h2>
         <ul>
           {sources
@@ -370,18 +370,18 @@ const CDNTesting = () => {
               </li>
             ))}
         </ul>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Ověření načtení knihoven</h2>
         {Object.entries(loadedLibraries).map(([name, status]) => (
           <p key={name} className="section-text">
             <strong>{name}:</strong> {status ? "Načteno" : "Nenačteno"}
           </p>
         ))}
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Ověření funkcionality knihoven</h2>
 
         <p id="lodash-test" className="section-text">
@@ -418,7 +418,7 @@ const CDNTesting = () => {
           style={{
             border: "1px solid black",
           }}></canvas>
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

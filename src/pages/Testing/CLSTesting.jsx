@@ -104,7 +104,7 @@ const CLSTesting = () => {
         </div>
       </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <div className="tabs">
           <button
             className={`tabs__item ${
@@ -140,9 +140,9 @@ const CLSTesting = () => {
         {activeTest === "ads" && <AdsTest isOptimized={isOptimized} />}
         {activeTest === "dynamic" && <DynamicTest isOptimized={isOptimized} />}
         {activeTest === "fonts" && <FontsTest isOptimized={isOptimized} />}
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Techniky pro snížení CLS</h2>
         <div className="cls-techniques">
           <div className="cls-technique">
@@ -169,11 +169,11 @@ const CLSTesting = () => {
             </p>
           </div>
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

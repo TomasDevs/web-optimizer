@@ -32,7 +32,7 @@ const InpTesting = () => {
         <title>Testování INP | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">
           Testování Interaction to Next Paint (INP)
         </h1>
@@ -42,9 +42,9 @@ const InpTesting = () => {
           interakci. Dobrá hodnota INP je pod 200 ms, zatímco hodnota nad 500 ms
           je považována za špatnou.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <div className="inp-test__controls">
           <button onClick={handleInpToggle} className="button -bottom">
             Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
@@ -58,9 +58,9 @@ const InpTesting = () => {
             </strong>
           </p>
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <div className="tabs">
           <button
             className={`tabs__item ${
@@ -83,9 +83,9 @@ const InpTesting = () => {
         )}
 
         {activeTest === "form" && <FormTest isOptimized={isOptimized} />}
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p className="section-text">
           <strong>Optimalizovaná verze:</strong> Používá asynchronní zpracování
@@ -101,11 +101,11 @@ const InpTesting = () => {
           prohlížeč je zaneprázdněn zpracováním výpočtu. To vede k znatelným
           prodlevám a zhoršení uživatelského zážitku.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

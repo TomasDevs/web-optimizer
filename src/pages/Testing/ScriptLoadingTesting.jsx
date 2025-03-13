@@ -253,9 +253,9 @@ const ScriptLoadingTesting = () => {
         </ul>
       </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

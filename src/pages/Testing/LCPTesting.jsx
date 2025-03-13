@@ -27,7 +27,7 @@ const LCPTesting = () => {
         <title>Testování LCP | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">
           Testování Largest Contentful Paint (LCP)
         </h1>
@@ -71,9 +71,9 @@ const LCPTesting = () => {
             />
           )}
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p>
           Optimalizovaná verze využívá moderní formát obrázků WebP, atribut{" "}
@@ -81,11 +81,11 @@ const LCPTesting = () => {
           <code>loading="eager"</code>. Neoptimalizovaná verze používá formát
           JPG bez prioritizace načítání.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };

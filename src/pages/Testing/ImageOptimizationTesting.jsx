@@ -130,7 +130,7 @@ const ImageOptimizationTesting = () => {
         </div>
       </div>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <div className="info">
           <h3>O testování optimalizace obrázků</h3>
           <p>
@@ -142,7 +142,7 @@ const ImageOptimizationTesting = () => {
           </p>
         </div>
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };
