@@ -63,7 +63,12 @@ const AboutApp = () => {
         <p className="section-text">
           Aplikace <strong>Web Optimizer</strong> umožňuje porovnat výkon
           jednotlivých stránek webu před a po optimalizaci pomocí metrik Core
-          Web Vitals prostřednictvím PageSpeed Insights API.
+          Web Vitals prostřednictvím PageSpeed Insights API a knihovny
+          web-vitals. Doporučeno je také použít specializované nástroje pro
+          měření výkonu, které poskytují komplexnější analýzu, více na stránce{" "}
+          <a href="/nastroje" className="highlight-link">
+            Nástroje
+          </a>
         </p>
       </FadeInOnScroll>
 
@@ -95,13 +100,30 @@ const AboutApp = () => {
             rel="noopener noreferrer">
             SCSS
           </a>{" "}
-          pro stylování. Měření výkonu je zajištěno pomocí{" "}
+          pro stylování.
+        </p>
+        <p className="section-text">
+          Měření výkonu a Core Web Vitals metrik je implementováno pomocí{" "}
+          <a
+            href="https://web.dev/articles/vitals"
+            className="highlight-link -external"
+            target="_blank"
+            rel="noopener noreferrer">
+            web-vitals
+          </a>{" "}
+          knihovny pro měření v reálném čase přímo na stránce a{" "}
           <a
             href="https://developers.google.com/speed/pagespeed/insights/"
             className="highlight-link -external"
             target="_blank"
             rel="noopener noreferrer">
             Google PageSpeed Insights API
+          </a>{" "}
+          pro komplexnější analýzu a doporučení. Pro nejpřesnější výsledky je
+          doporučeno provést testování pomocí specializovaných online nástrojů,
+          jejichž přehled najdete na stránce{" "}
+          <a href="/nastroje" className="highlight-link">
+            Nástroje
           </a>
           .
         </p>
@@ -114,7 +136,8 @@ const AboutApp = () => {
             rel="noopener noreferrer">
             Netlify
           </a>
-          , což umožňuje automatické nasazování a rychlou dostupnost.
+          , což umožňuje automatické nasazování, continuous deployment a rychlou
+          dostupnost díky globální CDN síti.
         </p>
       </FadeInOnScroll>
 
