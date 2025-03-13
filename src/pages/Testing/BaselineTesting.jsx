@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import { onLCP, onCLS, onINP, onFCP, onTTFB } from "web-vitals";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 import LazyYoutubeEmbed from "../../components/Testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
@@ -12,6 +12,13 @@ const BaselineTesting = () => {
   const [status, setStatus] = useState("Připraveno k testu");
   const [mockData, setMockData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [metrics, setMetrics] = useState({
+    lcp: "Měření...",
+    cls: "Měření...",
+    inp: "Měření...",
+    fcp: "Měření...",
+    ttfb: "Měření...",
+  });
 
   // Získání parametrů z URL
   const isOptimized = searchParams.get("version") === "optimized";
@@ -26,6 +33,41 @@ const BaselineTesting = () => {
       );
     }
   }, [searchParams, setSearchParams]);
+
+  // Měření Core Web Vitals
+  useEffect(() => {
+    let isMounted = true;
+
+    const handleMetric =
+      (name) =>
+      ({ value }) => {
+        if (isMounted) {
+          setMetrics((prev) => ({
+            ...prev,
+            [name]: name === "cls" ? value.toFixed(3) : value.toFixed(0),
+          }));
+        }
+      };
+
+    try {
+      const unsubLCP = onLCP(handleMetric("lcp"));
+      const unsubCLS = onCLS(handleMetric("cls"));
+      const unsubINP = onINP(handleMetric("inp"));
+      const unsubFCP = onFCP(handleMetric("fcp"));
+      const unsubTTFB = onTTFB(handleMetric("ttfb"));
+
+      return () => {
+        isMounted = false;
+        if (typeof unsubLCP === "function") unsubLCP();
+        if (typeof unsubCLS === "function") unsubCLS();
+        if (typeof unsubINP === "function") unsubINP();
+        if (typeof unsubFCP === "function") unsubFCP();
+        if (typeof unsubTTFB === "function") unsubTTFB();
+      };
+    } catch (error) {
+      console.error("Chyba při měření metrik:", error);
+    }
+  }, [isOptimized]);
 
   // Dynamické načítání fontů podle verze
   useEffect(() => {
@@ -108,12 +150,42 @@ const BaselineTesting = () => {
         )}
       </Helmet>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h1 className="subpage-title">Testování optimalizací webu</h1>
 
-        <p className="section-text">
-          Tato stránka demonstruje různé optimalizační techniky a jejich vliv na
-          výkon webu. Přepněte mezi verzemi pro porovnání rozdílů.
+        <div className="metrics-container">
+          <div className="flex-gap">
+            <div className="metric-item">
+              <span>
+                LCP: <strong>{metrics.lcp} ms</strong>
+              </span>
+            </div>
+            <div className="metric-item">
+              <span>
+                CLS: <strong>{metrics.cls}</strong>
+              </span>
+            </div>
+            <div className="metric-item">
+              <span>
+                INP: <strong>{metrics.inp} ms</strong>
+              </span>
+            </div>
+            <div className="metric-item">
+              <span>
+                FCP: <strong>{metrics.fcp} ms</strong>
+              </span>
+            </div>
+            <div className="metric-item">
+              <span>
+                TTFB: <strong>{metrics.ttfb} ms</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
         </p>
 
         <button onClick={handleVersionToggle} className="button -margin">
@@ -129,9 +201,9 @@ const BaselineTesting = () => {
         <p className="status-text">
           Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Hero Sekce (LCP)</h2>
         <p className="section-text">
           {isOptimized
@@ -152,9 +224,9 @@ const BaselineTesting = () => {
             fetchPriority={isOptimized ? "high" : undefined}
           />
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">
           Optimalizované načítání YouTube videí
         </h2>
@@ -172,9 +244,9 @@ const BaselineTesting = () => {
             />
           ))}
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">
           Optimalizované vs. neoptimalizované video
         </h2>
@@ -210,9 +282,9 @@ const BaselineTesting = () => {
           />
           Váš prohlížeč nepodporuje video tag.
         </video>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
         <p className="section-text">
           {isOptimized
@@ -244,9 +316,9 @@ const BaselineTesting = () => {
             </div>
           )}
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Test interaktivity (INP)</h2>
         <p className="section-text">
           {isOptimized
@@ -257,9 +329,9 @@ const BaselineTesting = () => {
           Spustit těžký výpočet
         </button>
         <p className="status-text">{status}</p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Galerie obrázků</h2>
         <p className="section-text">
           {isOptimized
@@ -267,7 +339,7 @@ const BaselineTesting = () => {
             : "Obrázky bez definovaných rozměrů způsobují layout shift."}
         </p>
         <div className="gallery__container">
-          {Array.from({ length: 24 }, (_, i) => (
+          {Array.from({ length: 15 }, (_, i) => (
             <img
               key={i}
               src={
@@ -285,9 +357,9 @@ const BaselineTesting = () => {
         </div>
 
         <CreditGallery source="Unsplash" link="https://unsplash.com" />
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
         <p className="section-text">
           {isOptimized
@@ -317,9 +389,9 @@ const BaselineTesting = () => {
             />
           )}
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle -small">Načítání fontů</h2>
         <p className="section-text">
           {isOptimized
@@ -332,9 +404,9 @@ const BaselineTesting = () => {
           }`}>
           Ukázkový text s různými způsoby načítání fontů.
         </p>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <div className="section-text">
           <p>
@@ -366,11 +438,11 @@ const BaselineTesting = () => {
             pro externí obsah.
           </p>
         </div>
-      </FadeInOnScroll>
+      </section>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
         <TestPageSpeed />
-      </FadeInOnScroll>
+      </section>
     </>
   );
 };
