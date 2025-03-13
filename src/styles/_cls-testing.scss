@@ -76,10 +76,6 @@
   overflow: hidden;
 
   &__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 0.5rem;
     background-color: rgba(vars.$primary-color, 0.1);
     color: vars.$primary-color;
@@ -89,7 +85,7 @@
   }
 
   &__content {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 }
 

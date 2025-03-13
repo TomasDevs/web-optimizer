@@ -334,7 +334,7 @@ const DynamicTest = ({ isOptimized }) => {
       {isOptimized ? (
         <div
           className="products-grid"
-          style={{ minHeight: isLoading ? "300px" : "auto" }}>
+          style={{ minHeight: isLoading ? "240px" : "auto" }}>
           {isLoading ? (
             <div className="products-grid__loading">Načítání produktů...</div>
           ) : (
