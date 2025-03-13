@@ -1,11 +1,18 @@
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { onLCP, onFID, onTTFB, onINP } from "web-vitals";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 
 const ScriptLoadingTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [metrics, setMetrics] = useState({
+    lcp: "Měření...",
+    fid: "Měření...",
+    ttfb: "Měření...",
+    inp: "Měření...",
+  });
 
   // Zajištění, že parametr "script" je vždy přítomen v URL
   useEffect(() => {
@@ -15,6 +22,39 @@ const ScriptLoadingTesting = () => {
   }, [searchParams, setSearchParams]);
 
   const scriptType = searchParams.get("script") || "async";
+
+  // Měření výkonnostních metrik
+  useEffect(() => {
+    let isMounted = true;
+
+    const handleMetric =
+      (name) =>
+      ({ value }) => {
+        if (isMounted) {
+          setMetrics((prev) => ({
+            ...prev,
+            [name]: value.toFixed(0),
+          }));
+        }
+      };
+
+    try {
+      const unsubLCP = onLCP(handleMetric("lcp"));
+      const unsubFID = onFID(handleMetric("fid"));
+      const unsubTTFB = onTTFB(handleMetric("ttfb"));
+      const unsubINP = onINP(handleMetric("inp"));
+
+      return () => {
+        isMounted = false;
+        if (typeof unsubLCP === "function") unsubLCP();
+        if (typeof unsubFID === "function") unsubFID();
+        if (typeof unsubTTFB === "function") unsubTTFB();
+        if (typeof unsubINP === "function") unsubINP();
+      };
+    } catch (error) {
+      console.error("Chyba při měření metrik:", error);
+    }
+  }, [scriptType]);
 
   // Přepnutí mezi metodami načítání skriptů (async, defer, sync)
   const handleScriptToggle = () => {
@@ -88,22 +128,41 @@ const ScriptLoadingTesting = () => {
       <Helmet>
         <title>Testování načítání skriptů | Web Optimizer</title>
       </Helmet>
-      <FadeInOnScroll className="section-page">
+
+      <div className="section-page">
         <h1 className="subpage-title">Testování načítání skriptů</h1>
 
-        <p className="section-text">
-          Tato stránka umožňuje testovat různé způsoby načítání skriptů:{" "}
-          <code className="inline-code">async</code>,{" "}
-          <code className="inline-code">defer</code> a{" "}
-          <code className="inline-code">sync</code>. Pomocí tlačítka níže lze
-          přepínat mezi metodami a sledovat jejich vliv na metriky jako{" "}
-          <strong>FCP</strong>, <strong>LCP</strong> a <strong>TBT</strong>.
-        </p>
-      </FadeInOnScroll>
+        <div className="flex-gap">
+          <div className="metric-item">
+            <span>
+              LCP: <strong>{metrics.lcp} ms</strong>
+            </span>
+          </div>
+          <div className="metric-item">
+            <span>
+              FID: <strong>{metrics.fid} ms</strong>
+            </span>
+          </div>
+          <div className="metric-item">
+            <span>
+              TTFB: <strong>{metrics.ttfb} ms</strong>
+            </span>
+          </div>
+          <div className="metric-item">
+            <span>
+              INP: <strong>{metrics.inp} ms</strong>
+            </span>
+          </div>
+        </div>
 
-      <FadeInOnScroll className="section-page">
-        <h2 className="section-subtitle -small">Testování skriptů</h2>
-        <p className="section-text">
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+        </p>
+      </div>
+
+      <div className="section-page">
+        <p className="status-text">
           Aktuální metoda načítání skriptů: <strong>{scriptType}</strong>
         </p>
         <button onClick={handleScriptToggle} className="button -margin">
@@ -114,9 +173,9 @@ const ScriptLoadingTesting = () => {
             ? "sync"
             : "async"}
         </button>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="section-page">
+      <div className="section-page">
         <h2 className="section-subtitle -small">Výsledek skriptů</h2>
         <div id="script-test-output" className="status-text">
           Skript načítá JSON data...
@@ -127,9 +186,37 @@ const ScriptLoadingTesting = () => {
         <div id="extra-script-output" className="status-text">
           Extra script nebyl zatím spuštěn...
         </div>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="section-page">
+      <section className="section-page">
+        <p className="section-text">
+          Tato stránka umožňuje testovat různé způsoby načítání skriptů:{" "}
+          <code className="inline-code">async</code>,{" "}
+          <code className="inline-code">defer</code> a{" "}
+          <code className="inline-code">sync</code>. Pomocí tlačítka níže lze
+          přepínat mezi metodami a sledovat jejich vliv na metriky jako{" "}
+          <strong>LCP</strong>, <strong>FID</strong> a <strong>INP</strong>.
+        </p>
+        <div className="info">
+          <h3>Rozdíly mezi způsoby načítání skriptů</h3>
+          <ul>
+            <li>
+              <strong>Async</strong> - Skripty se načítají paralelně a spustí se
+              okamžitě po stažení bez ohledu na DOM nebo jiné skripty. Ideální
+              pro nezávislé skripty třetích stran.
+            </li>
+            <li>
+              <strong>Defer</strong> - Skripty se načítají paralelně, ale spustí
+              se až po parsování HTML a v pořadí, v jakém jsou definovány.
+              Vhodné pro skripty, které potřebují přístup k HTML.
+            </li>
+            <li>
+              <strong>Sync</strong> - Skripty blokují parsování HTML a spouští
+              se ihned. Výrazně zpomaluje vykreslení stránky.
+            </li>
+          </ul>
+        </div>
+
         <h2 className="section-subtitle -small">Popis testovaných skriptů</h2>
         <p className="section-text">
           Na této stránce jsou testovány tři různé skripty, každý se chová jinak
@@ -164,14 +251,7 @@ const ScriptLoadingTesting = () => {
             – Okamžitě se spustí a jen vypíše potvrzení o dokončení.
           </li>
         </ul>
-
-        <p className="section-text">
-          Pozoruj, jak jednotlivé skripty reagují při přepínání mezi různými
-          metodami načítání skriptů. Například <strong>defer</strong> zajistí,
-          že se skripty vykonají ve správném pořadí, zatímco{" "}
-          <strong>async</strong> je spustí nezávisle na sobě.
-        </p>
-      </FadeInOnScroll>
+      </section>
 
       <FadeInOnScroll className="section-page">
         <TestPageSpeed />
