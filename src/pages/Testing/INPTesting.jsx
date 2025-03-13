@@ -39,8 +39,8 @@ const InpTesting = () => {
 
         <p className="section-text">
           Interaction to Next Paint (INP) měří dobu odezvy na uživatelskou
-          interakci. Přepni mezi optimalizovanou a neoptimalizovanou verzí a
-          sleduj vliv na responzivitu stránky.
+          interakci. Dobrá hodnota INP je pod 200 ms, zatímco hodnota nad 500 ms
+          je považována za špatnou.
         </p>
       </FadeInOnScroll>
 
