@@ -1,0 +1,38 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+
+.metrics-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.metric-value {
+  padding: 0.75rem 1.25rem;
+  border-radius: vars.$border-radius-md;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value--good {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.metric-value--bad {
+  background-color: rgba(244, 67, 54, 0.1);
+  border: 1px solid rgba(244, 67, 54, 0.5);
+}
+
+.metric-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.metric-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
