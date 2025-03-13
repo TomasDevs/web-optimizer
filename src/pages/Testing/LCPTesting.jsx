@@ -34,8 +34,8 @@ const LCPTesting = () => {
 
         <p className="section-text">
           LCP určuje rychlost načtení největšího viditelného prvku na stránce.
-          Nejčastěji se jedná o hlavní obrázek nebo nadpis. Hodnota LCP by měla
-          být pod <strong>2,5 vteřiny</strong>.
+          Nejčastěji se jedná o obrázek nebo nadpis. Hodnota LCP by měla být pod{" "}
+          <strong>2,5 vteřiny</strong>.
         </p>
 
         <button onClick={handleLCPChange} className="button -bottom">
