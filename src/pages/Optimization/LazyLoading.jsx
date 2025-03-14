@@ -58,7 +58,7 @@ const LazyLoading = () => {
           <strong>Zrychluje načítání:</strong> Snižuje počáteční velikost
           stránky a zrychluje vykreslení. <br />
           <strong>Šetří data:</strong> Obrázky, které nejsou v zorném poli, se
-          nenačítají, což snižuje přenos dat.
+          nenačítají, což snižuje přenos dat.{" "}
           <strong>Zlepšuje uživatelský zážitek:</strong> Stránka je rychleji
           interaktivní a působí svižnějším dojmem.
         </p>
