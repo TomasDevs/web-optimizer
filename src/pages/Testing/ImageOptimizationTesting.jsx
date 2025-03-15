@@ -74,19 +74,19 @@ const ImageOptimizationTesting = () => {
       <div className="section-page">
         <h1 className="subpage-title">Testování optimalizace obrázků</h1>
 
-        <div className="cls-monitor">
+        <div className="metrics-monitor">
           <h2>CLS hodnota (Cumulative Layout Shift)</h2>
           <div
-            className={`cls-value ${
+            className={`metrics-value ${
               parseFloat(clsValue) > 0.1 && clsValue !== "Měření..."
-                ? "cls-value--bad"
+                ? "metrics-value--bad"
                 : parseFloat(clsValue) <= 0.1 && clsValue !== "Měření..."
-                ? "cls-value--good"
+                ? "metrics-value--good"
                 : ""
             }`}>
-            <span className="cls-value__number">{clsValue}</span>
+            <span className="metrics-value__number">{clsValue}</span>
             {clsValue !== "Měření..." && (
-              <span className="cls-value__label">
+              <span className="metrics-value__label">
                 {parseFloat(clsValue) <= 0.1
                   ? "Dobrá hodnota"
                   : "Špatná hodnota"}

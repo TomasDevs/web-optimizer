@@ -12,12 +12,12 @@
   }
 }
 
-.cls-monitor {
+.metrics-monitor {
   margin: 0 0 1rem;
   display: block;
 }
 
-.cls-value {
+.metrics-value {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -29,7 +29,7 @@
   &--good {
     border-left-color: #4caf50;
 
-    .cls-value__number {
+    .metrics-value__number {
       color: #4caf50;
     }
   }
@@ -37,7 +37,7 @@
   &--bad {
     border-left-color: #f44336;
 
-    .cls-value__number {
+    .metrics-value__number {
       color: #f44336;
     }
   }

@@ -54,19 +54,19 @@ const LCPTesting = () => {
           Testování Largest Contentful Paint (LCP)
         </h1>
 
-        <div className="cls-monitor">
+        <div className="metrics-monitor">
           <h2 className="section-subtitle -small">LCP hodnota</h2>
           <div
-            className={`cls-value ${
+            className={`metrics-value ${
               lcpValue !== "Měření..." && parseInt(lcpValue) > 2500
-                ? "cls-value--bad"
+                ? "metrics-value--bad"
                 : lcpValue !== "Měření..." && parseInt(lcpValue) <= 2500
-                ? "cls-value--good"
+                ? "metrics-value--good"
                 : ""
             }`}>
-            <span className="cls-value__number">{lcpValue}</span>
+            <span className="metrics-value__number">{lcpValue}</span>
             {lcpValue !== "Měření..." && (
-              <span className="cls-value__label">
+              <span className="metrics-value__label">
                 {parseInt(lcpValue) <= 2500
                   ? "Dobrá hodnota"
                   : "Špatná hodnota"}

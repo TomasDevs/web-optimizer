@@ -39,23 +39,19 @@ const InpTesting = () => {
 
         <p className="section-text">
           Interaction to Next Paint (INP) měří dobu odezvy na uživatelskou
-          interakci. Dobrá hodnota INP je pod 200 ms, zatímco hodnota nad 500 ms
-          je považována za špatnou.
+          interakci. Dobrá hodnota INP je <strong>pod 200 ms</strong>, zatímco
+          hodnota <strong>nad 500 ms</strong> je považována za špatnou.
         </p>
 
-        <div className="inp-test__controls">
-          <button onClick={handleInpToggle} className="button -bottom">
-            Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-            verzi
-          </button>
+        <button onClick={handleInpToggle} className="button -bottom">
+          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+          verzi
+        </button>
 
-          <p className="status-text">
-            Aktuální verze:{" "}
-            <strong>
-              {isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}
-            </strong>
-          </p>
-        </div>
+        <p className="status-text">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
       </section>
 
       <section className="section-page">

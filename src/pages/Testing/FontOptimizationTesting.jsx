@@ -108,7 +108,7 @@ const FontOptimizationTesting = () => {
 
       <section className="section-page">
         <h1 className="subpage-title">Testování fontů</h1>
-        <div className="cls-monitor">
+        <div className="metrics-monitor">
           <h2 className="section-subtitle -small">Výkonnostní metriky</h2>
           <div className="flex-gap">
             <div className="metric-item">

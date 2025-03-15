@@ -68,19 +68,19 @@ const CLSTesting = () => {
           0.25 za špatnou.
         </p>
 
-        <div className="cls-monitor">
+        <div className="metrics-monitor">
           <div
-            className={`cls-value ${
+            className={`metrics-value ${
               parseFloat(clsValue) > 0.1 && clsValue !== "Čekání na měření..."
-                ? "cls-value--bad"
+                ? "metrics-value--bad"
                 : parseFloat(clsValue) <= 0.1 &&
                   clsValue !== "Čekání na měření..."
-                ? "cls-value--good"
+                ? "metrics-value--good"
                 : ""
             }`}>
-            <span className="cls-value__number">{clsValue}</span>
+            <span className="metrics-value__number">{clsValue}</span>
             {clsValue !== "Čekání na měření..." && (
-              <span className="cls-value__label">
+              <span className="metrics-value__label">
                 {parseFloat(clsValue) <= 0.1
                   ? "Dobrá hodnota"
                   : "Špatná hodnota"}
@@ -89,19 +89,15 @@ const CLSTesting = () => {
           </div>
         </div>
 
-        <div className="inp-test__controls">
-          <button onClick={handleClsToggle} className="button -bottom">
-            Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-            verzi
-          </button>
+        <button onClick={handleClsToggle} className="button -bottom">
+          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+          verzi
+        </button>
 
-          <p className="status-text">
-            Aktuální verze:{" "}
-            <strong>
-              {isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}
-            </strong>
-          </p>
-        </div>
+        <p className="status-text">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
 
         <p className="hints">
           Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
