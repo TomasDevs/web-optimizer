@@ -95,7 +95,6 @@ const LCPTesting = () => {
             <img
               src="/assets/images/lcp-image.jpg"
               width="1440"
-              height="960"
               alt="Neoptimalizovaný hero obrázek"
               className="lcp-image"
               loading="lazy"
