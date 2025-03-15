@@ -193,8 +193,6 @@ const BaselineTesting = () => {
             </div>
           </div>
         </div>
-
-        <TestingHint />
       </section>
 
       <div className="hero__container">
@@ -210,6 +208,7 @@ const BaselineTesting = () => {
           loading={isOptimized ? "eager" : "lazy"}
           fetchPriority={isOptimized ? "high" : undefined}
         />
+        <TestingHint />
       </div>
 
       <section className="section-page">
