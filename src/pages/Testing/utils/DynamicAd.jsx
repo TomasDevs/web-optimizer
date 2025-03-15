@@ -19,12 +19,38 @@ const DynamicAd = ({ isOptimized }) => {
         <div
           style={{
             width: "100%",
-            height: "800px",
+            height: "400px",
             background: "#f0f0f0",
             border: "1px solid #ccc",
             padding: "20px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
           }}>
-          <div>Rezervované místo pro reklamu</div>
+          <div
+            style={{
+              fontSize: "1.2rem",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}>
+            Rezervované místo pro reklamu
+          </div>
+          <div
+            style={{
+              width: "80%",
+              height: "300px",
+              background: "linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "8px",
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "24px",
+            }}>
+            Optimalizovaná reklama
+          </div>
         </div>
       ) : (
         <>
@@ -42,7 +68,7 @@ const DynamicAd = ({ isOptimized }) => {
             <div
               className="ad-container__content ad-container__content--dynamic"
               style={{
-                height: "800px",
+                height: "400px",
                 marginBottom: "30px",
                 marginTop: "30px",
                 background: "#e0e0e0",
@@ -57,6 +83,23 @@ const DynamicAd = ({ isOptimized }) => {
                 Tento banner se načetl až po vykreslení stránky a způsobil
                 masivní posun obsahu
               </p>
+              <div
+                style={{
+                  width: "80%",
+                  height: "250px",
+                  margin: "0 auto",
+                  background:
+                    "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "8px",
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: "24px",
+                }}>
+                Neoptimalizovaná reklama
+              </div>
             </div>
           )}
 

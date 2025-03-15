@@ -87,12 +87,6 @@
   &--unoptimized {
     aspect-ratio: unset;
     width: 100%;
-    height: auto;
-    min-height: 200px;
-
-    iframe {
-      min-height: 315px;
-    }
   }
 }
 

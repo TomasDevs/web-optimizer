@@ -12,7 +12,7 @@ const LazyYoutubeEmbed = ({ videoId, isOptimized }) => {
       {isLoaded || !isOptimized ? (
         <iframe
           width="100%"
-          height={isOptimized ? "100%" : "315"}
+          height={isOptimized ? "100%" : "auto"}
           src={`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0&modestbranding=1`}
           title="YouTube video"
           frameBorder="0"
