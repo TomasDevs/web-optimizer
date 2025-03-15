@@ -1,11 +1,12 @@
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
+import { onLCP } from "web-vitals";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 
 const LCPTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [lcpValue, setLcpValue] = useState("Měření...");
 
   // Zajištění, že parametr "optimized" je vždy přítomen v URL
   useEffect(() => {
@@ -15,6 +16,27 @@ const LCPTesting = () => {
   }, [searchParams, setSearchParams]);
 
   const isOptimized = searchParams.get("optimized") === "true";
+
+  // Měření LCP pomocí web-vitals
+  useEffect(() => {
+    let isMounted = true;
+
+    const reportLCP = ({ value }) => {
+      if (isMounted) {
+        setLcpValue(`${value.toFixed(0)} ms`);
+      }
+    };
+
+    // Registrujeme listener pro měření LCP
+    const unsubscribe = onLCP(reportLCP);
+
+    return () => {
+      isMounted = false;
+      if (typeof unsubscribe === "function") {
+        unsubscribe();
+      }
+    };
+  }, [isOptimized]);
 
   // Přepnutí mezi optimalizovanou a neoptimalizovanou verzí stránky
   const handleLCPChange = () => {
@@ -31,6 +53,32 @@ const LCPTesting = () => {
         <h1 className="subpage-title">
           Testování Largest Contentful Paint (LCP)
         </h1>
+
+        <div className="cls-monitor">
+          <h2 className="section-subtitle -small">LCP hodnota</h2>
+          <div
+            className={`cls-value ${
+              lcpValue !== "Měření..." && parseInt(lcpValue) > 2500
+                ? "cls-value--bad"
+                : lcpValue !== "Měření..." && parseInt(lcpValue) <= 2500
+                ? "cls-value--good"
+                : ""
+            }`}>
+            <span className="cls-value__number">{lcpValue}</span>
+            {lcpValue !== "Měření..." && (
+              <span className="cls-value__label">
+                {parseInt(lcpValue) <= 2500
+                  ? "Dobrá hodnota"
+                  : "Špatná hodnota"}
+              </span>
+            )}
+          </div>
+        </div>
+
+        <p className="hints">
+          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
+          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
+        </p>
 
         <div className="section-page">
           {isOptimized ? (
@@ -77,8 +125,8 @@ const LCPTesting = () => {
         <h2 className="section-subtitle">Rozdíly mezi verzemi</h2>
         <p className="section-text">
           Optimalizovaná verze využívá moderní formát obrázků WebP, atribut{" "}
-          <code className="code-block">fetchPriority</code> a vhodné načítání
-          obrázků pomocí <code className="code-block">loading="eager"</code>.
+          <code className="inline-code">fetchPriority</code> a vhodné načítání
+          obrázků pomocí <code className="inline-code">loading="eager"</code>.
           Neoptimalizovaná verze používá formát JPG bez prioritizace načítání.
         </p>
       </section>
