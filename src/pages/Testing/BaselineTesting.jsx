@@ -7,6 +7,7 @@ import LazyYoutubeEmbed from "../../components/Testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
 import CreditGallery from "./utils/CreditGallery";
 import TestingHint from "./utils/TestingHint";
+import DynamicAd from "./utils/DynamicAd";
 
 const BaselineTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -150,7 +151,6 @@ const BaselineTesting = () => {
           />
         )}
       </Helmet>
-
       <section className="section-page">
         <h1 className="subpage-title">Testování optimalizací webu</h1>
 
@@ -200,7 +200,6 @@ const BaselineTesting = () => {
           Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
         </p>
       </section>
-
       <section className="section-page">
         <h2 className="section-subtitle -small">Hero Sekce (LCP)</h2>
         <p className="section-text">
@@ -222,6 +221,17 @@ const BaselineTesting = () => {
             fetchPriority={isOptimized ? "high" : undefined}
           />
         </div>
+      </section>
+
+      <section className="section-page">
+        <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
+        <p className="section-text">
+          {isOptimized
+            ? "Reklamní prostor je předem rezervován."
+            : "Reklama se načítá dynamicky a způsobuje posuny."}
+        </p>
+
+        <DynamicAd isOptimized={isOptimized} />
       </section>
 
       <section className="section-page">
@@ -253,33 +263,50 @@ const BaselineTesting = () => {
             ? "Optimalizovaná verze používá WebM a lazy loading pro rychlejší načítání."
             : "Neoptimalizované video se načítá okamžitě, což zpomaluje stránku."}
         </p>
-        <video
-          width="100%"
-          height="auto"
-          muted
-          loop
-          autoPlay
-          loading={isOptimized ? "lazy" : "eager"}
-          poster={isOptimized ? "/assets/images/video-preview.jpg" : undefined}
-          preload={isOptimized ? "metadata" : "auto"}>
-          <source
-            src={
-              isOptimized
-                ? "/assets/videos/video-optimalized.webm"
-                : "/assets/videos/video-unoptimalized.webm"
-            }
-            type="video/webm"
-          />
-          <source
-            src={
-              isOptimized
-                ? "/assets/videos/video-optimalized.mp4"
-                : "/assets/videos/video-unoptimalized.mp4"
-            }
-            type="video/mp4"
-          />
-          Váš prohlížeč nepodporuje video tag.
-        </video>
+        {isOptimized ? (
+          <div className="video-container video-container--optimized">
+            <video
+              width="100%"
+              height="auto"
+              muted
+              loop
+              controls
+              loading="lazy"
+              poster="/assets/images/video-preview.jpg"
+              preload="metadata">
+              <source
+                src="/assets/videos/video-optimalized.webm"
+                type="video/webm"
+              />
+              <source
+                src="/assets/videos/video-optimalized.mp4"
+                type="video/mp4"
+              />
+              Váš prohlížeč nepodporuje video tag.
+            </video>
+          </div>
+        ) : (
+          <div className="video-container">
+            <video
+              width="100%"
+              height="auto"
+              muted
+              loop
+              controls
+              autoPlay
+              preload="auto">
+              <source
+                src="/assets/videos/video-unoptimalized.webm"
+                type="video/webm"
+              />
+              <source
+                src="/assets/videos/video-unoptimalized.mp4"
+                type="video/mp4"
+              />
+              Váš prohlížeč nepodporuje video tag.
+            </video>
+          </div>
+        )}
       </section>
 
       <section className="section-page">
@@ -293,25 +320,47 @@ const BaselineTesting = () => {
           className={`dynamic-content ${
             isOptimized ? "dynamic-content--reserved" : ""
           }`}>
-          {isLoading ? (
-            <div className="skeleton-loading">
-              <div className="skeleton-line"></div>
-              <div className="skeleton-line"></div>
-            </div>
+          {isOptimized ? (
+            isLoading ? (
+              <div className="skeleton-loading">
+                <div className="skeleton-line"></div>
+                <div className="skeleton-line"></div>
+              </div>
+            ) : (
+              <div className="grid-container">
+                {mockData.map((item) => (
+                  <div key={item.id} className="mock-item">
+                    <h3 className="mock-name">{item.name}</h3>
+                    <p className="mock-email">
+                      <a
+                        href={`mailto:${item.email}`}
+                        className="highlight-link">
+                        {item.email}
+                      </a>
+                    </p>
+                    <p className="mock-description">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            )
           ) : (
-            <div className="grid-container">
-              {mockData.map((item) => (
-                <div key={item.id} className="mock-item">
-                  <h3 className="mock-name">{item.name}</h3>
-                  <p className="mock-email">
-                    <a href={`mailto:${item.email}`} className="highlight-link">
-                      {item.email}
-                    </a>
-                  </p>
-                  <p className="mock-description">{item.body}</p>
-                </div>
-              ))}
-            </div>
+            !isLoading && (
+              <div className="grid-container">
+                {mockData.map((item) => (
+                  <div key={item.id} className="mock-item">
+                    <h3 className="mock-name">{item.name}</h3>
+                    <p className="mock-email">
+                      <a
+                        href={`mailto:${item.email}`}
+                        className="highlight-link">
+                        {item.email}
+                      </a>
+                    </p>
+                    <p className="mock-description">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            )
           )}
         </div>
       </section>
@@ -336,7 +385,10 @@ const BaselineTesting = () => {
             ? "Obrázky mají pevně definované rozměry a používají moderní formáty."
             : "Obrázky bez definovaných rozměrů způsobují layout shift."}
         </p>
-        <div className="gallery__container">
+        <div
+          className={`gallery__container ${
+            isOptimized ? "" : "no-dimensions"
+          }`}>
           {Array.from({ length: 15 }, (_, i) => (
             <img
               key={i}
@@ -355,38 +407,6 @@ const BaselineTesting = () => {
         </div>
 
         <CreditGallery source="Unsplash" link="https://unsplash.com" />
-      </section>
-
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
-        <p className="section-text">
-          {isOptimized
-            ? "Reklamní prostor je předem rezervován."
-            : "Reklama se načítá dynamicky a způsobuje posuny."}
-        </p>
-        <div className="ad-placeholder">
-          {isOptimized ? (
-            <div style={{ width: "100%", height: "600px", background: "#ccc" }}>
-              Rezervované místo pro reklamu
-              <iframe
-                src="https://osel.cz/"
-                width="100%"
-                height="600"
-                title="Ukázková reklama"
-                style={{ border: "none" }}
-                loading="lazy"
-              />
-            </div>
-          ) : (
-            <iframe
-              src="https://osel.cz/"
-              width="100%"
-              height="600"
-              title="Ukázková reklama"
-              style={{ border: "none" }}
-            />
-          )}
-        </div>
       </section>
 
       <section className="section-page">
