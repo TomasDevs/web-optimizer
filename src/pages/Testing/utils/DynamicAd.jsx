@@ -65,13 +65,6 @@ const DynamicAd = ({ isOptimized }) => {
                 Tento banner se načetl až po vykreslení stránky a způsobil
                 masivní posun obsahu
               </p>
-              <iframe
-                src="https://web-optimizer.netlify.app/"
-                width="100%"
-                height="600"
-                title="Ukázková reklama"
-                style={{ border: "none" }}
-              />
             </div>
           )}
 
