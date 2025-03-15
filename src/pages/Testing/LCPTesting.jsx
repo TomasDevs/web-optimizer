@@ -32,21 +32,6 @@ const LCPTesting = () => {
           Testování Largest Contentful Paint (LCP)
         </h1>
 
-        <p className="section-text">
-          LCP určuje rychlost načtení největšího viditelného prvku na stránce.
-          Nejčastěji se jedná o obrázek nebo nadpis. Hodnota LCP by měla být pod{" "}
-          <strong>2,5 vteřiny</strong>.
-        </p>
-
-        <button onClick={handleLCPChange} className="button -bottom">
-          Přepnout na {isOptimized ? "neoptimalizovanou" : "optimalizovanou"}{" "}
-          verzi
-        </button>
-        <p className="status-text">
-          Aktuální verze:{" "}
-          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
-        </p>
-
         <div className="section-page">
           {isOptimized ? (
             <>
@@ -71,6 +56,21 @@ const LCPTesting = () => {
             />
           )}
         </div>
+
+        <p className="section-text">
+          LCP určuje rychlost načtení největšího viditelného prvku na stránce.
+          Nejčastěji se jedná o obrázek nebo nadpis. Hodnota LCP by měla být pod{" "}
+          <strong>2,5 vteřiny</strong>.
+        </p>
+
+        <button onClick={handleLCPChange} className="button -bottom">
+          Přepnout na {isOptimized ? "neoptimalizovanou" : "optimalizovanou"}{" "}
+          verzi
+        </button>
+        <p className="status-text">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
       </section>
 
       <section className="section-page">
