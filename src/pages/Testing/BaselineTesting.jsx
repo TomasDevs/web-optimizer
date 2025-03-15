@@ -6,6 +6,7 @@ import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 import LazyYoutubeEmbed from "../../components/Testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
 import CreditGallery from "./utils/CreditGallery";
+import TestingHint from "./utils/TestingHint";
 
 const BaselineTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -183,10 +184,7 @@ const BaselineTesting = () => {
           </div>
         </div>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-        </p>
+        <TestingHint />
 
         <button onClick={handleVersionToggle} className="button -margin">
           Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}

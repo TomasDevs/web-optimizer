@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { onLCP } from "web-vitals";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
+import TestingHint from "./utils/TestingHint";
 
 const LCPTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -75,10 +76,7 @@ const LCPTesting = () => {
           </div>
         </div>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-        </p>
+        <TestingHint />
 
         <div className="section-page">
           {isOptimized ? (

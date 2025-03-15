@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { onCLS } from "web-vitals";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
+import TestingHint from "./utils/TestingHint";
 
 const ImageOptimizationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -107,11 +108,7 @@ const ImageOptimizationTesting = () => {
           </button>
         </div>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-          Pomůže to změřit CLS přesněji při opětovném načtení stránky.
-        </p>
+        <TestingHint />
       </div>
 
       <div className="gallery section-page">

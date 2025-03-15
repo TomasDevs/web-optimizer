@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { onCLS, onFCP, onLCP } from "web-vitals";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
+import TestingHint from "./utils/TestingHint";
 
 const FontOptimizationTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -141,10 +142,7 @@ const FontOptimizationTesting = () => {
           </strong>
         </p>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-        </p>
+        <TestingHint />
       </section>
 
       <section className="section-page">

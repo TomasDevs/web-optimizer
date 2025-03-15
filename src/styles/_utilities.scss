@@ -196,6 +196,15 @@
   margin-top: 0.8rem;
   font-size: 0.9rem;
   font-style: italic;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  &__icon {
+    color: #666;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
 }
 
 .info {

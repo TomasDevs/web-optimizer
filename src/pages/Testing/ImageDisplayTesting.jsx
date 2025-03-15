@@ -5,6 +5,7 @@ import { onCLS } from "web-vitals";
 import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import TestPageSpeed from "../../components/Testing/TestPageSpeed";
 import CreditGallery from "./utils/CreditGallery";
+import TestingHint from "./utils/TestingHint";
 
 const ImageDisplayTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -89,11 +90,7 @@ const ImageDisplayTesting = () => {
           </strong>
         </p>
 
-        <p className="hints">
-          Pro lepší výsledky testu doporučuji přepnout okno/kartu v prohlížeči a
-          vrátit se zpět, případně mezi testy také aktualizovat stránku (F5).
-          Pomůže to změřit CLS přesněji při opětovném načtení stránky.
-        </p>
+        <TestingHint />
       </section>
 
       <section className="gallery section-page">
