@@ -195,21 +195,23 @@ const BaselineTesting = () => {
         </div>
 
         <TestingHint />
-
-        <button onClick={handleVersionToggle} className="button -margin">
-          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-          verzi
-        </button>
-
-        <p className="status-text -bottom">
-          Aktuální verze:{" "}
-          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
-        </p>
-
-        <p className="status-text">
-          Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
-        </p>
       </section>
+
+      <div className="hero__container">
+        <img
+          src={
+            isOptimized
+              ? "/assets/images/lcp-image-min.webp"
+              : "/assets/images/lcp-image.jpg"
+          }
+          alt="Hero obrázek"
+          width={1920}
+          height={isOptimized ? 1080 : undefined}
+          loading={isOptimized ? "eager" : "lazy"}
+          fetchPriority={isOptimized ? "high" : undefined}
+        />
+      </div>
+
       <section className="section-page">
         <h2 className="section-subtitle -small">Hero Sekce (LCP)</h2>
         <p className="section-text">
@@ -217,21 +219,21 @@ const BaselineTesting = () => {
             ? "Optimalizovaný obrázek používá formát WebP a správné načítání."
             : "Neoptimalizovaný obrázek bez prioritního načítání."}
         </p>
-        <div className="hero__container">
-          <img
-            src={
-              isOptimized
-                ? "/assets/images/lcp-image-min.webp"
-                : "/assets/images/lcp-image.jpg"
-            }
-            alt="Hero obrázek"
-            width={1920}
-            height={isOptimized ? 1080 : undefined}
-            loading={isOptimized ? "eager" : "lazy"}
-            fetchPriority={isOptimized ? "high" : undefined}
-          />
-        </div>
       </section>
+
+      <button onClick={handleVersionToggle} className="button -margin">
+        Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+        verzi
+      </button>
+
+      <p className="status-text -bottom">
+        Aktuální verze:{" "}
+        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+      </p>
+
+      <p className="status-text">
+        Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
+      </p>
 
       <section className="section-page">
         <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
