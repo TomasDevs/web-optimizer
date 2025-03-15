@@ -206,7 +206,7 @@ const BaselineTesting = () => {
           }
           alt="Hero obrázek"
           width={1920}
-          height={isOptimized ? 1080 : undefined}
+          height={1080}
           loading={isOptimized ? "eager" : "lazy"}
           fetchPriority={isOptimized ? "high" : undefined}
         />
