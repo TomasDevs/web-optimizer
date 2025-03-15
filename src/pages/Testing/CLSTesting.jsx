@@ -19,6 +19,11 @@ const CLSTesting = () => {
     }
   }, [searchParams, setSearchParams]);
 
+  // Přepínání mezi optimalizovanou a neoptimalizovanou verzí
+  const handleClsToggle = () => {
+    setSearchParams({ optimized: !isOptimized ? "true" : "false" });
+  };
+
   const isOptimized = searchParams.get("optimized") === "true";
 
   // Měření CLS pomocí web-vitals
@@ -41,11 +46,6 @@ const CLSTesting = () => {
       }
     };
   }, [isOptimized, activeTest]);
-
-  // Přepínání mezi optimalizovanou a neoptimalizovanou verzí
-  const handleClsToggle = () => {
-    setSearchParams({ optimized: !isOptimized ? "true" : "false" });
-  };
 
   // Přepínání mezi testy
   const switchTest = (testName) => {
@@ -256,7 +256,7 @@ const AdsTest = ({ isOptimized }) => {
                 height: "1000px",
                 marginBottom: "30px",
                 marginTop: "30px",
-                background: "#f0f0f0",
+                background: "#d0d0d0",
               }}>
               <strong style={{ fontSize: "1.5rem" }}>
                 VELKÝ REKLAMNÍ BANNER
