@@ -7,12 +7,12 @@ import LazyYoutubeEmbed from "../../components/Testing/LazyYoutubeEmbed";
 import { heavyComputation, fetchMockData } from "./utils/testingUtils";
 import CreditGallery from "./utils/CreditGallery";
 import TestingHint from "./utils/TestingHint";
-import DynamicAd from "./utils/DynamicAd";
 
 const BaselineTesting = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [status, setStatus] = useState("Připraveno k testu");
   const [mockData, setMockData] = useState([]);
+  const [adLoaded, setAdLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [metrics, setMetrics] = useState({
     lcp: "Měření...",
@@ -68,6 +68,16 @@ const BaselineTesting = () => {
       };
     } catch (error) {
       console.error("Chyba při měření metrik:", error);
+    }
+  }, [isOptimized]);
+
+  useEffect(() => {
+    if (!isOptimized) {
+      // Simulace opožděného načtení reklamy po 1,5 sekundě
+      const timer = setTimeout(() => {
+        setAdLoaded(true);
+      }, 1500);
+      return () => clearTimeout(timer);
     }
   }, [isOptimized]);
 
@@ -224,6 +234,62 @@ const BaselineTesting = () => {
       </section>
 
       <section className="section-page">
+        <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
+        <p className="section-text">
+          {isOptimized
+            ? "Obsah má předem rezervované místo pro prevenci CLS."
+            : "Dynamicky načítaný obsah bez rezervovaného místa."}
+        </p>
+        <div
+          className={`dynamic-content ${
+            isOptimized ? "dynamic-content--reserved" : ""
+          }`}>
+          {isOptimized ? (
+            isLoading ? (
+              <div className="skeleton-loading">
+                <div className="skeleton-line"></div>
+                <div className="skeleton-line"></div>
+              </div>
+            ) : (
+              <div className="grid-container">
+                {mockData.map((item) => (
+                  <div key={item.id} className="mock-item">
+                    <h3 className="mock-name">{item.name}</h3>
+                    <p className="mock-email">
+                      <a
+                        href={`mailto:${item.email}`}
+                        className="highlight-link">
+                        {item.email}
+                      </a>
+                    </p>
+                    <p className="mock-description">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            )
+          ) : (
+            !isLoading && (
+              <div className="grid-container">
+                {mockData.map((item) => (
+                  <div key={item.id} className="mock-item">
+                    <h3 className="mock-name">{item.name}</h3>
+                    <p className="mock-email">
+                      <a
+                        href={`mailto:${item.email}`}
+                        className="highlight-link">
+                        {item.email}
+                      </a>
+                    </p>
+                    <p className="mock-description">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            )
+          )}
+        </div>
+      </section>
+
+      <section className="section-page">
         <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
         <p className="section-text">
           {isOptimized
@@ -231,7 +297,107 @@ const BaselineTesting = () => {
             : "Reklama se načítá dynamicky a způsobuje posuny."}
         </p>
 
-        <DynamicAd isOptimized={isOptimized} />
+        <div className="ad-placeholder">
+          {isOptimized ? (
+            <div
+              style={{
+                width: "100%",
+                height: "400px",
+                background: "#f0f0f0",
+                border: "1px solid #ccc",
+                padding: "20px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}>
+              <div
+                style={{
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}>
+                Rezervované místo pro reklamu
+              </div>
+              <div
+                style={{
+                  width: "80%",
+                  height: "300px",
+                  background:
+                    "linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "8px",
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: "24px",
+                }}>
+                Optimalizovaná reklama
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="content-before-ad">
+                <p>
+                  Tento text je nad reklamou. Při načtení reklamy dojde k posunu
+                  obsahu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+
+              {adLoaded && (
+                <div
+                  className="ad-container__content ad-container__content--dynamic"
+                  style={{
+                    height: "400px",
+                    marginBottom: "30px",
+                    marginTop: "30px",
+                    background: "#e0e0e0",
+                    border: "1px solid #999",
+                    padding: "20px",
+                    textAlign: "center",
+                  }}>
+                  <strong style={{ fontSize: "1.5rem" }}>
+                    VELKÝ REKLAMNÍ BANNER
+                  </strong>
+                  <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
+                    Tento banner se načetl až po vykreslení stránky a způsobil
+                    masivní posun obsahu
+                  </p>
+                  <div
+                    style={{
+                      width: "80%",
+                      height: "250px",
+                      margin: "0 auto",
+                      background:
+                        "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      borderRadius: "8px",
+                      color: "white",
+                      fontWeight: "bold",
+                      fontSize: "24px",
+                    }}>
+                    Neoptimalizovaná reklama
+                  </div>
+                </div>
+              )}
+
+              <div className="content-after-ad">
+                <p>
+                  Tento text je pod reklamou. Při načtení dojde k jeho posunu
+                  dolů. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </p>
+              </div>
+            </>
+          )}
+        </div>
       </section>
 
       <section className="section-page">
@@ -307,62 +473,6 @@ const BaselineTesting = () => {
             </video>
           </div>
         )}
-      </section>
-
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
-        <p className="section-text">
-          {isOptimized
-            ? "Obsah má předem rezervované místo pro prevenci CLS."
-            : "Dynamicky načítaný obsah bez rezervovaného místa."}
-        </p>
-        <div
-          className={`dynamic-content ${
-            isOptimized ? "dynamic-content--reserved" : ""
-          }`}>
-          {isOptimized ? (
-            isLoading ? (
-              <div className="skeleton-loading">
-                <div className="skeleton-line"></div>
-                <div className="skeleton-line"></div>
-              </div>
-            ) : (
-              <div className="grid-container">
-                {mockData.map((item) => (
-                  <div key={item.id} className="mock-item">
-                    <h3 className="mock-name">{item.name}</h3>
-                    <p className="mock-email">
-                      <a
-                        href={`mailto:${item.email}`}
-                        className="highlight-link">
-                        {item.email}
-                      </a>
-                    </p>
-                    <p className="mock-description">{item.body}</p>
-                  </div>
-                ))}
-              </div>
-            )
-          ) : (
-            !isLoading && (
-              <div className="grid-container">
-                {mockData.map((item) => (
-                  <div key={item.id} className="mock-item">
-                    <h3 className="mock-name">{item.name}</h3>
-                    <p className="mock-email">
-                      <a
-                        href={`mailto:${item.email}`}
-                        className="highlight-link">
-                        {item.email}
-                      </a>
-                    </p>
-                    <p className="mock-description">{item.body}</p>
-                  </div>
-                ))}
-              </div>
-            )
-          )}
-        </div>
       </section>
 
       <section className="section-page">
