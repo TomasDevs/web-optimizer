@@ -289,116 +289,67 @@ const BaselineTesting = () => {
         </div>
       </section>
 
-      <section className="section-page">
-        <h2 className="section-subtitle -small">Reklamy a externí obsah</h2>
+      <div className="cls-test__content">
+        <h2 className="section-subtitle -small">Test reklam a bannerů</h2>
         <p className="section-text">
           {isOptimized
-            ? "Reklamní prostor je předem rezervován."
-            : "Reklama se načítá dynamicky a způsobuje posuny."}
+            ? "Reklamní prostor je předem rezervován, takže načtení reklamy nezpůsobí posun okolního obsahu."
+            : "Reklama se načítá dynamicky bez předem vyhrazeného místa, což způsobuje posun okolního obsahu."}
         </p>
 
-        <div className="ad-placeholder">
+        <div className="content-block">
+          <h3>Nadpis článku</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
+            risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+
           {isOptimized ? (
-            <div
-              style={{
-                width: "100%",
-                height: "400px",
-                background: "#f0f0f0",
-                border: "1px solid #ccc",
-                padding: "20px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}>
-              <div
-                style={{
-                  fontSize: "1.2rem",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
-                }}>
-                Rezervované místo pro reklamu
+            <div className="ad-container">
+              <div className="ad-container__label">
+                Vyhrazený prostor pro reklamu
               </div>
-              <div
-                style={{
-                  width: "80%",
-                  height: "300px",
-                  background:
-                    "linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderRadius: "8px",
-                  color: "white",
-                  fontWeight: "bold",
-                  fontSize: "24px",
-                }}>
-                Optimalizovaná reklama
+              <div className="ad-container__content">
+                <strong>Reklamní banner</strong>
+                <p>Tento prostor byl vyhrazen již při načítání stránky</p>
               </div>
             </div>
           ) : (
-            <>
-              <div className="content-before-ad">
-                <p>
-                  Tento text je nad reklamou. Při načtení reklamy dojde k posunu
-                  obsahu. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
+            adLoaded && (
+              <div
+                className="ad-container__content ad-container__content--dynamic"
+                style={{
+                  height: "1000px",
+                  marginBottom: "30px",
+                  marginTop: "30px",
+                  background: "#d0d0d0",
+                }}>
+                <strong style={{ fontSize: "1.5rem" }}>
+                  VELKÝ REKLAMNÍ BANNER
+                </strong>
+                <p style={{ fontSize: "1.2rem" }}>
+                  Tento banner se načetl až po vykreslení stránky a způsobil
+                  masivní posun obsahu
                 </p>
               </div>
-
-              {adLoaded && (
-                <div
-                  className="ad-container__content ad-container__content--dynamic"
-                  style={{
-                    height: "400px",
-                    marginBottom: "30px",
-                    marginTop: "30px",
-                    background: "#e0e0e0",
-                    border: "1px solid #999",
-                    padding: "20px",
-                    textAlign: "center",
-                  }}>
-                  <strong style={{ fontSize: "1.5rem" }}>
-                    VELKÝ REKLAMNÍ BANNER
-                  </strong>
-                  <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
-                    Tento banner se načetl až po vykreslení stránky a způsobil
-                    masivní posun obsahu
-                  </p>
-                  <div
-                    style={{
-                      width: "80%",
-                      height: "250px",
-                      margin: "0 auto",
-                      background:
-                        "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      borderRadius: "8px",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "24px",
-                    }}>
-                    Neoptimalizovaná reklama
-                  </div>
-                </div>
-              )}
-
-              <div className="content-after-ad">
-                <p>
-                  Tento text je pod reklamou. Při načtení dojde k jeho posunu
-                  dolů. Pellentesque habitant morbi tristique senectus et netus
-                  et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                  feugiat vitae, ultricies eget, tempor sit amet, ante.
-                </p>
-              </div>
-            </>
+            )
           )}
+
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+            egestas semper. Aenean ultricies mi vitae est.
+          </p>
+
+          <p>
+            Další odstavec textu pro zvýraznění posunu. Mauris placerat eleifend
+            leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+            erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+          </p>
         </div>
-      </section>
+      </div>
 
       <section className="section-page">
         <h2 className="section-subtitle">
