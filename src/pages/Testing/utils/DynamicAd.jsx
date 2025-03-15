@@ -25,14 +25,6 @@ const DynamicAd = ({ isOptimized }) => {
             padding: "20px",
           }}>
           <div>Rezervované místo pro reklamu</div>
-          <iframe
-            src="https://osel.cz/"
-            width="100%"
-            height="700"
-            title="Ukázková reklama"
-            style={{ border: "none", marginTop: "20px" }}
-            loading="lazy"
-          />
         </div>
       ) : (
         <>
