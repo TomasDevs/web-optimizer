@@ -66,7 +66,7 @@ const DynamicAd = ({ isOptimized }) => {
                 masivní posun obsahu
               </p>
               <iframe
-                src="https://osel.cz/"
+                src="https://web-optimizer.netlify.app/"
                 width="100%"
                 height="600"
                 title="Ukázková reklama"
