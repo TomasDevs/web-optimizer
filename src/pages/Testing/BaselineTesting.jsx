@@ -221,7 +221,7 @@ const BaselineTesting = () => {
         </p>
       </section>
 
-      <button onClick={handleVersionToggle} className="button -margin">
+      <button onClick={handleVersionToggle} className="button -bottom">
         Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
         verzi
       </button>
