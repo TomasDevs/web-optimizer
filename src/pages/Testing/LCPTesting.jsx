@@ -85,7 +85,7 @@ const LCPTesting = () => {
                 fetchPriority="high"
                 src="/assets/images/lcp-image-min.webp"
                 width="1440"
-                height="600"
+                height="710"
                 alt="Optimalizovaný hero obrázek"
                 className="lcp-image"
                 loading="eager"
@@ -95,7 +95,7 @@ const LCPTesting = () => {
             <img
               src="/assets/images/lcp-image.jpg"
               width="1440"
-              height="600"
+              height="810"
               alt="Neoptimalizovaný hero obrázek"
               className="lcp-image"
               loading="lazy"
