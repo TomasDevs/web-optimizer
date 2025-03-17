@@ -43,6 +43,7 @@ import InpTesting from "./pages/Testing/INPTesting";
 import Home from "./pages/Home";
 import AboutApp from "./pages/Menu/AboutApp";
 import Tools from "./pages/Menu/Tools";
+import Results from "./pages/Menu/Results";
 import FAQ from "./pages/Menu/FAQ";
 import NotFound from "./pages/NotFound";
 
@@ -56,6 +57,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/o-aplikaci" element={<AboutApp />} />
           <Route path="/nastroje" element={<Tools />} />
+          <Route path="/vysledky" element={<Results />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/testovani" element={<TestingPage />} />
           <Route path="/optimalizace" element={<Optimization />} />
