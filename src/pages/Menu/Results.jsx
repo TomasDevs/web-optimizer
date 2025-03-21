@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 import {
   BarChart,
   Bar,
@@ -430,14 +431,15 @@ const Results = () => {
       <Helmet>
         <title>Výsledky testování | Web Optimizer</title>
       </Helmet>
-
-      <h1 className="subpage-title">Výsledky testování optimalizací</h1>
-      <p className="section-text">
-        Tato stránka prezentuje klíčové výsledky z testování optimalizačních
-        technik na různých zařízeních a v různých podmínkách. Grafy ukazují
-        srovnání optimalizované a neoptimalizované verze aplikace, které byly
-        získány pomocí testovací platformy vyvinuté v rámci bakalářské práce.
-      </p>
+      <FadeInOnScroll className="section-page">
+        <h1 className="subpage-title">Výsledky testování optimalizací</h1>
+        <p className="section-text">
+          Tato stránka prezentuje klíčové výsledky z testování optimalizačních
+          technik na různých zařízeních a v různých podmínkách. Grafy ukazují
+          srovnání optimalizované a neoptimalizované verze aplikace, které byly
+          získány pomocí testovací platformy vyvinuté v rámci bakalářské práce.
+        </p>
+      </FadeInOnScroll>
 
       <div className="tabs">
         {tabs.map((tab, index) => (
