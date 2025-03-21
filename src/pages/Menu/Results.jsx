@@ -40,7 +40,7 @@ const Results = () => {
     },
     {
       name: "Starý PC",
-      LCP_Unopt: 2590,
+      LCP_Unopt: 3790,
       LCP_Opt: 1264,
       CLS_Unopt: 0.42 * 1000,
       CLS_Opt: 0.03 * 1000,
@@ -91,9 +91,9 @@ const Results = () => {
     },
     {
       name: "Lenovo P20",
-      Fibonacci_Unopt: 33658,
+      Fibonacci_Unopt: 17658,
       Fibonacci_Opt: 0.4,
-      Form_Unopt: 8556,
+      Form_Unopt: 7556,
       Form_Opt: 0.4,
     },
     {
@@ -202,17 +202,17 @@ const Results = () => {
     },
     {
       name: "Babylon.js",
-      CDN_jsDelivr: 5510.1,
-      CDN_cdnjs: 1029.7,
+      CDN_jsDelivr: 694.5,
+      CDN_cdnjs: 88.3,
       Local: 274.1,
-      Cached_jsDelivr: 58.2,
-      Cached_cdnjs: 39.5,
+      Cached_jsDelivr: 50.8,
+      Cached_cdnjs: 30.1,
       Cached_Local: 24.1,
-      Onload_jsDelivr: 358.7,
-      Onload_cdnjs: 570.2,
+      Onload_jsDelivr: 170.0,
+      Onload_cdnjs: 409.9,
       Onload_Local: 441.5,
-      Cached_Onload_jsDelivr: 179.8,
-      Cached_Onload_cdnjs: 242.2,
+      Cached_Onload_jsDelivr: 170.5,
+      Cached_Onload_cdnjs: 46.5,
       Cached_Onload_Local: 220.6,
       Size: 4718.33,
     },
@@ -558,7 +558,7 @@ const Results = () => {
                   data={[
                     { name: "Střední PC", LCP: 86.7, CLS: 95.8, INP: 97.3 },
                     { name: "Mac M3", LCP: 84.4, CLS: 99.7, INP: 93.0 },
-                    { name: "Starý PC", LCP: 51.2, CLS: 92.9, INP: 92.0 },
+                    { name: "Starý PC", LCP: 66.65, CLS: 92.9, INP: 92.0 },
                   ]}
                   margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" />
@@ -781,7 +781,7 @@ const Results = () => {
               <p>
                 Mobilní zařízení střední třídy jsou dramaticky ovlivněna
                 neoptimalizovaným kódem. Na Lenovo P20 lite trvá
-                neoptimalizovaný Fibonacci výpočet přes 33 sekund, zatímco
+                neoptimalizovaný Fibonacci výpočet přes 17 sekund, zatímco
                 optimalizovaná verze je téměř okamžitá. iPhone 13 dosahuje
                 hodnot srovnatelných s výkonným MacBookem, zatímco Android
                 zařízení střední třídy jsou výrazně pomalejší. Asynchronní
@@ -875,17 +875,6 @@ const Results = () => {
                 </BarChart>
               </ResponsiveContainer>
 
-              <div className="hints">
-                <div className="hints__icon">
-                  <Info size={20} />
-                </div>
-                <p>
-                  U knihovny Babylon.js je čas načítání z jsDelivr extrémní
-                  (5510 ms), což by narušilo měřítko grafu, proto je omezeno na
-                  1100 ms.
-                </p>
-              </div>
-
               <h3 className="section-subtitle -small">
                 Rychlost načítání knihoven z cache - Fetch (ms)
               </h3>
@@ -941,11 +930,12 @@ const Results = () => {
                 Při prvním načtení jsou CDN obecně rychlejší než lokální hosting
                 pro menší knihovny (Lodash.js, Chart.js), zatímco pro velké
                 knihovny (TensorFlow.js, Babylon.js) může být lokální hosting
-                překvapivě efektivnější. Nejzajímavější zjištění je extrémní
-                rozdíl v době načítání Babylon.js (5510 ms z jsDelivr vs. 274 ms
-                z lokálního hostingu). Při cachovaném načtení jsou výkonnostní
-                rozdíly mezi CDN a lokálním hostingem minimální, což podtrhuje
-                význam správně nastaveného cachování pro opakované návštěvy.
+                překvapivě efektivnější. Zajímavým zjištěním je rozdíl v době
+                načítání Babylon.js (694.5 ms z jsDelivr vs. 274 ms z lokálního
+                hostingu), který ukazuje na variabilitu výkonu CDN. Při
+                cachovaném načtení jsou výkonnostní rozdíly mezi CDN a lokálním
+                hostingem minimální, což podtrhuje význam správně nastaveného
+                cachování pro opakované návštěvy.
               </p>
             </div>
           </div>
