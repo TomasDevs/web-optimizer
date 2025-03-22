@@ -55,10 +55,10 @@ const AboutApp = () => {
           Proč je to důležité a jak to funguje?
         </h2>
         <p className="section-text">
-          Weby musí být rychlé a plynulé, jinak ztrácí uživatele. Tento projekt
-          se zaměřuje například na testování a implementaci technik jako
-          minifikace kódu, optimalizace obrázků a lazy loading, které mohou
-          výrazně zlepšit výkon aplikací.
+          Weby musí být rychlé a plynulé, jinak ztrácí uživatele. Projekt se
+          zaměřuje například na testování a implementaci technik jako minifikace
+          kódu, optimalizace obrázků a lazy loading, které mohou výrazně zlepšit
+          výkon aplikací.
         </p>
         <p className="section-text">
           Aplikace <strong>Web Optimizer</strong> umožňuje porovnat výkon
