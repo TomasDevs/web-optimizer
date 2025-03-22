@@ -224,10 +224,6 @@
   background-color: color.scale(vars.$background-color, $lightness: 10%);
   border-left: 4px solid vars.$highlight-color;
   border-radius: vars.$border-radius-md;
-
-  &.-top {
-    margin-top: 0.5rem;
-  }
 }
 
 .sr-only {

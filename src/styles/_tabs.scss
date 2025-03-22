@@ -9,9 +9,14 @@
   position: relative;
   gap: 0.25rem;
 
+  &.-bottom {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid
+      color.adjust(vars.$background-color, $lightness: -10%);
+  }
+
   @include mx.breakpoint(md) {
     justify-content: center;
-    flex-wrap: nowrap;
   }
 
   &__item {
@@ -19,7 +24,7 @@
     padding: 0.5rem 0.75rem;
     cursor: pointer;
     border: none;
-    background: rgba(vars.$text-color, 0.05);
+    background: rgba(vars.$text-color, 0.06);
     font-size: 0.95rem;
     font-weight: 500;
     color: rgba(vars.$text-color, 0.8);

@@ -21,7 +21,7 @@ const Results = () => {
   // Data pro Core Web Vitals na různých zařízeních
   const devicePerformanceData = [
     {
-      name: "Střední PC",
+      name: "Dell PC",
       LCP_Unopt: 3360,
       LCP_Opt: 448,
       CLS_Unopt: 0.332 * 1000,
@@ -30,7 +30,7 @@ const Results = () => {
       INP_Opt: 64,
     },
     {
-      name: "Mac M3",
+      name: "MacBook M3",
       LCP_Unopt: 2692,
       LCP_Opt: 420,
       CLS_Unopt: 0.33 * 1000,
@@ -52,7 +52,7 @@ const Results = () => {
   // Data pro Core Web Vitals (Lighthouse)
   const lighthousePerformanceData = [
     {
-      name: "Střední PC",
+      name: "Dell PC",
       LCP_Unopt: 10100,
       LCP_Opt: 448,
       CLS_Unopt: 0.273 * 1000,
@@ -61,7 +61,7 @@ const Results = () => {
       INP_Opt: 64,
     },
     {
-      name: "Mac M3",
+      name: "MacBook M3",
       LCP_Unopt: 8500,
       LCP_Opt: 900,
       CLS_Unopt: 0.367 * 1000,
@@ -90,7 +90,7 @@ const Results = () => {
       Form_Opt: 0.01,
     },
     {
-      name: "Lenovo P20",
+      name: "Huawei P20",
       Fibonacci_Unopt: 17658,
       Fibonacci_Opt: 0.4,
       Form_Unopt: 7556,
@@ -111,7 +111,7 @@ const Results = () => {
       Form_Opt: 0.1,
     },
     {
-      name: "Mac M3",
+      name: "MacBook M3",
       Fibonacci_Unopt: 1739,
       Fibonacci_Opt: 0.1,
       Form_Unopt: 571.3,
@@ -442,7 +442,7 @@ const Results = () => {
       </FadeInOnScroll>
 
       <FadeInOnScroll className="section-page">
-        <div className="tabs">
+        <div className="tabs -bottom">
           {tabs.map((tab, index) => (
             <button
               key={index}
@@ -453,13 +453,6 @@ const Results = () => {
               {tab}
             </button>
           ))}
-        </div>
-
-        <div className="info -top">
-          <p>
-            Použijte záložky výše pro navigaci mezi jednotlivými testy a
-            datovými sadami.
-          </p>
         </div>
       </FadeInOnScroll>
 
@@ -473,8 +466,8 @@ const Results = () => {
               <p className="section-text">
                 Graf znázorňuje vliv hardwarové konfigurace na metriky Core Web
                 Vitals měřené pomocí knihovny web-vitals. Testování probíhalo na
-                třech různých počítačích: středně výkonném PC s 16GB RAM a SSD,
-                výkonném MacBooku Air M3 a starším PC s 4GB RAM a HDD.
+                třech různých počítačích: středně výkonném PC Dell s 16GB RAM a
+                SSD, výkonném MacBooku Air M3 a starším PC s 4GB RAM a HDD.
               </p>
 
               <div className="chart-container">
@@ -559,8 +552,8 @@ const Results = () => {
                 <ResponsiveContainer width="100%" height={300}>
                   <BarChart
                     data={[
-                      { name: "Střední PC", LCP: 86.7, CLS: 95.8, INP: 97.3 },
-                      { name: "Mac M3", LCP: 84.4, CLS: 99.7, INP: 93.0 },
+                      { name: "Dell PC", LCP: 86.7, CLS: 95.8, INP: 97.3 },
+                      { name: "MacBook M3", LCP: 84.4, CLS: 99.7, INP: 93.0 },
                       { name: "Starý PC", LCP: 66.65, CLS: 92.9, INP: 92.0 },
                     ]}
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -577,7 +570,7 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Hardwarová konfigurace má zásadní vliv zejména na INP. Starší
                   zařízení s HDD vykazují výrazně horší výkon při zpracování
@@ -696,7 +689,7 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Testování v různých nástrojích ukázalo výrazné rozdíly v
                   naměřených hodnotách LCP. Zatímco lokální nástroje jako
@@ -708,10 +701,10 @@ const Results = () => {
                   efektivity.
                 </p>
                 <p>
-                  Zlepšení je nejméně patrné v Hong Kongu (9.4%), což může být
+                  Zlepšení je nejméně patrné v Hong Kongu (9,4 %), což může být
                   způsobeno latencí sítě, která se optimalizacemi obtížně
                   eliminuje. Naopak největší zlepšení bylo zaznamenáno ve
-                  Virginii (79%) a Sydney (78.4%), což naznačuje, že lokální
+                  Virginii (79 %) a Sydney (78,4 %), což naznačuje, že lokální
                   optimalizace mají významný dopad i při přístupu ze vzdálených
                   lokací.
                 </p>
@@ -725,8 +718,8 @@ const Results = () => {
               <p className="section-text">
                 Porovnání výkonu mobilních zařízení a počítačů při zpracování
                 náročných JavaScript úloh. Testování bylo provedeno na iPhone
-                13, Lenovo P20 lite a běžném Xiaomi telefonu. Pro srovnání jsou
-                uvedeny i výsledky z PC.
+                13, běžném Xiaomi (střední třída) a na starším telefonu Huawei
+                P20 Lite. Pro srovnání jsou uvedeny i výsledky z PC.
               </p>
 
               <div className="chart-container">
@@ -782,10 +775,10 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Mobilní zařízení střední třídy jsou dramaticky ovlivněna
-                  neoptimalizovaným kódem. Na Lenovo P20 lite trvá
+                  neoptimalizovaným kódem. Na Huawei P20 lite trvá
                   neoptimalizovaný Fibonacci výpočet přes 17 sekund, zatímco
                   optimalizovaná verze je téměř okamžitá. iPhone 13 dosahuje
                   hodnot srovnatelných s výkonným MacBookem, zatímco Android
@@ -834,7 +827,7 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Rychlost připojení má dramatický dopad na LCP, zejména u
                   neoptimalizované verze. Při přechodu z 4G na 3G se LCP
@@ -940,15 +933,17 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Při prvním načtení jsou CDN obecně rychlejší než lokální
                   hosting pro menší knihovny (Lodash.js, Chart.js), zatímco pro
                   velké knihovny (TensorFlow.js, Babylon.js) může být lokální
-                  hosting překvapivě efektivnější. Zajímavým zjištěním je rozdíl
-                  v době načítání Babylon.js (694.5 ms z jsDelivr vs. 274 ms z
-                  lokálního hostingu), který ukazuje na variabilitu výkonu CDN.
-                  Při cachovaném načtení jsou výkonnostní rozdíly mezi CDN a
+                  hosting v některých případech efektivnější. Tento jev je
+                  demonstrován rozdílem v době načítání Babylon.js (694.5 ms z
+                  jsDelivr vs. 274 ms z lokálního hostingu). Kromě potenciálně
+                  lepšího výkonu poskytuje lokální hosting vyšší míru kontroly,
+                  bezpečnosti a eliminuje závislost na externích službách. Při
+                  cachovaném načtení jsou výkonnostní rozdíly mezi CDN a
                   lokálním hostingem minimální, což podtrhuje význam správně
                   nastaveného cachování pro opakované návštěvy.
                 </p>
@@ -1041,13 +1036,13 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   U endpointů s povoleným cachováním je zlepšení při druhém
-                  volání výrazně vyšší (průměrně 93%) oproti API bez cachování
-                  (průměrně 45%). Největší kompresi vykazuje Pokemon API (87%),
-                  což výrazně zrychluje přenos dat. Cachování API odpovědí je
-                  jednou z nejefektivnějších optimalizací pro zlepšení
+                  volání výrazně vyšší (průměrně 93 %) oproti API bez cachování
+                  (průměrně 45 %). Největší kompresi vykazuje Pokemon API (87
+                  %), což výrazně zrychluje přenos dat. Cachování API odpovědí
+                  je jednou z nejefektivnějších optimalizací pro zlepšení
                   responzivity aplikace, zvláště u opakovaně načítaných dat.
                 </p>
               </div>
@@ -1146,12 +1141,12 @@ const Results = () => {
               </div>
 
               <div className="info">
-                <h3 className="section-subtitle -small">Klíčové zjištění</h3>
+                <h3 className="section-subtitle -small">Hlavní poznatky</h3>
                 <p>
                   Nejdramatičtější zlepšení bylo zaznamenáno u JavaScriptových
                   výpočtů (Fibonacci test), kde optimalizace pomocí
                   asynchronního zpracování přinesla téměř stoprocentní zlepšení
-                  (99,997%). U CLS testů byl největší efekt pozorován při
+                  (99,997 %). U CLS testů byl největší efekt pozorován při
                   optimalizaci reklam a dynamického obsahu, kde rezervace
                   prostoru v layoutu eliminovala nežádoucí posuny.
                 </p>
