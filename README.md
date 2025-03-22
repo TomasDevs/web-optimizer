@@ -12,11 +12,12 @@ Testovací platforma pro implementaci a vyhodnocení technik optimalizace výkon
 
 ## Popis projektu
 
-Tato aplikace je součástí **bakalářské práce**, která se zaměřuje na různé optimalizační strategie pro webové aplikace. Umožňuje **testování výkonu**, analýzu metrik (včetně **Core Web Vitals**) a porovnání různých optimalizačních technik.
+Aplikace je součástí **bakalářské práce**, která se zaměřuje na různé optimalizační strategie pro webové aplikace. Umožňuje **testování výkonu**, analýzu metrik (včetně **Core Web Vitals**) a porovnání různých optimalizačních technik.
 
 ## Funkce
 
 - Testování výkonu pomocí **Google PageSpeed Insights API**.
+- Měření Core Web Vitals metrik v reálném čase pomocí knihovny **web-vitals**.
 - Možnost dynamického přepínání optimalizačních funkcí.
 - Porovnání výkonu **před a po optimalizaci**.
 
@@ -64,7 +65,7 @@ Aplikace je nasazena a dostupná online: [Web Optimizer - Live Demo](https://web
 
 ## Licence
 
-Tento projekt je určen pouze pro akademické účely a nemá veřejnou licenci.
+Projekt je určen pouze pro akademické účely a nemá veřejnou licenci.
 
 ---
 
@@ -81,6 +82,7 @@ This application is part of a **bachelor's thesis** focused on exploring various
 ## Features
 
 - Performance testing using **Google PageSpeed Insights API**.
+- Real-time Core Web Vitals measurement using the **web-vitals** library.
 - Dynamic toggling of optimization features.
 - Comparison of performance **before and after optimizations**.
 
