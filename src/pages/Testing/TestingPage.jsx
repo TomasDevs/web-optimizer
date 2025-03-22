@@ -5,7 +5,7 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const TestingPage = () => {
   return (
-    <div className="section-page">
+    <div className="testing-page">
       <Helmet>
         <title>Testování výkonu | Web Optimizer</title>
       </Helmet>

@@ -11,7 +11,7 @@ const INPDetail = () => {
       <Helmet>
         <title>INP | Web Optimizer</title>
       </Helmet>
-      <FadeInOnScroll className="section-description">
+      <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Interaction to Next Paint (INP)</h1>
         <p className="section-text">
           Metrika <strong>Interaction to Next Paint (INP)</strong> měří odezvu

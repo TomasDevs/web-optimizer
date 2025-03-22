@@ -11,7 +11,7 @@ const CLSDetail = () => {
       <Helmet>
         <title>CLS | Web Optimizer</title>
       </Helmet>
-      <FadeInOnScroll className="section-description">
+      <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Cumulative Layout Shift (CLS)</h1>
         <p className="section-text">
           Metrika <strong>Cumulative Layout Shift (CLS)</strong> sleduje

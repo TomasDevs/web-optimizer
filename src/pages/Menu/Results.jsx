@@ -427,7 +427,7 @@ const Results = () => {
   ];
 
   return (
-    <div className="section-page">
+    <div className="resullts-page">
       <Helmet>
         <title>Výsledky testování | Web Optimizer</title>
       </Helmet>

@@ -6,12 +6,12 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const CoreWebVitals = () => {
   return (
-    <div className="section-page">
+    <div className="corewebvitals-page">
       <Helmet>
         <title>Core Web Vitals | Web Optimizer</title>
       </Helmet>
 
-      <FadeInOnScroll className="section-description">
+      <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Core Web Vitals</h1>
         <p className="section-text">
           Core Web Vitals jsou hlavní metriky od Googlu, které hodnotí rychlost,

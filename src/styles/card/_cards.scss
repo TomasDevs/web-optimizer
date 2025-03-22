@@ -5,10 +5,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 1rem;
-    margin: 2rem 0 0;
+    margin: 1rem 0 0;
 
     @include mx.breakpoint(md) {
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      margin: 2rem 0 0;
     }
 
     .core-web-vitals-cards & {

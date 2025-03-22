@@ -7,7 +7,7 @@ import TestButton from "../../components/UI/TestButton";
 
 const LCPDetail = () => {
   return (
-    <div className="page lcp-detail-page">
+    <div className="section-page lcp-detail-page">
       <Helmet>
         <title>LCP | Web Optimizer</title>
       </Helmet>

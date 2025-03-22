@@ -104,18 +104,28 @@
 }
 
 .section {
-  padding: 1.5rem 0;
+  margin: 1.5rem 0;
 
   &-page {
-    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  &-lg {
+    margin: 2rem 0;
   }
 
   @include mx.breakpoint(xs) {
-    padding: 2rem 0;
+    margin: 2rem 0;
+    &-lg {
+      margin: 3rem 0;
+    }
   }
 
   @include mx.breakpoint(lg) {
-    padding: 3rem 0;
+    margin: 3rem 0;
+    &-lg {
+      margin: 4rem 0;
+    }
   }
 }
 

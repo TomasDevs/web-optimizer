@@ -6,11 +6,11 @@ import FadeInOnScroll from "../../components/UI/FadeInOnScroll";
 
 const Optimization = () => {
   return (
-    <div className="section-page">
+    <div className="optimization-page">
       <Helmet>
         <title>Optimalizace webu | Web Optimizer</title>
       </Helmet>
-      <FadeInOnScroll className="section-description">
+      <FadeInOnScroll className="section-page">
         <h1 className="subpage-title">Optimalizace webu: Rychlost a výkon</h1>
 
         <p className="section-text">
