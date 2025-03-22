@@ -195,7 +195,7 @@ const BaselineTesting = () => {
         </div>
       </section>
 
-      <div className="hero__container">
+      <section className="hero__container">
         <img
           src={
             isOptimized
@@ -209,7 +209,7 @@ const BaselineTesting = () => {
           fetchPriority={isOptimized ? "high" : undefined}
         />
         <TestingHint />
-      </div>
+      </section>
 
       <section className="section-page">
         <h2 className="section-subtitle -small">Hero Sekce (LCP)</h2>
@@ -218,21 +218,21 @@ const BaselineTesting = () => {
             ? "Optimalizovaný obrázek používá formát WebP a správné načítání."
             : "Neoptimalizovaný obrázek bez prioritního načítání."}
         </p>
+
+        <button onClick={handleVersionToggle} className="button -bottom">
+          Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
+          verzi
+        </button>
+
+        <p className="status-text -bottom">
+          Aktuální verze:{" "}
+          <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
+        </p>
+
+        <p className="status-text">
+          Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
+        </p>
       </section>
-
-      <button onClick={handleVersionToggle} className="button -bottom">
-        Přepnout na {isOptimized ? "Neoptimalizovanou" : "Optimalizovanou"}{" "}
-        verzi
-      </button>
-
-      <p className="status-text -bottom">
-        Aktuální verze:{" "}
-        <strong>{isOptimized ? "Optimalizovaná" : "Neoptimalizovaná"}</strong>
-      </p>
-
-      <p className="status-text">
-        Minifikace: <strong>{isMinified ? "Zapnutá" : "Vypnutá"}</strong>
-      </p>
 
       <section className="section-page">
         <h2 className="section-subtitle -small">Dynamický obsah (CLS)</h2>
@@ -290,7 +290,7 @@ const BaselineTesting = () => {
         </div>
       </section>
 
-      <div className="cls-test__content">
+      <section className="section-page cls-test__content">
         <h2 className="section-subtitle -small">Test reklam a bannerů</h2>
         <p className="section-text">
           {isOptimized
@@ -350,7 +350,7 @@ const BaselineTesting = () => {
             erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
           </p>
         </div>
-      </div>
+      </section>
 
       <section className="section-page">
         <h2 className="section-subtitle">
