@@ -36,6 +36,10 @@ Projekt je **hostován na Netlify**, což zajišťuje **rychlé nasazení a glob
 
 ## Jak začít
 
+### Požadavky
+
+- Node.js verze 18 nebo novější
+
 ### Instalace
 
 Naklonujte repozitář:
@@ -96,6 +100,10 @@ This application is part of a **bachelor's thesis** focused on exploring various
 - **Google PageSpeed Insights API**: Performance measurement.
 
 ## Getting started
+
+### Requirements
+
+- Node.js version 18 or newer
 
 ### Installation
 
