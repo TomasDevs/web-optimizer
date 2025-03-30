@@ -480,8 +480,10 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
+                    <YAxis unit="&nbsp;ms" />
+                    <Tooltip
+                      formatter={(value) => [`${value} ms`, "Doba načítání"]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="LCP_Unopt"
@@ -505,8 +507,16 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
+                    <YAxis
+                      tickFormatter={(value) => (value / 1000).toFixed(3)}
+                      domain={[0, "dataMax"]}
+                    />
+                    <Tooltip
+                      formatter={(value) => [
+                        `${(value / 1000).toFixed(3)}`,
+                        "CLS hodnota",
+                      ]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="CLS_Unopt"
@@ -530,8 +540,10 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
+                    <YAxis unit="&nbsp;ms" />
+                    <Tooltip
+                      formatter={(value) => [`${value} ms`, "Doba interakce"]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="INP_Unopt"
@@ -602,7 +614,7 @@ const Results = () => {
 
               <div className="chart-container">
                 <h3 className="section-subtitle -small">
-                  LCP v různých testovacích nástrojích (ms)
+                  LCP v různých testovacích nástrojích
                 </h3>
                 <ResponsiveContainer width="100%" height={450}>
                   <BarChart
@@ -615,7 +627,7 @@ const Results = () => {
                       textAnchor="end"
                       height={80}
                     />
-                    <YAxis unit=" ms" />
+                    <YAxis unit="&nbsp;ms" />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba načítání"]}
                     />
@@ -669,7 +681,7 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis unit=" ms" />
+                    <YAxis unit="&nbsp;ms" />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba načítání"]}
                     />
@@ -732,8 +744,10 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis scale="log" domain={[0.01, 40000]} />
-                    <Tooltip />
+                    <YAxis unit="&nbsp;ms" scale="log" domain={[0.01, 40000]} />
+                    <Tooltip
+                      formatter={(value) => [`${value} ms`, "Doba interakce"]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="Fibonacci_Unopt"
@@ -757,8 +771,10 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis scale="log" domain={[0.01, 10000]} />
-                    <Tooltip />
+                    <YAxis unit="&nbsp;ms" scale="log" domain={[0.01, 10000]} />
+                    <Tooltip
+                      formatter={(value) => [`${value} ms`, "Doba interakce"]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="Form_Unopt"
@@ -801,7 +817,7 @@ const Results = () => {
 
               <div className="chart-container">
                 <h3 className="section-subtitle -small">
-                  LCP při různých rychlostech připojení (s)
+                  LCP při různých rychlostech připojení
                 </h3>
                 <ResponsiveContainer width="100%" height={300}>
                   <BarChart
@@ -809,8 +825,10 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
+                    <YAxis unit="&nbsp;s" />
+                    <Tooltip
+                      formatter={(value) => [`${value} s`, "Doba načítání"]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="Unoptimized"
@@ -854,7 +872,7 @@ const Results = () => {
 
               <div className="chart-container">
                 <h3 className="section-subtitle -small">
-                  Rychlost načítání knihoven z různých zdrojů - Fetch (ms)
+                  Rychlost načítání knihoven z různých zdrojů - Fetch
                 </h3>
                 <ResponsiveContainer width="100%" height={350}>
                   <BarChart
@@ -862,7 +880,7 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis type="number" domain={[0, 1100]} />
+                    <YAxis unit="&nbsp;ms" type="number" domain={[0, 800]} />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba načítání"]}
                     />
@@ -878,7 +896,7 @@ const Results = () => {
                 </ResponsiveContainer>
 
                 <h3 className="section-subtitle -small">
-                  Rychlost načítání knihoven z cache - Fetch (ms)
+                  Rychlost načítání knihoven z cache - Fetch
                 </h3>
                 <ResponsiveContainer width="100%" height={350}>
                   <BarChart
@@ -886,7 +904,7 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis domain={[0, 60]} />
+                    <YAxis unit="&nbsp;ms" domain={[0, 60]} />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba načítání"]}
                     />
@@ -918,7 +936,7 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis unit=" KB" />
+                    <YAxis unit="&nbsp;KB" />
                     <Tooltip
                       formatter={(value) => [`${value} KB`, "Velikost"]}
                     />
@@ -964,7 +982,7 @@ const Results = () => {
 
               <div className="chart-container">
                 <h3 className="section-subtitle -small">
-                  Rychlost odezvy API (TTFB) při prvním a druhém volání (ms)
+                  Rychlost odezvy API (TTFB) při prvním a druhém volání
                 </h3>
                 <ResponsiveContainer width="100%" height={450}>
                   <BarChart
@@ -977,7 +995,7 @@ const Results = () => {
                       textAnchor="end"
                       height={80}
                     />
-                    <YAxis />
+                    <YAxis unit="&nbsp;ms" />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba odezvy"]}
                     />
@@ -1064,7 +1082,7 @@ const Results = () => {
 
               <div className="chart-container">
                 <h3 className="section-subtitle -small">
-                  Testy optimalizace pro INP (ms)
+                  Testy optimalizace pro INP
                 </h3>
                 <ResponsiveContainer width="100%" height={300}>
                   <BarChart
@@ -1074,7 +1092,7 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis type="number" domain={[0, 3500]} />
+                    <YAxis unit="&nbsp;ms" type="number" domain={[0, 3500]} />
                     <Tooltip
                       formatter={(value) => [`${value} ms`, "Doba interakce"]}
                     />
@@ -1103,8 +1121,16 @@ const Results = () => {
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
+                    <YAxis
+                      tickFormatter={(value) => (value / 1000).toFixed(3)}
+                      domain={[0, "dataMax"]}
+                    />
+                    <Tooltip
+                      formatter={(value) => [
+                        `${(value / 1000).toFixed(3)}`,
+                        "CLS hodnota",
+                      ]}
+                    />
                     <Legend />
                     <Bar
                       dataKey="Unopt"
